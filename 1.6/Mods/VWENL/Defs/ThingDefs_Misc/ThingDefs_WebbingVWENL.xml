@@ -4,8 +4,10 @@
 		<description>A load-bearing chest harness tailored for tear gas grenades. Double-sealed canister pockets with chemically resistant inner lining and rubberized layers protect the wearer from accidental exposure to the special compound during movement.</description>
 		<label>Grenadier Webbing (Tear)</label>
 		<recipeMaker>
-		  <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
-		  <researchPrerequisite>VWE_NonLethal</researchPrerequisite>
+		  <researchPrerequisites>
+		    <li>TRG_SpecialistAccessories</li>
+		    <li>VWE_NonLethal</li>
+		  </researchPrerequisites>
 		</recipeMaker>
 		<graphicData>
 		  <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
@@ -22,7 +24,7 @@
 		</stuffCategories>
 		<statBases>
 		  <MaxHitPoints>200</MaxHitPoints>
-		  <WorkToMake>10000</WorkToMake>
+		  <WorkToMake>6000</WorkToMake>
 		  <Mass>1</Mass>
 		  <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
 		  <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
@@ -65,7 +67,7 @@
 		  <li>TRG_Accessories</li>
 		</thingCategories>
 		<equippedStatOffsets>
-		  <PainShockThreshold>0.20</PainShockThreshold>	  
+		  <PainShockThreshold>0.10</PainShockThreshold>	  
 		</equippedStatOffsets>   
 		<apparel>
 		  <bodyPartGroups>
@@ -74,8 +76,11 @@
 			<li>Waist</li>        
 		  </bodyPartGroups>
 		  <wornGraphicPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</wornGraphicPath>
+		  <wornGraphicData>
+       		 <renderUtilityAsPack>false</renderUtilityAsPack>
+    	 </wornGraphicData>
 		  <layers>
-			<li>Shell</li>
+			<li>Belt</li>
 		  </layers>
 		  <tags>
 			<li>TRG_Accessories_Grenadier</li>
@@ -83,31 +88,14 @@
 		  <defaultOutfitTags>
 			<li>Soldier</li>
 		  </defaultOutfitTags>
-		  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-          <countsAsClothingForNudity>false</countsAsClothingForNudity>
+		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 		  <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		  <useWornGraphicMask>True</useWornGraphicMask>			  
 		</apparel>	
-		<colorGenerator Class="ColorGenerator_Options">
-		  <options>
-			<li>
-			  <weight>10</weight>
-			  <only>(0.50,0.5,0.36)</only>
-			</li>
-			<li>
-			  <weight>6</weight>
-			  <only>(0.40,0.57,0.40)</only>
-			</li>
-			<li>
-			  <weight>10</weight>
-			  <only>(0.38,0.36,0.20)</only>
-			</li>
-			<li>
-			  <weight>10</weight>
-			  <only>(0.29,0.32,0.12)</only>
-			</li>
-		  </options>
-	    </colorGenerator>	
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.40,0.34,0.22)</color>
+    </colorGenerator>	
+	  <uiIconScale>1.15</uiIconScale>
 	</ThingDef>
 </Defs>

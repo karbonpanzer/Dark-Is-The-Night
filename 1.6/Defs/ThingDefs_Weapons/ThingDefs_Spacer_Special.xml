@@ -1,32 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 
-	<!-- ==================== GAUSS RIFLE ==================== -->
+	<!-- Special Weapons -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>TRG_Round_GaussRifle</defName>
-		<label>gauss rifle ferrous slug</label>
+		<defName>TRG_Bullet_ServiceLMG</defName>
+		<label>combat LMG round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Projectile/Chemrail_Round</texPath>
-			<drawSize>0.7</drawSize>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<drawSize>0.6</drawSize>
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>45</damageAmountBase>
-			<armorPenetrationBase>0.82</armorPenetrationBase>
-			<speed>115</speed>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationBase>0.30</armorPenetrationBase>
+			<speed>78</speed>
 		</projectile>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TRG_GaussRifle</defName>
-		<label>Gauss Rifle</label>
-		<description>A rifle converted into a gauss rifle using a modified foregrip. A series of magnetic coils turns a simple firearm into a powerful long-range rifle cheaply.</description>
+		<defName>TRG_ServiceLMG</defName>
+		<label>Combat LMG</label>
+		<description>A modified form of the combat rifle used as a support weapon. Fitted with a longer barrel and a bipod, it also features a higher rate of fire, making it more effective as a light machinegun.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Equipment/WeaponRanged/chemrailrifle</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/combatlmg</texPath>
 			<drawSize>1.3</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
@@ -34,49 +34,50 @@
 		<recipeMaker>
 			<researchPrerequisite>TRG_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>9</Crafting>
+				<Crafting>10</Crafting>
 			</skillRequirements>
 			<recipeUsers>
 				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
-			<Steel>80</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-			<ComponentSpacer>4</ComponentSpacer>
-			<Plasteel>20</Plasteel>
+			<Steel>70</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Plasteel>18</Plasteel>
 		</costList>
 		<statBases>
-			<WorkToMake>56000</WorkToMake>
-			<Mass>7.5</Mass>
-			<MarketValue>3800</MarketValue>
-			<AccuracyTouch>0.33</AccuracyTouch>
-			<AccuracyShort>0.50</AccuracyShort>
-			<AccuracyMedium>0.78</AccuracyMedium>
-			<AccuracyLong>0.88</AccuracyLong>
-			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+			<WorkToMake>48000</WorkToMake>
+			<Mass>6.5</Mass>
+			<MarketValue>2800</MarketValue>
+			<AccuracyTouch>0.38</AccuracyTouch>
+			<AccuracyShort>0.52</AccuracyShort>
+			<AccuracyMedium>0.42</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.20</MoveSpeed>
+			<MoveSpeed>-0.15</MoveSpeed>
 		</equippedStatOffsets>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TRG_Round_GaussRifle</defaultProjectile>
-				<warmupTime>3.0</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				<range>48.0</range>
-				<soundCast>ChargeLance_Fire</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<defaultProjectile>TRG_Bullet_ServiceLMG</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>30.0</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
 		</verbs>
 		<weaponTags>
 			<li>SpacerGun</li>
-			<li>ChargeRifle</li>
-			<li>SniperRifle</li>
-			<li>BNF_Ranger</li>
+			<li>AssaultRifle</li>
+			<li>BNF_FrontlineSupport</li>
+			<li>BNF_HInfantry</li>
 			<li>BNF_Commander</li>
 		</weaponTags>
 		<tools>
@@ -85,7 +86,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>14</power>
+				<power>12</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 			<li>
@@ -104,9 +105,8 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
-
-	<!-- ==================== SALVO GRENADE LAUNCHER ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>TRG_Grenade_SalvoLauncher</defName>
@@ -209,9 +209,8 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
-
-	<!-- ==================== LIGHT AUTOLOADER CANNON ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>TRG_Shell_AutoloaderCannon</defName>
@@ -314,9 +313,8 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
-
-	<!-- ==================== HYDRA ANTI-MATERIAL RIFLE ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>TRG_Bullet_HydraAMR</defName>
@@ -380,9 +378,9 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>TRG_Bullet_HydraAMR</defaultProjectile>
 				<warmupTime>3.4</warmupTime>
-				<range>52.0</range>
-				<burstShotCount>3</burstShotCount>
-				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<range>48.0</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>13</muzzleFlashScale>
@@ -420,6 +418,7 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
 
 </Defs>

@@ -10,23 +10,19 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
+        <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
-          <weight>5</weight>
-          <only>(0.25,0.27,0.34)</only>
+          <weight>10</weight>
+          <only>(0.82,0.76,0.65)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.48,0.49,0.51)</only>
+          <only>(0.78,0.72,0.60)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.81,0.80,0.84)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.85,0.86,0.86)</only>
+          <only>(0.70,0.65,0.52)</only>
         </li>
       </options>
     </colorGenerator>
@@ -47,9 +43,6 @@
       <StuffEffectMultiplierInsulation_Heat>1.75</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <PainShockThreshold>0.10</PainShockThreshold>
-    </equippedStatOffsets>
     <apparel>
       <developmentalStageFilter>Child,Adult</developmentalStageFilter>
       <bodyPartGroups>
@@ -79,6 +72,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
@@ -91,23 +85,19 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.2</drawSize>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
+        <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
+          <only>(0.75,0.67,0.54)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
+          <only>(0.68,0.60,0.45)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
+          <only>(0.56,0.50,0.38)</only>
         </li>
       </options>
     </colorGenerator>
@@ -156,6 +146,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -168,7 +159,7 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
+        <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
@@ -176,11 +167,11 @@
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.55,0.45,0.46)</only>
+          <only>(0.68,0.60,0.45)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.56,0.43,0.24)</only>
+          <only>(0.56,0.50,0.38)</only>
         </li>
       </options>
     </colorGenerator>
@@ -201,9 +192,6 @@
       <StuffEffectMultiplierInsulation_Heat>1.0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <PainShockThreshold>0.10</PainShockThreshold>
-    </equippedStatOffsets>
     <apparel>
       <developmentalStageFilter>Child,Adult</developmentalStageFilter>
       <bodyPartGroups>
@@ -233,6 +221,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
@@ -245,23 +234,19 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.2</drawSize>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
+        <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
+          <only>(0.82,0.76,0.65)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
+          <only>(0.78,0.72,0.60)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
+          <only>(0.70,0.65,0.52)</only>
         </li>
       </options>
     </colorGenerator>
@@ -310,6 +295,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -322,23 +308,23 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
+        <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
+          <only>(0.45,0.42,0.30)</only>
         </li>
         <li>
-          <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
+          <weight>8</weight>
+          <only>(0.38,0.40,0.30)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
+          <only>(0.35,0.33,0.22)</only>
+        </li>
+        <li>
+          <weight>8</weight>
+          <only>(0.30,0.32,0.20)</only>
         </li>
       </options>
     </colorGenerator>
@@ -359,9 +345,6 @@
       <StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <PainShockThreshold>0.10</PainShockThreshold>
-    </equippedStatOffsets>
     <apparel>
       <developmentalStageFilter>Child,Adult</developmentalStageFilter>
       <bodyPartGroups>
@@ -391,6 +374,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
@@ -403,23 +387,23 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.2</drawSize>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
+        <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
+          <only>(0.45,0.42,0.30)</only>
         </li>
         <li>
-          <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
+          <weight>8</weight>
+          <only>(0.38,0.40,0.30)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
+          <only>(0.35,0.33,0.22)</only>
+        </li>
+        <li>
+          <weight>8</weight>
+          <only>(0.30,0.32,0.20)</only>
         </li>
       </options>
     </colorGenerator>
@@ -468,6 +452,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -480,23 +465,23 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
+        <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
-          <weight>5</weight>
-          <only>(0.25,0.27,0.34)</only>
+          <weight>10</weight>
+          <only>(0.35,0.38,0.34)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.48,0.49,0.51)</only>
+          <only>(0.40,0.40,0.38)</only>
         </li>
         <li>
-          <weight>10</weight>
-          <only>(0.81,0.80,0.84)</only>
+          <weight>8</weight>
+          <only>(0.30,0.32,0.28)</only>
         </li>
         <li>
-          <weight>10</weight>
-          <only>(0.85,0.86,0.86)</only>
+          <weight>8</weight>
+          <only>(0.38,0.36,0.32)</only>
         </li>
       </options>
     </colorGenerator>
@@ -517,9 +502,6 @@
       <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <PainShockThreshold>0.10</PainShockThreshold>
-    </equippedStatOffsets>
     <apparel>
       <developmentalStageFilter>Child,Adult</developmentalStageFilter>
       <bodyPartGroups>
@@ -549,6 +531,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
@@ -561,23 +544,23 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.2</drawSize>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
+        <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
+          <only>(0.35,0.38,0.34)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
+          <only>(0.40,0.40,0.38)</only>
         </li>
         <li>
-          <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
+          <weight>8</weight>
+          <only>(0.30,0.32,0.28)</only>
+        </li>
+        <li>
+          <weight>8</weight>
+          <only>(0.38,0.36,0.32)</only>
         </li>
       </options>
     </colorGenerator>
@@ -626,6 +609,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -638,15 +622,11 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
+        <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
-          <weight>5</weight>
-          <only>(0.25,0.27,0.34)</only>
-        </li>
-        <li>
           <weight>10</weight>
-          <only>(0.48,0.49,0.51)</only>
+          <only>(0.85,0.86,0.86)</only>
         </li>
         <li>
           <weight>10</weight>
@@ -654,7 +634,11 @@
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.85,0.86,0.86)</only>
+          <only>(0.75,0.76,0.78)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <only>(0.48,0.49,0.51)</only>
         </li>
       </options>
     </colorGenerator>
@@ -675,9 +659,6 @@
       <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <PainShockThreshold>0.10</PainShockThreshold>
-    </equippedStatOffsets>
     <apparel>
       <developmentalStageFilter>Child,Adult</developmentalStageFilter>
       <bodyPartGroups>
@@ -707,6 +688,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
@@ -719,23 +701,23 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.2</drawSize>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
+        <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
+          <only>(0.85,0.86,0.86)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.81,0.80,0.84)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.75,0.76,0.78)</only>
         </li>
         <li>
           <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
+          <only>(0.48,0.49,0.51)</only>
         </li>
       </options>
     </colorGenerator>
@@ -784,5 +766,6 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 </Defs>

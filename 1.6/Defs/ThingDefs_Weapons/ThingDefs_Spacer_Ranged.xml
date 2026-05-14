@@ -1,13 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 
-	<!-- ======================================================== -->
-	<!--                     PISTOLS                              -->
-	<!-- ======================================================== -->
-
-	<!-- ==================== DOMINATOR PISTOL ==================== -->
-
-	<!-- ==================== ASSAULT PISTOL ==================== -->
+	<!-- Pistols -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>TRG_Bullet_AssaultPistol</defName>
@@ -20,8 +14,8 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>20</damageAmountBase>
-			<armorPenetrationBase>0.42</armorPenetrationBase>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.32</armorPenetrationBase>
 			<speed>52</speed>
 		</projectile>
 	</ThingDef>
@@ -106,9 +100,8 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
-
-	<!-- ==================== SERVICE PISTOL ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>TRG_Bullet_ServicePistol</defName>
@@ -149,13 +142,13 @@
 		<costList>
 			<Steel>24</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
-			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentSpacer>1</ComponentSpacer>
 			<Plasteel>6</Plasteel>
 		</costList>
 		<statBases>
 			<WorkToMake>18000</WorkToMake>
 			<Mass>2.4</Mass>
-			<MarketValue>700</MarketValue>
+			<MarketValue>500</MarketValue>
 			<AccuracyTouch>0.66</AccuracyTouch>
 			<AccuracyShort>0.72</AccuracyShort>
 			<AccuracyMedium>0.62</AccuracyMedium>
@@ -207,9 +200,8 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
-
-	<!-- ==================== ADVANCED SMG ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>TRG_Bullet_AdvancedSMG</defName>
@@ -234,7 +226,7 @@
 		<description>A state of the art sub-machinegun built with lightweight polymers and advanced alloys. Light, accurate, and easy to use, it has found usage in hundreds of colonies now for security.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Equipment/WeaponRanged/RetroRifle</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/compactpdw</texPath>
 			<drawSize>1.0</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
@@ -257,7 +249,7 @@
 		<statBases>
 			<WorkToMake>28000</WorkToMake>
 			<Mass>2.0</Mass>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>1400</MarketValue>
 			<AccuracyTouch>0.62</AccuracyTouch>
 			<AccuracyShort>0.76</AccuracyShort>
 			<AccuracyMedium>0.68</AccuracyMedium>
@@ -269,10 +261,10 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>TRG_Bullet_AdvancedSMG</defaultProjectile>
-				<warmupTime>0.25</warmupTime>
-				<range>28.0</range>
-				<burstShotCount>4</burstShotCount>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<warmupTime>0.4</warmupTime>
+				<range>26.0</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<soundCast>Shot_HeavySMG</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>8</muzzleFlashScale>
@@ -310,9 +302,8 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
-
-	<!-- ==================== Stampede Revolver ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>TRG_Bullet_StampedeRevolver</defName>
@@ -325,8 +316,8 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>18</damageAmountBase>
-			<armorPenetrationBase>0.28</armorPenetrationBase>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBase>0.26</armorPenetrationBase>
 			<speed>62</speed>
 		</projectile>
 	</ThingDef>
@@ -410,18 +401,14 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
 
-	<!-- ======================================================== -->
-	<!--                     RIFLES                               -->
-	<!-- ======================================================== -->
+	<!-- Rifles -->
 
-	<!-- ==================== DOMINION RIFLE ==================== -->
-
-	<!-- Duplex ammo: two AP rounds per cartridge, simulated as a rapid burst of 2 -->
 	<ThingDef ParentName="BaseBullet">
 		<defName>TRG_Bullet_ServiceRifle</defName>
-		<label>service rifle duplex round</label>
+		<label>combat rifle duplex round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
@@ -430,19 +417,19 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>21</damageAmountBase>
-			<armorPenetrationBase>0.54</armorPenetrationBase>
+			<damageAmountBase>17</damageAmountBase>
+			<armorPenetrationBase>0.38</armorPenetrationBase>
 			<speed>88</speed>
 		</projectile>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>TRG_ServiceRifle</defName>
-		<label>Service Rifle</label>
+		<label>Combat Rifle</label>
 		<description>An advanced rifle design used by ringer veterans and mercenaries. Built with state-of-the-art polymers and alloys, it fires armor-piercing duplex ammunition.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Equipment/WeaponRanged/flechetterifle</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/combatrifle</texPath>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
@@ -478,7 +465,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>TRG_Bullet_ServiceRifle</defaultProjectile>
 				<warmupTime>1.0</warmupTime>
-				<range>38.0</range>
+				<range>34.0</range>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<soundCast>Shot_AssaultRifle</soundCast>
@@ -518,13 +505,12 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
-
-	<!-- ==================== PROSPECTOR RIFLE ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>TRG_Bullet_ServiceCarbine</defName>
-		<label>service carbine round</label>
+		<label>combat carbine round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
@@ -532,19 +518,19 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>12</damageAmountBase>
-			<armorPenetrationBase>0.12</armorPenetrationBase>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>0.20</armorPenetrationBase>
 			<speed>64</speed>
 		</projectile>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>TRG_ServiceCarbine</defName>
-		<label>Service Carbine</label>
+		<label>Combat Carbine</label>
 		<description>An older design rifle using less complex methods, earning it favor with prospectors. Built with stamped materials, making it cheaper to produce but less accurate at range.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Equipment/WeaponRanged/servicerifle</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/combatcarbine</texPath>
 			<drawSize>1.1</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
@@ -616,13 +602,10 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
 
-	<!-- ======================================================== -->
-	<!--                     SHOTGUNS                             -->
-	<!-- ======================================================== -->
-
-	<!-- ==================== JACKHAMMER SHOTGUN ==================== -->
+	<!-- Shotguns -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>TRG_Shell_JackhammerShotgun</defName>
@@ -723,9 +706,8 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
-
-	<!-- ==================== DOMINION SHOTGUN ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>TRG_Shell_LawbringerShotgun</defName>
@@ -750,7 +732,7 @@
 		<description>A large gauge shotgun favored by colonists for its ruggedness and stopping power. Slow to cycle but devastating at close to medium range with its uncommon 8 gauge shell.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Equipment/WeaponRanged/supershotgun</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/lawbringershotgun</texPath>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
@@ -775,9 +757,9 @@
 			<Mass>4.8</Mass>
 			<MarketValue>1800</MarketValue>
 			<AccuracyTouch>0.78</AccuracyTouch>
-			<AccuracyShort>0.82</AccuracyShort>
-			<AccuracyMedium>0.52</AccuracyMedium>
-			<AccuracyLong>0.20</AccuracyLong>
+			<AccuracyShort>0.74</AccuracyShort>
+			<AccuracyMedium>0.48</AccuracyMedium>
+			<AccuracyLong>0.18</AccuracyLong>
 			<RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
@@ -787,6 +769,7 @@
 				<defaultProjectile>TRG_Shell_LawbringerShotgun</defaultProjectile>
 				<warmupTime>0.8</warmupTime>
 				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>18</ticksBetweenBurstShots>
 				<range>22.0</range>
 				<soundCast>Shot_Shotgun</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -825,6 +808,7 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
 
 </Defs>

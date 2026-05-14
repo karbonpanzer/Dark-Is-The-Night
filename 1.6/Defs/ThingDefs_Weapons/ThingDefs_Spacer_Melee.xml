@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Defs>
 
-	<!-- ==================== VIBROSWORD ==================== -->
+	<!-- Melee Weapons -->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>TRG_Vibrosword</defName>
@@ -14,7 +14,6 @@
 			<drawSize>1.4</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
-		<uiIconScale>0.9</uiIconScale>
 		<equippedAngleOffset>-50</equippedAngleOffset>
 		<recipeMaker>
 			<workSkill>Crafting</workSkill>
@@ -49,7 +48,7 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>9</power>
-				<cooldownTime>2.1</cooldownTime>
+				<cooldownTime>2.4</cooldownTime>
 			</li>
 			<li>
 				<label>edge</label>
@@ -57,7 +56,7 @@
 					<li>Cut</li>
 				</capacities>
 				<power>26</power>
-				<cooldownTime>2.1</cooldownTime>
+				<cooldownTime>2.4</cooldownTime>
 				<armorPenetration>0.50</armorPenetration>
 			</li>
 			<li>
@@ -66,7 +65,7 @@
 					<li>Stab</li>
 				</capacities>
 				<power>24</power>
-				<cooldownTime>2.1</cooldownTime>
+				<cooldownTime>2.4</cooldownTime>
 				<armorPenetration>0.50</armorPenetration>
 			</li>
 		</tools>
@@ -82,9 +81,8 @@
 		<tradeTags>
 			<li>WeaponMelee</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
-
-	<!-- ==================== VIBROBLADE ==================== -->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>TRG_Vibroblade</defName>
@@ -97,7 +95,6 @@
 			<drawSize>1.3</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
-		<uiIconScale>0.9</uiIconScale>
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<recipeMaker>
 			<workSkill>Crafting</workSkill>
@@ -132,7 +129,7 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>8</power>
-				<cooldownTime>1.6</cooldownTime>
+				<cooldownTime>1.8</cooldownTime>
 			</li>
 			<li>
 				<label>blade</label>
@@ -140,7 +137,7 @@
 					<li>Cut</li>
 				</capacities>
 				<power>20</power>
-				<cooldownTime>1.6</cooldownTime>
+				<cooldownTime>1.8</cooldownTime>
 				<armorPenetration>0.40</armorPenetration>
 			</li>
 			<li>
@@ -149,7 +146,7 @@
 					<li>Stab</li>
 				</capacities>
 				<power>19</power>
-				<cooldownTime>1.6</cooldownTime>
+				<cooldownTime>1.8</cooldownTime>
 				<armorPenetration>0.40</armorPenetration>
 			</li>
 		</tools>
@@ -166,9 +163,8 @@
 		<tradeTags>
 			<li>WeaponMelee</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
-
-	<!-- ==================== VIBROMAUL ==================== -->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>TRG_Vibromaul</defName>
@@ -181,7 +177,6 @@
 			<drawSize>1.4</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
-		<uiIconScale>0.9</uiIconScale>
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<recipeMaker>
 			<workSkill>Crafting</workSkill>
@@ -239,6 +234,7 @@
 		<tradeTags>
 			<li>WeaponMelee</li>
 		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
 
 </Defs>

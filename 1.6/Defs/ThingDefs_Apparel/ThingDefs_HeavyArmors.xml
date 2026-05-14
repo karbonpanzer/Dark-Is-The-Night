@@ -28,23 +28,26 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>80</Steel>
+      <Steel>90</Steel>
       <Plasteel>60</Plasteel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MarketValue>800</MarketValue>
       <MaxHitPoints>340</MaxHitPoints>
-      <Mass>6</Mass>
+      <Mass>11</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.60</ArmorRating_Heat>
-      <Insulation_Cold>34</Insulation_Cold>
-      <Insulation_Heat>10</Insulation_Heat>
-      <EquipDelay>3</EquipDelay>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.56</ArmorRating_Heat>
+      <Insulation_Cold>38</Insulation_Cold>
+      <Insulation_Heat>12</Insulation_Heat>
+      <EquipDelay>8</EquipDelay>
     </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.20</MoveSpeed>
+    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -55,6 +58,7 @@
       </bodyPartGroups>
       <layers>
         <li>Middle</li>
+        <li>Shell</li>
       </layers>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -65,7 +69,6 @@
       <soundRemove>Remove_PowerArmor</soundRemove>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <tags Inherit="False">
-        <li>TRG_Armor</li>
         <li>TRG_Armor</li>
       </tags>
       <renderNodeProperties>
@@ -113,6 +116,7 @@
       <li>Armor</li>
       <li>TRG_Armor</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
@@ -145,23 +149,26 @@ This variant is marked for usage by Medical staff.</description>
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>80</Steel>
+      <Steel>90</Steel>
       <Plasteel>60</Plasteel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MarketValue>800</MarketValue>
       <MaxHitPoints>340</MaxHitPoints>
-      <Mass>6</Mass>
+      <Mass>11</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.60</ArmorRating_Heat>
-      <Insulation_Cold>34</Insulation_Cold>
-      <Insulation_Heat>10</Insulation_Heat>
-      <EquipDelay>3</EquipDelay>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.56</ArmorRating_Heat>
+      <Insulation_Cold>38</Insulation_Cold>
+      <Insulation_Heat>12</Insulation_Heat>
+      <EquipDelay>8</EquipDelay>
     </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.20</MoveSpeed>
+    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -172,6 +179,7 @@ This variant is marked for usage by Medical staff.</description>
       </bodyPartGroups>
       <layers>
         <li>Middle</li>
+        <li>Shell</li>
       </layers>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -229,6 +237,7 @@ This variant is marked for usage by Medical staff.</description>
       <li>Armor</li>
       <li>TRG_Armor</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
@@ -261,23 +270,26 @@ This variant is marked for usage by Engineers.</description>
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>80</Steel>
+      <Steel>90</Steel>
       <Plasteel>60</Plasteel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MarketValue>800</MarketValue>
       <MaxHitPoints>340</MaxHitPoints>
-      <Mass>6</Mass>
+      <Mass>11</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.60</ArmorRating_Heat>
-      <Insulation_Cold>34</Insulation_Cold>
-      <Insulation_Heat>10</Insulation_Heat>
-      <EquipDelay>3</EquipDelay>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.56</ArmorRating_Heat>
+      <Insulation_Cold>38</Insulation_Cold>
+      <Insulation_Heat>12</Insulation_Heat>
+      <EquipDelay>8</EquipDelay>
     </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.20</MoveSpeed>
+    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -288,6 +300,7 @@ This variant is marked for usage by Engineers.</description>
       </bodyPartGroups>
       <layers>
         <li>Middle</li>
+        <li>Shell</li>
       </layers>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -345,6 +358,7 @@ This variant is marked for usage by Engineers.</description>
       <li>Armor</li>
       <li>TRG_Armor</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
@@ -375,18 +389,18 @@ This variant is marked for usage by Engineers.</description>
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>50</Steel>
+      <Steel>60</Steel>
       <Plasteel>40</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <statBases>
       <WorkToMake>21000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>1.5</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.44</ArmorRating_Heat>
       <Insulation_Cold>4</Insulation_Cold>
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
@@ -404,7 +418,6 @@ This variant is marked for usage by Engineers.</description>
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags>
-        <li>TRG_Armor</li>
         <li>TRG_Armor</li>
       </tags>
       <renderNodeProperties>
@@ -442,6 +455,7 @@ This variant is marked for usage by Engineers.</description>
       <li>Armor</li>
       <li>TRG_Armor</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
@@ -474,18 +488,18 @@ This variant is marked for usage by Medical staff.</description>
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>50</Steel>
+      <Steel>60</Steel>
       <Plasteel>40</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <statBases>
       <WorkToMake>21000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>1.5</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.44</ArmorRating_Heat>
       <Insulation_Cold>4</Insulation_Cold>
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
@@ -540,6 +554,7 @@ This variant is marked for usage by Medical staff.</description>
       <li>Armor</li>
       <li>TRG_Armor</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
@@ -572,18 +587,18 @@ This variant is marked for usage by Engineers.</description>
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>50</Steel>
+      <Steel>60</Steel>
       <Plasteel>40</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <statBases>
       <WorkToMake>21000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>1.5</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.44</ArmorRating_Heat>
       <Insulation_Cold>4</Insulation_Cold>
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
@@ -638,6 +653,7 @@ This variant is marked for usage by Engineers.</description>
       <li>Armor</li>
       <li>TRG_Armor</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
@@ -670,18 +686,18 @@ This variant is marked for usage by Officers.</description>
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>50</Steel>
+      <Steel>60</Steel>
       <Plasteel>40</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <statBases>
       <WorkToMake>21000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>1.5</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.44</ArmorRating_Heat>
       <Insulation_Cold>4</Insulation_Cold>
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
@@ -736,7 +752,7 @@ This variant is marked for usage by Officers.</description>
       <li>Armor</li>
       <li>TRG_Armor</li>
     </tradeTags>
-    <uiIconScale>1.4</uiIconScale>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
@@ -769,16 +785,16 @@ This variant is marked for usage by Officers.</description>
     <costList>
       <Cloth>100</Cloth>
       <Plasteel>40</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <statBases>
       <WorkToMake>9000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>2</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.44</ArmorRating_Heat>
       <Insulation_Cold>12</Insulation_Cold>
       <Insulation_Heat>0.2</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
@@ -833,6 +849,7 @@ This variant is marked for usage by Officers.</description>
       <li>Armor</li>
       <li>TRG_Armor</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
@@ -864,7 +881,7 @@ This variant is marked for usage by Officers.</description>
     </recipeMaker>
     <costList>
       <Cloth>60</Cloth>
-      <Steel>30</Steel>
+      <Steel>40</Steel>
       <Plasteel>50</Plasteel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
@@ -873,16 +890,16 @@ This variant is marked for usage by Officers.</description>
       <MaxHitPoints>220</MaxHitPoints>
       <Mass>2.7</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>1.17</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.47</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.47</ArmorRating_Heat>
+      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.48</ArmorRating_Heat>
       <Insulation_Cold>12</Insulation_Cold>
       <Insulation_Heat>0.2</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.15</MoveSpeed>
-      <RangedCooldownFactor>0.35</RangedCooldownFactor>
+      <MoveSpeed>-0.08</MoveSpeed>
+      <RangedCooldownFactor>0.15</RangedCooldownFactor>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -934,6 +951,7 @@ This variant is marked for usage by Officers.</description>
       <li>Armor</li>
       <li>TRG_Armor</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
@@ -974,15 +992,15 @@ This variant is marked for usage by Officers.</description>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>1.5</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>0.88</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.35</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.38</ArmorRating_Heat>
       <Insulation_Cold>4</Insulation_Cold>
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.01</MoveSpeed>
+      <MoveSpeed>-0.05</MoveSpeed>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -1035,5 +1053,6 @@ This variant is marked for usage by Officers.</description>
       <li>Armor</li>
       <li>TRG_Armor</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 </Defs>

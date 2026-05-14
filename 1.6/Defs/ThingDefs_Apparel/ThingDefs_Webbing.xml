@@ -9,25 +9,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
-        </li>
-      </options>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>TRG_InfantryAccessories</researchPrerequisite>
@@ -50,16 +33,33 @@
       <EquipDelay>1.5</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <RangedCooldownFactor>-0.2</RangedCooldownFactor>
+      <RangedCooldownFactor>-0.10</RangedCooldownFactor>
     </equippedStatOffsets>
     <apparel>
+			<drawData>
+                <dataSouth>
+                    <layer>21.5</layer>
+                </dataSouth>
+                <dataWest>
+				    <layer>21.5</layer>
+                </dataWest>
+                <dataEast>
+				    <layer>21.5</layer>
+                </dataEast>
+                <dataNorth>
+			        <layer>21.5</layer>
+                </dataNorth>
+			</drawData>	
       <bodyPartGroups>
         <li>Torso</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/InfantryPouches/InfantryPouches</wornGraphicPath>
+		  <wornGraphicData>
+       		 <renderUtilityAsPack>false</renderUtilityAsPack>
+    	  </wornGraphicData>
       <layers>
-        <li>Shell</li>
+        <li>Belt</li>
       </layers>
       <tags>
         <li>TRG_Webbing_Infantry</li>
@@ -78,6 +78,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -89,25 +90,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
-        </li>
-      </options>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>TRG_SupportAccessories</researchPrerequisite>
@@ -135,18 +119,34 @@
       <ConstructionSpeed>0.15</ConstructionSpeed>
     </equippedStatOffsets>
     <apparel>
+			<drawData>
+                <dataSouth>
+                    <layer>21.5</layer>
+                </dataSouth>
+                <dataWest>
+				    <layer>21.5</layer>
+                </dataWest>
+                <dataEast>
+				    <layer>21.5</layer>
+                </dataEast>
+                <dataNorth>
+			        <layer>21.5</layer>
+                </dataNorth>
+			</drawData>	
       <bodyPartGroups>
         <li>Torso</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/SupportPouches/SupportPouches</wornGraphicPath>
+		  <wornGraphicData>
+       		 <renderUtilityAsPack>false</renderUtilityAsPack>
+    	  </wornGraphicData>
       <layers>
-        <li>Shell</li>
+        <li>Belt</li>
       </layers>
       <tags>
         <li>TRG_Webbing_Engineer</li>
         <li>TRG_Accessories</li>
-        <li>TRG_Webbing_Engineer</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -161,6 +161,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -172,25 +173,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
-        </li>
-      </options>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>TRG_SupportAccessories</researchPrerequisite>
@@ -218,18 +202,34 @@
       <MedicalTendQuality>0.15</MedicalTendQuality>
     </equippedStatOffsets>
     <apparel>
+			<drawData>
+                <dataSouth>
+                    <layer>21.5</layer>
+                </dataSouth>
+                <dataWest>
+				    <layer>21.5</layer>
+                </dataWest>
+                <dataEast>
+				    <layer>21.5</layer>
+                </dataEast>
+                <dataNorth>
+			        <layer>21.5</layer>
+                </dataNorth>
+			</drawData>	
       <bodyPartGroups>
         <li>Torso</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/MedicPouches/MedicPouches</wornGraphicPath>
+		  <wornGraphicData>
+       		 <renderUtilityAsPack>false</renderUtilityAsPack>
+    	  </wornGraphicData>
       <layers>
-        <li>Shell</li>
+        <li>Belt</li>
       </layers>
       <tags>
         <li>TRG_Webbing_Medic</li>
         <li>TRG_Accessories</li>
-        <li>TRG_Webbing_Medic</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -244,6 +244,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -255,21 +256,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.75,0.67,0.54)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.55,0.45,0.46)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.56,0.43,0.24)</only>
-        </li>
-      </options>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>TRG_SupportAccessories</researchPrerequisite>
@@ -296,13 +284,30 @@
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
     </equippedStatOffsets>
     <apparel>
+			<drawData>
+                <dataSouth>
+                    <layer>21.5</layer>
+                </dataSouth>
+                <dataWest>
+				    <layer>21.5</layer>
+                </dataWest>
+                <dataEast>
+				    <layer>21.5</layer>
+                </dataEast>
+                <dataNorth>
+			        <layer>21.5</layer>
+                </dataNorth>
+			</drawData>	
       <bodyPartGroups>
         <li>Torso</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/PoliceBelt/PoliceBelt</wornGraphicPath>
+		  <wornGraphicData>
+       		 <renderUtilityAsPack>false</renderUtilityAsPack>
+    	  </wornGraphicData>
       <layers>
-        <li>Shell</li>
+        <li>Belt</li>
       </layers>
       <tags>
         <li>TRG_Webbing_Riot</li>
@@ -317,6 +322,11 @@
     <thingCategories>
       <li>TRG_Accessories</li>
     </thingCategories>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>TRG_Uniforms</li>
+    </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -328,25 +338,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
-        </li>
-      </options>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
@@ -361,7 +354,7 @@
     <costStuffCount>40</costStuffCount>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>10000</WorkToMake>
+      <WorkToMake>3500</WorkToMake>
       <Mass>1</Mass>
       <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
@@ -369,17 +362,34 @@
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <HuntingStealth>0.40</HuntingStealth>
+      <HuntingStealth>0.25</HuntingStealth>
     </equippedStatOffsets>
     <apparel>
+			<drawData>
+                <dataSouth>
+                    <layer>21.5</layer>
+                </dataSouth>
+                <dataWest>
+				    <layer>21.5</layer>
+                </dataWest>
+                <dataEast>
+				    <layer>21.5</layer>
+                </dataEast>
+                <dataNorth>
+			        <layer>21.5</layer>
+                </dataNorth>
+			</drawData>	
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/ScoutWebbing/ScoutWebbing</wornGraphicPath>
+		  <wornGraphicData>
+       		 <renderUtilityAsPack>false</renderUtilityAsPack>
+    	  </wornGraphicData>
       <layers>
-        <li>Shell</li>
+        <li>Belt</li>
       </layers>
       <tags>
         <li>TRG_Webbing_Scout</li>
@@ -403,6 +413,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -414,25 +425,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
-        </li>
-      </options>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
@@ -447,7 +441,7 @@
     <costStuffCount>40</costStuffCount>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>10000</WorkToMake>
+      <WorkToMake>3500</WorkToMake>
       <Mass>1</Mass>
       <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
@@ -455,17 +449,35 @@
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <PainShockThreshold>0.20</PainShockThreshold>
+      <MeleeDamageFactor>0.10</MeleeDamageFactor>
+      <MeleeCooldownFactor>-0.05</MeleeCooldownFactor>
     </equippedStatOffsets>
     <apparel>
+			<drawData>
+                <dataSouth>
+                    <layer>21.5</layer>
+                </dataSouth>
+                <dataWest>
+				    <layer>21.5</layer>
+                </dataWest>
+                <dataEast>
+				    <layer>21.5</layer>
+                </dataEast>
+                <dataNorth>
+			        <layer>21.5</layer>
+                </dataNorth>
+			</drawData>	
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/ShocktrooperWebbing/ShocktrooperWebbing</wornGraphicPath>
+		  <wornGraphicData>
+       		 <renderUtilityAsPack>false</renderUtilityAsPack>
+    	  </wornGraphicData>
       <layers>
-        <li>Shell</li>
+        <li>Belt</li>
       </layers>
       <tags>
         <li>TRG_Webbing_Shocktrooper</li>
@@ -489,6 +501,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -500,25 +513,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
-        </li>
-      </options>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
@@ -533,7 +529,7 @@
     <costStuffCount>40</costStuffCount>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>10000</WorkToMake>
+      <WorkToMake>6000</WorkToMake>
       <Mass>1</Mass>
       <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
@@ -541,17 +537,34 @@
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <PainShockThreshold>0.20</PainShockThreshold>
+      <PainShockThreshold>0.10</PainShockThreshold>
     </equippedStatOffsets>
     <apparel>
+			<drawData>
+                <dataSouth>
+                    <layer>21.5</layer>
+                </dataSouth>
+                <dataWest>
+				    <layer>21.5</layer>
+                </dataWest>
+                <dataEast>
+				    <layer>21.5</layer>
+                </dataEast>
+                <dataNorth>
+			        <layer>21.5</layer>
+                </dataNorth>
+			</drawData>	
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</wornGraphicPath>
+		  <wornGraphicData>
+       		 <renderUtilityAsPack>false</renderUtilityAsPack>
+    	  </wornGraphicData>
       <layers>
-        <li>Shell</li>
+        <li>Belt</li>
       </layers>
       <tags>
         <li>TRG_Accessories</li>
@@ -559,7 +572,6 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
@@ -600,6 +612,7 @@
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
       </li>
     </verbs>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -611,25 +624,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
-        </li>
-      </options>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
@@ -644,7 +640,7 @@
     <costStuffCount>40</costStuffCount>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>10000</WorkToMake>
+      <WorkToMake>6000</WorkToMake>
       <Mass>1</Mass>
       <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
@@ -652,17 +648,34 @@
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <PainShockThreshold>0.20</PainShockThreshold>
+      <PainShockThreshold>0.10</PainShockThreshold>
     </equippedStatOffsets>
     <apparel>
+			<drawData>
+                <dataSouth>
+                    <layer>21.5</layer>
+                </dataSouth>
+                <dataWest>
+				    <layer>21.5</layer>
+                </dataWest>
+                <dataEast>
+				    <layer>21.5</layer>
+                </dataEast>
+                <dataNorth>
+			        <layer>21.5</layer>
+                </dataNorth>
+			</drawData>	
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</wornGraphicPath>
+		  <wornGraphicData>
+       		 <renderUtilityAsPack>false</renderUtilityAsPack>
+    	  </wornGraphicData>
       <layers>
-        <li>Shell</li>
+        <li>Belt</li>
       </layers>
       <tags>
         <li>TRG_Accessories</li>
@@ -670,7 +683,6 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
@@ -703,7 +715,7 @@
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
-        <drawHighlightWithLineOfSight>false</drawHighlightWithLineOfSight>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
@@ -711,6 +723,7 @@
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
       </li>
     </verbs>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -722,25 +735,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
-        </li>
-      </options>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
@@ -755,7 +751,7 @@
     <costStuffCount>40</costStuffCount>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>10000</WorkToMake>
+      <WorkToMake>6000</WorkToMake>
       <Mass>1</Mass>
       <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
@@ -763,17 +759,34 @@
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <PainShockThreshold>0.20</PainShockThreshold>
+      <PainShockThreshold>0.10</PainShockThreshold>
     </equippedStatOffsets>
     <apparel>
+			<drawData>
+                <dataSouth>
+                    <layer>21.5</layer>
+                </dataSouth>
+                <dataWest>
+				    <layer>21.5</layer>
+                </dataWest>
+                <dataEast>
+				    <layer>21.5</layer>
+                </dataEast>
+                <dataNorth>
+			        <layer>21.5</layer>
+                </dataNorth>
+			</drawData>	
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>false</renderUtilityAsPack>
+      </wornGraphicData>
       <layers>
-        <li>Shell</li>
+        <li>Belt</li>
       </layers>
       <tags>
         <li>TRG_Accessories</li>
@@ -781,7 +794,6 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
@@ -822,5 +834,6 @@
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
       </li>
     </verbs>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 </Defs>

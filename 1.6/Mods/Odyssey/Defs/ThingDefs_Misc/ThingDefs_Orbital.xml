@@ -23,9 +23,9 @@
 				<MaxHitPoints>120</MaxHitPoints>
 				<Mass>1</Mass>
 				<Flammability>0.4</Flammability>
-				<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
-				<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-				<ArmorRating_Heat>0.46</ArmorRating_Heat>
+				<ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.40</ArmorRating_Heat>
 				<Insulation_Cold>4</Insulation_Cold>
 				<Insulation_Heat>2</Insulation_Heat>
 				<EquipDelay>2</EquipDelay>
@@ -35,12 +35,12 @@
 			</thingCategories>
 			<costList>
 				<Cloth>10</Cloth>
-				<Steel>25</Steel>
+				<Steel>35</Steel>
 				<Plasteel>20</Plasteel>
 				<ComponentIndustrial>2</ComponentIndustrial>
 			</costList>
 			<equippedStatOffsets>
-				<MoveSpeed>-0.01</MoveSpeed>
+				<MoveSpeed>-0.05</MoveSpeed>
 				<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
 				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>				
 			</equippedStatOffsets>
@@ -78,12 +78,16 @@
 			<thingSetMakerTags>
 			  <li>RewardStandardMidFreq</li>
 			</thingSetMakerTags>
-			<costList>
-			  <ComponentIndustrial>2</ComponentIndustrial>
-			  <Steel>40</Steel>
-			</costList>
-			<colorGenerator Class="ColorGenerator_StandardApparel" />
-		</ThingDef>	
+			<colorGenerator Class="ColorGenerator_Options">
+			  <options>
+			    <li>
+			      <weight>10</weight>
+			      <only>(0.65,0.65,0.65)</only>
+			    </li>
+			  </options>
+			</colorGenerator>
+	  <uiIconScale>1.15</uiIconScale>
+	</ThingDef>	
 
 		<ThingDef ParentName="ApparelMakeableBase">
 			<defName>TRG_OrbitalMarauderArmor</defName>
@@ -103,25 +107,24 @@
 				<WorkToMake>60000</WorkToMake>
 				<MarketValue>550</MarketValue>
 				<MaxHitPoints>300</MaxHitPoints>
-				<Mass>7</Mass>
+				<Mass>8</Mass>
 				<Flammability>0.4</Flammability>
-				<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
-				<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-				<ArmorRating_Heat>0.54</ArmorRating_Heat>
+				<ArmorRating_Sharp>0.88</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.46</ArmorRating_Heat>
 				<Insulation_Cold>34</Insulation_Cold>
 				<Insulation_Heat>10</Insulation_Heat>
-				<EquipDelay>5</EquipDelay>
+				<EquipDelay>6</EquipDelay>
 			</statBases>
 			<thingCategories>
 				<li>TRG_Armor</li>
 			</thingCategories>
 			<costList>
-				<Steel>60</Steel>
+				<Steel>70</Steel>
 				<Plasteel>40</Plasteel>
-				<ComponentIndustrial>3</ComponentIndustrial>
+				<ComponentIndustrial>4</ComponentIndustrial>
 			</costList>
 			<equippedStatOffsets>
-				<PainShockThreshold>0.10</PainShockThreshold>
 		        <MoveSpeed>-1.25</MoveSpeed>
 			    <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>			
 			</equippedStatOffsets>
@@ -174,5 +177,6 @@
 					</li>
 				</options>
 			</colorGenerator>	
-		</ThingDef>	  
+	  <uiIconScale>1.15</uiIconScale>
+	</ThingDef>	  
 </Defs>

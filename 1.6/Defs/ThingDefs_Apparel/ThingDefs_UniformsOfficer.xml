@@ -79,6 +79,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
@@ -156,6 +157,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -168,7 +170,7 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
+        <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
@@ -190,8 +192,10 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_OfficerUniforms</researchPrerequisite>
-      <researchPrerequisite>TRG_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisites>
+        <li>TRG_OfficerUniforms</li>
+        <li>TRG_ExtremeWeatherUniforms</li>
+      </researchPrerequisites>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -199,11 +203,11 @@
     </stuffCategories>
     <costStuffCount>100</costStuffCount>
     <statBases>
-      <MaxHitPoints>180</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>4200</WorkToMake>
       <Mass>2.8</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>1.80</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Cold>1.75</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2</EquipDelay>
     </statBases>
@@ -238,6 +242,7 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
@@ -250,29 +255,32 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.2</drawSize>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
+        <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.50,0.5,0.36)</only>
+          <only>(0.9,0.9,0.9)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
         </li>
         <li>
           <weight>6</weight>
-          <only>(0.40,0.57,0.40)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.38,0.36,0.20)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.29,0.32,0.12)</only>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
         </li>
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_OfficerUniforms</researchPrerequisite>
-      <researchPrerequisite>TRG_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisites>
+        <li>TRG_OfficerUniforms</li>
+        <li>TRG_ExtremeWeatherUniforms</li>
+      </researchPrerequisites>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -297,7 +305,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>TRG_RingerUniform</li>
+        <li>TRG_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -315,5 +323,6 @@
       <li>Clothing</li>
       <li>TRG_Uniforms</li>
     </tradeTags>
+    <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 </Defs>
