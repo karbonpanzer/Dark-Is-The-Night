@@ -6,7 +6,7 @@
 		<description>A settler mission from a ring city, dropped on the rimworld with basic equipment and a mandate nobody intends to enforce. Make of it what you can.</description>
 
 		<scenario>
-			<summary>A group of prospectors, sent to survey for a larger empire.</summary>
+			<summary>A group of settlers from a barren ring city seeking opportunity.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>TRG_Player</factionDef>

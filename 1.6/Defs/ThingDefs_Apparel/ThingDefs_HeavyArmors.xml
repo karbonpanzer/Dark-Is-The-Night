@@ -87,7 +87,7 @@
           <drawData>
             <scale>0.120</scale>
             <defaultData>
-              <layer>92</layer>
+              <layer>82</layer>
               <offset>(0,0,-0.155)</offset>
               
             </defaultData>
@@ -208,7 +208,7 @@ This variant is marked for usage by Medical staff.</description>
           <drawData>
             <scale>0.120</scale>
             <defaultData>
-              <layer>92</layer>
+              <layer>82</layer>
               <offset>(0,0,-0.155)</offset>
               
             </defaultData>
@@ -329,7 +329,7 @@ This variant is marked for usage by Engineers.</description>
           <drawData>
             <scale>0.120</scale>
             <defaultData>
-              <layer>92</layer>
+              <layer>82</layer>
               <offset>(0,0,-0.155)</offset>
               
             </defaultData>

@@ -13,9 +13,6 @@
 
         <li>r_name(p=2)->[nearnameinitial] [political_union_cap]</li>
 
-        <li>r_name(p=3)->The [political_adjective_expedition] [political_union_standalone]</li>
-        <li>r_name(p=2)->The [political_adjective] [political_union_standalone]</li>
-
         <li>political_union_standalone->[political_union_cap]</li>
         <li>political_union_standalone->Compact</li>
         <li>political_union_standalone->Concord</li>
