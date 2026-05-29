@@ -42,14 +42,16 @@ namespace EOTF.Core.DecalSystem
         public override void WorldComponentTick()
         {
             base.WorldComponentTick();
-            if (Find.TickManager.TicksGame % 10000 != 0) return;
+            if (_pawns.Count == 0 || Find.TickManager.TicksGame % 10000 != 0) return;
 
             TMPToRemove.Clear();
             foreach (var pawn in _pawns)
             {
                 if (pawn == null || pawn.Destroyed || pawn.apparel == null)
+                {
                     if (pawn != null)
                         TMPToRemove.Add(pawn);
+                }
             }
             for (int i = 0; i < TMPToRemove.Count; i++)
             {

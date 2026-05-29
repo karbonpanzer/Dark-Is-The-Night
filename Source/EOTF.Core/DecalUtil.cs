@@ -6,6 +6,9 @@ namespace EOTF.Core.DecalSystem
 {
     public static class DecalUtil
     {
+        private static List<DecalSymbolDef>? _cachedArmorSymbols;
+        private static List<DecalSymbolDef>? _cachedHelmetSymbols;
+
         public static DecalProfileSet ReadProfileSetFrom(Pawn pawn)
         {
             var comp = GetMarker(pawn);
@@ -40,7 +43,7 @@ namespace EOTF.Core.DecalSystem
         }
 
         //Tries WorldComponent cache first, falls back to brute force apparel scan if that's fucked
-        private static CompEditDecalMarker? GetMarker(Pawn? pawn)
+        private static CompEditDecalMarker? GetMarker(Pawn pawn)
         {
             if (pawn?.apparel == null) return null;
 
@@ -67,18 +70,37 @@ namespace EOTF.Core.DecalSystem
 
         public static List<DecalSymbolDef> AllSymbols() => DefDatabase<DecalSymbolDef>.AllDefsListForReading;
 
-        //Filters symbols by slot — armorOnly decals hidden from helmet tab, helmetOnly hidden from armor tab
+        //Cached per-slot symbol lists, built once and reused
         public static List<DecalSymbolDef> SymbolsForSlot(DecalSlot slot)
         {
-            var all = AllSymbols();
-            var filtered = new List<DecalSymbolDef>(all.Count);
-            for (int i = 0; i < all.Count; i++)
+            if (slot == DecalSlot.Armor)
             {
-                if (slot == DecalSlot.Armor && all[i].helmetOnly) continue;
-                if (slot == DecalSlot.Helmet && all[i].armorOnly) continue;
-                filtered.Add(all[i]);
+                if (_cachedArmorSymbols == null)
+                {
+                    var all = AllSymbols();
+                    _cachedArmorSymbols = new List<DecalSymbolDef>(all.Count);
+                    for (int i = 0; i < all.Count; i++)
+                    {
+                        if (!all[i].helmetOnly)
+                            _cachedArmorSymbols.Add(all[i]);
+                    }
+                }
+                return _cachedArmorSymbols;
             }
-            return filtered;
+            else
+            {
+                if (_cachedHelmetSymbols == null)
+                {
+                    var all = AllSymbols();
+                    _cachedHelmetSymbols = new List<DecalSymbolDef>(all.Count);
+                    for (int i = 0; i < all.Count; i++)
+                    {
+                        if (!all[i].armorOnly)
+                            _cachedHelmetSymbols.Add(all[i]);
+                    }
+                }
+                return _cachedHelmetSymbols;
+            }
         }
 
         public static bool PawnHasAnyDecalApparel(Pawn pawn) => GetMarker(pawn) != null;

@@ -28,8 +28,6 @@ namespace EOTF.Core.DecalSystem
 
         private List<Color>? _allColors;
 
-        private Rot4 _previewRot = Rot4.South;
-
         private readonly Dictionary<string, Texture2D> _thumbCache = new Dictionary<string, Texture2D>();
 
         private static readonly Vector2 ButSize = new Vector2(200f, 40f);
@@ -102,7 +100,7 @@ namespace EOTF.Core.DecalSystem
             RenderTexture portrait = PortraitsCache.Get(
                 _pawn,
                 new Vector2(innerPortrait.width, innerPortrait.height),
-                _previewRot,
+                Rot4.South,
                 PortraitOffset,
                 PortraitZoom,
                 supersample: true,
