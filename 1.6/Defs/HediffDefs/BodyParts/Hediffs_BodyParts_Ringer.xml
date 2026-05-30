@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--  Neuro-Stabilizer  -->
+  <!-- Neuro-Stabilizer -->
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>DRG_hediff_NeuroStabilizer</defName>
@@ -84,13 +84,13 @@
     <removesHediff>DRG_hediff_NeuroStabilizer</removesHediff>
   </RecipeDef>
 
-  <!--  Combat Reflex Cortex  -->
+  <!-- Reflex Cortex -->
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>DRG_hediff_CombatReflexCortex</defName>
-    <label>combat reflex cortex</label>
-    <labelNoun>a combat reflex cortex</labelNoun>
-    <description>An installed cortical accelerator that stimulates the brain's motor and spatial processing centers. Grants significantly faster reflexes in combat, but the constant low-level adrenaline stimulation makes the recipient more prone to emotional instability.</description>
+    <label>reflex cortex</label>
+    <labelNoun>a reflex cortex</labelNoun>
+    <description>An installed cortical accelerator that stimulates the brain's motor and spatial processing centers. Grants significantly faster reflexes in combat at the cost of slightly increased emotional volatility.</description>
     <defaultLabelColor>(135,206,235)</defaultLabelColor>
     <stages>
       <li>
@@ -110,8 +110,8 @@
 
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>DRG_CombatReflexCortex</defName>
-    <label>combat reflex cortex</label>
-    <description>A cortical accelerator designed for cranial implantation. It stimulates the brain's motor and spatial processing centers to grant faster reflexes in combat, but the constant adrenaline stimulation contributes to emotional instability. (Implant)</description>
+    <label>reflex cortex</label>
+    <description>A cortical accelerator designed for cranial implantation. It stimulates the brain's motor and spatial processing centers to grant faster reflexes in combat. (Implant)</description>
     <descriptionHyperlinks><RecipeDef>DRG_InstallCombatReflexCortex</RecipeDef></descriptionHyperlinks>
     <costList>
       <Plasteel>15</Plasteel>
@@ -124,13 +124,13 @@
 
   <RecipeDef ParentName="SurgeryInstallImplantBase">
     <defName>DRG_InstallCombatReflexCortex</defName>
-    <label>install combat reflex cortex</label>
-    <description>Install a combat reflex cortex.</description>
+    <label>install reflex cortex</label>
+    <description>Install a reflex cortex.</description>
     <descriptionHyperlinks>
       <ThingDef>DRG_CombatReflexCortex</ThingDef>
       <HediffDef>DRG_hediff_CombatReflexCortex</HediffDef>
     </descriptionHyperlinks>
-    <jobString>Installing combat reflex cortex.</jobString>
+    <jobString>Installing reflex cortex.</jobString>
     <ingredients>
       <li>
         <filter>
@@ -154,23 +154,23 @@
 
   <RecipeDef ParentName="SurgeryRemoveImplantBase">
     <defName>DRG_RemoveCombatReflexCortex</defName>
-    <label>remove combat reflex cortex</label>
-    <description>Remove combat reflex cortex.</description>
+    <label>remove reflex cortex</label>
+    <description>Remove reflex cortex.</description>
     <descriptionHyperlinks>
       <ThingDef>DRG_CombatReflexCortex</ThingDef>
       <HediffDef>DRG_hediff_CombatReflexCortex</HediffDef>
     </descriptionHyperlinks>
-    <jobString>Removing combat reflex cortex.</jobString>
+    <jobString>Removing reflex cortex.</jobString>
     <removesHediff>DRG_hediff_CombatReflexCortex</removesHediff>
   </RecipeDef>
 
-  <!--  Thermal Regulator  -->
+  <!-- Thermal Regulator -->
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>DRG_hediff_ThermalRegulator</defName>
     <label>thermal regulator</label>
     <labelNoun>a thermal regulator</labelNoun>
-    <description>An installed subdermal thermal management system. It actively heats or cools the body to maintain homeostasis in extreme environments. The system draws on the body's metabolic reserves, slightly increasing the recipient's hunger rate.</description>
+    <description>An installed subdermal thermal management system. It actively heats or cools the body to maintain homeostasis in extreme environments, allowing comfortable operation in conditions that would incapacitate an unaugmented human.</description>
     <defaultLabelColor>(135,206,235)</defaultLabelColor>
     <stages>
       <li>
@@ -178,7 +178,6 @@
           <ComfyTemperatureMin>-40</ComfyTemperatureMin>
           <ComfyTemperatureMax>40</ComfyTemperatureMax>
         </statOffsets>
-        <hungerRateFactor>1.15</hungerRateFactor>
       </li>
     </stages>
     <spawnThingOnRemoved>DRG_ThermalRegulator</spawnThingOnRemoved>
@@ -190,7 +189,7 @@
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>DRG_ThermalRegulator</defName>
     <label>thermal regulator</label>
-    <description>A subdermal thermal management system designed for torso implantation. It actively maintains body temperature homeostasis across extreme environments, drawing on the body's metabolic reserves. (Implant)</description>
+    <description>A subdermal thermal management system designed for torso implantation. It actively maintains body temperature homeostasis across extreme environments. (Implant)</description>
     <descriptionHyperlinks><RecipeDef>DRG_InstallThermalRegulator</RecipeDef></descriptionHyperlinks>
     <costList>
       <Plasteel>20</Plasteel>
@@ -243,19 +242,18 @@
     <removesHediff>DRG_hediff_ThermalRegulator</removesHediff>
   </RecipeDef>
 
-  <!--  Mnemonic Amplifier  -->
+  <!-- Mnemonic Amplifier -->
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>DRG_hediff_MnemonicAmplifier</defName>
     <label>mnemonic amplifier</label>
     <labelNoun>a mnemonic amplifier</labelNoun>
-    <description>An installed cranial implant that enhances synaptic plasticity and memory encoding. The recipient learns skills noticeably faster, but the neural overhead causes restless sleep patterns.</description>
+    <description>An installed cranial implant that enhances synaptic plasticity and memory encoding. The recipient learns skills noticeably faster as the implant optimizes synaptic pathway formation.</description>
     <defaultLabelColor>(135,206,235)</defaultLabelColor>
     <stages>
       <li>
         <statOffsets>
-          <GlobalLearningFactor>0.25</GlobalLearningFactor>
-          <RestRateMultiplier>-0.10</RestRateMultiplier>
+          <GlobalLearningFactor>0.20</GlobalLearningFactor>
         </statOffsets>
       </li>
     </stages>
@@ -268,7 +266,7 @@
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>DRG_MnemonicAmplifier</defName>
     <label>mnemonic amplifier</label>
-    <description>A cranial implant that enhances synaptic plasticity and memory encoding. The recipient learns skills faster, but the neural overhead causes restless sleep patterns. (Implant)</description>
+    <description>A cranial implant that enhances synaptic plasticity and memory encoding. The recipient learns skills faster as the implant optimizes synaptic pathway formation. (Implant)</description>
     <descriptionHyperlinks><RecipeDef>DRG_InstallMnemonicAmplifier</RecipeDef></descriptionHyperlinks>
     <costList>
       <Plasteel>15</Plasteel>
@@ -321,13 +319,13 @@
     <removesHediff>DRG_hediff_MnemonicAmplifier</removesHediff>
   </RecipeDef>
 
-  <!--  Dermal Lattice  -->
+  <!-- Dermal Lattice -->
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>DRG_hediff_DermalLattice</defName>
     <label>dermal lattice</label>
     <labelNoun>a dermal lattice</labelNoun>
-    <description>An installed mesh of interwoven plasteel fibers beneath the skin. It provides meaningful resistance to sharp and blunt trauma without external armor, but the rigid subdermal framework restricts full range of motion.</description>
+    <description>An installed mesh of interwoven plasteel fibers beneath the skin. It provides meaningful resistance to sharp and blunt trauma without external armor.</description>
     <defaultLabelColor>(135,206,235)</defaultLabelColor>
     <stages>
       <li>
@@ -335,12 +333,6 @@
           <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
           <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
         </statOffsets>
-        <capMods>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>-0.08</offset>
-          </li>
-        </capMods>
       </li>
     </stages>
     <spawnThingOnRemoved>DRG_DermalLattice</spawnThingOnRemoved>
@@ -352,7 +344,7 @@
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>DRG_DermalLattice</defName>
     <label>dermal lattice</label>
-    <description>A mesh of interwoven plasteel fibers designed for subdermal implantation. It provides meaningful resistance to sharp and blunt damage without external armor, but the rigid framework restricts range of motion. (Implant)</description>
+    <description>A mesh of interwoven plasteel fibers designed for subdermal implantation. It provides meaningful resistance to sharp and blunt damage without external armor. (Implant)</description>
     <descriptionHyperlinks><RecipeDef>DRG_InstallDermalLattice</RecipeDef></descriptionHyperlinks>
     <costList>
       <Plasteel>30</Plasteel>
@@ -405,13 +397,13 @@
     <removesHediff>DRG_hediff_DermalLattice</removesHediff>
   </RecipeDef>
 
-  <!--  Retractable Blade Arm  -->
+  <!-- Blade Arm -->
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DRG_hediff_RetractableBladeArm</defName>
-    <label>retractable blade arm</label>
-    <labelNoun>a retractable blade arm</labelNoun>
-    <description>An installed bionic arm with an integrated retractable mono-molecular blade housed along the forearm. When sheathed, the arm functions as a capable manipulator. When deployed, the blade extends for devastating close-quarters strikes.</description>
+    <label>blade arm</label>
+    <labelNoun>a blade arm</labelNoun>
+    <description>An installed bionic arm with an integrated mono-molecular blade. When sheathed, the arm functions as a capable manipulator. When deployed, the blade extends for devastating close-quarters strikes.</description>
     <defaultLabelColor>(135,206,235)</defaultLabelColor>
     <addedPartProps>
       <solid>true</solid>
@@ -454,8 +446,8 @@
 
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>DRG_RetractableBladeArm</defName>
-    <label>retractable blade arm</label>
-    <description>A bionic arm with an integrated retractable mono-molecular blade. When sheathed, it functions as a capable manipulator. When deployed, the blade extends for devastating melee strikes. The dual-purpose mechanism makes it costlier to produce. (Replacement)</description>
+    <label>blade arm</label>
+    <description>A bionic arm with an integrated mono-molecular blade. When sheathed, it functions as a capable manipulator. When deployed, the blade extends for devastating melee strikes. (Replacement)</description>
     <descriptionHyperlinks><RecipeDef>DRG_InstallRetractableBladeArm</RecipeDef></descriptionHyperlinks>
     <costList>
       <Plasteel>25</Plasteel>
@@ -468,13 +460,13 @@
 
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
     <defName>DRG_InstallRetractableBladeArm</defName>
-    <label>install retractable blade arm</label>
-    <description>Install a retractable blade arm.</description>
+    <label>install blade arm</label>
+    <description>Install a blade arm.</description>
     <descriptionHyperlinks>
       <ThingDef>DRG_RetractableBladeArm</ThingDef>
       <HediffDef>DRG_hediff_RetractableBladeArm</HediffDef>
     </descriptionHyperlinks>
-    <jobString>Installing retractable blade arm.</jobString>
+    <jobString>Installing blade arm.</jobString>
     <ingredients>
       <li>
         <filter>
@@ -496,32 +488,19 @@
     <addsHediff>DRG_hediff_RetractableBladeArm</addsHediff>
   </RecipeDef>
 
-  <!--  Piston Leg  -->
+  <!-- Piston Leg -->
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DRG_hediff_PistonLeg</defName>
     <label>piston leg</label>
     <labelNoun>a piston leg</labelNoun>
-    <description>An installed bionic leg built around high-pressure pneumatic pistons that deliver explosive acceleration and devastating kick force. The constant micro-vibrations traveling up the skeletal frame impair fine motor control, and the aggressive power cycling leaves the recipient more fatigued.</description>
+    <description>An installed bionic leg built around high-pressure pneumatic pistons that deliver explosive acceleration and devastating kick force. The pneumatic system delivers rapid acceleration and powerful strikes.</description>
     <defaultLabelColor>(135,206,235)</defaultLabelColor>
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>1.25</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
-    <stages>
-      <li>
-        <statOffsets>
-          <RestRateMultiplier>-0.05</RestRateMultiplier>
-        </statOffsets>
-        <capMods>
-          <li>
-            <capacity>Manipulation</capacity>
-            <offset>-0.04</offset>
-          </li>
-        </capMods>
-      </li>
-    </stages>
     <comps>
       <li Class="HediffCompProperties_VerbGiver">
         <tools>
@@ -545,7 +524,7 @@
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>DRG_PistonLeg</defName>
     <label>piston leg</label>
-    <description>A bionic leg built around high-pressure pneumatic pistons. Delivers explosive acceleration and a devastating kick, but the constant vibrations impair fine motor control and the aggressive power cycling is physically draining. (Replacement)</description>
+    <description>A bionic leg built around high-pressure pneumatic pistons. Delivers explosive acceleration and a devastating kick, with integrated pneumatic pistons that deliver rapid acceleration and powerful kicks. (Replacement)</description>
     <descriptionHyperlinks><RecipeDef>DRG_InstallPistonLeg</RecipeDef></descriptionHyperlinks>
     <costList>
       <Plasteel>20</Plasteel>
@@ -586,13 +565,13 @@
     <addsHediff>DRG_hediff_PistonLeg</addsHediff>
   </RecipeDef>
 
-  <!--  Overclocked Heart  -->
+  <!-- Surge Heart -->
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DRG_hediff_OverclockedHeart</defName>
-    <label>overclocked heart</label>
-    <labelNoun>an overclocked heart</labelNoun>
-    <description>An installed bionic heart tuned well beyond standard operating parameters. It drives blood through the body at a rate that pushes biological limits, boosting cognitive function and physical output. The body burns through energy reserves and needs more rest to compensate for the relentless pace.</description>
+    <label>surge heart</label>
+    <labelNoun>a surge heart</labelNoun>
+    <description>An installed bionic heart with an integrated surge system that drives blood at elevated pressure, boosting cognitive function and physical output. A lattice-dust healing system allows it to recover from damage.</description>
     <defaultLabelColor>(135,206,235)</defaultLabelColor>
     <addedPartProps>
       <solid>true</solid>
@@ -610,8 +589,6 @@
             <offset>0.05</offset>
           </li>
         </capMods>
-        <restFallFactor>1.15</restFallFactor>
-        <hungerRateFactor>1.15</hungerRateFactor>
       </li>
     </stages>
     <spawnThingOnRemoved>DRG_OverclockedHeart</spawnThingOnRemoved>
@@ -622,8 +599,8 @@
 
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>DRG_OverclockedHeart</defName>
-    <label>overclocked heart</label>
-    <description>A bionic heart tuned beyond standard parameters. It drives blood at a rate that boosts cognitive function and physical output, but burns through energy reserves and demands more rest. (Replacement)</description>
+    <label>surge heart</label>
+    <description>A bionic heart with an integrated surge system that boosts cognitive function and physical output beyond standard bionic specifications. (Replacement)</description>
     <descriptionHyperlinks><RecipeDef>DRG_InstallOverclockedHeart</RecipeDef></descriptionHyperlinks>
     <costList>
       <Plasteel>20</Plasteel>
@@ -636,13 +613,13 @@
 
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
     <defName>DRG_InstallOverclockedHeart</defName>
-    <label>install overclocked heart</label>
-    <description>Install an overclocked heart.</description>
+    <label>install surge heart</label>
+    <description>Install a surge heart.</description>
     <descriptionHyperlinks>
       <ThingDef>DRG_OverclockedHeart</ThingDef>
       <HediffDef>DRG_hediff_OverclockedHeart</HediffDef>
     </descriptionHyperlinks>
-    <jobString>Installing overclocked heart.</jobString>
+    <jobString>Installing surge heart.</jobString>
     <ingredients>
       <li>
         <filter>
@@ -664,13 +641,13 @@
     <addsHediff>DRG_hediff_OverclockedHeart</addsHediff>
   </RecipeDef>
 
-  <!--  Tracker's Nose  -->
+  <!-- Tracker's Nose -->
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DRG_hediff_TrackersNose</defName>
     <label>tracker's nose</label>
     <labelNoun>a tracker's nose</labelNoun>
-    <description>An installed bionic nasal implant packed with chemosensory arrays far more sensitive than natural olfactory tissue. The recipient can detect subtle chemical signatures in soil, vegetation, and animal pheromones, improving yields from farming and animal husbandry. The heightened sensory input also amplifies pain perception as the nervous system struggles to filter the constant flood of data.</description>
+    <description>An installed bionic nasal implant packed with chemosensory arrays far more sensitive than natural olfactory tissue. The recipient can detect subtle chemical signatures in soil, vegetation, and animal pheromones, improving yields from farming and animal husbandry. The enhanced chemosensory arrays allow the recipient to detect subtle environmental signatures invisible to natural senses.</description>
     <defaultLabelColor>(135,206,235)</defaultLabelColor>
     <addedPartProps>
       <solid>true</solid>
@@ -684,7 +661,6 @@
           <AnimalGatherYield>0.10</AnimalGatherYield>
           <TameAnimalChance>0.10</TameAnimalChance>
         </statOffsets>
-        <painFactor>1.15</painFactor>
       </li>
     </stages>
     <spawnThingOnRemoved>DRG_TrackersNose</spawnThingOnRemoved>
@@ -696,7 +672,7 @@
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>DRG_TrackersNose</defName>
     <label>tracker's nose</label>
-    <description>A bionic nasal implant with chemosensory arrays far more sensitive than natural tissue. Improves farming and animal handling through detection of subtle chemical signatures, but the heightened sensory input amplifies pain perception. (Replacement)</description>
+    <description>A bionic nasal implant with chemosensory arrays far more sensitive than natural tissue. Improves farming and animal handling through detection of subtle chemical signatures, allowing detection of subtle environmental signatures invisible to natural senses. (Replacement)</description>
     <descriptionHyperlinks><RecipeDef>DRG_InstallTrackersNose</RecipeDef></descriptionHyperlinks>
     <costList>
       <Plasteel>10</Plasteel>
@@ -737,7 +713,7 @@
     <addsHediff>DRG_hediff_TrackersNose</addsHediff>
   </RecipeDef>
 
-  <!--  Service Stud  -->
+  <!-- Service Stud -->
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>DRG_hediff_ServiceStud</defName>
@@ -760,23 +736,6 @@
     <descriptionHyperlinks>
       <ThingDef>DRG_ServiceStud</ThingDef>
     </descriptionHyperlinks>
-    <renderNodeProperties>
-      <li>
-        <workerClass>PawnRenderNodeWorker_Hediff</workerClass>
-        <texPath>Things/Pawn/Wounds/DRG_ServiceStud</texPath>
-        <parentTagDef>Head</parentTagDef>
-        <drawSize>0.10</drawSize>
-        <drawData>
-          <defaultData>
-            <layer>56</layer>
-            <offset>(0, 0, 0)</offset>
-          </defaultData>
-          <dataWest>
-            <flip>true</flip>
-          </dataWest>
-        </drawData>
-      </li>
-    </renderNodeProperties>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartBionicBase">
@@ -834,5 +793,415 @@
     <jobString>Removing service stud.</jobString>
     <removesHediff>DRG_hediff_ServiceStud</removesHediff>
   </RecipeDef>
+
+
+  <!-- Myofiber Lacing -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>DRG_hediff_MyofiberLacing</defName>
+    <label>myofiber lacing</label>
+    <labelNoun>a myofiber lacing</labelNoun>
+    <description>An installed network of synthetic muscle fibers woven through the recipient's existing musculature. It provides a meaningful boost to raw physical strength without dramatically altering body mass, providing a meaningful boost to raw physical strength without dramatically altering body mass.</description>
+    <defaultLabelColor>(135,206,235)</defaultLabelColor>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDamageFactor>0.15</MeleeDamageFactor>
+          <CarryingCapacity>30</CarryingCapacity>
+        </statOffsets>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>DRG_MyofiberLacing</spawnThingOnRemoved>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_MyofiberLacing</ThingDef>
+    </descriptionHyperlinks>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>DRG_MyofiberLacing</defName>
+    <label>myofiber lacing</label>
+    <description>A network of synthetic muscle fibers designed to be woven through existing musculature. Boosts raw physical strength and carrying capacity. (Implant)</description>
+    <descriptionHyperlinks><RecipeDef>DRG_InstallMyofiberLacing</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>DRG_InstallMyofiberLacing</defName>
+    <label>install myofiber lacing</label>
+    <description>Install myofiber lacing.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_MyofiberLacing</ThingDef>
+      <HediffDef>DRG_hediff_MyofiberLacing</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing myofiber lacing.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DRG_MyofiberLacing</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DRG_MyofiberLacing</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DRG_hediff_MyofiberLacing</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>DRG_RemoveMyofiberLacing</defName>
+    <label>remove myofiber lacing</label>
+    <description>Remove myofiber lacing.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_MyofiberLacing</ThingDef>
+      <HediffDef>DRG_hediff_MyofiberLacing</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing myofiber lacing.</jobString>
+    <removesHediff>DRG_hediff_MyofiberLacing</removesHediff>
+  </RecipeDef>
+
+
+  <!-- Osteo-Weave -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>DRG_hediff_OsteoLatticeWeave</defName>
+    <label>osteo-weave</label>
+    <labelNoun>an osteo-weave</labelNoun>
+    <description>An installed plasteel-ceramic composite woven through the recipient's skeletal structure. Bones are significantly more resistant to fracture and blunt trauma, and the reinforced frame supports heavier loads.</description>
+    <defaultLabelColor>(135,206,235)</defaultLabelColor>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+          <CarryingCapacity>20</CarryingCapacity>
+        </statOffsets>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>DRG_OsteoLatticeWeave</spawnThingOnRemoved>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_OsteoLatticeWeave</ThingDef>
+    </descriptionHyperlinks>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>DRG_OsteoLatticeWeave</defName>
+    <label>osteo-weave</label>
+    <description>A plasteel-ceramic composite woven through the skeletal structure. Greatly reduces blunt trauma damage and increases carrying capacity. (Implant)</description>
+    <descriptionHyperlinks><RecipeDef>DRG_InstallOsteoLatticeWeave</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>25</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>1.0</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>DRG_InstallOsteoLatticeWeave</defName>
+    <label>install osteo-weave</label>
+    <description>Install an osteo-weave.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_OsteoLatticeWeave</ThingDef>
+      <HediffDef>DRG_hediff_OsteoLatticeWeave</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing osteo-weave.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DRG_OsteoLatticeWeave</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DRG_OsteoLatticeWeave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DRG_hediff_OsteoLatticeWeave</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>DRG_RemoveOsteoLatticeWeave</defName>
+    <label>remove osteo-weave</label>
+    <description>Remove osteo-weave.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_OsteoLatticeWeave</ThingDef>
+      <HediffDef>DRG_hediff_OsteoLatticeWeave</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing osteo-weave.</jobString>
+    <removesHediff>DRG_hediff_OsteoLatticeWeave</removesHediff>
+  </RecipeDef>
+
+
+  <!-- Vigilance Node -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>DRG_hediff_VigilanceNode</defName>
+    <label>vigilance node</label>
+    <labelNoun>a vigilance node</labelNoun>
+    <description>An installed cranial implant that allows hemispheric sleep alternation. One half of the brain rests while the other maintains awareness, dramatically reducing the amount of sleep required. The recipient is never fully rested nor fully alert, existing in a perpetual twilight state.</description>
+    <defaultLabelColor>(135,206,235)</defaultLabelColor>
+    <stages>
+      <li>
+        <restFallFactor>0.65</restFallFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.06</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>DRG_VigilanceNode</spawnThingOnRemoved>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_VigilanceNode</ThingDef>
+    </descriptionHyperlinks>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>DRG_VigilanceNode</defName>
+    <label>vigilance node</label>
+    <description>A cranial implant that enables hemispheric sleep alternation. Dramatically reduces sleep requirements at the cost of a persistent consciousness penalty. (Implant)</description>
+    <descriptionHyperlinks><RecipeDef>DRG_InstallVigilanceNode</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>0.3</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>DRG_InstallVigilanceNode</defName>
+    <label>install vigilance node</label>
+    <description>Install a vigilance node.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_VigilanceNode</ThingDef>
+      <HediffDef>DRG_hediff_VigilanceNode</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vigilance node.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DRG_VigilanceNode</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DRG_VigilanceNode</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DRG_hediff_VigilanceNode</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>DRG_RemoveVigilanceNode</defName>
+    <label>remove vigilance node</label>
+    <description>Remove vigilance node.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_VigilanceNode</ThingDef>
+      <HediffDef>DRG_hediff_VigilanceNode</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing vigilance node.</jobString>
+    <removesHediff>DRG_hediff_VigilanceNode</removesHediff>
+  </RecipeDef>
+
+
+  <!-- Auxiliary Lung -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>DRG_hediff_AuxiliaryLung</defName>
+    <label>auxiliary lung</label>
+    <labelNoun>an auxiliary lung</labelNoun>
+    <description>An installed compact secondary lung that supplements primary respiration. Provides meaningful breathing capacity improvement and filters airborne toxins.</description>
+    <defaultLabelColor>(135,206,235)</defaultLabelColor>
+    <stages>
+      <li>
+        <statOffsets>
+          <ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>0.10</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>DRG_AuxiliaryLung</spawnThingOnRemoved>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_AuxiliaryLung</ThingDef>
+    </descriptionHyperlinks>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>DRG_AuxiliaryLung</defName>
+    <label>auxiliary lung</label>
+    <description>A compact secondary lung that supplements primary respiration. Boosts breathing capacity and provides significant toxin resistance. (Implant)</description>
+    <descriptionHyperlinks><RecipeDef>DRG_InstallAuxiliaryLung</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>DRG_InstallAuxiliaryLung</defName>
+    <label>install auxiliary lung</label>
+    <description>Install an auxiliary lung.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_AuxiliaryLung</ThingDef>
+      <HediffDef>DRG_hediff_AuxiliaryLung</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing auxiliary lung.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DRG_AuxiliaryLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DRG_AuxiliaryLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DRG_hediff_AuxiliaryLung</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>DRG_RemoveAuxiliaryLung</defName>
+    <label>remove auxiliary lung</label>
+    <description>Remove auxiliary lung.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_AuxiliaryLung</ThingDef>
+      <HediffDef>DRG_hediff_AuxiliaryLung</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing auxiliary lung.</jobString>
+    <removesHediff>DRG_hediff_AuxiliaryLung</removesHediff>
+  </RecipeDef>
+
+
+  <!-- Trauma Shunt -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>DRG_hediff_TraumaShunt</defName>
+    <label>trauma shunt</label>
+    <labelNoun>a trauma shunt</labelNoun>
+    <description>An installed cranial emergency system that floods the brain with preservative compounds when damage becomes critical. The recipient can endure significantly more pain before losing consciousness. The shunt's standby chemicals create a persistent mental fog that slightly impairs cognition.</description>
+    <defaultLabelColor>(135,206,235)</defaultLabelColor>
+    <stages>
+      <li>
+        <statOffsets>
+          <PainShockThreshold>0.25</PainShockThreshold>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.04</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>DRG_TraumaShunt</spawnThingOnRemoved>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_TraumaShunt</ThingDef>
+    </descriptionHyperlinks>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>DRG_TraumaShunt</defName>
+    <label>trauma shunt</label>
+    <description>A cranial emergency system that floods the brain with preservative compounds at critical damage thresholds. Dramatically increases pain tolerance at the cost of a persistent consciousness penalty. (Implant)</description>
+    <descriptionHyperlinks><RecipeDef>DRG_InstallTraumaShunt</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Neutroamine>5</Neutroamine>
+    </costList>
+    <statBases>
+      <Mass>0.3</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>DRG_InstallTraumaShunt</defName>
+    <label>install trauma shunt</label>
+    <description>Install a trauma shunt.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_TraumaShunt</ThingDef>
+      <HediffDef>DRG_hediff_TraumaShunt</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing trauma shunt.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DRG_TraumaShunt</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DRG_TraumaShunt</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DRG_hediff_TraumaShunt</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>DRG_RemoveTraumaShunt</defName>
+    <label>remove trauma shunt</label>
+    <description>Remove trauma shunt.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_TraumaShunt</ThingDef>
+      <HediffDef>DRG_hediff_TraumaShunt</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing trauma shunt.</jobString>
+    <removesHediff>DRG_hediff_TraumaShunt</removesHediff>
+  </RecipeDef>
+
 
 </Defs>

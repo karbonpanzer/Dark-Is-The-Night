@@ -7,14 +7,14 @@ namespace FoodSynthesizer
 {
     public class CompSpawnerSelectable : ThingComp
     {
-        private int ticksUntilSpawn;
-        private int selectedIndex;
+        private int _ticksUntilSpawn;
+        private int _selectedIndex;
 
         public CompProperties_SpawnerSelectable Props
             => (CompProperties_SpawnerSelectable)props;
 
         private ThingDefCountClass? CurrentOption
-            => Props?.spawnOptions?[selectedIndex];
+            => Props.spawnOptions?[_selectedIndex];
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
@@ -27,7 +27,7 @@ namespace FoodSynthesizer
 
         private void ResetTimer()
         {
-            ticksUntilSpawn = Props.spawnIntervalRange.RandomInRange;
+            _ticksUntilSpawn = Props.spawnIntervalRange.RandomInRange;
         }
 
         public override void CompTick()
@@ -41,18 +41,18 @@ namespace FoodSynthesizer
                 }
             }
 
-            ticksUntilSpawn--;
-            if (ticksUntilSpawn <= 0)
+            _ticksUntilSpawn--;
+            if (_ticksUntilSpawn <= 0)
             {
                 TryDoSpawn();
                 ResetTimer();
             }
         }
 
-        private bool TryDoSpawn()
+        private void TryDoSpawn()
         {
             ThingDefCountClass? option = CurrentOption;
-            if (option?.thingDef == null) return false;
+            if (option?.thingDef == null) return;
 
             if (Props.spawnMaxAdjacent >= 0)
             {
@@ -73,7 +73,7 @@ namespace FoodSynthesizer
                 }
                 if (adjacent >= Props.spawnMaxAdjacent)
                 {
-                    return false;
+                    return;
                 }
             }
 
@@ -94,7 +94,7 @@ namespace FoodSynthesizer
                 ThingPlaceMode.Near))
             {
                 thing.Destroy();
-                return false;
+                return;
             }
 
             if (Props.showMessageIfOwned && parent.Faction == Faction.OfPlayer)
@@ -105,8 +105,6 @@ namespace FoodSynthesizer
                     thing,
                     MessageTypeDefOf.PositiveEvent);
             }
-
-            return true;
         }
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
@@ -131,7 +129,7 @@ namespace FoodSynthesizer
                             int localIndex = i;
                             ThingDefCountClass opt = Props.spawnOptions[i];
                             string label;
-                            if (i == selectedIndex)
+                            if (i == _selectedIndex)
                             {
                                 label = "FoodSynth_CurrentMarker".Translate(
                                     opt.thingDef.LabelCap,
@@ -144,7 +142,7 @@ namespace FoodSynthesizer
                                     opt.count);
                             }
 
-                            menuOptions.Add(new FloatMenuOption(label, delegate { selectedIndex = localIndex; }));
+                            menuOptions.Add(new FloatMenuOption(label, delegate { _selectedIndex = localIndex; }));
                         }
 
                     Find.WindowStack.Add(new FloatMenu(menuOptions));
@@ -173,7 +171,7 @@ namespace FoodSynthesizer
             if (Props.writeTimeLeftToSpawn)
             {
                 text += "\n" + "NextSpawnedItemIn".Translate(
-                    GenDate.ToStringTicksToPeriod(ticksUntilSpawn));
+                    GenDate.ToStringTicksToPeriod(_ticksUntilSpawn));
             }
 
             return text;
@@ -183,10 +181,10 @@ namespace FoodSynthesizer
         {
             base.PostExposeData();
             string prefix = Props.saveKeysPrefix ?? "selectable";
-            Scribe_Values.Look(ref ticksUntilSpawn,
-                prefix + "_ticksUntilSpawn", 0);
-            Scribe_Values.Look(ref selectedIndex,
-                prefix + "_selectedIndex", 0);
+            Scribe_Values.Look(ref _ticksUntilSpawn,
+                prefix + "_ticksUntilSpawn");
+            Scribe_Values.Look(ref _selectedIndex,
+                prefix + "_selectedIndex");
         }
     }
 }
