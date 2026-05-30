@@ -49,7 +49,6 @@
     </ingestible>
   </ThingDef>
 
-  <!-- ===================== MEATCUBE ===================== -->
   <ThingDef ParentName="FoodCubeBase">
     <defName>Meatcube</defName>
     <label>meatcube</label>
@@ -72,7 +71,6 @@
     </thingCategories>
   </ThingDef>
 
-  <!-- ===================== VEGBLOCK ===================== -->
   <ThingDef ParentName="FoodCubeBase">
     <defName>Vegblock</defName>
     <label>vegblock</label>
@@ -94,7 +92,6 @@
     </thingCategories>
   </ThingDef>
 
-  <!-- ===================== FRUITBLOCK ===================== -->
   <ThingDef ParentName="FoodCubeBase">
     <defName>Fruitblock</defName>
     <label>fruitblock</label>
@@ -118,7 +115,6 @@
     </thingCategories>
   </ThingDef>
 
-  <!-- ===================== CHOCOBLOCK ===================== -->
   <ThingDef ParentName="FoodCubeBase">
     <defName>Chocoblock</defName>
     <label>chocoblock</label>

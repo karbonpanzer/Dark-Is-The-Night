@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- ############## Neuro-Stabilizer ############## -->
+  <!--  Neuro-Stabilizer  -->
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>DRG_hediff_NeuroStabilizer</defName>
@@ -84,7 +84,7 @@
     <removesHediff>DRG_hediff_NeuroStabilizer</removesHediff>
   </RecipeDef>
 
-  <!-- ############## Combat Reflex Cortex ############## -->
+  <!--  Combat Reflex Cortex  -->
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>DRG_hediff_CombatReflexCortex</defName>
@@ -164,7 +164,7 @@
     <removesHediff>DRG_hediff_CombatReflexCortex</removesHediff>
   </RecipeDef>
 
-  <!-- ############## Thermal Regulator ############## -->
+  <!--  Thermal Regulator  -->
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>DRG_hediff_ThermalRegulator</defName>
@@ -243,7 +243,7 @@
     <removesHediff>DRG_hediff_ThermalRegulator</removesHediff>
   </RecipeDef>
 
-  <!-- ############## Mnemonic Amplifier ############## -->
+  <!--  Mnemonic Amplifier  -->
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>DRG_hediff_MnemonicAmplifier</defName>
@@ -321,7 +321,7 @@
     <removesHediff>DRG_hediff_MnemonicAmplifier</removesHediff>
   </RecipeDef>
 
-  <!-- ############## Dermal Lattice ############## -->
+  <!--  Dermal Lattice  -->
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>DRG_hediff_DermalLattice</defName>
@@ -405,7 +405,7 @@
     <removesHediff>DRG_hediff_DermalLattice</removesHediff>
   </RecipeDef>
 
-  <!-- ############## Retractable Blade Arm ############## -->
+  <!--  Retractable Blade Arm  -->
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DRG_hediff_RetractableBladeArm</defName>
@@ -496,7 +496,7 @@
     <addsHediff>DRG_hediff_RetractableBladeArm</addsHediff>
   </RecipeDef>
 
-  <!-- ############## Piston Leg ############## -->
+  <!--  Piston Leg  -->
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DRG_hediff_PistonLeg</defName>
@@ -586,7 +586,7 @@
     <addsHediff>DRG_hediff_PistonLeg</addsHediff>
   </RecipeDef>
 
-  <!-- ############## Overclocked Heart ############## -->
+  <!--  Overclocked Heart  -->
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DRG_hediff_OverclockedHeart</defName>
@@ -664,7 +664,7 @@
     <addsHediff>DRG_hediff_OverclockedHeart</addsHediff>
   </RecipeDef>
 
-  <!-- ############## Tracker's Nose ############## -->
+  <!--  Tracker's Nose  -->
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>DRG_hediff_TrackersNose</defName>
@@ -737,7 +737,7 @@
     <addsHediff>DRG_hediff_TrackersNose</addsHediff>
   </RecipeDef>
 
-  <!-- ############## Service Stud ############## -->
+  <!--  Service Stud  -->
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>DRG_hediff_ServiceStud</defName>
