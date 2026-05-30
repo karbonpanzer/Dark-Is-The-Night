@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
 	<ResearchTabDef>
-		<defName>TRG_ResearchTab</defName>
-		<label>Ringer</label>
+		<defName>DRG_ResearchTab</defName>
+		<label>Dead Ringer</label>
 	</ResearchTabDef>
 </Defs>

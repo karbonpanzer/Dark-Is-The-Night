@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>TRG_OfficerMarauderArmor</defName>
+    <defName>DRG_OfficerMarauderArmor</defName>
     <label>Officer Marauder Armor</label>
     <description>A Marauder armor set finished for officer-grade wear. Offers equivalent protection to standard Marauder while maintaining the appearance expected of command personnel.</description>
     <graphicData>
@@ -18,13 +18,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_OfficerMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>DRG_OfficerMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TRG_FabricationBench</li>
+        <li>DRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -68,12 +68,12 @@
       </defaultOutfitTags>
       <wornGraphicPath>Things/Pawn/Humanlike/Armor/OfficerArmor/OfficerArmor</wornGraphicPath>
       <tags Inherit="False">
-        <li>TRG_Armor</li>
+        <li>DRG_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
-          <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
-          <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerApparel</workerClass>
+        <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+          <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
+          <workerClass>DeadRinger.PawnRenderNodeWorkerApparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -105,21 +105,21 @@
       </renderNodeProperties>
     </apparel>
     <comps>
-      <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
+      <li Class="DeadRinger.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TRG_Armor</li>
+      <li>DRG_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TRG_Armor</li>
+      <li>DRG_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>TRG_OfficerMarauderArmor_Scout</defName>
+    <defName>DRG_OfficerMarauderArmor_Scout</defName>
     <label>Officer Marauder Armor (Scout)</label>
     <description>A lighter Marauder armor set worn by officers who operate close to or ahead of their unit. Trimmed for mobility while retaining markings that identify the wearer as command personnel.</description>
     <graphicData>
@@ -136,13 +136,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_OfficerMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>DRG_OfficerMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TRG_FabricationBench</li>
+        <li>DRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -184,12 +184,12 @@
       </defaultOutfitTags>
       <wornGraphicPath>Things/Pawn/Humanlike/Armor/OfficerScoutArmor/OfficerScoutArmor</wornGraphicPath>
       <tags Inherit="False">
-        <li>TRG_Armor</li>
+        <li>DRG_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
-          <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
-          <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerApparel</workerClass>
+        <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+          <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
+          <workerClass>DeadRinger.PawnRenderNodeWorkerApparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -221,21 +221,21 @@
       </renderNodeProperties>
     </apparel>
     <comps>
-      <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
+      <li Class="DeadRinger.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TRG_Armor</li>
+      <li>DRG_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TRG_Armor</li>
+      <li>DRG_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>TRG_ScoutMarauderArmor</defName>
+    <defName>DRG_ScoutMarauderArmor</defName>
     <label>Scout Marauder Armor</label>
     <description>A reduced Marauder armor set designed for reconnaissance personnel. Coverage is trimmed to allow faster movement and quieter operation well ahead of the main force.</description>
     <graphicData>
@@ -252,13 +252,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>DRG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TRG_FabricationBench</li>
+        <li>DRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -298,13 +298,13 @@
       </defaultOutfitTags>
       <wornGraphicPath>Things/Pawn/Humanlike/Armor/ScoutArmor/ScoutArmor</wornGraphicPath>
       <tags Inherit="False">
-        <li>TRG_Armor</li>
-        <li>TRG_Armor_Conscript</li>
+        <li>DRG_Armor</li>
+        <li>DRG_Armor_Conscript</li>
       </tags>
       <renderNodeProperties>
-        <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
-          <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
-          <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerApparel</workerClass>
+        <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+          <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
+          <workerClass>DeadRinger.PawnRenderNodeWorkerApparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -336,21 +336,21 @@
       </renderNodeProperties>
     </apparel>
     <comps>
-      <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
+      <li Class="DeadRinger.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TRG_Armor</li>
+      <li>DRG_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TRG_Armor</li>
+      <li>DRG_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>TRG_RiotMarauderArmor</defName>
+    <defName>DRG_RiotMarauderArmor</defName>
     <label>Riot Marauder Armor</label>
     <description>A Marauder armor set reinforced for crowd control operations. Additional blunt-trauma protection on the front panel helps absorb impacts common in suppression engagements.</description>
     <graphicData>
@@ -367,13 +367,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_RiotArmor</researchPrerequisite>
+      <researchPrerequisite>DRG_RiotArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="false">
-        <li>TRG_FabricationBench</li>
+        <li>DRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -408,7 +408,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>TRG_Accessories</li>
+        <li>DRG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -419,9 +419,9 @@
       <soundRemove>Remove_PowerArmor</soundRemove>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <renderNodeProperties>
-        <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
-          <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
-          <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerApparel</workerClass>
+        <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+          <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
+          <workerClass>DeadRinger.PawnRenderNodeWorkerApparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -453,15 +453,15 @@
       </renderNodeProperties>
     </apparel>
     <comps>
-      <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
+      <li Class="DeadRinger.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TRG_Armor</li>
+      <li>DRG_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TRG_Armor</li>
+      <li>DRG_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>

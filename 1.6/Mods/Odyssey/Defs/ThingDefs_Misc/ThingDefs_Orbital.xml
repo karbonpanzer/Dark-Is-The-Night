@@ -3,12 +3,12 @@
 <Defs> 				
 			
 		<ThingDef ParentName="ArmorHelmetMakeableBase">
-			<defName>TRG_OrbitalMarauderHelmet</defName>
+			<defName>DRG_OrbitalMarauderHelmet</defName>
 			<label>Orbital Marauder Helmet</label>
 			<description>A fully sealed Marauder helmet rated for low-pressure environments. Integrated visor and pressure-lock collar allow short-duration operations in vacuum or near-vacuum conditions.</description>
 			<techLevel>Spacer</techLevel>
 		   <recipeMaker>
-			  <researchPrerequisite>TRG_OrbitalMarauderArmor</researchPrerequisite>
+			  <researchPrerequisite>DRG_OrbitalMarauderArmor</researchPrerequisite>
 			  <recipeUsers>
 				<li>TableMachining</li>
 			  </recipeUsers>
@@ -31,7 +31,7 @@
 				<EquipDelay>2</EquipDelay>
 			</statBases>
 			<thingCategories>
-				<li>TRG_Helmets</li>
+				<li>DRG_Helmets</li>
 			</thingCategories>
 			<costList>
 				<Cloth>10</Cloth>
@@ -59,7 +59,7 @@
 				<li>Overhead</li>
 			  </layers>
 			  <tags>
-				<li>TRG_Armor</li>
+				<li>DRG_Armor</li>
 				<li>Vacsuit</li>
 			  </tags>
 			<forceEyesVisibleForRotations>
@@ -90,12 +90,12 @@
 	</ThingDef>	
 
 		<ThingDef ParentName="ApparelMakeableBase">
-			<defName>TRG_OrbitalMarauderArmor</defName>
+			<defName>DRG_OrbitalMarauderArmor</defName>
 			<label>Orbital Marauder Armor</label>
 			<techLevel>Spacer</techLevel>
 			<description>A vacuum-rated variant of standard Marauder armor, with sealed joints and passive pressure retention. Used by personnel conducting boarding actions or operations in low-pressure environments.</description>			
 			<recipeMaker>
-				<researchPrerequisite>TRG_OrbitalMarauderArmor</researchPrerequisite>
+				<researchPrerequisite>DRG_OrbitalMarauderArmor</researchPrerequisite>
 			</recipeMaker>
 			<graphicData>
 				<graphicClass>Graphic_Single</graphicClass>
@@ -117,7 +117,7 @@
 				<EquipDelay>6</EquipDelay>
 			</statBases>
 			<thingCategories>
-				<li>TRG_Armor</li>
+				<li>DRG_Armor</li>
 			</thingCategories>
 			<costList>
 				<Steel>70</Steel>
@@ -140,15 +140,15 @@
 					<li>Middle</li>					
 				</layers>
 				<tags>
-					<li>TRG_Armor</li>
+					<li>DRG_Armor</li>
 				</tags>
 				<defaultOutfitTags>
 					<li>Spacefarer</li>
 				</defaultOutfitTags>
 				<renderNodeProperties>
-					<li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
-					<nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
-					<workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
+					<li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+					<nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
+					<workerClass>DeadRinger.PawnRenderNodeWorkerHeadware</workerClass>
 					<parentTagDef>ApparelHead</parentTagDef>
 					<baseLayer>55</baseLayer>
 					<visibleFacing>
@@ -167,7 +167,7 @@
 				</renderNodeProperties>      
 			</apparel>
 			<comps>
-				<li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
+				<li Class="DeadRinger.CompPropertiesEditDecalMarker" />
 			</comps>
 			<colorGenerator Class="ColorGenerator_Options">
 				<options>

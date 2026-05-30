@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
 	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>TRG_Player</defName>
+		<defName>DRG_Player</defName>
 		<label>Ringer settlers</label>
 		<race>Human</race>
-		<defaultFactionType>TRG_Player</defaultFactionType>
-		<nameMaker>TRG_Ringer_NamerMale</nameMaker>
-		<nameMakerFemale>TRG_Ringer_NamerFemale</nameMakerFemale>
+		<defaultFactionType>DRG_Player</defaultFactionType>
+		<nameMaker>DRG_Ringer_NamerMale</nameMaker>
+		<nameMakerFemale>DRG_Ringer_NamerFemale</nameMakerFemale>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -16,7 +16,7 @@
 			</li>
 		</backstoryFiltersOverride>
 		<apparelTags>
-			<li>TRG_RingerUniform</li>
+			<li>DRG_RingerUniform</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<gearHealthRange>

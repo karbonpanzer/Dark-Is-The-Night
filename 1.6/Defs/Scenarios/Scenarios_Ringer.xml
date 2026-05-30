@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ScenarioDef ParentName="ScenarioBase">
-		<defName>TRG_Prospectors</defName>
+		<defName>DRG_Prospectors</defName>
 		<label>Ringer Settlers</label>
 		<description>You arrived, following the dream of many, you are the first of your ship to set foot on this world. The fresh air is the first you have breathed in years, you are here now. Many of your family and friends could not make it but you did.. What will you do with your freedom?</description>
 
@@ -9,7 +9,7 @@
 			<summary>A group of settlers from a dead orbital ring seeking opportunity.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
-				<factionDef>TRG_Player</factionDef>
+				<factionDef>DRG_Player</factionDef>
 			</playerFaction>
 
 			<parts>
@@ -43,33 +43,33 @@
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>TRG_LawbringerShotgun</thingDef>
+					<thingDef>DRG_LawbringerShotgun</thingDef>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>TRG_ServicePistol</thingDef>
+					<thingDef>DRG_ServicePistol</thingDef>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>TRG_Vibroblade</thingDef>
+					<thingDef>DRG_Vibroblade</thingDef>
 					<count>1</count>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>TRG_MarauderArmor</thingDef>
+					<thingDef>DRG_MarauderArmor</thingDef>
 					<count>1</count>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>TRG_MarauderHelmet</thingDef>
+					<thingDef>DRG_MarauderHelmet</thingDef>
 					<count>1</count>
 					<quality>Normal</quality>
 				</li>
@@ -94,6 +94,12 @@
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
+					<thingDef>ComponentSpacer</thingDef>
+					<count>5</count>
+				</li>				
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
 					<thingDef>MedicineIndustrial</thingDef>
 					<count>60</count>
 				</li>
@@ -113,13 +119,13 @@
 				<!-- Needed for Scenario Start to get Early Research-->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>TRG_Decoder</thingDef>
+					<thingDef>DRG_Decoder</thingDef>
 					<count>1</count>
 				</li>
 
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
-					<project>TRG_RingerUniforms</project>
+					<project>DRG_RingerUniforms</project>
 				</li>
 
 				 <!-- Scatter some things near player start -->

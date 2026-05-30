@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[@Name="VCE_CookBakeMealBase"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>Squareloaf</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[@Name="VCE_CookBakeMealBase"]/defaultIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>Squareloaf</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[@Name="VCE_CookGourmetBakeMealBase"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>Squareloaf</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[@Name="VCE_CookGourmetBakeMealBase"]/defaultIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>Squareloaf</li>
+    </value>
+  </Operation>
+
+</Patch>

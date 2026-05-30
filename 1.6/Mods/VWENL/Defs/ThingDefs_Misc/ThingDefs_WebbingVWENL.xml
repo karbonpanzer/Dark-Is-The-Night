@@ -1,11 +1,11 @@
 <Defs>
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>TRG_Webbing_GrenadierTear</defName>
+		<defName>DRG_Webbing_GrenadierTear</defName>
 		<description>A load-bearing chest harness tailored for tear gas grenades. Double-sealed canister pockets with chemically resistant inner lining and rubberized layers protect the wearer from accidental exposure to the special compound during movement.</description>
 		<label>Grenadier Webbing (Tear)</label>
 		<recipeMaker>
 		  <researchPrerequisites>
-		    <li>TRG_SpecialistAccessories</li>
+		    <li>DRG_SpecialistAccessories</li>
 		    <li>VWE_NonLethal</li>
 		  </researchPrerequisites>
 		</recipeMaker>
@@ -64,7 +64,7 @@
 		  </li>
 		</verbs>
 	    <thingCategories>
-		  <li>TRG_Accessories</li>
+		  <li>DRG_Accessories</li>
 		</thingCategories>
 		<equippedStatOffsets>
 		  <PainShockThreshold>0.10</PainShockThreshold>	  
@@ -83,7 +83,7 @@
 			<li>Belt</li>
 		  </layers>
 		  <tags>
-			<li>TRG_Accessories_Grenadier</li>
+			<li>DRG_Accessories_Grenadier</li>
 		  </tags>
 		  <defaultOutfitTags>
 			<li>Soldier</li>

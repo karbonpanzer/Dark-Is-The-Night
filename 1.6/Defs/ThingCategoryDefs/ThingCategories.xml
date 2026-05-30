@@ -1,42 +1,42 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
 	<ThingCategoryDef>
-		<defName>TRG_Uniforms</defName>
+		<defName>DRG_Uniforms</defName>
 		<label>Ringer Apparel</label>
 		<parent>Apparel</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>TRG_Headgear</defName>
+		<defName>DRG_Headgear</defName>
 		<label>Ringer Headgear</label>
-		<parent>TRG_Uniforms</parent>
+		<parent>DRG_Uniforms</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>TRG_Accessories</defName>
+		<defName>DRG_Accessories</defName>
 		<label>Ringer Accessories</label>
-		<parent>TRG_Uniforms</parent>
+		<parent>DRG_Uniforms</parent>
 	</ThingCategoryDef>
 
 	<!-- Armor Directory-->
 	<ThingCategoryDef>
-		<defName>TRG_Armor</defName>
+		<defName>DRG_Armor</defName>
 		<label>Ringer Armor</label>
-		<parent>TRG_Uniforms</parent>
+		<parent>DRG_Uniforms</parent>
 	</ThingCategoryDef>
 
 	<!-- Helmet Subdirectory-->
 	<ThingCategoryDef>
-		<defName>TRG_Helmets</defName>
+		<defName>DRG_Helmets</defName>
 		<label>Helmets</label>
-		<parent>TRG_Armor</parent>
+		<parent>DRG_Armor</parent>
 	</ThingCategoryDef>
 
 	<!-- Armor Accessories-->
 	<ThingCategoryDef>
-		<defName>TRG_ArmorAccessories</defName>
+		<defName>DRG_ArmorAccessories</defName>
 		<label>Armor Accessories</label>
-		<parent>TRG_Armor</parent>
+		<parent>DRG_Armor</parent>
 	</ThingCategoryDef>
 
 </Defs>

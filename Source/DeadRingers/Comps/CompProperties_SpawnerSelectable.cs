@@ -1,0 +1,39 @@
+using System.Collections.Generic;
+using Verse;
+
+namespace FoodSynthesizer
+{
+    public class CompProperties_SpawnerSelectable : CompProperties
+    {
+        public List<ThingDefCountClass>? spawnOptions;
+        public IntRange spawnIntervalRange = new IntRange(600000, 600000);
+        public int spawnMaxAdjacent = -1;
+        public bool spawnForbidden;
+        public bool requiresPower = true;
+        public bool writeTimeLeftToSpawn = true;
+        public bool showMessageIfOwned = true;
+        public bool inheritFaction;
+
+        [NoTranslate]
+        public string? saveKeysPrefix;
+
+        public CompProperties_SpawnerSelectable()
+        {
+            compClass = typeof(CompSpawnerSelectable);
+        }
+
+        public override IEnumerable<string> ConfigErrors(ThingDef parentDef)
+        {
+            foreach (string error in base.ConfigErrors(parentDef))
+            {
+                yield return error;
+            }
+
+            if (spawnOptions.NullOrEmpty())
+            {
+                yield return "CompProperties_SpawnerSelectable has no spawnOptions defined on "
+                             + parentDef.defName;
+            }
+        }
+    }
+}

@@ -5,9 +5,9 @@
     <!-- ========================================= -->
 
     <!-- Civilian Bases -->
-    <PawnKindDef Name="TRG_Civil_CivilianBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_CivilianBase" Abstract="True">
         <race>Human</race>
-        <defaultFactionType>TRG_Civil</defaultFactionType>
+        <defaultFactionType>DRG_Civil</defaultFactionType>
         <invNutrition>2.55</invNutrition>
         <chemicalAddictionChance>0.05</chemicalAddictionChance>
         <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
@@ -17,8 +17,8 @@
         <maxGenerationAge>50</maxGenerationAge>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <isFighter>false</isFighter>
-        <nameMaker>TRG_Ringer_NamerMale</nameMaker>
-        <nameMakerFemale>TRG_Ringer_NamerFemale</nameMakerFemale>
+        <nameMaker>DRG_Ringer_NamerMale</nameMaker>
+        <nameMakerFemale>DRG_Ringer_NamerFemale</nameMakerFemale>
         <backstoryFiltersOverride>
             <li>
                 <categories>
@@ -46,7 +46,7 @@
         </inventoryOptions>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_LaborerBase" ParentName="TRG_Civil_CivilianBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_LaborerBase" ParentName="DRG_Civil_CivilianBase" Abstract="True">
         <combatPower>25</combatPower>
         <itemQuality>Poor</itemQuality>
         <isFighter>false</isFighter>
@@ -66,9 +66,9 @@
     </PawnKindDef>
 
     <!-- Leadership Bases -->
-    <PawnKindDef Name="TRG_Civil_LeadershipBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_LeadershipBase" Abstract="True">
         <race>Human</race>
-        <defaultFactionType>TRG_Civil</defaultFactionType>
+        <defaultFactionType>DRG_Civil</defaultFactionType>
         <invNutrition>2.55</invNutrition>
         <chemicalAddictionChance>0</chemicalAddictionChance>
         <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
@@ -78,8 +78,8 @@
         <maxGenerationAge>60</maxGenerationAge>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <isFighter>false</isFighter>
-        <nameMaker>TRG_Ringer_NamerMale</nameMaker>
-        <nameMakerFemale>TRG_Ringer_NamerFemale</nameMakerFemale>
+        <nameMaker>DRG_Ringer_NamerMale</nameMaker>
+        <nameMakerFemale>DRG_Ringer_NamerFemale</nameMakerFemale>
         <backstoryFiltersOverride>
             <li>
                 <categories>
@@ -112,9 +112,9 @@
     </PawnKindDef>
 
     <!-- Military/Fighter Bases -->
-    <PawnKindDef Name="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_MilitaryBase" Abstract="True">
         <race>Human</race>
-        <defaultFactionType>TRG_Civil</defaultFactionType>
+        <defaultFactionType>DRG_Civil</defaultFactionType>
         <invNutrition>2.55</invNutrition>
         <chemicalAddictionChance>0</chemicalAddictionChance>
         <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
@@ -124,8 +124,8 @@
         <maxGenerationAge>35</maxGenerationAge>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <isFighter>true</isFighter>
-        <nameMaker>TRG_Ringer_NamerMale</nameMaker>
-        <nameMakerFemale>TRG_Ringer_NamerFemale</nameMakerFemale>
+        <nameMaker>DRG_Ringer_NamerMale</nameMaker>
+        <nameMakerFemale>DRG_Ringer_NamerFemale</nameMakerFemale>
         <backstoryFiltersOverride>
             <li>
                 <categories>
@@ -153,7 +153,7 @@
         </inventoryOptions>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_RecruitRangedTier" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_RecruitRangedTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>100</combatPower>
         <itemQuality>Poor</itemQuality>
         <apparelMoney>600~900</apparelMoney>
@@ -178,7 +178,7 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_RecruitMeleeTier" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_RecruitMeleeTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>100</combatPower>
         <itemQuality>Poor</itemQuality>
         <apparelMoney>600~900</apparelMoney>
@@ -200,7 +200,7 @@
         </skills>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_InfantryRangedTier1" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_InfantryRangedTier1" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>120</combatPower>
         <apparelMoney>1000~1500</apparelMoney>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
@@ -224,7 +224,7 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_InfantryMeleeTier1" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_InfantryMeleeTier1" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>120</combatPower>
         <apparelMoney>1000~1500</apparelMoney>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
@@ -245,7 +245,7 @@
         </skills>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_InfantryRangedTier2" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_InfantryRangedTier2" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>150</combatPower>
         <apparelMoney>1200~1700</apparelMoney>
         <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
@@ -270,7 +270,7 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_InfantryMeleeTier2" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_InfantryMeleeTier2" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>150</combatPower>
         <apparelMoney>1200~1700</apparelMoney>
         <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
@@ -292,7 +292,7 @@
         </skills>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_HeavyInfantryTier" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_HeavyInfantryTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>175</combatPower>
         <apparelMoney>1500~2000</apparelMoney>
         <apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
@@ -311,7 +311,7 @@
         </skills>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_VeteranRangedTier" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_VeteranRangedTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>180</combatPower>
         <itemQuality>Good</itemQuality>
         <apparelMoney>1800~2400</apparelMoney>
@@ -334,7 +334,7 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_VeteranMeleeTier" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_VeteranMeleeTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>180</combatPower>
         <itemQuality>Good</itemQuality>
         <apparelMoney>1800~2400</apparelMoney>
@@ -354,7 +354,7 @@
         </skills>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_NCOTier" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_NCOTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>130</combatPower>
         <itemQuality>Normal</itemQuality>
         <apparelMoney>1100~1600</apparelMoney>
@@ -390,7 +390,7 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_VeteranTier" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_VeteranTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>180</combatPower>
         <itemQuality>Good</itemQuality>
         <apparelMoney>1800~2400</apparelMoney>
@@ -417,7 +417,7 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_SupportTier" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_SupportTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>120</combatPower>
         <apparelMoney>1000~1500</apparelMoney>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
@@ -436,7 +436,7 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_OfficerTier" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_OfficerTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>140</combatPower>
         <itemQuality>Good</itemQuality>
         <gearHealthRange>1.0~1.0</gearHealthRange>
@@ -473,7 +473,7 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_SpecialWeaponsTier" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_SpecialWeaponsTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>145</combatPower>
         <apparelMoney>1100~1600</apparelMoney>
         <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
@@ -495,7 +495,7 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_WardenTier" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_WardenTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>160</combatPower>
         <itemQuality>Good</itemQuality>
         <gearHealthRange>1.0~1.0</gearHealthRange>
@@ -533,7 +533,7 @@
         </skills>
     </PawnKindDef>
 
-    <PawnKindDef Name="TRG_Civil_ShocktrooperTier" ParentName="TRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DRG_Civil_ShocktrooperTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
         <combatPower>190</combatPower>
         <itemQuality>Good</itemQuality>
         <apparelMoney>1900~2600</apparelMoney>
@@ -564,8 +564,8 @@
     <!-- CIVILIAN PAWNS -->
     <!-- ========================================= -->
 
-    <PawnKindDef ParentName="TRG_Civil_CivilianBase">
-        <defName>TRG_Civil_Settler</defName>
+    <PawnKindDef ParentName="DRG_Civil_CivilianBase">
+        <defName>DRG_Civil_Settler</defName>
         <label>settler</label>
         <labelPlural>settlers</labelPlural>
         <combatPower>35</combatPower>
@@ -577,7 +577,7 @@
         <apparelMoney>200~350</apparelMoney>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <weaponTags>
             <li>SimpleGun</li>
@@ -606,8 +606,8 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_CivilianBase">
-        <defName>TRG_Civil_Trader</defName>
+    <PawnKindDef ParentName="DRG_Civil_CivilianBase">
+        <defName>DRG_Civil_Trader</defName>
         <label>trader</label>
         <labelPlural>traders</labelPlural>
         <trader>true</trader>
@@ -620,7 +620,7 @@
         <apparelMoney>300~600</apparelMoney>
         <apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <weaponTags>
             <li>Pistol</li>
@@ -650,13 +650,13 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_LaborerBase">
-        <defName>TRG_Civil_Laborer</defName>
+    <PawnKindDef ParentName="DRG_Civil_LaborerBase">
+        <defName>DRG_Civil_Laborer</defName>
         <label>laborer</label>
         <labelPlural>laborers</labelPlural>
         <combatPower>25</combatPower>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <weaponTags>
             <li>SimpleGun</li>
@@ -684,8 +684,8 @@
     <!-- LEADER PAWNS -->
     <!-- ========================================= -->
 
-    <PawnKindDef ParentName="TRG_Civil_LeadershipBase">
-        <defName>TRG_Civil_Representative</defName>
+    <PawnKindDef ParentName="DRG_Civil_LeadershipBase">
+        <defName>DRG_Civil_Representative</defName>
         <label>representative</label>
         <labelPlural>representatives</labelPlural>
         <combatPower>120</combatPower>
@@ -699,7 +699,7 @@
         <apparelMoney>1000~1500</apparelMoney>
         <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <weaponTags>
             <li>Pistol</li>
@@ -738,201 +738,201 @@
     <!-- FIGHTER PAWNS -->
     <!-- ========================================= -->
 
-    <PawnKindDef ParentName="TRG_Civil_RecruitRangedTier">
-        <defName>TRG_Civil_Recruit_Ranged</defName>
+    <PawnKindDef ParentName="DRG_Civil_RecruitRangedTier">
+        <defName>DRG_Civil_Recruit_Ranged</defName>
         <label>recruit</label>
         <labelPlural>recruits</labelPlural>
         <combatPower>100</combatPower>
         <minGenerationAge>18</minGenerationAge>
         <maxGenerationAge>25</maxGenerationAge>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <apparelRequired>
-            <li>TRG_MarauderArmor</li>
-            <li>TRG_MarauderHelmet</li>
+            <li>DRG_MarauderArmor</li>
+            <li>DRG_MarauderHelmet</li>
         </apparelRequired>
         <initialWillRange>3~5</initialWillRange>
         <initialResistanceRange>25~35</initialResistanceRange>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/private</armorDecalPath>
                 <helmetDecalPath>Things/Decals/private</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_RecruitMeleeTier">
-        <defName>TRG_Civil_Recruit_Melee</defName>
+    <PawnKindDef ParentName="DRG_Civil_RecruitMeleeTier">
+        <defName>DRG_Civil_Recruit_Melee</defName>
         <label>recruit</label>
         <labelPlural>recruits</labelPlural>
         <combatPower>100</combatPower>
         <minGenerationAge>18</minGenerationAge>
         <maxGenerationAge>25</maxGenerationAge>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <apparelRequired>
-            <li>TRG_MarauderArmor</li>
-            <li>TRG_MarauderHelmet</li>
+            <li>DRG_MarauderArmor</li>
+            <li>DRG_MarauderHelmet</li>
         </apparelRequired>
         <initialWillRange>3~5</initialWillRange>
         <initialResistanceRange>25~35</initialResistanceRange>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/private</armorDecalPath>
                 <helmetDecalPath>Things/Decals/private</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_InfantryRangedTier1">
-        <defName>TRG_Civil_Infantry_Ranged</defName>
+    <PawnKindDef ParentName="DRG_Civil_InfantryRangedTier1">
+        <defName>DRG_Civil_Infantry_Ranged</defName>
         <label>infantry</label>
         <labelPlural>infantry</labelPlural>
         <combatPower>150</combatPower>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <apparelRequired>
-            <li>TRG_MarauderArmor</li>
-            <li>TRG_MarauderHelmet</li>
-        			<li>TRG_Webbing_Infantry</li>
+            <li>DRG_MarauderArmor</li>
+            <li>DRG_MarauderHelmet</li>
+        			<li>DRG_Webbing_Infantry</li>
 		</apparelRequired>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/corporal</armorDecalPath>
                 <helmetDecalPath>Things/Decals/corporal</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_InfantryMeleeTier1">
-        <defName>TRG_Civil_Infantry_Melee</defName>
+    <PawnKindDef ParentName="DRG_Civil_InfantryMeleeTier1">
+        <defName>DRG_Civil_Infantry_Melee</defName>
         <label>infantry</label>
         <labelPlural>infantry</labelPlural>
         <combatPower>150</combatPower>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <apparelRequired>
-            <li>TRG_MarauderArmor</li>
-            <li>TRG_MarauderHelmet</li>
-        			<li>TRG_Webbing_Infantry</li>
+            <li>DRG_MarauderArmor</li>
+            <li>DRG_MarauderHelmet</li>
+        			<li>DRG_Webbing_Infantry</li>
 		</apparelRequired>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/corporal</armorDecalPath>
                 <helmetDecalPath>Things/Decals/corporal</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_HeavyInfantryTier">
-        <defName>TRG_Civil_Heavy_Infantry</defName>
+    <PawnKindDef ParentName="DRG_Civil_HeavyInfantryTier">
+        <defName>DRG_Civil_Heavy_Infantry</defName>
         <label>heavy infantry</label>
         <labelPlural>heavy infantry</labelPlural>
         <combatPower>175</combatPower>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <weaponTags>
             <li>MedievalMeleeAdvanced</li>
         </weaponTags>
         <apparelRequired>
-            <li>TRG_HeavyMarauderArmor</li>
-            <li>TRG_HeavyMarauderHelmet</li>
+            <li>DRG_HeavyMarauderArmor</li>
+            <li>DRG_HeavyMarauderHelmet</li>
         </apparelRequired>
         <initialWillRange>5~7</initialWillRange>
         <initialResistanceRange>35~45</initialResistanceRange>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/skull</armorDecalPath>
                 <helmetDecalPath>Things/Decals/skull</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_NCOTier">
-        <defName>TRG_Civil_Sergeant</defName>
+    <PawnKindDef ParentName="DRG_Civil_NCOTier">
+        <defName>DRG_Civil_Sergeant</defName>
         <label>sergeant</label>
         <labelPlural>sergeants</labelPlural>
         <combatPower>135</combatPower>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <apparelRequired>
-            <li>TRG_MarauderArmor</li>
-            <li>TRG_MarauderHelmet</li>
-        			<li>TRG_Webbing_Infantry</li>
+            <li>DRG_MarauderArmor</li>
+            <li>DRG_MarauderHelmet</li>
+        			<li>DRG_Webbing_Infantry</li>
 		</apparelRequired>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/sgt</armorDecalPath>
                 <helmetDecalPath>Things/Decals/sgt</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_VeteranRangedTier">
-        <defName>TRG_Civil_Veteran_Ranged</defName>
+    <PawnKindDef ParentName="DRG_Civil_VeteranRangedTier">
+        <defName>DRG_Civil_Veteran_Ranged</defName>
         <label>veteran</label>
         <labelPlural>veterans</labelPlural>
         <combatPower>180</combatPower>
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <weaponTags Inherit="False">
             <li>IndustrialGunAdvanced</li>
         </weaponTags>
         <apparelRequired>
-            <li>TRG_HeavyMarauderArmor</li>
-            <li>TRG_HeavyMarauderHelmet</li>
-        			<li>TRG_Webbing_Infantry</li>
+            <li>DRG_HeavyMarauderArmor</li>
+            <li>DRG_HeavyMarauderHelmet</li>
+        			<li>DRG_Webbing_Infantry</li>
 		</apparelRequired>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/skullrifle</armorDecalPath>
                 <helmetDecalPath>Things/Decals/skullrifle</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_VeteranMeleeTier">
-        <defName>TRG_Civil_Veteran_Melee</defName>
+    <PawnKindDef ParentName="DRG_Civil_VeteranMeleeTier">
+        <defName>DRG_Civil_Veteran_Melee</defName>
         <label>veteran</label>
         <labelPlural>veterans</labelPlural>
         <combatPower>180</combatPower>
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <weaponTags Inherit="False">
             <li>MedievalMeleeAdvanced</li>
         </weaponTags>
         <apparelRequired>
-            <li>TRG_HeavyMarauderArmor</li>
-            <li>TRG_HeavyMarauderHelmet</li>
-        			<li>TRG_Webbing_Infantry</li>
+            <li>DRG_HeavyMarauderArmor</li>
+            <li>DRG_HeavyMarauderHelmet</li>
+        			<li>DRG_Webbing_Infantry</li>
 		</apparelRequired>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/skullsword</armorDecalPath>
                 <helmetDecalPath>Things/Decals/skullsword</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_InfantryRangedTier2">
-        <defName>TRG_Civil_Ranger</defName>
+    <PawnKindDef ParentName="DRG_Civil_InfantryRangedTier2">
+        <defName>DRG_Civil_Ranger</defName>
         <label>ranger</label>
         <labelPlural>rangers</labelPlural>
         <combatPower>155</combatPower>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <weaponTags Inherit="False">
             <li>IndustrialGunAdvanced</li>
@@ -940,9 +940,9 @@
         <weaponMoney>1950~2550</weaponMoney>
         <apparelMoney>1100~1600</apparelMoney>
         <apparelRequired>
-            <li>TRG_ScoutMarauderArmor</li>
-            <li>TRG_MarauderHelmet</li>
-        			<li>TRG_Webbing_Scout</li>
+            <li>DRG_ScoutMarauderArmor</li>
+            <li>DRG_MarauderHelmet</li>
+        			<li>DRG_Webbing_Scout</li>
 		</apparelRequired>
         <skills>
             <li>
@@ -955,26 +955,26 @@
             </li>
         </skills>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/arrowhead</armorDecalPath>
                 <helmetDecalPath>Things/Decals/arrowhead</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_SupportTier">
-        <defName>TRG_Civil_Medic</defName>
+    <PawnKindDef ParentName="DRG_Civil_SupportTier">
+        <defName>DRG_Civil_Medic</defName>
         <label>medic</label>
         <labelPlural>medics</labelPlural>
         <combatPower>120</combatPower>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
-            <li>TRG_MarauderArmor</li>
+            <li>DRG_RingerUniform</li>
+            <li>DRG_MarauderArmor</li>
         </apparelTags>
         <apparelRequired>
-            <li>TRG_MarauderArmor</li>
-            <li>TRG_MarauderHelmet</li>
-        			<li>TRG_Webbing_Medic</li>
+            <li>DRG_MarauderArmor</li>
+            <li>DRG_MarauderHelmet</li>
+        			<li>DRG_Webbing_Medic</li>
 		</apparelRequired>
         <inventoryOptions>
             <skipChance>0.5</skipChance>
@@ -1000,26 +1000,26 @@
             </li>
         </skills>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/cross</armorDecalPath>
                 <helmetDecalPath>Things/Decals/cross</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_SupportTier">
-        <defName>TRG_Civil_Engineer</defName>
+    <PawnKindDef ParentName="DRG_Civil_SupportTier">
+        <defName>DRG_Civil_Engineer</defName>
         <label>engineer</label>
         <labelPlural>engineers</labelPlural>
         <combatPower>120</combatPower>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
-            <li>TRG_MarauderArmor</li>
+            <li>DRG_RingerUniform</li>
+            <li>DRG_MarauderArmor</li>
         </apparelTags>
         <apparelRequired>
-            <li>TRG_MarauderArmor</li>
-            <li>TRG_MarauderHelmet</li>
-        			<li>TRG_Webbing_Engineer</li>
+            <li>DRG_MarauderArmor</li>
+            <li>DRG_MarauderHelmet</li>
+        			<li>DRG_Webbing_Engineer</li>
 		</apparelRequired>
         <skills>
             <li>
@@ -1036,160 +1036,160 @@
             </li>
         </skills>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/cog</armorDecalPath>
                 <helmetDecalPath>Things/Decals/cog</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_SpecialWeaponsTier">
-        <defName>TRG_Civil_GrenadierFrag</defName>
+    <PawnKindDef ParentName="DRG_Civil_SpecialWeaponsTier">
+        <defName>DRG_Civil_GrenadierFrag</defName>
         <label>grenadier</label>
         <labelPlural>grenadiers</labelPlural>
         <combatPower>145</combatPower>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <weaponTags Inherit="False">
             <li>GrenadeDestructive</li>
             <li>IndustrialGunAdvanced</li>
         </weaponTags>
         <apparelRequired>
-            <li>TRG_MarauderArmor</li>
-            <li>TRG_MarauderHelmet</li>   
-            <li>TRG_Webbing_GrenadierFrag</li>        
+            <li>DRG_MarauderArmor</li>
+            <li>DRG_MarauderHelmet</li>   
+            <li>DRG_Webbing_GrenadierFrag</li>        
 		</apparelRequired>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/battleaxe</armorDecalPath>
                 <helmetDecalPath>Things/Decals/battleaxe</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_SpecialWeaponsTier">
-        <defName>TRG_Civil_GrenadierFire</defName>
+    <PawnKindDef ParentName="DRG_Civil_SpecialWeaponsTier">
+        <defName>DRG_Civil_GrenadierFire</defName>
         <label>grenadier</label>
         <labelPlural>grenadiers</labelPlural>
         <combatPower>145</combatPower>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <weaponTags Inherit="False">
             <li>GrenadeDestructive</li>
             <li>IndustrialGunAdvanced</li>
         </weaponTags>
         <apparelRequired>
-            <li>TRG_MarauderArmor</li>
-            <li>TRG_MarauderHelmet</li>
-            <li>TRG_Webbing_GrenadierIncendiary</li>           
+            <li>DRG_MarauderArmor</li>
+            <li>DRG_MarauderHelmet</li>
+            <li>DRG_Webbing_GrenadierIncendiary</li>           
 		</apparelRequired>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/battleaxe</armorDecalPath>
                 <helmetDecalPath>Things/Decals/battleaxe</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
     
-    <PawnKindDef ParentName="TRG_Civil_SpecialWeaponsTier">
-        <defName>TRG_Civil_GrenadierEMP</defName>
+    <PawnKindDef ParentName="DRG_Civil_SpecialWeaponsTier">
+        <defName>DRG_Civil_GrenadierEMP</defName>
         <label>grenadier</label>
         <labelPlural>grenadiers</labelPlural>
         <combatPower>145</combatPower>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <weaponTags Inherit="False">
             <li>GrenadeDestructive</li>
             <li>IndustrialGunAdvanced</li>
         </weaponTags>
         <apparelRequired>
-            <li>TRG_MarauderArmor</li>
-            <li>TRG_MarauderHelmet</li>
-            <li>TRG_Webbing_GrenadierEMP</li>         
+            <li>DRG_MarauderArmor</li>
+            <li>DRG_MarauderHelmet</li>
+            <li>DRG_Webbing_GrenadierEMP</li>         
 		</apparelRequired>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/battleaxe</armorDecalPath>
                 <helmetDecalPath>Things/Decals/battleaxe</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>   
 
-    <PawnKindDef ParentName="TRG_Civil_SpecialWeaponsTier" MayRequire="Ludeon.RimWorld.Biotech">
-        <defName>TRG_Civil_GrenadierTox</defName>
+    <PawnKindDef ParentName="DRG_Civil_SpecialWeaponsTier" MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>DRG_Civil_GrenadierTox</defName>
         <label>grenadier</label>
         <labelPlural>grenadiers</labelPlural>
         <combatPower>145</combatPower>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <weaponTags Inherit="False">
             <li>GrenadeDestructive</li>
             <li>IndustrialGunAdvanced</li>
         </weaponTags>
         <apparelRequired>
-            <li>TRG_MarauderArmor</li>
-            <li>TRG_MarauderHelmet</li>
-            <li>TRG_Webbing_GrenadierTox</li>         
+            <li>DRG_MarauderArmor</li>
+            <li>DRG_MarauderHelmet</li>
+            <li>DRG_Webbing_GrenadierTox</li>         
 		</apparelRequired>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/battleaxe</armorDecalPath>
                 <helmetDecalPath>Things/Decals/battleaxe</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef> 
 
-    <PawnKindDef ParentName="TRG_Civil_ShocktrooperTier">
-        <defName>TRG_Civil_Shocktrooper</defName>
+    <PawnKindDef ParentName="DRG_Civil_ShocktrooperTier">
+        <defName>DRG_Civil_Shocktrooper</defName>
         <label>shocktrooper</label>
         <labelPlural>shocktroopers</labelPlural>
         <combatPower>190</combatPower>
         <minGenerationAge>25</minGenerationAge>
         <maxGenerationAge>40</maxGenerationAge>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <weaponTags Inherit="False">
             <li>IndustrialGunAdvanced</li>
         </weaponTags>
         <apparelRequired>
-            <li>TRG_HeavyMarauderArmor</li>
-            <li>TRG_HeavyMarauderHelmet</li>
-        	<li>TRG_Webbing_Shocktrooper</li>
+            <li>DRG_HeavyMarauderArmor</li>
+            <li>DRG_HeavyMarauderHelmet</li>
+        	<li>DRG_Webbing_Shocktrooper</li>
 		</apparelRequired>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/skullspear</armorDecalPath>
                 <helmetDecalPath>Things/Decals/skullspear</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_WardenTier">
-        <defName>TRG_Civil_Warden</defName>
+    <PawnKindDef ParentName="DRG_Civil_WardenTier">
+        <defName>DRG_Civil_Warden</defName>
         <label>warden</label>
         <labelPlural>wardens</labelPlural>
         <combatPower>160</combatPower>
         <apparelTags>
-            <li>TRG_RingerUniform</li>
+            <li>DRG_RingerUniform</li>
         </apparelTags>
         <apparelRequired>
-            <li>TRG_RiotMarauderArmor</li>
+            <li>DRG_RiotMarauderArmor</li>
 		</apparelRequired>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/police</armorDecalPath>
                 <helmetDecalPath>Things/Decals/police</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="TRG_Civil_OfficerTier">
-        <defName>TRG_Civil_Officer</defName>
+    <PawnKindDef ParentName="DRG_Civil_OfficerTier">
+        <defName>DRG_Civil_Officer</defName>
         <label>commander</label>
         <labelPlural>commanders</labelPlural>
         <combatPower>150</combatPower>
@@ -1197,10 +1197,10 @@
         <trader>true</trader>
         <itemQuality>Excellent</itemQuality>
         <apparelTags>
-            <li>TRG_OfficerUniform</li>
+            <li>DRG_OfficerUniform</li>
         </apparelTags>
         <apparelRequired>
-            <li>TRG_OfficerMarauderArmor</li>
+            <li>DRG_OfficerMarauderArmor</li>
         </apparelRequired>
         <techHediffsChance>0.20</techHediffsChance>
         <techHediffsMoney>1800~2500</techHediffsMoney>
@@ -1225,7 +1225,7 @@
             </li>
         </skills>
         <modExtensions>
-            <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
+            <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/commander</armorDecalPath>
                 <helmetDecalPath>Things/Decals/commander</helmetDecalPath>
             </li>

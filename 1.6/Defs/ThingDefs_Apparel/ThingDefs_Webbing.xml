@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>TRG_Webbing_Infantry</defName>
+    <defName>DRG_Webbing_Infantry</defName>
     <label>Infantry Webbing</label>
     <description>A standard load-bearing harness worn by Ringer infantry. Distributes the weight of ammunition and field kit across the torso. Issued to most front-line personnel.</description>
     <graphicData>
@@ -13,7 +13,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_InfantryAccessories</researchPrerequisite>
+      <researchPrerequisite>DRG_InfantryAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -62,8 +62,8 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>TRG_Webbing_Infantry</li>
-        <li>TRG_Accessories</li>
+        <li>DRG_Webbing_Infantry</li>
+        <li>DRG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -72,17 +72,17 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>TRG_Accessories</li>
+      <li>DRG_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TRG_Uniforms</li>
+      <li>DRG_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TRG_Webbing_Engineer</defName>
+    <defName>DRG_Webbing_Engineer</defName>
     <label>Engineer Webbing</label>
     <description>A load-bearing harness fitted with tool loops, component pouches, and cable management clips. Used by combat engineers who carry both weapons and technical equipment into the field.</description>
     <graphicData>
@@ -94,7 +94,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_SupportAccessories</researchPrerequisite>
+      <researchPrerequisite>DRG_SupportAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>30</Steel>
@@ -145,8 +145,8 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>TRG_Webbing_Engineer</li>
-        <li>TRG_Accessories</li>
+        <li>DRG_Webbing_Engineer</li>
+        <li>DRG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -155,17 +155,17 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>TRG_Accessories</li>
+      <li>DRG_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TRG_Uniforms</li>
+      <li>DRG_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TRG_Webbing_Medic</defName>
+    <defName>DRG_Webbing_Medic</defName>
     <label>Medic Webbing</label>
     <description>A load-bearing harness configured with medical pouches, tourniquet holders, and quick-access loops for field dressings. Designed to keep essential trauma supplies within immediate reach.</description>
     <graphicData>
@@ -177,7 +177,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_SupportAccessories</researchPrerequisite>
+      <researchPrerequisite>DRG_SupportAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>30</Steel>
@@ -228,8 +228,8 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>TRG_Webbing_Medic</li>
-        <li>TRG_Accessories</li>
+        <li>DRG_Webbing_Medic</li>
+        <li>DRG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -238,17 +238,17 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>TRG_Accessories</li>
+      <li>DRG_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TRG_Uniforms</li>
+      <li>DRG_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TRG_Webbing_Riot</defName>
+    <defName>DRG_Webbing_Riot</defName>
     <label>Riot Webbing</label>
     <description>A heavy-duty load-bearing harness used in crowd control operations. Carries restraints, less-lethal munitions, and a baton loop alongside standard kit.</description>
     <graphicData>
@@ -260,7 +260,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_SupportAccessories</researchPrerequisite>
+      <researchPrerequisite>DRG_SupportAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>50</Steel>
@@ -310,8 +310,8 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>TRG_Webbing_Riot</li>
-        <li>TRG_Accessories</li>
+        <li>DRG_Webbing_Riot</li>
+        <li>DRG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -320,17 +320,17 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>TRG_Accessories</li>
+      <li>DRG_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TRG_Uniforms</li>
+      <li>DRG_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TRG_Webbing_Scout</defName>
+    <defName>DRG_Webbing_Scout</defName>
     <label>Scout Webbing</label>
     <description>A minimal load-bearing harness designed to carry only essential equipment. Low profile and free of rattling hardware, suited for personnel who need to move quietly.</description>
     <graphicData>
@@ -342,7 +342,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>DRG_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -392,8 +392,8 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>TRG_Webbing_Scout</li>
-        <li>TRG_Accessories</li>
+        <li>DRG_Webbing_Scout</li>
+        <li>DRG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -407,17 +407,17 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>TRG_Accessories</li>
+      <li>DRG_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TRG_Uniforms</li>
+      <li>DRG_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TRG_Webbing_Shocktrooper</defName>
+    <defName>DRG_Webbing_Shocktrooper</defName>
     <label>Shocktrooper Webbing</label>
     <description>A load-bearing harness configured for close-quarters assault. High-capacity magazine pouches and breach tool loops are positioned for fast access under fire.</description>
     <graphicData>
@@ -429,7 +429,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>DRG_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -480,8 +480,8 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>TRG_Webbing_Shocktrooper</li>
-        <li>TRG_Accessories</li>
+        <li>DRG_Webbing_Shocktrooper</li>
+        <li>DRG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -495,17 +495,17 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>TRG_Accessories</li>
+      <li>DRG_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TRG_Uniforms</li>
+      <li>DRG_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TRG_Webbing_GrenadierFrag</defName>
+    <defName>DRG_Webbing_GrenadierFrag</defName>
     <label>Grenadier Webbing (Frag)</label>
     <description>A load-bearing chest harness fitted with dedicated loops and pouches for fragmentation grenades. Standard kit for grenadier infantry who need their munitions close at hand.</description>
     <graphicData>
@@ -517,7 +517,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>DRG_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -567,7 +567,7 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>TRG_Accessories</li>
+        <li>DRG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -590,7 +590,7 @@
       </li>
     </comps>
     <thingCategories>
-      <li>TRG_Accessories</li>
+      <li>DRG_Accessories</li>
     </thingCategories>
     <verbs>
       <li>
@@ -616,7 +616,7 @@
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TRG_Webbing_GrenadierEMP</defName>
+    <defName>DRG_Webbing_GrenadierEMP</defName>
     <label>Grenadier Webbing (EMP)</label>
     <description>A load-bearing chest harness configured for EMP grenades. Signal-dampening lining keeps the electromagnetic pulse charges from interfering with nearby electronics between engagements.</description>
     <graphicData>
@@ -628,7 +628,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>DRG_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -678,7 +678,7 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>TRG_Accessories</li>
+        <li>DRG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -701,7 +701,7 @@
       </li>
     </comps>
     <thingCategories>
-      <li>TRG_Accessories</li>
+      <li>DRG_Accessories</li>
     </thingCategories>
     <verbs>
       <li>
@@ -727,7 +727,7 @@
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TRG_Webbing_GrenadierIncendiary</defName>
+    <defName>DRG_Webbing_GrenadierIncendiary</defName>
     <label>Grenadier Webbing (Incendiary)</label>
     <description>A load-bearing chest harness designed to carry incendiary grenades. Glass bottles filled with flammable liquid create devastating fires on impact. Heat-resistant loops and spacing prevent sympathetic ignition.</description>
     <graphicData>
@@ -739,7 +739,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>DRG_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -789,7 +789,7 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>TRG_Accessories</li>
+        <li>DRG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -812,7 +812,7 @@
       </li>
     </comps>
     <thingCategories>
-      <li>TRG_Accessories</li>
+      <li>DRG_Accessories</li>
     </thingCategories>
     <verbs>
       <li>

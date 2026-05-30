@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>TRG_OfficerUniform</defName>
+    <defName>DRG_OfficerUniform</defName>
     <label>Ringer Officer Uniform</label>
     <description>A tailored duty uniform worn by commissioned Ringer officers. Cut to be presentable in formal settings while remaining durable enough for field use.</description>
     <graphicData>
@@ -32,7 +32,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>DRG_OfficerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -65,7 +65,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>TRG_OfficerUniform</li>
+        <li>DRG_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -73,17 +73,17 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TRG_Uniforms</li>
+      <li>DRG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TRG_Uniforms</li>
+      <li>DRG_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>TRG_OfficerHat</defName>
+    <defName>DRG_OfficerHat</defName>
     <label>Ringer Officer Headwear</label>
     <description>A structured cap worn by Ringer Officers. Bears rank and unit markings, allowing the wearer to be identified quickly as command personnel during engagements.</description>
     <graphicData>
@@ -114,7 +114,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TRG_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>DRG_OfficerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -139,7 +139,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>TRG_OfficerUniform</li>
+        <li>DRG_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -151,17 +151,17 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TRG_Headgear</li>
+      <li>DRG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TRG_Uniforms</li>
+      <li>DRG_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TRG_OfficerUniform_SuperCold</defName>
+    <defName>DRG_OfficerUniform_SuperCold</defName>
     <label>Ringer Officer Uniform (Tundra)</label>
     <description>An officer's duty uniform insulated for extreme cold. Thermal lining and sealed cuffs allow command personnel to function in conditions that would otherwise be debilitating.</description>
     <graphicData>
@@ -193,8 +193,8 @@
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisites>
-        <li>TRG_OfficerUniforms</li>
-        <li>TRG_ExtremeWeatherUniforms</li>
+        <li>DRG_OfficerUniforms</li>
+        <li>DRG_ExtremeWeatherUniforms</li>
       </researchPrerequisites>
     </recipeMaker>
     <stuffCategories>
@@ -228,7 +228,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>TRG_OfficerUniform</li>
+        <li>DRG_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -236,17 +236,17 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TRG_Uniforms</li>
+      <li>DRG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TRG_Uniforms</li>
+      <li>DRG_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>TRG_OfficerHat_SuperCold</defName>
+    <defName>DRG_OfficerHat_SuperCold</defName>
     <label>Ringer Officer Headwear (Tundra)</label>
     <description>An officer's cap insulated for extreme cold. Full brow and ear coverage protects against frostbite without obscuring the rank markings that identify command personnel.</description>
     <graphicData>
@@ -278,8 +278,8 @@
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisites>
-        <li>TRG_OfficerUniforms</li>
-        <li>TRG_ExtremeWeatherUniforms</li>
+        <li>DRG_OfficerUniforms</li>
+        <li>DRG_ExtremeWeatherUniforms</li>
       </researchPrerequisites>
     </recipeMaker>
     <stuffCategories>
@@ -305,7 +305,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>TRG_OfficerUniform</li>
+        <li>DRG_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -317,11 +317,11 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TRG_Headgear</li>
+      <li>DRG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TRG_Uniforms</li>
+      <li>DRG_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>

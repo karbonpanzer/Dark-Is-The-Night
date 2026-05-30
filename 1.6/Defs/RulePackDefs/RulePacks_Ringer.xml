@@ -2,7 +2,7 @@
 <Defs>
 
   <RulePackDef>
-    <defName>TRG_Faction_Civil</defName>
+    <defName>DRG_Faction_Civil</defName>
     <include>
       <li>OutlanderPlaceNameUtility</li>
     </include>
@@ -32,7 +32,7 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>TRG_Settlement_Civil</defName>
+    <defName>DRG_Settlement_Civil</defName>
     <rulePack>
       <rulesStrings>
         <li>r_name(p=12)->[townname_wordgen]</li>
@@ -102,7 +102,7 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>TRG_Faction_Rough</defName>
+    <defName>DRG_Faction_Rough</defName>
     <include>
       <li>OutlanderPlaceNameUtility</li>
     </include>
@@ -136,7 +136,7 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>TRG_Settlement_Rough</defName>
+    <defName>DRG_Settlement_Rough</defName>
     <rulePack>
       <rulesStrings>
         <li>r_name(p=4)->[townname_combo]</li>
