@@ -169,6 +169,8 @@
 					<DRG_Civil_Laborer>8</DRG_Civil_Laborer>
 					<DRG_Civil_Trader>8</DRG_Civil_Trader>
 					<DRG_Civil_Representative>2</DRG_Civil_Representative>
+					<DRG_Civil_Recruit_Ranged>4</DRG_Civil_Recruit_Ranged>
+					<DRG_Civil_Recruit_Melee>2</DRG_Civil_Recruit_Melee>
 					<DRG_Civil_Ranger>4</DRG_Civil_Ranger>
 					<DRG_Civil_Infantry_Ranged>4</DRG_Civil_Infantry_Ranged>
 					<DRG_Civil_Infantry_Melee>2</DRG_Civil_Infantry_Melee>
@@ -191,6 +193,8 @@
 					<Elephant>1</Elephant>
 				</carriers>
 				<guards>
+					<DRG_Civil_Recruit_Ranged>10</DRG_Civil_Recruit_Ranged>
+					<DRG_Civil_Recruit_Melee>5</DRG_Civil_Recruit_Melee>
 					<DRG_Civil_Infantry_Ranged>4</DRG_Civil_Infantry_Ranged>
 					<DRG_Civil_Infantry_Melee>2</DRG_Civil_Infantry_Melee>
 					<DRG_Civil_Ranger>4</DRG_Civil_Ranger>
@@ -205,6 +209,8 @@
 				<options>
 					<DRG_Civil_Settler>20</DRG_Civil_Settler>
 					<DRG_Civil_Laborer>12</DRG_Civil_Laborer>
+					<DRG_Civil_Recruit_Ranged>6</DRG_Civil_Recruit_Ranged>
+					<DRG_Civil_Recruit_Melee>3</DRG_Civil_Recruit_Melee>
 					<DRG_Civil_Engineer>4</DRG_Civil_Engineer>
 					<DRG_Civil_Medic>4</DRG_Civil_Medic>
 					<DRG_Civil_Infantry_Ranged>6</DRG_Civil_Infantry_Ranged>
@@ -308,6 +314,7 @@
 			<li>Caravan_Ringer_BulkGoods</li>
 			<li>Caravan_Ringer_ArmsDealer</li>
 			<li>Caravan_Ringer_Exotic</li>
+			<li>Caravan_Rough_PirateMerchant</li>			
 		</caravanTraderKinds>
 		<visitorTraderKinds>
 			<li>Visitor_Ringer_Standard</li>
@@ -375,6 +382,8 @@
 					<DRG_Rough_Laborer>8</DRG_Rough_Laborer>
 					<DRG_Rough_Trader>8</DRG_Rough_Trader>
 					<DRG_Rough_Representative>2</DRG_Rough_Representative>
+					<DRG_Rough_Recruit_Ranged>4</DRG_Rough_Recruit_Ranged>
+					<DRG_Rough_Recruit_Melee>2</DRG_Rough_Recruit_Melee>
 					<DRG_Rough_Ranger>4</DRG_Rough_Ranger>
 					<DRG_Rough_Infantry_Ranged>4</DRG_Rough_Infantry_Ranged>
 					<DRG_Rough_Infantry_Melee>2</DRG_Rough_Infantry_Melee>
@@ -397,6 +406,8 @@
 					<Elephant>1</Elephant>
 				</carriers>
 				<guards>
+					<DRG_Rough_Recruit_Ranged>10</DRG_Rough_Recruit_Ranged>
+					<DRG_Rough_Recruit_Melee>5</DRG_Rough_Recruit_Melee>
 					<DRG_Rough_Infantry_Ranged>4</DRG_Rough_Infantry_Ranged>
 					<DRG_Rough_Infantry_Melee>2</DRG_Rough_Infantry_Melee>
 					<DRG_Rough_Ranger>4</DRG_Rough_Ranger>
@@ -411,6 +422,8 @@
 				<options>
 					<DRG_Rough_Settler>20</DRG_Rough_Settler>
 					<DRG_Rough_Laborer>12</DRG_Rough_Laborer>
+					<DRG_Rough_Recruit_Ranged>6</DRG_Rough_Recruit_Ranged>
+					<DRG_Rough_Recruit_Melee>3</DRG_Rough_Recruit_Melee>
 					<DRG_Rough_Engineer>4</DRG_Rough_Engineer>
 					<DRG_Rough_Medic>4</DRG_Rough_Medic>
 					<DRG_Rough_Infantry_Ranged>6</DRG_Rough_Infantry_Ranged>

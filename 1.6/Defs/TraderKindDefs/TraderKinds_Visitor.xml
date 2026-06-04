@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <TraderKindDef>
@@ -9,17 +9,40 @@
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
-        <countRange>50~250</countRange>
+        <countRange>75~300</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>-2~5</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>-3~2</countRange> <!-- ~30% chance for 1-2 -->
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>MedicineIndustrial</thingDef>
         <countRange>1~4</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MealSurvivalPack</thingDef>
+        <countRange>3~6</countRange>
       </li>
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
           <li>Cloth</li>
           <li>Chocolate</li>
         </thingDefs>
+      </li>
+
+      <!-- Faction food -->
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>DRG_Meatcube</li>
+          <li>DRG_Vegblock</li>
+          <li>DRG_Fruitblock</li>
+          <li>DRG_Chocoblock</li>
+        </thingDefs>
+        <countRange>5~15</countRange>
       </li>
 
       <!-- Drugs -->
@@ -58,21 +81,15 @@
         <tradeTag>BasicClothing</tradeTag>
         <maxTechLevelGenerate>Spacer</maxTechLevelGenerate>
       </li>
-
-      <!-- Implants -->
-      <!-- none -->
-
-      <!-- Buildings -->
-      <!-- none -->
-
-      <!-- Exotic -->
-      <!-- none -->
-
-      <!-- Slaves -->
-      <!-- none -->
-
-      <!-- Animals -->
-      <!-- none -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>DRG_Uniforms</tradeTag>
+        <countRange>1~3</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>DRG_Armor</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>-2~1</countRange> <!-- ~30% chance for a single armor piece -->
+      </li>
 
       <!-- Buying -->
       <li Class="StockGenerator_BuyExpensiveSimple" />

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <TraderKindDef>
@@ -8,7 +8,7 @@
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
-        <countRange>800~3000</countRange>
+        <countRange>1000~3500</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentIndustrial</thingDef>
@@ -16,7 +16,7 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentSpacer</thingDef>
-        <countRange>1~6</countRange>
+        <countRange>3~10</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>Steel</thingDef>
@@ -62,6 +62,10 @@
         <thingDef>MedicineIndustrial</thingDef>
         <countRange>25~50</countRange>
       </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineUltratech</thingDef>
+        <countRange>3~10</countRange>
+      </li>
       <li Class="StockGenerator_ReinforcedBarrels">
         <countRange>1~4</countRange>
       </li>
@@ -91,6 +95,8 @@
           <li MayRequire="Ludeon.RimWorld.Odyssey">BlocksVacstone</li>
         </excludedThingDefs>
       </li>
+
+      <!-- Food -->
       <li Class="StockGenerator_Category">
         <categoryDef>FoodRaw</categoryDef>
         <thingDefCountRange>2~4</thingDefCountRange>
@@ -111,6 +117,16 @@
         </thingDefs>
       </li>
 
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>DRG_Meatcube</li>
+          <li>DRG_Vegblock</li>
+          <li>DRG_Fruitblock</li>
+          <li>DRG_Chocoblock</li>
+        </thingDefs>
+        <countRange>25~75</countRange>
+      </li>
+
       <!-- Drugs -->
       <li Class="StockGenerator_Category">
         <categoryDef>Drugs</categoryDef>
@@ -118,7 +134,7 @@
         <totalPriceRange>700~1500</totalPriceRange>
       </li>
 
-      <!-- Techprints -->
+      <!-- Techprints & Decoders -->
       <li Class="StockGenerator_Techprints">
         <countChances>
           <li>
@@ -133,24 +149,21 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>DRG_Decoder</thingDef>
-        <countRange>1~1</countRange>
+        <countRange>1~2</countRange>
       </li>
 
       <!-- Books -->
       <li Class="StockGenerator_Category">
         <categoryDef>Books</categoryDef>
         <excludedThingDefs>
-          <li MayRequire="Ludeon.RimWorld.Anomaly">Tome</li> <!-- only available in Anomaly, handled
-          seperately -->
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Tome</li>
         </excludedThingDefs>
         <thingDefCountRange>2</thingDefCountRange>
         <countRange>-2~1</countRange>
       </li>
-
       <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tomes">
         <countRange>-2~1</countRange>
       </li>
-
       <li Class="StockGenerator_SingleDef">
         <thingDef>Schematic</thingDef>
         <countRange>1~1</countRange>
@@ -159,12 +172,24 @@
       <!-- Weapons -->
       <li Class="StockGenerator_Tag">
         <tradeTag>WeaponRanged</tradeTag>
+        <maxTechLevelGenerate>Spacer</maxTechLevelGenerate>
         <countRange>3~6</countRange>
       </li>
       <li Class="StockGenerator_Tag">
         <tradeTag>WeaponMelee</tradeTag>
+        <maxTechLevelGenerate>Spacer</maxTechLevelGenerate>
         <thingDefCountRange>3~4</thingDefCountRange>
         <countRange>1~2</countRange>
+      </li>
+      <!-- Faction exotic weapons -->
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>DRG_HydraRifle</li>
+          <li>DRG_AutoloaderCannon</li>
+          <li>DRG_SalvoGrenadeLauncher</li>
+          <li>DRG_ServiceLMG</li>
+        </thingDefs>
+        <countRange>0~2</countRange>
       </li>
 
       <!-- Apparel -->
@@ -177,18 +202,29 @@
         <countRange>2~4</countRange>
       </li>
       <li Class="StockGenerator_Tag">
-        <tradeTag>BNF_Clothing</tradeTag>
-        <countRange>7~7</countRange>
+        <tradeTag>DRG_Uniforms</tradeTag>
+        <countRange>6~10</countRange>
       </li>
       <li Class="StockGenerator_Tag">
         <tradeTag>Armor</tradeTag>
+        <maxTechLevelGenerate>Spacer</maxTechLevelGenerate>
+        <thingDefCountRange>2~4</thingDefCountRange>
         <countRange>2~4</countRange>
       </li>
       <li Class="StockGenerator_Tag">
-        <tradeTag>BNF_Armor</tradeTag>
-        <thingDefCountRange>1~15</thingDefCountRange>
-        <countRange>7~12</countRange>
-        <maxTechLevelGenerate>Spacer</maxTechLevelGenerate>
+        <tradeTag>DRG_Armor</tradeTag>
+        <thingDefCountRange>4~8</thingDefCountRange>
+        <countRange>3~6</countRange>
+      </li>
+      <!-- Prestige armor -->
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>DRG_OfficerMarauderArmor</li>
+          <li>DRG_OfficerMarauderArmor_Scout</li>
+          <li>DRG_ScoutMarauderArmor</li>
+          <li>DRG_RiotMarauderArmor</li>
+        </thingDefs>
+        <countRange>0~2</countRange>
       </li>
 
       <!-- Implants -->
@@ -229,8 +265,9 @@
         <thingDefCountRange>1~4</thingDefCountRange>
         <countRange>1~2</countRange>
         <excludedThingDefs>
-          <li>Luciferium</li> <!-- already handled by drugs -->
-          <li>ComponentSpacer</li> <!-- already handled by single def -->
+          <li>Luciferium</li>
+          <li>ComponentSpacer</li>
+          <li>DRG_Decoder</li>
         </excludedThingDefs>
         <customCountRanges>
           <MedicineUltratech>2~15</MedicineUltratech>
@@ -248,7 +285,7 @@
       <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tag">
         <tradeTag>Serum</tradeTag>
         <thingDefCountRange>4~4</thingDefCountRange>
-        <countRange>-3~1</countRange> <!-- 20% chance of appearing -->
+        <countRange>-3~1</countRange>
         <excludedThingDefs>
           <li>VoidsightSerum</li>
         </excludedThingDefs>
@@ -277,10 +314,10 @@
         </createMatingPair>
       </li>
 
-      <!-- Archite capsule2 -->
+      <!-- Archite capsule -->
       <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
         <thingDef>ArchiteCapsule</thingDef>
-        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+        <countRange>-1~2</countRange>
       </li>
 
       <!-- Deathrest capacity serum -->
@@ -289,30 +326,20 @@
         <countRange>0~1</countRange>
       </li>
 
-      <!-- Cultist apparel -->
-      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
-        <thingDef>Apparel_CultistMask</thingDef>
-        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
-      </li>
-      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
-        <thingDef>Apparel_CeremonialCultistMask</thingDef>
-        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
-      </li>
-
       <!-- Pack turret apparel -->
       <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
         <thingDef>Apparel_PackTurret</thingDef>
-        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+        <countRange>-1~2</countRange>
       </li>
 
       <!-- Cultist apparel -->
       <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
         <thingDef>Apparel_CultistMask</thingDef>
-        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+        <countRange>-1~2</countRange>
       </li>
       <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
         <thingDef>Apparel_CeremonialCultistMask</thingDef>
-        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+        <countRange>-1~2</countRange>
       </li>
 
       <!-- Buying -->

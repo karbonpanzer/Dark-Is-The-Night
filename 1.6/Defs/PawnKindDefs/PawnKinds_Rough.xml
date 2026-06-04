@@ -720,7 +720,7 @@
         <defName>DRG_Rough_Representative</defName>
         <label>representative</label>
         <labelPlural>representatives</labelPlural>
-        <combatPower>120</combatPower>
+        <combatPower>80</combatPower>
         <factionLeader>true</factionLeader>
         <trader>true</trader>
         <minGenerationAge>35</minGenerationAge>
@@ -770,7 +770,7 @@
         <defName>DRG_Rough_Recruit_Ranged</defName>
         <label>recruit</label>
         <labelPlural>recruits</labelPlural>
-        <combatPower>100</combatPower>
+        <combatPower>70</combatPower>
         <minGenerationAge>18</minGenerationAge>
         <maxGenerationAge>25</maxGenerationAge>
         <initialWillRange>3~5</initialWillRange>
@@ -794,7 +794,7 @@
         <defName>DRG_Rough_Recruit_Melee</defName>
         <label>recruit</label>
         <labelPlural>recruits</labelPlural>
-        <combatPower>100</combatPower>
+        <combatPower>70</combatPower>
         <minGenerationAge>18</minGenerationAge>
         <maxGenerationAge>25</maxGenerationAge>
         <initialWillRange>3~5</initialWillRange>
@@ -818,7 +818,7 @@
         <defName>DRG_Rough_Infantry_Ranged</defName>
         <label>infantry</label>
         <labelPlural>infantry</labelPlural>
-        <combatPower>150</combatPower>
+        <combatPower>105</combatPower>
         <modExtensions>
             <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/corporal</armorDecalPath>
@@ -840,7 +840,7 @@
         <defName>DRG_Rough_Infantry_Melee</defName>
         <label>infantry</label>
         <labelPlural>infantry</labelPlural>
-        <combatPower>150</combatPower>
+        <combatPower>105</combatPower>
         <modExtensions>
             <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/corporal</armorDecalPath>
@@ -862,7 +862,7 @@
         <defName>DRG_Rough_Heavy_Infantry</defName>
         <label>heavy infantry</label>
         <labelPlural>heavy infantry</labelPlural>
-        <combatPower>175</combatPower>
+        <combatPower>125</combatPower>
         <initialWillRange>5~7</initialWillRange>
         <initialResistanceRange>35~45</initialResistanceRange>
         <modExtensions>
@@ -886,7 +886,7 @@
         <defName>DRG_Rough_Sergeant</defName>
         <label>sergeant</label>
         <labelPlural>sergeants</labelPlural>
-        <combatPower>135</combatPower>
+        <combatPower>90</combatPower>
         <modExtensions>
             <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/sgt</armorDecalPath>
@@ -908,7 +908,7 @@
         <defName>DRG_Rough_Veteran_Ranged</defName>
         <label>veteran</label>
         <labelPlural>veterans</labelPlural>
-        <combatPower>180</combatPower>
+        <combatPower>130</combatPower>
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
         <weaponTags Inherit="False">
@@ -937,7 +937,7 @@
         <defName>DRG_Rough_Veteran_Melee</defName>
         <label>veteran</label>
         <labelPlural>veterans</labelPlural>
-        <combatPower>180</combatPower>
+        <combatPower>130</combatPower>
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
         <weaponTags Inherit="False">
@@ -964,7 +964,7 @@
         <defName>DRG_Rough_Ranger</defName>
         <label>ranger</label>
         <labelPlural>rangers</labelPlural>
-        <combatPower>155</combatPower>
+        <combatPower>110</combatPower>
         <weaponTags Inherit="False">
             <li>DRG_RingerCarbine</li>
             <li>DRG_RingerHeavyPistol</li>
@@ -1001,7 +1001,7 @@
         <defName>DRG_Rough_Medic</defName>
         <label>medic</label>
         <labelPlural>medics</labelPlural>
-        <combatPower>120</combatPower>
+        <combatPower>80</combatPower>
         <inventoryOptions>
             <skipChance>0.5</skipChance>
             <subOptionsChooseOne>
@@ -1050,7 +1050,7 @@
         <defName>DRG_Rough_Engineer</defName>
         <label>engineer</label>
         <labelPlural>engineers</labelPlural>
-        <combatPower>120</combatPower>
+        <combatPower>80</combatPower>
         <skills>
             <li>
                 <skill>Construction</skill>
@@ -1090,7 +1090,7 @@
         <defName>DRG_Rough_GrenadierFrag</defName>
         <label>grenadier</label>
         <labelPlural>grenadiers</labelPlural>
-        <combatPower>145</combatPower>
+        <combatPower>100</combatPower>
         <weaponTags Inherit="False">
             <li>DRG_RingerSidearm</li>
             <li>DRG_RingerSMG</li>
@@ -1116,7 +1116,7 @@
         <defName>DRG_Rough_GrenadierFire</defName>
         <label>grenadier</label>
         <labelPlural>grenadiers</labelPlural>
-        <combatPower>145</combatPower>
+        <combatPower>100</combatPower>
         <weaponTags Inherit="False">
             <li>DRG_RingerSidearm</li>
             <li>DRG_RingerSMG</li>
@@ -1142,7 +1142,7 @@
         <defName>DRG_Rough_GrenadierEMP</defName>
         <label>grenadier</label>
         <labelPlural>grenadiers</labelPlural>
-        <combatPower>145</combatPower>
+        <combatPower>100</combatPower>
         <weaponTags Inherit="False">
             <li>DRG_RingerSidearm</li>
             <li>DRG_RingerSMG</li>
@@ -1168,7 +1168,7 @@
         <defName>DRG_Rough_GrenadierTox</defName>
         <label>grenadier</label>
         <labelPlural>grenadiers</labelPlural>
-        <combatPower>145</combatPower>
+        <combatPower>100</combatPower>
         <weaponTags Inherit="False">
             <li>DRG_RingerSidearm</li>
             <li>DRG_RingerSMG</li>
@@ -1194,7 +1194,7 @@
         <defName>DRG_Rough_Shocktrooper</defName>
         <label>shocktrooper</label>
         <labelPlural>shocktroopers</labelPlural>
-        <combatPower>190</combatPower>
+        <combatPower>140</combatPower>
         <minGenerationAge>25</minGenerationAge>
         <maxGenerationAge>40</maxGenerationAge>
         <weaponTags Inherit="False">
@@ -1221,7 +1221,7 @@
         <defName>DRG_Rough_Warden</defName>
         <label>warden</label>
         <labelPlural>wardens</labelPlural>
-        <combatPower>160</combatPower>
+        <combatPower>115</combatPower>
         <modExtensions>
             <li Class="DeadRinger.DecalKindExtension">
                 <armorDecalPath>Things/Decals/police</armorDecalPath>
@@ -1242,7 +1242,7 @@
         <defName>DRG_Rough_Officer</defName>
         <label>commander</label>
         <labelPlural>commanders</labelPlural>
-        <combatPower>150</combatPower>
+        <combatPower>105</combatPower>
         <factionLeader>true</factionLeader>
         <trader>true</trader>
         <itemQuality>Excellent</itemQuality>
