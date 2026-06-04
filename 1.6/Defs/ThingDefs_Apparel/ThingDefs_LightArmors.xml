@@ -174,7 +174,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags>
-        <li>DRG_Armor</li>
+        <li>DRG_LightHelmet</li>
       </tags>
       <renderNodeProperties>
         <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
@@ -296,6 +296,9 @@
           </drawData>
         </li>
       </renderNodeProperties>
+      <tags>
+        <li>DRG_LightHelmet</li>
+      </tags>
     </apparel>
     <comps>
       <li Class="DeadRinger.CompPropertiesEditDecalMarker" />
@@ -398,6 +401,9 @@
           </drawData>
         </li>
       </renderNodeProperties>
+      <tags>
+        <li>DRG_LightHelmet_Shield</li>
+      </tags>
     </apparel>
     <comps>
       <li Class="DeadRinger.CompPropertiesEditDecalMarker" />
@@ -497,6 +503,9 @@
           </drawData>
         </li>
       </renderNodeProperties>
+      <tags>
+        <li>DRG_LightHelmet</li>
+      </tags>
     </apparel>
     <comps>
       <li Class="DeadRinger.CompPropertiesEditDecalMarker" />

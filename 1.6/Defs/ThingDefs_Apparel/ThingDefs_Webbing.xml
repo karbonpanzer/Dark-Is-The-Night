@@ -8,6 +8,7 @@
       <texPath>Things/Pawn/Humanlike/Accessories/InfantryPouches/InfantryPouches</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
+      <color>(0.40,0.34,0.22)</color>
     </graphicData>
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
@@ -17,19 +18,13 @@
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
+      <Cloth>40</Cloth>
     </costList>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <costStuffCount>40</costStuffCount>
+    <stuffCategories Inherit="False" IsNull="True" />
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToMake>2000</WorkToMake>
       <Mass>1</Mass>
-      <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -89,6 +84,7 @@
       <texPath>Things/Pawn/Humanlike/Accessories/SupportPouches/SupportPouches</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
+      <color>(0.40,0.34,0.22)</color>
     </graphicData>
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
@@ -100,18 +96,11 @@
       <Steel>30</Steel>
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <costStuffCount>40</costStuffCount>
+    <stuffCategories Inherit="False" IsNull="True" />
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToMake>2500</WorkToMake>
       <Mass>1</Mass>
-      <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -172,6 +161,7 @@
       <texPath>Things/Pawn/Humanlike/Accessories/MedicPouches/MedicPouches</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
+      <color>(0.40,0.34,0.22)</color>
     </graphicData>
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
@@ -183,18 +173,11 @@
       <Steel>30</Steel>
       <Silver>5</Silver>
     </costList>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <costStuffCount>40</costStuffCount>
+    <stuffCategories Inherit="False" IsNull="True" />
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToMake>2500</WorkToMake>
       <Mass>1</Mass>
-      <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -255,6 +238,7 @@
       <texPath>Things/Pawn/Humanlike/Accessories/PoliceBelt/PoliceBelt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
+      <color>(0.40,0.34,0.22)</color>
     </graphicData>
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
@@ -264,19 +248,13 @@
     </recipeMaker>
     <costList>
       <Steel>50</Steel>
+      <Cloth>40</Cloth>
     </costList>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <costStuffCount>40</costStuffCount>
+    <stuffCategories Inherit="False" IsNull="True" />
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToMake>2000</WorkToMake>
       <Mass>1</Mass>
-      <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -337,6 +315,7 @@
       <texPath>Things/Pawn/Humanlike/Accessories/ScoutWebbing/ScoutWebbing</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
+      <color>(0.40,0.34,0.22)</color>
     </graphicData>
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
@@ -346,19 +325,13 @@
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
+      <Cloth>40</Cloth>
     </costList>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <costStuffCount>40</costStuffCount>
+    <stuffCategories Inherit="False" IsNull="True" />
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToMake>3500</WorkToMake>
       <Mass>1</Mass>
-      <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -424,6 +397,7 @@
       <texPath>Things/Pawn/Humanlike/Accessories/ShocktrooperWebbing/ShocktrooperWebbing</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
+      <color>(0.40,0.34,0.22)</color>
     </graphicData>
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
@@ -433,19 +407,13 @@
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
+      <Cloth>40</Cloth>
     </costList>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <costStuffCount>40</costStuffCount>
+    <stuffCategories Inherit="False" IsNull="True" />
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToMake>3500</WorkToMake>
       <Mass>1</Mass>
-      <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -512,6 +480,7 @@
       <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
+      <color>(0.40,0.34,0.22)</color>
     </graphicData>
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
@@ -521,19 +490,13 @@
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
+      <Cloth>40</Cloth>
     </costList>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <costStuffCount>40</costStuffCount>
+    <stuffCategories Inherit="False" IsNull="True" />
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToMake>6000</WorkToMake>
       <Mass>1</Mass>
-      <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -576,6 +539,9 @@
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
       <useWornGraphicMask>True</useWornGraphicMask>
+      <abilities>
+        <li>DRG_Ability_ThrowFrag</li>
+      </abilities>
     </apparel>
     <comps>
       <li Class="CompProperties_ApparelReloadable">
@@ -592,28 +558,38 @@
     <thingCategories>
       <li>DRG_Accessories</li>
     </thingCategories>
-    <verbs>
-      <li>
-        <label>throw frag grenade</label>
-        <verbClass>Verb_LaunchProjectileStatic</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <onlyManualCast>True</onlyManualCast>
-        <range>12.9</range>
-        <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
-        <noiseRadius>4</noiseRadius>
-        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-        <soundCast>ThrowGrenade</soundCast>
-        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-        <defaultProjectile>Proj_GrenadeFrag</defaultProjectile>
-        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-      </li>
-    </verbs>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
+
+  <AbilityDef>
+    <defName>DRG_Ability_ThrowFrag</defName>
+    <label>throw frag grenade</label>
+    <description>Throw a fragmentation grenade. Consumes one charge from the grenadier webbing.</description>
+    <iconPath>Things/Item/Equipment/WeaponRanged/Grenades</iconPath>
+    <gizmoClass>DeadRinger.CommandAbilityReloadable</gizmoClass>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <ai_IsIncendiary>false</ai_IsIncendiary>
+    <ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+    <hostile>true</hostile>
+    <writeCombatLog>true</writeCombatLog>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>12.9</range>
+      <warmupTime>1.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="DeadRinger.CompPropertiesAbilityEffectApparelReloadable">
+        <ProjectileDef>Proj_GrenadeFrag</ProjectileDef>
+        <ForcedMissRadius>1.9</ForcedMissRadius>
+        <SoundOnCast>ThrowGrenade</SoundOnCast>
+      </li>
+    </comps>
+  </AbilityDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
     <defName>DRG_Webbing_GrenadierEMP</defName>
@@ -623,6 +599,7 @@
       <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
+      <color>(0.40,0.34,0.22)</color>
     </graphicData>
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
@@ -632,19 +609,13 @@
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
+      <Cloth>40</Cloth>
     </costList>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <costStuffCount>40</costStuffCount>
+    <stuffCategories Inherit="False" IsNull="True" />
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToMake>6000</WorkToMake>
       <Mass>1</Mass>
-      <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -687,6 +658,9 @@
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
       <useWornGraphicMask>True</useWornGraphicMask>
+      <abilities>
+        <li>DRG_Ability_ThrowEMP</li>
+      </abilities>
     </apparel>
     <comps>
       <li Class="CompProperties_ApparelReloadable">
@@ -703,28 +677,38 @@
     <thingCategories>
       <li>DRG_Accessories</li>
     </thingCategories>
-    <verbs>
-      <li>
-        <label>throw emp grenade</label>
-        <verbClass>Verb_LaunchProjectileStatic</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <onlyManualCast>True</onlyManualCast>
-        <range>12.9</range>
-        <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
-        <noiseRadius>4</noiseRadius>
-        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-        <soundCast>ThrowGrenade</soundCast>
-        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-        <defaultProjectile>Proj_GrenadeEMP</defaultProjectile>
-        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-      </li>
-    </verbs>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
+
+  <AbilityDef>
+    <defName>DRG_Ability_ThrowEMP</defName>
+    <label>throw emp grenade</label>
+    <description>Throw an EMP grenade. Consumes one charge from the grenadier webbing.</description>
+    <iconPath>Things/Item/Equipment/WeaponRanged/EMPGrenades</iconPath>
+    <gizmoClass>DeadRinger.CommandAbilityReloadable</gizmoClass>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <ai_IsIncendiary>false</ai_IsIncendiary>
+    <ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+    <hostile>true</hostile>
+    <writeCombatLog>true</writeCombatLog>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>12.9</range>
+      <warmupTime>1.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="DeadRinger.CompPropertiesAbilityEffectApparelReloadable">
+        <ProjectileDef>Proj_GrenadeEMP</ProjectileDef>
+        <ForcedMissRadius>1.9</ForcedMissRadius>
+        <SoundOnCast>ThrowGrenade</SoundOnCast>
+      </li>
+    </comps>
+  </AbilityDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
     <defName>DRG_Webbing_GrenadierIncendiary</defName>
@@ -734,6 +718,7 @@
       <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
+      <color>(0.40,0.34,0.22)</color>
     </graphicData>
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
@@ -743,19 +728,13 @@
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
+      <Cloth>40</Cloth>
     </costList>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <costStuffCount>40</costStuffCount>
+    <stuffCategories Inherit="False" IsNull="True" />
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToMake>6000</WorkToMake>
       <Mass>1</Mass>
-      <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -798,6 +777,9 @@
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
       <useWornGraphicMask>True</useWornGraphicMask>
+      <abilities>
+        <li>DRG_Ability_ThrowIncendiary</li>
+      </abilities>
     </apparel>
     <comps>
       <li Class="CompProperties_ApparelReloadable">
@@ -814,26 +796,36 @@
     <thingCategories>
       <li>DRG_Accessories</li>
     </thingCategories>
-    <verbs>
-      <li>
-        <label>throw incendiary grenade</label>
-        <verbClass>Verb_LaunchProjectileStatic</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <onlyManualCast>True</onlyManualCast>
-        <range>12.9</range>
-        <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
-        <noiseRadius>4</noiseRadius>
-        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-        <soundCast>ThrowGrenade</soundCast>
-        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-        <defaultProjectile>Proj_GrenadeMolotov</defaultProjectile>
-        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-      </li>
-    </verbs>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
+
+  <AbilityDef>
+    <defName>DRG_Ability_ThrowIncendiary</defName>
+    <label>throw incendiary grenade</label>
+    <description>Throw an incendiary grenade. Consumes one charge from the grenadier webbing.</description>
+    <iconPath>Things/Item/Equipment/WeaponRanged/Molotov</iconPath>
+    <gizmoClass>DeadRinger.CommandAbilityReloadable</gizmoClass>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <ai_IsIncendiary>true</ai_IsIncendiary>
+    <ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+    <hostile>true</hostile>
+    <writeCombatLog>true</writeCombatLog>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>12.9</range>
+      <warmupTime>1.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="DeadRinger.CompPropertiesAbilityEffectApparelReloadable">
+        <ProjectileDef>Proj_GrenadeMolotov</ProjectileDef>
+        <ForcedMissRadius>1.9</ForcedMissRadius>
+        <SoundOnCast>ThrowGrenade</SoundOnCast>
+      </li>
+    </comps>
+  </AbilityDef>
 </Defs>

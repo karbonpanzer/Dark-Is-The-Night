@@ -69,11 +69,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>SpacerGun</li>
-			<li>Pistol</li>
-			<li>BNF_Commander</li>
-			<li>BNF_HRaider</li>
-			<li>BNF_FrontlineSupport</li>
+			<li>DRG_RingerHeavyPistol</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -168,12 +164,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>SpacerGun</li>
-			<li>Pistol</li>
-			<li>BNF_Infantry</li>
-			<li>BNF_InfantrySupport</li>
-			<li>BNF_Civilian</li>
-			<li>BNF_Commander</li>
+			<li>DRG_RingerSidearm</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -271,11 +262,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>SpacerGun</li>
-			<li>ShortShots</li>
-			<li>BNF_Raider</li>
-			<li>BNF_InfantrySupport</li>
-			<li>BNF_Commander</li>
+			<li>DRG_RingerSMG</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -371,11 +358,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>SpacerGun</li>
-			<li>Revolver</li>
-			<li>BNF_Commander</li>
-			<li>BNF_HRaider</li>
-			<li>BNF_FrontlineSupport</li>
+			<li>DRG_RingerHeavyPistol</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -474,11 +457,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>SpacerGun</li>
-			<li>AssaultRifle</li>
-			<li>BNF_Infantry</li>
-			<li>BNF_HInfantry</li>
-			<li>BNF_Commander</li>
+			<li>DRG_RingerRifle</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -574,11 +553,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>SpacerGun</li>
-			<li>AssaultRifle</li>
-			<li>BNF_Infantry</li>
-			<li>BNF_Raider</li>
-			<li>BNF_Civilian</li>
+			<li>DRG_RingerCarbine</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -675,11 +650,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>SpacerGun</li>
-			<li>PumpShotgun</li>
-			<li>BNF_HRaider</li>
-			<li>BNF_FrontlineSupport</li>
-			<li>BNF_Commander</li>
+			<li>DRG_RingerEliteShotgun</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -777,11 +748,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>SpacerGun</li>
-			<li>PumpShotgun</li>
-			<li>BNF_HRaider</li>
-			<li>BNF_HInfantry</li>
-			<li>BNF_Commander</li>
+			<li>DRG_RingerShotgun</li>
 		</weaponTags>
 		<tools>
 			<li>

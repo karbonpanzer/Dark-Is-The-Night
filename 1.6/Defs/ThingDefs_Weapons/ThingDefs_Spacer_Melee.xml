@@ -67,10 +67,8 @@
 			</li>
 		</tools>
 		<weaponTags>
-			<li>IndustrialMeleeAdvanced</li>
-			<li>BNF_HInfantry</li>
-			<li>BNF_HRaider</li>
-			<li>BNF_Commander</li>
+			<li>DRG_RingerMelee</li>
+			<li>DRG_RingerEliteMelee</li>
 		</weaponTags>
 		<thingSetMakerTags>
 			<li>RewardHighTech</li>
@@ -145,11 +143,7 @@
 			</li>
 		</tools>
 		<weaponTags>
-			<li>IndustrialMeleeAdvanced</li>
-			<li>BNF_Infantry</li>
-			<li>BNF_Ranger</li>
-			<li>BNF_Raider</li>
-			<li>BNF_Commander</li>
+			<li>DRG_RingerMelee</li>
 		</weaponTags>
 		<thingSetMakerTags>
 			<li>RewardStandardHighTech</li>

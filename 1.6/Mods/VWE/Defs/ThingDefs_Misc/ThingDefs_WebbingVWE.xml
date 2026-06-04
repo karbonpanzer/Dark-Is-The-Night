@@ -10,22 +10,17 @@
 		  <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<costStuffCount>40</costStuffCount>
+		  <color>(0.40,0.34,0.22)</color>
+    </graphicData>
 		<costList>
-		  <Steel>40</Steel>
-		</costList>
-		<stuffCategories>
-		  <li>Fabric</li>
-		  <li>Leathery</li>
-		</stuffCategories>
+      <Steel>40</Steel>
+      <Cloth>40</Cloth>
+    </costList>
+    <stuffCategories Inherit="False" IsNull="True" />
 		<statBases>
 		  <MaxHitPoints>200</MaxHitPoints>
 		  <WorkToMake>6000</WorkToMake>
 		  <Mass>1</Mass>
-		  <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-		  <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-		  <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 		  <EquipDelay>1</EquipDelay>
 		</statBases>
 		<comps>
@@ -40,26 +35,6 @@
 			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 		  </li>
 		</comps>
-		<verbs>
-		  <li>
-			<label>throw smoke grenade</label>
-			<verbClass>Verb_LaunchProjectileStatic</verbClass>
-			<hasStandardCommand>true</hasStandardCommand>
-			<onlyManualCast>True</onlyManualCast>
-			<range>12.9</range>
-			<forcedMissRadius>1.9</forcedMissRadius>
-			<warmupTime>1.5</warmupTime>
-			<noiseRadius>4</noiseRadius>
-			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-			<soundCast>ThrowGrenade</soundCast>
-			<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
-			<targetParams>
-			  <canTargetLocations>true</canTargetLocations>
-			</targetParams>
-			<defaultProjectile>VWE_Projectile_SmokeGrenade</defaultProjectile>
-			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-		  </li>
-		</verbs>
 	    <thingCategories>
 		  <li>DRG_Accessories</li>
 		</thingCategories>
@@ -87,6 +62,9 @@
 			<li>Waist</li>        
 		  </bodyPartGroups>
 		  <wornGraphicPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</wornGraphicPath>
+		  <wornGraphicData>
+		    <renderUtilityAsPack>false</renderUtilityAsPack>
+		  </wornGraphicData>
 		  <layers>
 			<li>Belt</li>
 		  </layers>
@@ -100,12 +78,44 @@
 		  <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		  <useWornGraphicMask>True</useWornGraphicMask>			  
+      <abilities>
+        <li>DRG_Ability_ThrowSmoke</li>
+      </abilities>
 		</apparel>	
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>	
 	  <uiIconScale>1.15</uiIconScale>
 	</ThingDef>
+
+  <AbilityDef>
+    <defName>DRG_Ability_ThrowSmoke</defName>
+    <label>throw smoke grenade</label>
+    <description>Throw a smoke grenade. Consumes one charge from the grenadier webbing.</description>
+    <iconPath>Things/Grenades/SmokeGrenade</iconPath>
+    <gizmoClass>DeadRinger.CommandAbilityReloadable</gizmoClass>
+    <aiCanUse>false</aiCanUse>
+    <ai_IsOffensive>false</ai_IsOffensive>
+    <ai_IsIncendiary>false</ai_IsIncendiary>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>12.9</range>
+      <warmupTime>1.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="DeadRinger.CompPropertiesAbilityEffectApparelReloadable">
+        <ProjectileDef>VWE_Projectile_SmokeGrenade</ProjectileDef>
+        <ForcedMissRadius>1.9</ForcedMissRadius>
+        <SoundOnCast>ThrowGrenade</SoundOnCast>
+      </li>
+    </comps>
+  </AbilityDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>DRG_Webbing_GrenadierFlash</defName>
@@ -118,22 +128,17 @@
 		  <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<costStuffCount>40</costStuffCount>
+		  <color>(0.40,0.34,0.22)</color>
+    </graphicData>
 		<costList>
-		  <Steel>40</Steel>
-		</costList>
-		<stuffCategories>
-		  <li>Fabric</li>
-		  <li>Leathery</li>
-		</stuffCategories>
+      <Steel>40</Steel>
+      <Cloth>40</Cloth>
+    </costList>
+    <stuffCategories Inherit="False" IsNull="True" />
 		<statBases>
 		  <MaxHitPoints>200</MaxHitPoints>
 		  <WorkToMake>6000</WorkToMake>
 		  <Mass>1</Mass>
-		  <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-		  <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-		  <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 		  <EquipDelay>1</EquipDelay>
 		</statBases>
 		<comps>
@@ -148,26 +153,6 @@
 			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 		  </li>
 		</comps>
-		<verbs>
-		  <li>
-			<label>throw flash grenade</label>
-			<verbClass>Verb_LaunchProjectileStatic</verbClass>
-			<hasStandardCommand>true</hasStandardCommand>
-			<onlyManualCast>True</onlyManualCast>
-			<range>12.9</range>
-			<forcedMissRadius>1.9</forcedMissRadius>
-			<warmupTime>1.5</warmupTime>
-			<noiseRadius>4</noiseRadius>
-			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-			<soundCast>ThrowGrenade</soundCast>
-			<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
-			<targetParams>
-			  <canTargetLocations>true</canTargetLocations>
-			</targetParams>
-			<defaultProjectile>VWE_Projectile_FlashGrenade</defaultProjectile>
-			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-		  </li>
-		</verbs>
 	    <thingCategories>
 		  <li>DRG_Accessories</li>
 		</thingCategories>
@@ -211,10 +196,43 @@
 		  <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		  <useWornGraphicMask>True</useWornGraphicMask>			  
+      <abilities>
+        <li>DRG_Ability_ThrowFlash</li>
+      </abilities>
 		</apparel>	
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>	
 	  <uiIconScale>1.15</uiIconScale>
-	</ThingDef>	
+	</ThingDef>
+
+  <AbilityDef>
+    <defName>DRG_Ability_ThrowFlash</defName>
+    <label>throw flash grenade</label>
+    <description>Throw a flash grenade to stun targets. Consumes one charge from the grenadier webbing.</description>
+    <iconPath>Things/Grenades/FlashGrenade</iconPath>
+    <gizmoClass>DeadRinger.CommandAbilityReloadable</gizmoClass>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <ai_IsIncendiary>false</ai_IsIncendiary>
+    <ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+    <hostile>true</hostile>
+    <writeCombatLog>true</writeCombatLog>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>12.9</range>
+      <warmupTime>1.5</warmupTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="DeadRinger.CompPropertiesAbilityEffectApparelReloadable">
+        <ProjectileDef>VWE_Projectile_FlashGrenade</ProjectileDef>
+        <ForcedMissRadius>1.9</ForcedMissRadius>
+        <SoundOnCast>ThrowGrenade</SoundOnCast>
+      </li>
+    </comps>
+  </AbilityDef>	
 </Defs>
