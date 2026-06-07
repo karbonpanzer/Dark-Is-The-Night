@@ -9,7 +9,6 @@ namespace DeadRinger
     {
         public DecalProfileSet ProfileSet = DecalProfileSet.Default;
 
-        //Saves decal state per-item so it persists across saves
         public override void PostExposeData()
         {
             base.PostExposeData();
@@ -23,7 +22,6 @@ namespace DeadRinger
             Scribe_Values.Look(ref ProfileSet.Armor.SymbolColor, "DeadRingerDecalArmorColor", Color.white);
         }
 
-        //Register with WorldComponent and apply PawnKindDef defaults if they exist
         public override void Notify_Equipped(Pawn pawn)
         {
             base.Notify_Equipped(pawn);
@@ -31,7 +29,6 @@ namespace DeadRinger
             TryApplyKindDefaults(pawn);
         }
 
-        //Only unregister if no other decal gear is still on the pawn
         public override void Notify_Unequipped(Pawn pawn)
         {
             base.Notify_Unequipped(pawn);
@@ -44,7 +41,6 @@ namespace DeadRinger
             WorldComponentDecalPawns.Instance?.Unregister(pawn);
         }
 
-        //Applies PawnKindDef decal defaults, render node validates textures on main thread
         private void TryApplyKindDefaults(Pawn pawn)
         {
             if (pawn.kindDef == null) return;

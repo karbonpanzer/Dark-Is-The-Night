@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>DRG_Webbing_Infantry</defName>
@@ -31,28 +31,28 @@
       <RangedCooldownFactor>-0.10</RangedCooldownFactor>
     </equippedStatOffsets>
     <apparel>
-			<drawData>
-                <dataSouth>
-                    <layer>21.5</layer>
-                </dataSouth>
-                <dataWest>
-				    <layer>21.5</layer>
-                </dataWest>
-                <dataEast>
-				    <layer>21.5</layer>
-                </dataEast>
-                <dataNorth>
-			        <layer>21.5</layer>
-                </dataNorth>
-			</drawData>	
+      <drawData>
+        <dataSouth>
+          <layer>21.5</layer>
+        </dataSouth>
+        <dataWest>
+          <layer>21.5</layer>
+        </dataWest>
+        <dataEast>
+          <layer>21.5</layer>
+        </dataEast>
+        <dataNorth>
+          <layer>21.5</layer>
+        </dataNorth>
+      </drawData>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/InfantryPouches/InfantryPouches</wornGraphicPath>
-		  <wornGraphicData>
-       		 <renderUtilityAsPack>false</renderUtilityAsPack>
-    	  </wornGraphicData>
+      <wornGraphicData>
+        <renderUtilityAsPack>false</renderUtilityAsPack>
+      </wornGraphicData>
       <layers>
         <li>Belt</li>
       </layers>
@@ -75,8 +75,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
-	<ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>DRG_Webbing_Engineer</defName>
     <label>Engineer Webbing</label>
     <description>A load-bearing harness fitted with tool loops, component pouches, and cable management clips. Used by combat engineers who carry both weapons and technical equipment into the field.</description>
@@ -108,28 +107,28 @@
       <ConstructionSpeed>0.15</ConstructionSpeed>
     </equippedStatOffsets>
     <apparel>
-			<drawData>
-                <dataSouth>
-                    <layer>21.5</layer>
-                </dataSouth>
-                <dataWest>
-				    <layer>21.5</layer>
-                </dataWest>
-                <dataEast>
-				    <layer>21.5</layer>
-                </dataEast>
-                <dataNorth>
-			        <layer>21.5</layer>
-                </dataNorth>
-			</drawData>	
+      <drawData>
+        <dataSouth>
+          <layer>21.5</layer>
+        </dataSouth>
+        <dataWest>
+          <layer>21.5</layer>
+        </dataWest>
+        <dataEast>
+          <layer>21.5</layer>
+        </dataEast>
+        <dataNorth>
+          <layer>21.5</layer>
+        </dataNorth>
+      </drawData>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/SupportPouches/SupportPouches</wornGraphicPath>
-		  <wornGraphicData>
-       		 <renderUtilityAsPack>false</renderUtilityAsPack>
-    	  </wornGraphicData>
+      <wornGraphicData>
+        <renderUtilityAsPack>false</renderUtilityAsPack>
+      </wornGraphicData>
       <layers>
         <li>Belt</li>
       </layers>
@@ -152,8 +151,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
-	<ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>DRG_Webbing_Medic</defName>
     <label>Medic Webbing</label>
     <description>A load-bearing harness configured with medical pouches, tourniquet holders, and quick-access loops for field dressings. Designed to keep essential trauma supplies within immediate reach.</description>
@@ -185,28 +183,28 @@
       <MedicalTendQuality>0.15</MedicalTendQuality>
     </equippedStatOffsets>
     <apparel>
-			<drawData>
-                <dataSouth>
-                    <layer>21.5</layer>
-                </dataSouth>
-                <dataWest>
-				    <layer>21.5</layer>
-                </dataWest>
-                <dataEast>
-				    <layer>21.5</layer>
-                </dataEast>
-                <dataNorth>
-			        <layer>21.5</layer>
-                </dataNorth>
-			</drawData>	
+      <drawData>
+        <dataSouth>
+          <layer>21.5</layer>
+        </dataSouth>
+        <dataWest>
+          <layer>21.5</layer>
+        </dataWest>
+        <dataEast>
+          <layer>21.5</layer>
+        </dataEast>
+        <dataNorth>
+          <layer>21.5</layer>
+        </dataNorth>
+      </drawData>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/MedicPouches/MedicPouches</wornGraphicPath>
-		  <wornGraphicData>
-       		 <renderUtilityAsPack>false</renderUtilityAsPack>
-    	  </wornGraphicData>
+      <wornGraphicData>
+        <renderUtilityAsPack>false</renderUtilityAsPack>
+      </wornGraphicData>
       <layers>
         <li>Belt</li>
       </layers>
@@ -229,8 +227,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
-	<ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>DRG_Webbing_Riot</defName>
     <label>Riot Webbing</label>
     <description>A heavy-duty load-bearing harness used in crowd control operations. Carries restraints, less-lethal munitions, and a baton loop alongside standard kit.</description>
@@ -262,28 +259,28 @@
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
     </equippedStatOffsets>
     <apparel>
-			<drawData>
-                <dataSouth>
-                    <layer>21.5</layer>
-                </dataSouth>
-                <dataWest>
-				    <layer>21.5</layer>
-                </dataWest>
-                <dataEast>
-				    <layer>21.5</layer>
-                </dataEast>
-                <dataNorth>
-			        <layer>21.5</layer>
-                </dataNorth>
-			</drawData>	
+      <drawData>
+        <dataSouth>
+          <layer>21.5</layer>
+        </dataSouth>
+        <dataWest>
+          <layer>21.5</layer>
+        </dataWest>
+        <dataEast>
+          <layer>21.5</layer>
+        </dataEast>
+        <dataNorth>
+          <layer>21.5</layer>
+        </dataNorth>
+      </drawData>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/PoliceBelt/PoliceBelt</wornGraphicPath>
-		  <wornGraphicData>
-       		 <renderUtilityAsPack>false</renderUtilityAsPack>
-    	  </wornGraphicData>
+      <wornGraphicData>
+        <renderUtilityAsPack>false</renderUtilityAsPack>
+      </wornGraphicData>
       <layers>
         <li>Belt</li>
       </layers>
@@ -306,8 +303,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
-	<ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>DRG_Webbing_Scout</defName>
     <label>Scout Webbing</label>
     <description>A minimal load-bearing harness designed to carry only essential equipment. Low profile and free of rattling hardware, suited for personnel who need to move quietly.</description>
@@ -338,29 +334,29 @@
       <HuntingStealth>0.25</HuntingStealth>
     </equippedStatOffsets>
     <apparel>
-			<drawData>
-                <dataSouth>
-                    <layer>21.5</layer>
-                </dataSouth>
-                <dataWest>
-				    <layer>21.5</layer>
-                </dataWest>
-                <dataEast>
-				    <layer>21.5</layer>
-                </dataEast>
-                <dataNorth>
-			        <layer>21.5</layer>
-                </dataNorth>
-			</drawData>	
+      <drawData>
+        <dataSouth>
+          <layer>21.5</layer>
+        </dataSouth>
+        <dataWest>
+          <layer>21.5</layer>
+        </dataWest>
+        <dataEast>
+          <layer>21.5</layer>
+        </dataEast>
+        <dataNorth>
+          <layer>21.5</layer>
+        </dataNorth>
+      </drawData>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/ScoutWebbing/ScoutWebbing</wornGraphicPath>
-		  <wornGraphicData>
-       		 <renderUtilityAsPack>false</renderUtilityAsPack>
-    	  </wornGraphicData>
+      <wornGraphicData>
+        <renderUtilityAsPack>false</renderUtilityAsPack>
+      </wornGraphicData>
       <layers>
         <li>Belt</li>
       </layers>
@@ -388,8 +384,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
-	<ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>DRG_Webbing_Shocktrooper</defName>
     <label>Shocktrooper Webbing</label>
     <description>A load-bearing harness configured for close-quarters assault. High-capacity magazine pouches and breach tool loops are positioned for fast access under fire.</description>
@@ -421,29 +416,29 @@
       <MeleeCooldownFactor>-0.05</MeleeCooldownFactor>
     </equippedStatOffsets>
     <apparel>
-			<drawData>
-                <dataSouth>
-                    <layer>21.5</layer>
-                </dataSouth>
-                <dataWest>
-				    <layer>21.5</layer>
-                </dataWest>
-                <dataEast>
-				    <layer>21.5</layer>
-                </dataEast>
-                <dataNorth>
-			        <layer>21.5</layer>
-                </dataNorth>
-			</drawData>	
+      <drawData>
+        <dataSouth>
+          <layer>21.5</layer>
+        </dataSouth>
+        <dataWest>
+          <layer>21.5</layer>
+        </dataWest>
+        <dataEast>
+          <layer>21.5</layer>
+        </dataEast>
+        <dataNorth>
+          <layer>21.5</layer>
+        </dataNorth>
+      </drawData>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/ShocktrooperWebbing/ShocktrooperWebbing</wornGraphicPath>
-		  <wornGraphicData>
-       		 <renderUtilityAsPack>false</renderUtilityAsPack>
-    	  </wornGraphicData>
+      <wornGraphicData>
+        <renderUtilityAsPack>false</renderUtilityAsPack>
+      </wornGraphicData>
       <layers>
         <li>Belt</li>
       </layers>
@@ -471,8 +466,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
-	<ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>DRG_Webbing_GrenadierFrag</defName>
     <label>Grenadier Webbing (Frag)</label>
     <description>A load-bearing chest harness fitted with dedicated loops and pouches for fragmentation grenades. Standard kit for grenadier infantry who need their munitions close at hand.</description>
@@ -503,29 +497,29 @@
       <PainShockThreshold>0.10</PainShockThreshold>
     </equippedStatOffsets>
     <apparel>
-			<drawData>
-                <dataSouth>
-                    <layer>21.5</layer>
-                </dataSouth>
-                <dataWest>
-				    <layer>21.5</layer>
-                </dataWest>
-                <dataEast>
-				    <layer>21.5</layer>
-                </dataEast>
-                <dataNorth>
-			        <layer>21.5</layer>
-                </dataNorth>
-			</drawData>	
+      <drawData>
+        <dataSouth>
+          <layer>21.5</layer>
+        </dataSouth>
+        <dataWest>
+          <layer>21.5</layer>
+        </dataWest>
+        <dataEast>
+          <layer>21.5</layer>
+        </dataEast>
+        <dataNorth>
+          <layer>21.5</layer>
+        </dataNorth>
+      </drawData>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</wornGraphicPath>
-		  <wornGraphicData>
-       		 <renderUtilityAsPack>false</renderUtilityAsPack>
-    	  </wornGraphicData>
+      <wornGraphicData>
+        <renderUtilityAsPack>false</renderUtilityAsPack>
+      </wornGraphicData>
       <layers>
         <li>Belt</li>
       </layers>
@@ -560,7 +554,6 @@
     </thingCategories>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
   <AbilityDef>
     <defName>DRG_Ability_ThrowFrag</defName>
     <label>throw frag grenade</label>
@@ -590,8 +583,7 @@
       </li>
     </comps>
   </AbilityDef>
-
-	<ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>DRG_Webbing_GrenadierEMP</defName>
     <label>Grenadier Webbing (EMP)</label>
     <description>A load-bearing chest harness configured for EMP grenades. Signal-dampening lining keeps the electromagnetic pulse charges from interfering with nearby electronics between engagements.</description>
@@ -622,29 +614,29 @@
       <PainShockThreshold>0.10</PainShockThreshold>
     </equippedStatOffsets>
     <apparel>
-			<drawData>
-                <dataSouth>
-                    <layer>21.5</layer>
-                </dataSouth>
-                <dataWest>
-				    <layer>21.5</layer>
-                </dataWest>
-                <dataEast>
-				    <layer>21.5</layer>
-                </dataEast>
-                <dataNorth>
-			        <layer>21.5</layer>
-                </dataNorth>
-			</drawData>	
+      <drawData>
+        <dataSouth>
+          <layer>21.5</layer>
+        </dataSouth>
+        <dataWest>
+          <layer>21.5</layer>
+        </dataWest>
+        <dataEast>
+          <layer>21.5</layer>
+        </dataEast>
+        <dataNorth>
+          <layer>21.5</layer>
+        </dataNorth>
+      </drawData>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
         <li>Waist</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</wornGraphicPath>
-		  <wornGraphicData>
-       		 <renderUtilityAsPack>false</renderUtilityAsPack>
-    	  </wornGraphicData>
+      <wornGraphicData>
+        <renderUtilityAsPack>false</renderUtilityAsPack>
+      </wornGraphicData>
       <layers>
         <li>Belt</li>
       </layers>
@@ -679,7 +671,6 @@
     </thingCategories>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
   <AbilityDef>
     <defName>DRG_Ability_ThrowEMP</defName>
     <label>throw emp grenade</label>
@@ -709,8 +700,7 @@
       </li>
     </comps>
   </AbilityDef>
-
-	<ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>DRG_Webbing_GrenadierIncendiary</defName>
     <label>Grenadier Webbing (Incendiary)</label>
     <description>A load-bearing chest harness designed to carry incendiary grenades. Glass bottles filled with flammable liquid create devastating fires on impact. Heat-resistant loops and spacing prevent sympathetic ignition.</description>
@@ -741,20 +731,20 @@
       <PainShockThreshold>0.10</PainShockThreshold>
     </equippedStatOffsets>
     <apparel>
-			<drawData>
-                <dataSouth>
-                    <layer>21.5</layer>
-                </dataSouth>
-                <dataWest>
-				    <layer>21.5</layer>
-                </dataWest>
-                <dataEast>
-				    <layer>21.5</layer>
-                </dataEast>
-                <dataNorth>
-			        <layer>21.5</layer>
-                </dataNorth>
-			</drawData>	
+      <drawData>
+        <dataSouth>
+          <layer>21.5</layer>
+        </dataSouth>
+        <dataWest>
+          <layer>21.5</layer>
+        </dataWest>
+        <dataEast>
+          <layer>21.5</layer>
+        </dataEast>
+        <dataNorth>
+          <layer>21.5</layer>
+        </dataNorth>
+      </drawData>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
@@ -798,7 +788,6 @@
     </thingCategories>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
   <AbilityDef>
     <defName>DRG_Ability_ThrowIncendiary</defName>
     <label>throw incendiary grenade</label>

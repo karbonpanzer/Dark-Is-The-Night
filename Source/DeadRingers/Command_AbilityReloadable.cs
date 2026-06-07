@@ -4,7 +4,6 @@ using Verse;
 
 namespace DeadRinger
 {
-    // Ability gizmo that paints the linked apparel's charge count in the top-right corner of the button, the way the old verb gizmo did.
     public sealed class CommandAbilityReloadable(Ability ability, Pawn pawn)
         : Command_Ability(ability, pawn)
     {
@@ -22,7 +21,6 @@ namespace DeadRinger
             }
         }
 
-        // Finds the worn apparel that grants this ability and returns its reloadable comp, mirroring how the ability effect comp links them.
         private CompApparelReloadable? FindReloadable()
         {
             if (Pawn?.apparel == null)

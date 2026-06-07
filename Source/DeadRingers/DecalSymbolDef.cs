@@ -6,8 +6,6 @@ namespace DeadRinger
     public sealed class DecalSymbol : Def
     {
         public string Path = "";
-
-        //Slot restrictions, both false means available everywhere
         public bool armorOnly = false;
         public bool helmetOnly = false;
     }

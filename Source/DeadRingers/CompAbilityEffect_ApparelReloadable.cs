@@ -5,7 +5,6 @@ using Verse.Sound;
 
 namespace DeadRinger
 {
-    // Ability effect that draws charges from the CompApparelReloadable on the apparel granting this ability, then launches the grenade projectile.
     public sealed class CompAbilityEffectApparelReloadable : CompAbilityEffect
     {
         private new CompPropertiesAbilityEffectApparelReloadable Props =>
@@ -14,7 +13,6 @@ namespace DeadRinger
         private CompApparelReloadable? _cachedReloadable;
         private Apparel? _cachedApparel;
 
-        // Resolves (and caches) the worn apparel that grants this ability and its reloadable comp.
         private CompApparelReloadable? Reloadable
         {
             get
@@ -59,7 +57,6 @@ namespace DeadRinger
             ResolveLinkedApparel();
         }
 
-        // Consumes one charge, then launches the projectile from the caster.
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             CompApparelReloadable? reloadable = Reloadable;
@@ -80,7 +77,6 @@ namespace DeadRinger
             base.Apply(target, dest);
         }
 
-        // Spawns and launches the grenade projectile, replicating the landing scatter the old grenade verb produced via forcedMissRadius.
         private void LaunchProjectile(LocalTargetInfo target)
         {
             Pawn caster = parent.pawn;
@@ -172,15 +168,9 @@ namespace DeadRinger
 
     public sealed class CompPropertiesAbilityEffectApparelReloadable : CompProperties_AbilityEffect
     {
-        // The grenade projectile this ability throws.
         public ThingDef? ProjectileDef;
-
-        // Landing scatter, equivalent to the old verb's forcedMissRadius (grenades used 1.9).
         public float ForcedMissRadius;
-
-        // Throw sound, equivalent to the old verb's soundCast (e.g. ThrowGrenade).
         public SoundDef? SoundOnCast;
-
         public bool ShowWarningIfMissing = true;
 
         public CompPropertiesAbilityEffectApparelReloadable()

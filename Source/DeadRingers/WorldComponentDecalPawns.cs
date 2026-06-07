@@ -13,10 +13,8 @@ namespace DeadRinger
 
         private static readonly List<Pawn> TMPToRemove = new List<Pawn>();
 
-        //Tracks which pawns have decal gear, persists across saves
         public WorldComponentDecalPawns(World world) : base(world) => Instance = this;
 
-        //Vanilla WorldPawns pattern — strip nulls and corrupted defs on load
         public override void ExposeData()
         {
             base.ExposeData();
@@ -38,7 +36,6 @@ namespace DeadRinger
             }
         }
 
-        //Purge dead or destroyed pawns so the set doesn't grow forever
         public override void WorldComponentTick()
         {
             base.WorldComponentTick();

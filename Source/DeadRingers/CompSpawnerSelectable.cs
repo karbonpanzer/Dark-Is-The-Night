@@ -8,8 +8,6 @@ namespace FoodSynthesizer
     public class CompSpawnerSelectable : ThingComp
     {
         private int ticksUntilSpawn;
-
-        //Tracking which option the player picked from the gizmo
         private int selectedIndex;
 
         public CompProperties_SpawnerSelectable Props
@@ -18,7 +16,6 @@ namespace FoodSynthesizer
         private ThingDefCountClass CurrentOption
             => Props.spawnOptions[selectedIndex];
 
-        //Carryover from CompSpawner, same init/tick/spawn logic
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
@@ -111,7 +108,6 @@ namespace FoodSynthesizer
             return true;
         }
 
-        //Gizmo button when clicked opens a float menu
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             ThingDefCountClass option = CurrentOption;
@@ -129,7 +125,6 @@ namespace FoodSynthesizer
                     List<FloatMenuOption> menuOptions = new List<FloatMenuOption>();
                     for (int i = 0; i < Props.spawnOptions.Count; i++)
                     {
-                        //I capture this or every option points to the last index
                         int localIndex = i;
                         ThingDefCountClass opt = Props.spawnOptions[i];
                         string label;
@@ -155,7 +150,6 @@ namespace FoodSynthesizer
             };
         }
 
-        //Fall back to the pink error square if the texture is missing, hard to miss
         private static Texture2D GetOptionIcon(ThingDefCountClass option)
         {
             if (option.thingDef.uiIcon != null)
@@ -165,7 +159,6 @@ namespace FoodSynthesizer
             return BaseContent.BadTex;
         }
 
-        //What's being made and the countdown, carryover pattern but I swap in the selected option
         public override string CompInspectStringExtra()
         {
             ThingDefCountClass option = CurrentOption;
@@ -182,7 +175,6 @@ namespace FoodSynthesizer
             return text;
         }
 
-        //Carryover save/load pattern, I just add selectedIndex on top of the timer
         public override void PostExposeData()
         {
             base.PostExposeData();

@@ -51,7 +51,6 @@ namespace DeadRinger
             _profileSet = DecalUtil.ReadProfileSetFrom(_pawn);
             _original = _profileSet;
 
-            //Alpha sort filtered by current tab slot
             _symbols = new List<DecalSymbol>(DecalUtil.SymbolsForSlot(_curTab));
             _symbols.Sort((a, b) => string.Compare(a.LabelCap.ToString(), b.LabelCap.ToString(), StringComparison.Ordinal));
 
@@ -91,7 +90,6 @@ namespace DeadRinger
             DrawBottomButtons(inRect);
         }
 
-        //Just the pawn portrait, nothing else
         private void DrawPawn(Rect rect)
         {
             Widgets.BeginGroup(rect);
@@ -110,7 +108,6 @@ namespace DeadRinger
             Widgets.EndGroup();
         }
 
-        //Tabs with enable/random control bar, symbol grid, and color palette
         private void DrawTabs(Rect rect)
         {
             var tabs = new List<TabRecord>
@@ -125,7 +122,6 @@ namespace DeadRinger
 
             bool isArmor = (_curTab == DecalSlot.Armor);
 
-            //Enable + Random bar at the top of the tab
             float controlBarH = 28f;
             Rect controlBar = new Rect(rect.x, rect.y, rect.width, controlBarH);
 
@@ -160,7 +156,6 @@ namespace DeadRinger
             DrawColors(new Rect(rect.x, rect.yMax + 10f, rect.width, _colorsHeight));
         }
 
-        //Rebuilds the symbol list when switching tabs so slot restrictions apply
         private void SetTab(DecalSlot slot)
         {
             if (_curTab == slot) return;
@@ -171,7 +166,6 @@ namespace DeadRinger
             _selectedArmorIndex = FindSymbolIndex(_profileSet.Armor.SymbolPath);
         }
 
-        //Flat symbol grid, alpha sorted
         private void DrawSymbolGrid(Rect rect, ref Vector2 scrollPosition)
         {
             bool isArmor = (_curTab == DecalSlot.Armor);
@@ -247,7 +241,6 @@ namespace DeadRinger
             Widgets.EndScrollView();
         }
 
-        //Color palette with ideo/fav/random shortcut buttons
         private void DrawColors(Rect rect)
         {
             bool isArmor = (_curTab == DecalSlot.Armor);
@@ -264,7 +257,6 @@ namespace DeadRinger
             float spacerGap = 12f;
             curY += spacerGap;
 
-            //Buttons sized dynamically based on how many are active
             float totalGap = 12f;
             bool showIdeo = ModsConfig.IdeologyActive && _pawn.Ideo != null && !Find.IdeoManager.classicMode;
             bool showFav = TryGetFavoriteColor(_pawn, out Color favColor);
@@ -317,7 +309,6 @@ namespace DeadRinger
             _colorsHeight += (Text.LineHeight * 2f) + spacerGap;
         }
 
-        //Cancel left, Reset center, Accept right
         private void DrawBottomButtons(Rect inRect)
         {
             if (Widgets.ButtonText(new Rect(inRect.x, inRect.yMax - ButSize.y, ButSize.x, ButSize.y), "DeadRinger_Decals_Cancel".Translate()))
@@ -368,7 +359,7 @@ namespace DeadRinger
             _profileSet.Armor.SymbolPath = _symbols[_selectedArmorIndex].Path;
         }
 
-        //Apparel color palette with HSV sort so it doesn't look like ass
+        //HSV sort so it doesn't look like ass
         private List<Color> AllColors()
         {
             if (_allColors != null) return _allColors;

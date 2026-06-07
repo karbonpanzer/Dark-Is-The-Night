@@ -28,7 +28,6 @@ namespace DeadRinger
             if (comp != null) comp.ProfileSet = profileSet;
         }
 
-        //Live preview so you can see changes without closing the damn dialog
         public static void SetLiveEditFull(Pawn pawn, DecalProfileSet profileSet)
         {
             WriteProfileSetTo(pawn, profileSet);
@@ -42,7 +41,6 @@ namespace DeadRinger
             pawn.Drawer.renderer.SetAllGraphicsDirty();
         }
 
-        //Tries WorldComponent cache first, falls back to brute force apparel scan if that's fucked
         private static CompEditDecalMarker? GetMarker(Pawn pawn)
         {
             if (pawn?.apparel == null) return null;
@@ -70,7 +68,6 @@ namespace DeadRinger
 
         public static List<DecalSymbol> AllSymbols() => DefDatabase<DecalSymbol>.AllDefsListForReading;
 
-        //Cached per-slot symbol lists, built once and reused
         public static List<DecalSymbol> SymbolsForSlot(DecalSlot slot)
         {
             if (slot == DecalSlot.Armor)

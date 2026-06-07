@@ -10,7 +10,6 @@ namespace DeadRinger
     [StaticConstructorOnStartup]
     public static class DecalBootstrap
     {
-        //Harmony bootstrap, mainly here so I can tell if this shit actually loaded
         static DecalBootstrap()
         {
             try

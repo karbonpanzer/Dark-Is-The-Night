@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>DRG_MarauderArmor</defName>
@@ -28,19 +28,18 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>70</Steel>
-      <Plasteel>40</Plasteel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <Steel>60</Steel>
+      <Plasteel>35</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <statBases>
-      <WorkToMake>60000</WorkToMake>
-      <MarketValue>550</MarketValue>
+      <WorkToMake>48000</WorkToMake>
       <MaxHitPoints>300</MaxHitPoints>
       <Mass>8</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>0.88</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.46</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
       <Insulation_Cold>34</Insulation_Cold>
       <Insulation_Heat>10</Insulation_Heat>
       <EquipDelay>6</EquipDelay>
@@ -87,7 +86,6 @@
             <defaultData>
               <layer>72</layer>
               <offset>(0,0,-0.155)</offset>
-              
             </defaultData>
             <dataNorth>
               <layer>92</layer>
@@ -116,8 +114,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
-	<ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="ArmorMachineableBase">
     <defName>DRG_MarauderHelmet</defName>
     <label>Marauder Helmet</label>
     <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Ringer combat personnel.</description>
@@ -145,18 +142,18 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>50</Steel>
-      <Plasteel>20</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <Steel>30</Steel>
+      <Plasteel>15</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <statBases>
-      <WorkToMake>15750</WorkToMake>
+      <WorkToMake>18000</WorkToMake>
       <MaxHitPoints>120</MaxHitPoints>
-      <Mass>1</Mass>
+      <Mass>1.2</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.40</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.88</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.44</ArmorRating_Heat>
       <Insulation_Cold>4</Insulation_Cold>
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>2</EquipDelay>
@@ -194,7 +191,6 @@
             <defaultData>
               <layer>75</layer>
               <offset>(0,0,0.17)</offset>
-              
             </defaultData>
           </drawData>
         </li>
@@ -213,8 +209,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
-	<ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="ArmorMachineableBase">
     <defName>DRG_MarauderHelmet_Insulated</defName>
     <label>Marauder Helmet (Insulated)</label>
     <description>A Marauder helmet with thermal lining added to the interior. Provides the same ballistic protection as the standard configuration in climates that would otherwise affect the wearer's effectiveness.</description>
@@ -242,18 +237,19 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Cloth>80</Cloth>
-      <Plasteel>20</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <Steel>20</Steel>
+      <Plasteel>15</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Cloth>40</Cloth>
     </costList>
     <statBases>
-      <WorkToMake>15750</WorkToMake>
+      <WorkToMake>20000</WorkToMake>
       <MaxHitPoints>100</MaxHitPoints>
-      <Mass>1</Mass>
+      <Mass>1.4</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.40</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.88</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.44</ArmorRating_Heat>
       <Insulation_Cold>12</Insulation_Cold>
       <Insulation_Heat>0.2</Insulation_Heat>
       <EquipDelay>2</EquipDelay>
@@ -291,7 +287,6 @@
             <defaultData>
               <layer>75</layer>
               <offset>(0,0,0.17)</offset>
-              
             </defaultData>
           </drawData>
         </li>
@@ -313,8 +308,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
-	<ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="ArmorMachineableBase">
     <defName>DRG_MarauderHelmet_Shield</defName>
     <label>Marauder Helmet (Reinforced)</label>
     <description>A Marauder helmet with an additional ballistic plate bonded to the front. Heavier than the standard configuration, but more resistant to direct frontal impacts.</description>
@@ -342,19 +336,18 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Cloth>60</Cloth>
       <Steel>30</Steel>
-      <Plasteel>30</Plasteel>
+      <Plasteel>25</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <statBases>
-      <WorkToMake>8000</WorkToMake>
+      <WorkToMake>22000</WorkToMake>
       <MaxHitPoints>170</MaxHitPoints>
       <Mass>1.7</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.42</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.46</ArmorRating_Heat>
       <Insulation_Cold>12</Insulation_Cold>
       <Insulation_Heat>0.2</Insulation_Heat>
       <EquipDelay>2</EquipDelay>
@@ -396,7 +389,6 @@
             <defaultData>
               <layer>75</layer>
               <offset>(0,0,0.17)</offset>
-              
             </defaultData>
           </drawData>
         </li>
@@ -418,8 +410,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
-	<ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="ArmorMachineableBase">
     <defName>DRG_MarauderHelmet_Gasmask</defName>
     <label>Marauder Helmet (Gasmask)</label>
     <description>A Marauder helmet fitted with an integrated filtration mask. Protects the skull and seals the airway against chemical agents and toxic particulates.</description>
@@ -447,19 +438,19 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Cloth>10</Cloth>
       <Steel>25</Steel>
-      <Plasteel>20</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <Plasteel>15</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Cloth>10</Cloth>
     </costList>
     <statBases>
-      <WorkToMake>15750</WorkToMake>
+      <WorkToMake>18000</WorkToMake>
       <MaxHitPoints>120</MaxHitPoints>
       <Mass>1</Mass>
       <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.34</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.32</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.38</ArmorRating_Heat>
       <Insulation_Cold>4</Insulation_Cold>
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>2</EquipDelay>
@@ -498,7 +489,6 @@
             <defaultData>
               <layer>75</layer>
               <offset>(0,0,0.17)</offset>
-              
             </defaultData>
           </drawData>
         </li>
