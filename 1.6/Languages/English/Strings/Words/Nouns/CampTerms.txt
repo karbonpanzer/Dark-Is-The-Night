@@ -1,0 +1,10 @@
+Camp
+Hideout
+Holdout
+Den
+Roost
+Stand
+Hold
+Lair
+Pit
+Nest

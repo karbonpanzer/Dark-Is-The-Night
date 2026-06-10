@@ -912,6 +912,7 @@
             <li>DRG_RingerRifle</li>
             <li>DRG_RingerEliteShotgun</li>
             <li>DRG_RingerMarksmanGun</li>
+            <li>DRG_RingerDMR</li>              
         </weaponTags>
         <modExtensions>
             <li Class="DeadRinger.DecalKindExtension">
@@ -965,6 +966,7 @@
         <weaponTags Inherit="False">
             <li>DRG_RingerCarbine</li>
             <li>DRG_RingerHeavyPistol</li>
+            <li>DRG_RingerDMR</li>            
         </weaponTags>
         <weaponMoney>1950~2550</weaponMoney>
         <apparelMoney>1100~1600</apparelMoney>

@@ -10,93 +10,17 @@
       <rulesStrings>
         <li>r_name(p=6)->[political_adjective_expedition] [political_union_cap] of [nearnameinitial]</li>
         <li>r_name(p=4)->[political_adjective] [political_union_cap] of [nearnameinitial]</li>
-
         <li>r_name(p=2)->[nearnameinitial] [political_union_cap]</li>
-
         <li>political_union_standalone->[political_union_cap]</li>
-        <li>political_union_standalone->Compact</li>
-        <li>political_union_standalone->Concord</li>
-        <li>political_union_standalone->Accord</li>
-        <li>political_union_standalone->Charter</li>
-        <li>political_union_standalone->Covenant</li>
-        <li>political_union_standalone->Pact</li>
         <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
+        <li>nearnameinitial(p=2)->[expedition_prefix] [PlaceOutlander]</li>
         <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
       </rulesStrings>
       <rulesFiles>
         <li>political_union_cap->Words/Nouns/PoliticalUnions_ExpeditionCap</li>
         <li>political_adjective_expedition->Words/Adjectives/Political_Adjective_Expedition</li>
         <li>political_adjective->Words/Adjectives/PoliticalUnions</li>
-      </rulesFiles>
-    </rulePack>
-  </RulePackDef>
-
-  <RulePackDef>
-    <defName>DRG_Settlement_Civil</defName>
-    <rulePack>
-      <rulesStrings>
-        <li>r_name(p=12)->[townname_wordgen]</li>
-        <li>r_name(p=6)->[townname_fixed]</li>
-        <li>r_name(p=4)->[townname_combo]</li>
-        <li>r_name->[townname_near]</li>
-
-        <!-- Topical noun (vanilla resolves to Vegetable/Game/BodyPart) -->
-        <li>topicalnoun->[Vegetable]</li>
-        <li>topicalnoun->[Game]</li>
-        <li>topicalnoun->[BodyPart]</li>
-
-        <!-- Combo names (vanilla-exact) -->
-        <li>townname_combo->[topicalnoun] [TerrainFeature]</li>
-        <li>townname_combo->[topicalnoun] [Community]</li>
-        <li>townname_combo->[topicalnoun]'s [TerrainFeature]</li>
-        <li>townname_combo->[topicalnoun]'s [Community]</li>
-        <li>townname_combo(p=2)->[concept_positive]'s [TerrainFeature]</li>
-        <li>townname_combo(p=2)->[concept_positive] [TerrainFeature]</li>
-        <li>townname_combo(p=2)->[concept_positive] [Community]</li>
-        <li>townname_combo(p=3)->[Character]'s [TerrainFeature]</li>
-        <li>townname_combo(p=3)->[Character]'s [Community]</li>
-
-        <!-- Near-feature names (vanilla-exact) -->
-        <li>townname_near->[nearnameinitial]-at-the-[TerrainFeature]</li>
-        <li>townname_near->[nearnameinitial]-by-the-[TerrainFeature]</li>
-        <li>townname_near->[nearnameinitial]-on-the-[TerrainFeature]</li>
-        <li>nearnameinitial->[townname_wordgen]</li>
-        <li>nearnameinitial->[Community]</li>
-
-        <!-- Word-generated names (vanilla-exact) -->
-        <li>townname_wordgen(p=2)->[SylE][SylE]</li>
-        <li>townname_wordgen(p=2)->[SylE][SylE][SylE]</li>
-        <li>townname_wordgen(p=2)->[SylE][townend]</li>
-        <li>townname_wordgen(p=2)->[SylE][SylE][townend]</li>
-        <li>townname_wordgen->[TerrainFeature][townend]</li>
-        <li>townname_wordgen->[topicalnoun][townend]</li>
-        <li>townend->ville</li>
-        <li>townend->town</li>
-        <li>townend->hurst</li>
-        <li>townend->bourne</li>
-        <li>townend->brad</li>
-        <li>townend->dale</li>
-        <li>townend->hope</li>
-        <li>townend->ing</li>
-        <li>townend->ness</li>
-        <li>townend->mere</li>
-        <li>townend->shaw</li>
-        <li>townend->wick</li>
-        <li>townend->ton</li>
-        <li>townend->ston</li>
-        <li>townend->os</li>
-        <li>townend->den</li>
-        <li>townend->tas</li>
-        <li>townend->wood</li>
-        <li>townend->land</li>
-        <li>townend->worth</li>
-        <li>townend->roon</li>
-        <li>townend->ron</li>
-        <li>townend->well</li>
-      </rulesStrings>
-      <rulesFiles>
-        <li>townname_fixed->Names/ExpeditionTowns</li>
-        <li>concept_positive->Words/Nouns/Concepts_Positive</li>
+        <li>expedition_prefix->Words/Adjectives/Expedition_Prefix</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>
@@ -108,21 +32,19 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <!-- Bare pirate bands (vanilla: The [AnimalBadass]s) -->
-        <li>r_name->The [pirate_band]</li>
-
-        <!-- Color/adjective + unit (vanilla: The [ColorBadass] [Weapon]s) -->
+        <li>r_name(p=4)->The [pirate_adjective] [military_unit]</li>
+        <li>r_name(p=4)->[pirate_leader]'s [military_unit]</li>
+        <li>r_name(p=3)->[pirate_leader]'s Free Company</li>
+        <li>r_name(p=3)->The [pirate_adjective] Free Company</li>
+        <li>r_name(p=2)->[pirate_leader]'s Free [military_unit_free]</li>
+        <li>r_name(p=3)->[pirate_leader]'s [gang_noun]</li>
+        <li>r_name(p=2)->The [pirate_leader] [gang_noun]</li>
+        <li>r_name(p=2)->The [concept_badass] [gang_noun]</li>
+        <li>r_name(p=2)->The [pirate_adjective] [gang_noun]</li>
+        <li>r_name(p=2)->[pirate_leader]'s [pirate_band]</li>
         <li>r_name(p=2)->The [pirate_adjective] [pirate_band]</li>
-        <li>r_name(p=2)->The [pirate_adjective] [military_unit]</li>
-
-        <!-- Bands of place (vanilla: The [X]s of [ConceptBadass]) -->
         <li>r_name->The [pirate_band] of [nearnameinitial]</li>
-
-        <!-- Leader + bands (vanilla: [NamePerson]'s [X]s) -->
-        <li>r_name(p=3)->[pirate_leader]'s [pirate_band]</li>
-        <li>r_name(p=2)->[pirate_leader]'s [military_unit]</li>
-
-        <!-- Placename sources (for "of X") -->
+        <li>r_name->The [pirate_adjective] [military_unit] of [nearnameinitial]</li>
         <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
         <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
       </rulesStrings>
@@ -130,59 +52,10 @@
         <li>pirate_leader->Names/PirateLeaderNames</li>
         <li>pirate_band->Words/Nouns/PirateBandNouns</li>
         <li>military_unit->Words/Nouns/MilitaryUnits</li>
+        <li>military_unit_free->Words/Nouns/MilitaryUnits_Free</li>
         <li>pirate_adjective->Words/Adjectives/PirateAdjectives</li>
-      </rulesFiles>
-    </rulePack>
-  </RulePackDef>
-
-  <RulePackDef>
-    <defName>DRG_Settlement_Rough</defName>
-    <rulePack>
-      <rulesStrings>
-        <li>r_name(p=4)->[townname_combo]</li>
-        <li>r_name->[townname_wordgen]</li>
-
-        <!-- Combo names (vanilla pirate structure with our sources) -->
-        <li>townname_combo->[pirate_leader]'s [geography]</li>
-        <li>townname_combo->[concept_badass] [geography]</li>
-        <li>townname_combo->[concept_badass]'s [geography]</li>
-        <li>townname_combo->[pirate_adjective] [geography]</li>
-        <li>geography(p=2)->[TerrainFeature]</li>
-        <li>geography->[Community]</li>
-
-        <!-- Word-generated names (vanilla-exact structure) -->
-        <li>townname_wordgen(p=2)->[SylE][SylE]</li>
-        <li>townname_wordgen(p=2)->[SylE][SylE][SylE]</li>
-        <li>townname_wordgen(p=2)->[SylE][townendevil]</li>
-        <li>townname_wordgen(p=2)->[SylE][SylE][townendevil]</li>
-
-        <!-- Townendevil (vanilla-exact list) -->
-        <li>townendevil->vast</li>
-        <li>townendevil->varg</li>
-        <li>townendevil->vix</li>
-        <li>townendevil->tor</li>
-        <li>townendevil->tear</li>
-        <li>townendevil->cut</li>
-        <li>townendevil->lop</li>
-        <li>townendevil->oze</li>
-        <li>townendevil->ozzle</li>
-        <li>townendevil->latch</li>
-        <li>townendevil->lock</li>
-        <li>townendevil->burn</li>
-        <li>townendevil->sear</li>
-        <li>townendevil->shank</li>
-        <li>townendevil->hurt</li>
-        <li>townendevil->vash</li>
-        <li>townendevil->warg</li>
-        <li>townendevil->wug</li>
-        <li>townendevil->thot</li>
-        <li>townendevil->thard</li>
-        <li>townendevil->thad</li>
-      </rulesStrings>
-      <rulesFiles>
-        <li>pirate_leader->Names/PirateLeaderNames</li>
         <li>concept_badass->Words/Nouns/Concepts_Badass</li>
-        <li>pirate_adjective->Words/Adjectives/PirateAdjectives</li>
+        <li>gang_noun->Words/Nouns/GangNouns</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>

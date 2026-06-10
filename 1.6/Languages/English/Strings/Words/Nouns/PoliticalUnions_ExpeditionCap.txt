@@ -1,6 +1,3 @@
-//Capitalized versions of political union nouns
-//For use as government/state nouns in "[Adjective] X of [Place]" pattern
-//e.g., "Unified Republic of Ferrun", "Reformed Commonwealth of Ironhold"
 Union
 Confederacy
 Confederation
@@ -21,3 +18,9 @@ State
 Realm
 Territories
 Prefecture
+Compact
+Concord
+Accord
+Charter
+Covenant
+Pact

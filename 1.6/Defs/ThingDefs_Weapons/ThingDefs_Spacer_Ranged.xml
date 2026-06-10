@@ -580,6 +580,204 @@
 		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
 
+	<ThingDef ParentName="BaseBullet">
+		<defName>DRG_Bullet_CombatDMR</defName>
+		<label>combat DMR round</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<drawSize>0.6</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.44</armorPenetrationBase>
+			<speed>92</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_CombatDMR">
+		<defName>DRG_CombatDMR</defName>
+		<label>Combat DMR</label>
+		<description>A precision variant of the combat rifle fitted with a longer barrel and magnified optic. Fires accurate two-round bursts at extended range, trading rate of fire for per-shot damage.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Equipment/WeaponRanged/combatdmr</texPath>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>DRG_AdvancedWeaponry</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>DRG_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>55</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+			<Plasteel>22</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>48000</WorkToMake>
+			<Mass>4.5</Mass>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.55</AccuracyShort>
+			<AccuracyMedium>0.78</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>DRG_Bullet_CombatDMR</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
+				<range>42.0</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>Shot_SniperRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>DRG_RingerDMR</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>RewardStandardHighTech</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
+	</ThingDef>	
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>DRG_Bullet_ServiceLMG</defName>
+		<label>combat LMG round</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<drawSize>0.6</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationBase>0.30</armorPenetrationBase>
+			<speed>78</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_ServiceLMG">
+		<defName>DRG_ServiceLMG</defName>
+		<label>Combat LMG</label>
+		<description>A modified form of the combat rifle used as a support weapon. Fitted with a longer barrel and a bipod, it also features a higher rate of fire, making it more effective as a light machinegun.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Equipment/WeaponRanged/combatlmg</texPath>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>DRG_AdvancedWeaponry</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>DRG_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Plasteel>18</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>48000</WorkToMake>
+			<Mass>6.5</Mass>
+			<MarketValue>2800</MarketValue>
+			<AccuracyTouch>0.38</AccuracyTouch>
+			<AccuracyShort>0.52</AccuracyShort>
+			<AccuracyMedium>0.42</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>DRG_Bullet_ServiceLMG</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>30.0</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>DRG_RingerHeavyGun</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>RewardStandardHighTech</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<uiIconScale>1.15</uiIconScale>
+	</ThingDef>	
+
 	<!-- Shotguns -->
 
 	<ThingDef ParentName="BaseBullet">

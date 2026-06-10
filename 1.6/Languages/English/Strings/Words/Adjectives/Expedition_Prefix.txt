@@ -1,11 +1,3 @@
-﻿// NEW
 New
-
-// OLD
 Old
-
-// CONTINUITY / HOMAGE
 Fort
-Port
-Mount
-Cape

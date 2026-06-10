@@ -1,25 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
 
-	<!-- Refugees - Player Faction-->
-
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>DRG_Player</defName>
-		<label>Ringer settlers</label>
-		<description>A colony of citizens from a dead orbital ring station.</description>
+		<label>Outcast refugees</label>
+		<description>A colony of war refugees displaced from a fallen industrial world that the Empire could no longer defend. They carry what Imperial-pattern gear they could evacuate with, and the will to build something stable on the rim.</description>
 		<colorSpectrum>
             <li>(0, 0.737, 0.847)</li>
 		</colorSpectrum>
 		<isPlayer>true</isPlayer>
 		<basicMemberKind>DRG_Player</basicMemberKind>
-		<pawnSingular>ringer</pawnSingular>
-		<pawnsPlural>ringers</pawnsPlural>
+		<pawnSingular>outcast</pawnSingular>
+		<pawnsPlural>outcasts</pawnsPlural>
 		<techLevel>Spacer</techLevel>
 		<allowedCultures>
 			<li>Astropolitan</li>
 		</allowedCultures>
 		<factionNameMaker>DRG_Faction_Civil</factionNameMaker>
-		<settlementNameMaker>DRG_Settlement_Civil</settlementNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<backstoryFilters>
 		  <li>
 			<categories>
@@ -42,14 +40,12 @@
 		</startingTechprintsResearchTags>
 	</FactionDef>
 
-	<!-- Colonists - Civil Faction-->
-
 	<FactionDef ParentName="FactionBase">
 		<defName>DRG_Civil</defName>
-		<label>Ringer settlers</label>
-		<description>Refugees of a dead orbital ring from a nearby system. After their home fell many found themselves as refugees settling on the Rimworlds around them.\n\nThough they lack many pieces of technology from their former home. They still retain their technology, composite armor, advanced weaponry, and secretive technology not availiable  to outsiders. A strong spacer faction using technology which favors collective over the individual, they are not powerful but have numbers on their side.\n\nStrong, resilient, and charitable, they make for great allies and worse enemies.</description>
-		<pawnSingular>ringer</pawnSingular>
-		<pawnsPlural>ringers</pawnsPlural>
+		<label>Outcast refugees</label>
+		<description>War refugees from a fallen industrial world. When their homeworld was overrun by the mechanoids and the Empire's reinforcements never came, the survivors scattered across the rimworlds in search of stability they no longer had.\n\nThey carry Imperial-pattern weapons, composite armor, and the discipline of subjects who once belonged to something larger. With their homeworld gone, they cannot replace what breaks or replenish what runs out. Their settlements are provisional by necessity and permanent by hope: charters and compacts drawn up around campfires, founding documents signed by people who remember being citizens.\n\nResilient, charitable, and fiercely cooperative, they make excellent allies and stubborn enemies.</description>
+		<pawnSingular>outcast</pawnSingular>
+		<pawnsPlural>outcasts</pawnsPlural>
 		<listOrderPriority>13</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -60,7 +56,7 @@
 		<leaderTitle>governor</leaderTitle>
 		<factionIconPath>UI/FactionIcons/Dominion</factionIconPath>
 		<factionNameMaker>DRG_Faction_Civil</factionNameMaker>
-		<settlementNameMaker>DRG_Settlement_Civil</settlementNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<colorSpectrum>
 			<li>(0.80, 0.80, 0.95)</li>
 		</colorSpectrum>
@@ -70,9 +66,10 @@
 			<li>Astropolitan</li>
 		</allowedCultures>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>			
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
 		</requiredMemes>
 		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
@@ -119,7 +116,6 @@
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
 		<pawnGroupMakers>
-			<!-- Combat Group 1: Mixed forces with ranged and melee -->
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>45</commonality>
@@ -143,8 +139,6 @@
 					<DRG_Civil_Officer>3</DRG_Civil_Officer>
 				</options>
 			</li>
-
-			<!-- Combat Group 2: Standard raid composition -->
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>35</commonality>
@@ -159,8 +153,6 @@
 					<DRG_Civil_Officer>3</DRG_Civil_Officer>
 				</options>
 			</li>
-
-			<!-- Peaceful Group -->
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<commonality>20</commonality>
@@ -179,8 +171,6 @@
 					<DRG_Civil_Officer>1</DRG_Civil_Officer>
 				</options>
 			</li>
-
-			<!-- Trader Group -->
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
@@ -202,8 +192,6 @@
 					<DRG_Civil_Officer>1</DRG_Civil_Officer>
 				</guards>
 			</li>
-
-			<!-- Settlement Group -->
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
@@ -247,21 +235,19 @@
 				<options>
 					<Farmer>1</Farmer>
 				</options>
-			</li>			
+			</li>
 		</pawnGroupMakers>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>25</configurationListOrderPriority>
-	</FactionDef>	
-
-	<!-- Freelancers - Hostile Faction-->
+	</FactionDef>
 
 	<FactionDef ParentName="FactionBase">
 		<defName>DRG_Rough</defName>
-		<label>Ringer outcasts</label>
-		<description>After the collapse of their home, many of the predatorory factions of the orbital station banded together as pirates.\n\nServing no one but themselves, they raided worlds, selling their services to the highest bidders. Their technology despite their riches, has not advanced, still using their technology they arrived with.\n\nWithout honor or consciousness, they prey on all those they are near.</description>
-		<pawnSingular>outcast</pawnSingular>
-		<pawnsPlural>outcasts</pawnsPlural>
+		<label>Free Companies</label>
+		<description>When their homeworld fell, not everyone wanted to start over. The harder elements of the displaced population broke from the civilian diaspora and kept moving.\n\nThey operate as free companies and bushwhacker bands, organized along the military lines they served under, selling their services where they can and taking what they want where they can't. They carry the same Imperial-pattern weapons as their settled cousins, but where the settlers see a finite supply to conserve, the Free Companies see a reason to keep raiding for spare parts and replacement gear.\n\nThey are not lawless chaos. They are something more dangerous: an army that lost its war and never demobilized.</description>
+		<pawnSingular>mercenary</pawnSingular>
+		<pawnsPlural>mercenaries</pawnsPlural>
 		<listOrderPriority>13</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -271,7 +257,7 @@
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>boss</leaderTitle>
 		<factionIconPath>UI/FactionIcons/Freelancers</factionIconPath>
-		<factionNameMaker>NamerFactionPirate</factionNameMaker>
+		<factionNameMaker>DRG_Faction_Rough</factionNameMaker>
 		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
 		<colorSpectrum>
 			<li>(0.60, 0.15, 0.15)</li>
@@ -282,7 +268,7 @@
 			<li>Astropolitan</li>
 		</allowedCultures>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>			
+			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		</requiredMemes>
 		<disallowedMemes>
@@ -314,7 +300,7 @@
 			<li>Caravan_Ringer_BulkGoods</li>
 			<li>Caravan_Ringer_ArmsDealer</li>
 			<li>Caravan_Ringer_Exotic</li>
-			<li>Caravan_Rough_PirateMerchant</li>			
+			<li>Caravan_Rough_PirateMerchant</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
 			<li>Visitor_Ringer_Standard</li>
@@ -332,7 +318,6 @@
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
 		<pawnGroupMakers>
-			<!-- Combat Group 1: Mixed forces with ranged and melee -->
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>45</commonality>
@@ -356,8 +341,6 @@
 					<DRG_Rough_Officer>3</DRG_Rough_Officer>
 				</options>
 			</li>
-
-			<!-- Combat Group 2: Standard raid composition -->
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>35</commonality>
@@ -372,8 +355,6 @@
 					<DRG_Rough_Officer>3</DRG_Rough_Officer>
 				</options>
 			</li>
-
-			<!-- Peaceful Group -->
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<commonality>20</commonality>
@@ -392,8 +373,6 @@
 					<DRG_Rough_Officer>1</DRG_Rough_Officer>
 				</options>
 			</li>
-
-			<!-- Trader Group -->
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
@@ -415,8 +394,6 @@
 					<DRG_Rough_Officer>1</DRG_Rough_Officer>
 				</guards>
 			</li>
-
-			<!-- Settlement Group -->
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
@@ -465,6 +442,6 @@
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>25</configurationListOrderPriority>
-	</FactionDef>	
+	</FactionDef>
 
 </Defs>
