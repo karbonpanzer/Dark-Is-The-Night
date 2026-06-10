@@ -598,7 +598,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_CombatDMR">
-		<defName>DRG_CombatDMR</defName>
+		<defName>DRG_ServiceDMR</defName>
 		<label>Combat DMR</label>
 		<description>A precision variant of the combat rifle fitted with a longer barrel and magnified optic. Fires accurate two-round bursts at extended range, trading rate of fire for per-shot damage.</description>
 		<graphicData>
