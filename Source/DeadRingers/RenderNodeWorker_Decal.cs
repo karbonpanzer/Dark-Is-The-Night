@@ -2,7 +2,7 @@ using Verse;
 
 namespace DeadRinger
 {
-    public class PawnRenderNodeWorkerApparel : PawnRenderNodeWorker
+    public class PawnRenderNodeWorkerDecal : PawnRenderNodeWorker
     {
         public override bool CanDrawNow(PawnRenderNode node, PawnDrawParms parms)
         {
@@ -11,5 +11,5 @@ namespace DeadRinger
         }
     }
 
-    public class PawnRenderNodeWorkerHeadware : PawnRenderNodeWorkerApparel { }
+    public class PawnRenderNodeWorkerDecalHead : PawnRenderNodeWorkerDecal { }
 }

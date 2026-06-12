@@ -70,9 +70,9 @@
         <li>DRG_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+        <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
           <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DeadRinger.PawnRenderNodeWorkerApparel</workerClass>
+          <workerClass>DeadRinger.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -183,9 +183,9 @@
         <li>DRG_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+        <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
           <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DeadRinger.PawnRenderNodeWorkerApparel</workerClass>
+          <workerClass>DeadRinger.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -295,9 +295,9 @@
         <li>DRG_Armor_Conscript</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+        <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
           <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DeadRinger.PawnRenderNodeWorkerApparel</workerClass>
+          <workerClass>DeadRinger.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -410,9 +410,9 @@
       <soundRemove>Remove_PowerArmor</soundRemove>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <renderNodeProperties>
-        <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+        <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
           <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DeadRinger.PawnRenderNodeWorkerApparel</workerClass>
+          <workerClass>DeadRinger.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>

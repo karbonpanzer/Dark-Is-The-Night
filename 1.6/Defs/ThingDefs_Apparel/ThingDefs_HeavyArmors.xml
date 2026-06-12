@@ -72,9 +72,9 @@
         <li>DRG_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+        <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
           <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DeadRinger.PawnRenderNodeWorkerApparel</workerClass>
+          <workerClass>DeadRinger.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>16</baseLayer>
           <texPaths>
@@ -117,6 +117,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
+
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>DRG_HeavyMarauderHelmet</defName>
     <label>Heavy Marauder Helmet</label>
@@ -177,9 +178,9 @@
         <li>DRG_HeavyHelmet</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+        <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
           <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DeadRinger.PawnRenderNodeWorkerHeadware</workerClass>
+          <workerClass>DeadRinger.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -273,9 +274,9 @@
         <li>DRG_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+        <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
           <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DeadRinger.PawnRenderNodeWorkerHeadware</workerClass>
+          <workerClass>DeadRinger.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -376,9 +377,9 @@
         <li>DRG_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+        <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
           <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DeadRinger.PawnRenderNodeWorkerHeadware</workerClass>
+          <workerClass>DeadRinger.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -479,9 +480,9 @@
         <li>DRG_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DeadRinger.PawnRenderNodePropertiesOmni">
+        <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
           <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DeadRinger.PawnRenderNodeWorkerHeadware</workerClass>
+          <workerClass>DeadRinger.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>

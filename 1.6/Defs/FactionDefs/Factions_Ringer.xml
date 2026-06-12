@@ -4,7 +4,7 @@
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>DRG_Player</defName>
 		<label>Outcast refugees</label>
-		<description>A small group of war refugees displaced from a fallen industrial world. Armed with whatever Imperial gear they could salvage during the evacuation, they have arrived on this rimworld with the desperate hope of building a stable new home.</description>
+		<description>A small group of war refugees displaced from a fallen industrial world. Armed with whatever military gear they could salvage during the evacuation, they have arrived on this rimworld with the desperate hope of building a stable new home.</description>
 		<colorSpectrum>
             <li>(0, 0.737, 0.847)</li>
 		</colorSpectrum>
@@ -16,8 +16,8 @@
 		<allowedCultures>
 			<li>Astropolitan</li>
 		</allowedCultures>
-		<factionNameMaker>DRG_Faction_Civil</factionNameMaker>
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<factionNameMaker>DRG_Faction_Outcast</factionNameMaker>
+		<settlementNameMaker>DRG_Settlement_Outcast</settlementNameMaker>
 		<backstoryFilters>
 		  <li>
 			<categories>
@@ -43,7 +43,7 @@
 	<FactionDef ParentName="FactionBase">
 		<defName>DRG_Civil</defName>
 		<label>Outcast refugees</label>
-		<description>A decentralized faction of war refugees whose industrial homeworld was overrun by mechanoids. Left behind by the Empire, these survivors scattered across the rim seeking stability they no longer had.\n\nThough they carry advanced Imperial weapons and composite armor, they lack the manufacturing base to replace what breaks. They rely on the discipline and cooperative spirit of their former society to survive. They are generally willing to trade and ally with outsiders who prove themselves trustworthy, but will fiercely defend their provisional settlements against any threat.</description>
+		<description>A decentralized faction of war refugees whose industrial homeworld was overrun by mechanoids. Abandoned to their fate, these survivors scattered across the rim seeking stability they no longer had.\n\nThough they carry advanced military weapons and composite armor, they lack the manufacturing base to replace what breaks. They rely on the discipline and cooperative spirit of their former society to survive. They are generally willing to trade and ally with outsiders who prove themselves trustworthy, but will fiercely defend their provisional settlements against any threat.</description>
 		<pawnSingular>outcast</pawnSingular>
 		<pawnsPlural>outcasts</pawnsPlural>
 		<listOrderPriority>13</listOrderPriority>
@@ -55,8 +55,8 @@
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>governor</leaderTitle>
 		<factionIconPath>UI/FactionIcons/Dominion</factionIconPath>
-		<factionNameMaker>DRG_Faction_Civil</factionNameMaker>
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<factionNameMaker>DRG_Faction_Outcast</factionNameMaker>
+		<settlementNameMaker>DRG_Settlement_Outcast</settlementNameMaker>
 		<colorSpectrum>
 			<li>(0.80, 0.80, 0.95)</li>
 		</colorSpectrum>
@@ -67,6 +67,7 @@
 		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
 		</requiredMemes>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
@@ -75,6 +76,9 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
 		<backstoryFilters>
 			<li>
@@ -245,9 +249,9 @@
 	<FactionDef ParentName="FactionBase">
 		<defName>DRG_Rough</defName>
 		<label>Free Companies</label>
-		<description>A heavily-armed faction of paramilitaries and opportunists formed from the ashes of a fallen industrial world. Unlike their civilian counterparts, these survivors abandoned the idea of peaceful settlement.\n\nOrganized into free companies and mercenary bands, they use salvaged Imperial weaponry to take what they want. They view the rimworld not as a new home, but as a resource pool to maintain their deteriorating spacer-tech gear. They are an army that never demobilized, preferring extortion and violent raiding over diplomacy.</description>
-		<pawnSingular>mercenary</pawnSingular>
-		<pawnsPlural>mercenaries</pawnsPlural>
+		<description>A heavily armed faction of paramilitaries and opportunists formed from the ashes of a fallen industrial world. Unlike their civilian counterparts, these survivors abandoned the idea of peaceful settlement.\n\nOrganized into free companies and mercenary bands, they use salvaged military weaponry to take what they want. They view the rimworld not as a new home, but as a resource pool to maintain their deteriorating equipment. They are an army that never demobilized, preferring extortion and violent raiding over diplomacy.</description>
+		<pawnSingular>freebooter</pawnSingular>
+		<pawnsPlural>freebooters</pawnsPlural>
 		<listOrderPriority>13</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -257,8 +261,8 @@
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>boss</leaderTitle>
 		<factionIconPath>UI/FactionIcons/Freelancers</factionIconPath>
-		<factionNameMaker>DRG_Faction_Rough</factionNameMaker>
-		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+		<factionNameMaker>DRG_Faction_Freebooters</factionNameMaker>
+		<settlementNameMaker>DRG_Settlement_Freebooters</settlementNameMaker>
 		<colorSpectrum>
 			<li>(0.60, 0.15, 0.15)</li>
 		</colorSpectrum>
@@ -268,13 +272,17 @@
 			<li>Astropolitan</li>
 		</allowedCultures>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		</requiredMemes>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
 		</disallowedMemes>
 		<backstoryFilters>
 			<li>

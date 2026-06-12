@@ -1,63 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <RulePackDef>
-    <defName>DRG_Faction_Civil</defName>
-    <include>
-      <li>OutlanderPlaceNameUtility</li>
-    </include>
-    <rulePack>
-      <rulesStrings>
-        <li>r_name(p=6)->[political_adjective_expedition] [political_union_cap] of [nearnameinitial]</li>
-        <li>r_name(p=4)->[political_adjective] [political_union_cap] of [nearnameinitial]</li>
-        <li>r_name(p=2)->[nearnameinitial] [political_union_cap]</li>
-        <li>political_union_standalone->[political_union_cap]</li>
-        <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
-        <li>nearnameinitial(p=2)->[expedition_prefix] [PlaceOutlander]</li>
-        <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
-      </rulesStrings>
-      <rulesFiles>
-        <li>political_union_cap->Words/Nouns/PoliticalUnions_ExpeditionCap</li>
-        <li>political_adjective_expedition->Words/Adjectives/Political_Adjective_Expedition</li>
-        <li>political_adjective->Words/Adjectives/PoliticalUnions</li>
-        <li>expedition_prefix->Words/Adjectives/Expedition_Prefix</li>
-      </rulesFiles>
-    </rulePack>
-  </RulePackDef>
+	<RulePackDef>
+		<defName>DRG_Faction_Outcast</defName>
+		<include>
+			<li>OutlanderPlaceNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=3)->[nearnameinitial]</li>
+				<li>r_name->[nearnameinitial] [political_union_outcast]</li>
+				<li>r_name->[nearnameinitial] [political_adjective_outcast] [political_union_outcast]</li>
+				<li>r_name->[political_union_outcast] of [nearnameinitial]</li>
+				<li>r_name->[political_adjective_outcast] [political_union_outcast] of [nearnameinitial]</li>
+				<li>nearnameinitial(p=3)->[PlaceOutlander]</li>
+				<li>nearnameinitial(p=2)->New [PlaceOutlander]</li>
+				<li>nearnameinitial->[Direction] [PlaceOutlander]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>political_union_outcast->Words/Nouns/PoliticalUnions_Outcast</li>
+				<li>political_adjective_outcast->Words/Adjectives/PoliticalAdjectives_Outcast</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
 
-  <RulePackDef>
-    <defName>DRG_Faction_Rough</defName>
-    <include>
-      <li>OutlanderPlaceNameUtility</li>
-    </include>
-    <rulePack>
-      <rulesStrings>
-        <li>r_name(p=4)->The [pirate_adjective] [military_unit]</li>
-        <li>r_name(p=4)->[pirate_leader]'s [military_unit]</li>
-        <li>r_name(p=3)->[pirate_leader]'s Free Company</li>
-        <li>r_name(p=3)->The [pirate_adjective] Free Company</li>
-        <li>r_name(p=2)->[pirate_leader]'s Free [military_unit_free]</li>
-        <li>r_name(p=3)->[pirate_leader]'s [gang_noun]</li>
-        <li>r_name(p=2)->The [pirate_leader] [gang_noun]</li>
-        <li>r_name(p=2)->The [concept_badass] [gang_noun]</li>
-        <li>r_name(p=2)->The [pirate_adjective] [gang_noun]</li>
-        <li>r_name(p=2)->[pirate_leader]'s [pirate_band]</li>
-        <li>r_name(p=2)->The [pirate_adjective] [pirate_band]</li>
-        <li>r_name->The [pirate_band] of [nearnameinitial]</li>
-        <li>r_name->The [pirate_adjective] [military_unit] of [nearnameinitial]</li>
-        <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
-        <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
-      </rulesStrings>
-      <rulesFiles>
-        <li>pirate_leader->Names/PirateLeaderNames</li>
-        <li>pirate_band->Words/Nouns/PirateBandNouns</li>
-        <li>military_unit->Words/Nouns/MilitaryUnits</li>
-        <li>military_unit_free->Words/Nouns/MilitaryUnits_Free</li>
-        <li>pirate_adjective->Words/Adjectives/PirateAdjectives</li>
-        <li>concept_badass->Words/Nouns/Concepts_Badass</li>
-        <li>gang_noun->Words/Nouns/GangNouns</li>
-      </rulesFiles>
-    </rulePack>
-  </RulePackDef>
+	<RulePackDef>
+		<defName>DRG_Faction_Freebooters</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=2)->[NamePerson]'s Free Company</li>
+				<li>r_name(p=2)->[NamePerson]'s [freecompanyunit]</li>
+				<li>r_name->[NamePerson]'s [groupname]</li>
+				<li>r_name(p=0.5)->[NamePerson]'s [Weapon]s</li>
+				<li>r_name(p=2)->The [ColorBadass] [freecompanyunit]</li>
+				<li>r_name->The [ColorBadass] Free Company</li>
+				<li>r_name(p=0.5)->The [ColorBadass] [groupname]</li>
+				<li>r_name(p=0.5)->The [ColorBadass] [Weapon]s</li>
+				<li>r_name->The [AdjectiveBadass] [freecompanyunit]</li>
+				<li>r_name(p=0.5)->The [AdjectiveBadass] [groupname]</li>
+				<li>r_name(p=0.5)->The [Weapon] [freecompanyunit]</li>
+				<li>freecompanyunit->Brigade</li>
+				<li>freecompanyunit->Battalion</li>
+				<li>freecompanyunit->Regiment</li>
+				<li>freecompanyunit->Legion</li>
+				<li>freecompanyunit->Company</li>
+				<li>freecompanyunit->Cohort</li>
+				<li>freecompanyunit->Banner</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>groupname->Words/Nouns/GroupNames</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>DRG_Settlement_Outcast</defName>
+		<include>
+			<li>OutlanderPlaceNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=8)->[townname_wordgen]</li>
+				<li>r_name(p=4)->[townname_fixed]</li>
+				<li>r_name(p=3)->[townname_combo]</li>
+				<li>r_name(p=3)->[townname_outcast]</li>
+
+				<li>townname_outcast->New [PlaceOutlander]</li>
+				<li>townname_outcast->Fort [PlaceOutlander]</li>
+				<li>townname_outcast->[Character]'s Crossing</li>
+				<li>townname_outcast->[Character]'s Landing</li>
+				<li>townname_outcast->[Character]'s Haven</li>
+				<li>townname_outcast->[Character]'s Reach</li>
+
+				<li>townname_wordgen(p=2)->[SylE][SylE]</li>
+				<li>townname_wordgen(p=2)->[SylE][townend]</li>
+				<li>townname_wordgen->[TerrainFeature][townend]</li>
+
+				<li>townname_combo->[Character]'s [Community]</li>
+				<li>townname_combo->[concept_positive] [Community]</li>
+				<li>townname_combo->[concept_positive] [TerrainFeature]</li>
+
+				<li>townend->ville</li>
+				<li>townend->ton</li>
+				<li>townend->hurst</li>
+				<li>townend->dale</li>
+				<li>townend->mere</li>
+				<li>townend->well</li>
+				<li>townend->wood</li>
+				<li>townend->land</li>
+				<li>townend->worth</li>
+				<li>townend->bourne</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>townname_fixed->Names/OutlanderTown</li>
+				<li>concept_positive->Words/Nouns/Concepts_Positive</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>DRG_Settlement_Freebooters</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=4)->[townname_combo]</li>
+				<li>r_name(p=3)->[townname_freebooter]</li>
+				<li>r_name(p=2)->[townname_wordgen]</li>
+
+				<li>townname_freebooter->[NamePerson]'s [campterm]</li>
+				<li>townname_freebooter->Fort [NamePerson]</li>
+				<li>townname_freebooter->Camp [ConceptBadass]</li>
+				<li>townname_freebooter->Outpost [ConceptBadass]</li>
+
+				<li>campterm->Hold</li>
+				<li>campterm->Camp</li>
+				<li>campterm->Reach</li>
+				<li>campterm->Bastion</li>
+				<li>campterm->Watch</li>
+				<li>campterm->Redoubt</li>
+
+				<li>townname_combo->[AnimalBadass] [geography]</li>
+				<li>townname_combo->[ConceptBadass] [geography]</li>
+				<li>townname_combo->[PersonBadass]'s [geography]</li>
+				<li>townname_combo->[ColorBadass] [geography]</li>
+				<li>townname_combo->[Weapon]'s [geography]</li>
+
+				<li>geography(p=2)->[TerrainFeature]</li>
+				<li>geography->[Community]</li>
+
+				<li>townname_wordgen(p=2)->[SylE][SylE]</li>
+				<li>townname_wordgen->[SylE][townendevil]</li>
+
+				<li>townendevil->vast</li>
+				<li>townendevil->burn</li>
+				<li>townendevil->sear</li>
+				<li>townendevil->shank</li>
+				<li>townendevil->lock</li>
+				<li>townendevil->vix</li>
+				<li>townendevil->tor</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 
 </Defs>

@@ -15,15 +15,15 @@ namespace DeadRinger
 
         public override Graphic? GraphicFor(Pawn pawn)
         {
-            var deadRingerProps = Props as PawnRenderNodePropertiesOmni;
+            var decalProps = Props as PawnRenderNodePropertiesDecal;
 
             DecalProfile profile = DecalUtil.ReadProfileFrom(pawn, _slot);
             string path = profile.Active ? profile.SymbolPath : GetDefaultPath(pawn);
-            Color color = profile.Active ? profile.SymbolColor : (deadRingerProps?.Color ?? new Color(0.2f, 0.2f, 0.2f));
+            Color color = profile.Active ? profile.SymbolColor : (decalProps?.Color ?? new Color(0.2f, 0.2f, 0.2f));
 
             if (path.NullOrEmpty()) return null;
 
-            if (deadRingerProps?.autoBodyTypePaths == true && pawn.story?.bodyType != null)
+            if (decalProps?.appendBodyType == true && pawn.story?.bodyType != null)
                 path = path + "_" + pawn.story.bodyType.defName;
 
             return GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.Cutout, Vector2.one, color);
@@ -31,8 +31,8 @@ namespace DeadRinger
 
         private static DecalSlot DetermineSlot(PawnRenderNodeProperties props)
         {
-            if (props is PawnRenderNodePropertiesOmni deadRingerProps && deadRingerProps.ExplicitSlot.HasValue)
-                return deadRingerProps.ExplicitSlot.Value;
+            if (props is PawnRenderNodePropertiesDecal decalProps && decalProps.ExplicitSlot.HasValue)
+                return decalProps.ExplicitSlot.Value;
 
             if (props.parentTagDef != null)
             {
@@ -46,10 +46,10 @@ namespace DeadRinger
 
         private string GetDefaultPath(Pawn pawn)
         {
-            if (Props is PawnRenderNodePropertiesOmni deadRingerProps && deadRingerProps.texPaths != null && deadRingerProps.texPaths.Count > 0)
+            if (Props is PawnRenderNodePropertiesDecal decalProps && decalProps.texPaths != null && decalProps.texPaths.Count > 0)
             {
                 int seed = pawn.Faction?.loadID ?? pawn.thingIDNumber;
-                return deadRingerProps.texPaths[seed % deadRingerProps.texPaths.Count];
+                return decalProps.texPaths[seed % decalProps.texPaths.Count];
             }
             return "";
         }
