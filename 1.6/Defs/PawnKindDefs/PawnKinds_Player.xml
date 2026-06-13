@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
 	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>DRG_Player</defName>
+		<defName>DITN_Player</defName>
 		<label>Ringer settlers</label>
 		<race>Human</race>
-		<defaultFactionType>DRG_Player</defaultFactionType>
+		<defaultFactionType>DITN_Player</defaultFactionType>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -14,7 +14,7 @@
 			</li>
 		</backstoryFiltersOverride>
 		<apparelTags>
-			<li>DRG_RingerUniform</li>
+			<li>DITN_RingerUniform</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<gearHealthRange>

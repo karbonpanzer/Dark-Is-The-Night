@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>DRG_Webbing_Infantry</defName>
+    <defName>DITN_Webbing_Infantry</defName>
     <label>Infantry Webbing</label>
     <description>A standard load-bearing harness worn by Ringer infantry. Distributes the weight of ammunition and field kit across the torso. Issued to most front-line personnel.</description>
     <graphicData>
@@ -14,7 +14,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_InfantryAccessories</researchPrerequisite>
+      <researchPrerequisite>DITN_InfantryAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -57,8 +57,8 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>DRG_Webbing_Infantry</li>
-        <li>DRG_Accessories</li>
+        <li>DITN_Webbing_Infantry</li>
+        <li>DITN_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -67,16 +67,16 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>DRG_Accessories</li>
+      <li>DITN_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>DRG_Uniforms</li>
+      <li>DITN_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>DRG_Webbing_Engineer</defName>
+    <defName>DITN_Webbing_Engineer</defName>
     <label>Engineer Webbing</label>
     <description>A load-bearing harness fitted with tool loops, component pouches, and cable management clips. Used by combat engineers who carry both weapons and technical equipment into the field.</description>
     <graphicData>
@@ -89,7 +89,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_SupportAccessories</researchPrerequisite>
+      <researchPrerequisite>DITN_SupportAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>30</Steel>
@@ -133,8 +133,8 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>DRG_Webbing_Engineer</li>
-        <li>DRG_Accessories</li>
+        <li>DITN_Webbing_Engineer</li>
+        <li>DITN_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -143,16 +143,16 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>DRG_Accessories</li>
+      <li>DITN_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>DRG_Uniforms</li>
+      <li>DITN_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>DRG_Webbing_Medic</defName>
+    <defName>DITN_Webbing_Medic</defName>
     <label>Medic Webbing</label>
     <description>A load-bearing harness configured with medical pouches, tourniquet holders, and quick-access loops for field dressings. Designed to keep essential trauma supplies within immediate reach.</description>
     <graphicData>
@@ -165,7 +165,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_SupportAccessories</researchPrerequisite>
+      <researchPrerequisite>DITN_SupportAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>30</Steel>
@@ -209,8 +209,8 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>DRG_Webbing_Medic</li>
-        <li>DRG_Accessories</li>
+        <li>DITN_Webbing_Medic</li>
+        <li>DITN_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -219,17 +219,17 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>DRG_Accessories</li>
+      <li>DITN_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>DRG_Uniforms</li>
+      <li>DITN_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>DRG_Webbing_Riot</defName>
+    <defName>DITN_Webbing_Riot</defName>
     <label>Riot Webbing</label>
     <description>A heavy-duty load-bearing harness used in crowd control operations. Carries restraints, less-lethal munitions, and a baton loop alongside standard kit.</description>
     <graphicData>
@@ -242,7 +242,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_SupportAccessories</researchPrerequisite>
+      <researchPrerequisite>DITN_SupportAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>50</Steel>
@@ -286,8 +286,8 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>DRG_Webbing_Riot</li>
-        <li>DRG_Accessories</li>
+        <li>DITN_Webbing_Riot</li>
+        <li>DITN_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -296,17 +296,17 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>DRG_Accessories</li>
+      <li>DITN_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>DRG_Uniforms</li>
+      <li>DITN_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>DRG_Webbing_Scout</defName>
+    <defName>DITN_Webbing_Scout</defName>
     <label>Scout Webbing</label>
     <description>A minimal load-bearing harness designed to carry only essential equipment. Low profile and free of rattling hardware, suited for personnel who need to move quietly.</description>
     <graphicData>
@@ -319,7 +319,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>DITN_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -363,8 +363,8 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>DRG_Webbing_Scout</li>
-        <li>DRG_Accessories</li>
+        <li>DITN_Webbing_Scout</li>
+        <li>DITN_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -378,17 +378,17 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>DRG_Accessories</li>
+      <li>DITN_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>DRG_Uniforms</li>
+      <li>DITN_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>DRG_Webbing_Shocktrooper</defName>
+    <defName>DITN_Webbing_Shocktrooper</defName>
     <label>Shocktrooper Webbing</label>
     <description>A load-bearing harness configured for close-quarters assault. High-capacity magazine pouches and breach tool loops are positioned for fast access under fire.</description>
     <graphicData>
@@ -401,7 +401,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>DITN_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -446,8 +446,8 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>DRG_Webbing_Shocktrooper</li>
-        <li>DRG_Accessories</li>
+        <li>DITN_Webbing_Shocktrooper</li>
+        <li>DITN_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -461,18 +461,18 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>DRG_Accessories</li>
+      <li>DITN_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>DRG_Uniforms</li>
+      <li>DITN_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
   <!-- Grenadier Webbings -->
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>DRG_Webbing_GrenadierFrag</defName>
+    <defName>DITN_Webbing_GrenadierFrag</defName>
     <label>Grenadier Webbing (Frag)</label>
     <description>A load-bearing chest harness fitted with dedicated loops and pouches for fragmentation grenades. Standard kit for grenadier infantry who need their munitions close at hand.</description>
     <graphicData>
@@ -485,7 +485,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>DITN_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -529,7 +529,7 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>DRG_Accessories</li>
+        <li>DITN_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -538,10 +538,27 @@
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
       <useWornGraphicMask>True</useWornGraphicMask>
-      <abilities>
-        <li>DRG_Ability_ThrowFrag</li>
-      </abilities>
     </apparel>
+    <verbs>
+      <li>
+        <label>throw frag grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Proj_GrenadeFrag</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
     <comps>
       <li Class="CompProperties_ApparelReloadable">
         <maxCharges>8</maxCharges>
@@ -555,43 +572,13 @@
       </li>
     </comps>
     <thingCategories>
-      <li>DRG_Accessories</li>
+      <li>DITN_Accessories</li>
     </thingCategories>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
-  <AbilityDef>
-    <defName>DRG_Ability_ThrowFrag</defName>
-    <label>throw frag grenade</label>
-    <description>Throw a fragmentation grenade. Consumes one charge from the grenadier webbing.</description>
-    <iconPath>Things/Item/Equipment/WeaponRanged/Grenades</iconPath>
-    <gizmoClass>DeadRinger.CommandAbilityReloadable</gizmoClass>
-    <aiCanUse>true</aiCanUse>
-    <ai_IsOffensive>true</ai_IsOffensive>
-    <ai_IsIncendiary>false</ai_IsIncendiary>
-    <ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
-    <hostile>true</hostile>
-    <writeCombatLog>true</writeCombatLog>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <range>12.9</range>
-      <warmupTime>1.5</warmupTime>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-        <canTargetPawns>true</canTargetPawns>
-      </targetParams>
-    </verbProperties>
-    <comps>
-      <li Class="DeadRinger.CompPropertiesAbilityEffectApparelReloadable">
-        <ProjectileDef>Proj_GrenadeFrag</ProjectileDef>
-        <ForcedMissRadius>1.9</ForcedMissRadius>
-        <SoundOnCast>ThrowGrenade</SoundOnCast>
-      </li>
-    </comps>
-  </AbilityDef>
-
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>DRG_Webbing_GrenadierEMP</defName>
+    <defName>DITN_Webbing_GrenadierEMP</defName>
     <label>Grenadier Webbing (EMP)</label>
     <description>A load-bearing chest harness configured for EMP grenades. Signal-dampening lining keeps the electromagnetic pulse charges from interfering with nearby electronics between engagements.</description>
     <graphicData>
@@ -604,7 +591,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>DITN_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -648,7 +635,7 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>DRG_Accessories</li>
+        <li>DITN_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -657,10 +644,27 @@
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
       <useWornGraphicMask>True</useWornGraphicMask>
-      <abilities>
-        <li>DRG_Ability_ThrowEMP</li>
-      </abilities>
     </apparel>
+    <verbs>
+      <li>
+        <label>throw emp grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Proj_GrenadeEMP</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
     <comps>
       <li Class="CompProperties_ApparelReloadable">
         <maxCharges>8</maxCharges>
@@ -674,43 +678,13 @@
       </li>
     </comps>
     <thingCategories>
-      <li>DRG_Accessories</li>
+      <li>DITN_Accessories</li>
     </thingCategories>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
-  <AbilityDef>
-    <defName>DRG_Ability_ThrowEMP</defName>
-    <label>throw emp grenade</label>
-    <description>Throw an EMP grenade. Consumes one charge from the grenadier webbing.</description>
-    <iconPath>Things/Item/Equipment/WeaponRanged/EMPGrenades</iconPath>
-    <gizmoClass>DeadRinger.CommandAbilityReloadable</gizmoClass>
-    <aiCanUse>true</aiCanUse>
-    <ai_IsOffensive>true</ai_IsOffensive>
-    <ai_IsIncendiary>false</ai_IsIncendiary>
-    <ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
-    <hostile>true</hostile>
-    <writeCombatLog>true</writeCombatLog>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <range>12.9</range>
-      <warmupTime>1.5</warmupTime>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-        <canTargetPawns>true</canTargetPawns>
-      </targetParams>
-    </verbProperties>
-    <comps>
-      <li Class="DeadRinger.CompPropertiesAbilityEffectApparelReloadable">
-        <ProjectileDef>Proj_GrenadeEMP</ProjectileDef>
-        <ForcedMissRadius>1.9</ForcedMissRadius>
-        <SoundOnCast>ThrowGrenade</SoundOnCast>
-      </li>
-    </comps>
-  </AbilityDef>
-
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>DRG_Webbing_GrenadierIncendiary</defName>
+    <defName>DITN_Webbing_GrenadierIncendiary</defName>
     <label>Grenadier Webbing (Incendiary)</label>
     <description>A load-bearing chest harness designed to carry incendiary grenades. Glass bottles filled with flammable liquid create devastating fires on impact. Heat-resistant loops and spacing prevent sympathetic ignition.</description>
     <graphicData>
@@ -723,7 +697,7 @@
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>DITN_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -767,7 +741,7 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>DRG_Accessories</li>
+        <li>DITN_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -776,10 +750,27 @@
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
       <useWornGraphicMask>True</useWornGraphicMask>
-      <abilities>
-        <li>DRG_Ability_ThrowIncendiary</li>
-      </abilities>
     </apparel>
+    <verbs>
+      <li>
+        <label>throw incendiary grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Proj_GrenadeMolotov</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
     <comps>
       <li Class="CompProperties_ApparelReloadable">
         <maxCharges>8</maxCharges>
@@ -793,38 +784,8 @@
       </li>
     </comps>
     <thingCategories>
-      <li>DRG_Accessories</li>
+      <li>DITN_Accessories</li>
     </thingCategories>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-
-  <AbilityDef>
-    <defName>DRG_Ability_ThrowIncendiary</defName>
-    <label>throw incendiary grenade</label>
-    <description>Throw an incendiary grenade. Consumes one charge from the grenadier webbing.</description>
-    <iconPath>Things/Item/Equipment/WeaponRanged/Molotov</iconPath>
-    <gizmoClass>DeadRinger.CommandAbilityReloadable</gizmoClass>
-    <aiCanUse>true</aiCanUse>
-    <ai_IsOffensive>true</ai_IsOffensive>
-    <ai_IsIncendiary>true</ai_IsIncendiary>
-    <ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
-    <hostile>true</hostile>
-    <writeCombatLog>true</writeCombatLog>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <range>12.9</range>
-      <warmupTime>1.5</warmupTime>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-        <canTargetPawns>true</canTargetPawns>
-      </targetParams>
-    </verbProperties>
-    <comps>
-      <li Class="DeadRinger.CompPropertiesAbilityEffectApparelReloadable">
-        <ProjectileDef>Proj_GrenadeMolotov</ProjectileDef>
-        <ForcedMissRadius>1.9</ForcedMissRadius>
-        <SoundOnCast>ThrowGrenade</SoundOnCast>
-      </li>
-    </comps>
-  </AbilityDef>
 </Defs>

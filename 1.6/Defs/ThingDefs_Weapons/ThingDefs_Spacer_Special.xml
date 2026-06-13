@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>DRG_Grenade_SalvoLauncher</defName>
+		<defName>DITN_Grenade_SalvoLauncher</defName>
 		<label>salvo launcher grenade</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -20,8 +20,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_SalvoGrenadeLauncher">
-		<defName>DRG_SalvoGrenadeLauncher</defName>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_SalvoGrenadeLauncher">
+		<defName>DITN_SalvoGrenadeLauncher</defName>
 		<label>Salvo Grenade Launcher</label>
 		<description>A rotary grenade launcher, favored by mercenaries. Designed for accuracy, it can fire a variety of grenades accurately in both lethal and nonlethal scenarios.</description>
 		<graphicData>
@@ -32,12 +32,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DRG_MercenaryWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_MercenaryWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -63,7 +63,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DRG_Grenade_SalvoLauncher</defaultProjectile>
+				<defaultProjectile>DITN_Grenade_SalvoLauncher</defaultProjectile>
 				<warmupTime>2.0</warmupTime>
 				<range>32.0</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -74,7 +74,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DRG_RingerHeavyGun</li>
+			<li>DITN_RingerHeavyGun</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -104,7 +104,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>DRG_Shell_AutoloaderCannon</defName>
+		<defName>DITN_Shell_AutoloaderCannon</defName>
 		<label>autoloader cannon shell</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -121,8 +121,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_AutoloaderCannon">
-		<defName>DRG_AutoloaderCannon</defName>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_AutoloaderCannon">
+		<defName>DITN_AutoloaderCannon</defName>
 		<label>Light Autoloader Cannon</label>
 		<description>A scaled down anti-tank cannon made for infantry use. Heavy, cumbersome, and slow, but capable of destroying armor effectively over great distances.</description>
 		<graphicData>
@@ -133,12 +133,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DRG_MercenaryWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_MercenaryWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>11</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -164,7 +164,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DRG_Shell_AutoloaderCannon</defaultProjectile>
+				<defaultProjectile>DITN_Shell_AutoloaderCannon</defaultProjectile>
 				<warmupTime>5.0</warmupTime>
 				<range>58.0</range>
 				<range>48.0</range>
@@ -176,7 +176,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DRG_RingerHeavyGun</li>
+			<li>DITN_RingerHeavyGun</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -207,7 +207,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>DRG_Bullet_HydraAMR</defName>
+		<defName>DITN_Bullet_HydraAMR</defName>
 		<label>hydra anti-material round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -223,8 +223,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_HydraRifle">
-		<defName>DRG_HydraRifle</defName>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_HydraRifle">
+		<defName>DITN_HydraRifle</defName>
 		<label>Hydra Rifle</label>
 		<description>An experimental hyper-burst anti-material rifle chambered in high-powered armor piercing shells. Heavy and cumbersome, effective against both armored and unarmored targets.</description>
 		<graphicData>
@@ -235,12 +235,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DRG_AdvancedWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>12</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -266,7 +266,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DRG_Bullet_HydraAMR</defaultProjectile>
+				<defaultProjectile>DITN_Bullet_HydraAMR</defaultProjectile>
 				<warmupTime>3.4</warmupTime>
 				<range>48.0</range>
 				<soundCast>Shot_SniperRifle</soundCast>
@@ -275,7 +275,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DRG_RingerMarksmanGun</li>
+			<li>DITN_RingerMarksmanGun</li>
 		</weaponTags>
 		<tools>
 			<li>

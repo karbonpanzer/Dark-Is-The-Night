@@ -95,7 +95,7 @@
 
       <!-- Decoders -->
       <li Class="StockGenerator_SingleDef">
-        <thingDef>DRG_Decoder</thingDef>
+        <thingDef>DITN_Decoder</thingDef>
         <countRange>1~1</countRange>
       </li>
 
@@ -123,7 +123,7 @@
         <countRange>5~7</countRange>
       </li>
       <li Class="StockGenerator_Tag">
-        <tradeTag>DRG_Uniforms</tradeTag>
+        <tradeTag>DITN_Uniforms</tradeTag>
         <countRange>6~10</countRange>
       </li>
 
@@ -236,12 +236,12 @@
         <countRange>2~5</countRange>
       </li>
       <li Class="StockGenerator_Tag">
-        <tradeTag>DRG_Armor</tradeTag>
+        <tradeTag>DITN_Armor</tradeTag>
         <thingDefCountRange>3~6</thingDefCountRange>
         <countRange>2~4</countRange>
       </li>
       <li Class="StockGenerator_Tag">
-        <tradeTag>DRG_Uniforms</tradeTag>
+        <tradeTag>DITN_Uniforms</tradeTag>
         <countRange>4~8</countRange>
       </li>
 
@@ -306,7 +306,7 @@
 
       <!-- Decoders -->
       <li Class="StockGenerator_SingleDef">
-        <thingDef>DRG_Decoder</thingDef>
+        <thingDef>DITN_Decoder</thingDef>
         <countRange>1~1</countRange>
       </li>
 
@@ -340,10 +340,10 @@
       <!-- Exotic weapons -->
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
-          <li>DRG_HydraRifle</li>
-          <li>DRG_AutoloaderCannon</li>
-          <li>DRG_SalvoGrenadeLauncher</li>
-          <li>DRG_ServiceLMG</li>
+          <li>DITN_HydraRifle</li>
+          <li>DITN_AutoloaderCannon</li>
+          <li>DITN_SalvoGrenadeLauncher</li>
+          <li>DITN_ServiceLMG</li>
         </thingDefs>
         <countRange>0~2</countRange>
       </li>
@@ -351,10 +351,10 @@
       <!-- Special / prestige armor -->
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
-          <li>DRG_OfficerMarauderArmor</li>
-          <li>DRG_OfficerMarauderArmor_Scout</li>
-          <li>DRG_ScoutMarauderArmor</li>
-          <li>DRG_RiotMarauderArmor</li>
+          <li>DITN_OfficerMarauderArmor</li>
+          <li>DITN_OfficerMarauderArmor_Scout</li>
+          <li>DITN_ScoutMarauderArmor</li>
+          <li>DITN_RiotMarauderArmor</li>
         </thingDefs>
         <countRange>0~2</countRange>
       </li>
@@ -385,7 +385,7 @@
         <excludedThingDefs>
           <li>MedicineUltratech</li>
           <li>ComponentSpacer</li>
-          <li>DRG_Decoder</li>
+          <li>DITN_Decoder</li>
           <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_DisruptorFlarePack</li>
         </excludedThingDefs>
         <customCountRanges>
@@ -560,7 +560,7 @@
 
       <!-- Armor -->
       <li Class="StockGenerator_Tag">
-        <tradeTag>DRG_Armor</tradeTag>
+        <tradeTag>DITN_Armor</tradeTag>
         <thingDefCountRange>2~4</thingDefCountRange>
         <countRange>1~3</countRange>
       </li>

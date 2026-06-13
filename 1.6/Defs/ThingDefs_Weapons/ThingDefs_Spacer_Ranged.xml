@@ -4,7 +4,7 @@
 	<!-- Pistols -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>DRG_Bullet_AssaultPistol</defName>
+		<defName>DITN_Bullet_AssaultPistol</defName>
 		<label>assault pistol round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -20,8 +20,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_AssaultPistol">
-		<defName>DRG_AssaultPistol</defName>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_AssaultPistol">
+		<defName>DITN_AssaultPistol</defName>
 		<label>Assault Pistol</label>
 		<description>A heavy caliber pistol favored by pirates and mercenaries. Powerful and weighty, it can easily pierce armor at close range. Though it lacks in the ability to hit at a distance.</description>
 		<graphicData>
@@ -32,12 +32,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DRG_MercenaryWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_MercenaryWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -60,7 +60,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DRG_Bullet_AssaultPistol</defaultProjectile>
+				<defaultProjectile>DITN_Bullet_AssaultPistol</defaultProjectile>
 				<warmupTime>0.7</warmupTime>
 				<range>20.0</range>
 				<soundCast>Shot_Revolver</soundCast>
@@ -69,7 +69,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DRG_RingerHeavyPistol</li>
+			<li>DITN_RingerHeavyPistol</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -100,7 +100,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>DRG_Bullet_ServicePistol</defName>
+		<defName>DITN_Bullet_ServicePistol</defName>
 		<label>service pistol round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -115,8 +115,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_ServicePistol">
-		<defName>DRG_ServicePistol</defName>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_ServicePistol">
+		<defName>DITN_ServicePistol</defName>
 		<label>Service Pistol</label>
 		<description>A semi-automatic pistol chambered in a large caliber. Its heavy weight makes it cumbersome, but the weight provides easier handling and control, allowing more accurate shots to be made.</description>
 		<graphicData>
@@ -127,12 +127,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DRG_RingerWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_RingerWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -155,7 +155,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DRG_Bullet_ServicePistol</defaultProjectile>
+				<defaultProjectile>DITN_Bullet_ServicePistol</defaultProjectile>
 				<warmupTime>0.55</warmupTime>
 				<range>22.0</range>
 				<soundCast>Shot_Autopistol</soundCast>
@@ -164,7 +164,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DRG_RingerSidearm</li>
+			<li>DITN_RingerSidearm</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -195,7 +195,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>DRG_Bullet_AdvancedSMG</defName>
+		<defName>DITN_Bullet_AdvancedSMG</defName>
 		<label>advanced SMG round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -211,8 +211,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_AdvancedSMG">
-		<defName>DRG_AdvancedSMG</defName>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_AdvancedSMG">
+		<defName>DITN_AdvancedSMG</defName>
 		<label>Advanced SMG</label>
 		<description>A state of the art sub-machinegun built with lightweight polymers and advanced alloys. Light, accurate, and easy to use, it has found usage in hundreds of colonies now for security.</description>
 		<graphicData>
@@ -223,12 +223,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_SMG</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DRG_AdvancedWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -251,7 +251,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DRG_Bullet_AdvancedSMG</defaultProjectile>
+				<defaultProjectile>DITN_Bullet_AdvancedSMG</defaultProjectile>
 				<warmupTime>0.4</warmupTime>
 				<range>26.0</range>
 				<burstShotCount>3</burstShotCount>
@@ -262,7 +262,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DRG_RingerSMG</li>
+			<li>DITN_RingerSMG</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -293,7 +293,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>DRG_Bullet_StampedeRevolver</defName>
+		<defName>DITN_Bullet_StampedeRevolver</defName>
 		<label>stampede revolver round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -309,8 +309,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_StampedeRevolver">
-		<defName>DRG_StampedeRevolver</defName>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_StampedeRevolver">
+		<defName>DITN_StampedeRevolver</defName>
 		<label>Stampede Revolver</label>
 		<description>A large frame revolver often seen with mercenaries. Despite its size, it is light and powerful, thanks to its advanced manufacturing and specialized high power ammunition.</description>
 		<graphicData>
@@ -321,12 +321,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DRG_MercenaryWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_MercenaryWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -349,7 +349,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DRG_Bullet_StampedeRevolver</defaultProjectile>
+				<defaultProjectile>DITN_Bullet_StampedeRevolver</defaultProjectile>
 				<warmupTime>0.6</warmupTime>
 				<range>24.0</range>
 				<soundCast>Shot_Revolver</soundCast>
@@ -358,7 +358,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DRG_RingerHeavyPistol</li>
+			<li>DITN_RingerHeavyPistol</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -390,7 +390,7 @@
 	<!-- Rifles -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>DRG_Bullet_ServiceRifle</defName>
+		<defName>DITN_Bullet_ServiceRifle</defName>
 		<label>combat rifle duplex round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -406,8 +406,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_ServiceRifle">
-		<defName>DRG_ServiceRifle</defName>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_ServiceRifle">
+		<defName>DITN_ServiceRifle</defName>
 		<label>Combat Rifle</label>
 		<description>An advanced rifle design used by ringer veterans and mercenaries. Built with state-of-the-art polymers and alloys, it fires armor-piercing duplex ammunition.</description>
 		<graphicData>
@@ -418,12 +418,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DRG_AdvancedWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -446,7 +446,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DRG_Bullet_ServiceRifle</defaultProjectile>
+				<defaultProjectile>DITN_Bullet_ServiceRifle</defaultProjectile>
 				<warmupTime>1.0</warmupTime>
 				<range>35.0</range>
 				<burstShotCount>3</burstShotCount>
@@ -457,7 +457,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DRG_RingerRifle</li>
+			<li>DITN_RingerRifle</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -488,7 +488,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>DRG_Bullet_ServiceCarbine</defName>
+		<defName>DITN_Bullet_ServiceCarbine</defName>
 		<label>combat carbine round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -503,8 +503,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_ServiceCarbine">
-		<defName>DRG_ServiceCarbine</defName>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_ServiceCarbine">
+		<defName>DITN_ServiceCarbine</defName>
 		<label>Combat Carbine</label>
 		<description>An older design rifle using less complex methods, earning it favor with prospectors. Built with stamped materials, making it cheaper to produce but less accurate at range.</description>
 		<graphicData>
@@ -515,12 +515,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DRG_RingerWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_RingerWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -543,7 +543,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DRG_Bullet_ServiceCarbine</defaultProjectile>
+				<defaultProjectile>DITN_Bullet_ServiceCarbine</defaultProjectile>
 				<warmupTime>0.8</warmupTime>
 				<range>28.0</range>
 				<soundCast>Shot_AssaultRifle</soundCast>
@@ -553,7 +553,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DRG_RingerCarbine</li>
+			<li>DITN_RingerCarbine</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -581,7 +581,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>DRG_Bullet_CombatDMR</defName>
+		<defName>DITN_Bullet_CombatDMR</defName>
 		<label>combat DMR round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -597,8 +597,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_CombatDMR">
-		<defName>DRG_ServiceDMR</defName>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_CombatDMR">
+		<defName>DITN_ServiceDMR</defName>
 		<label>Combat DMR</label>
 		<description>A precision variant of the combat rifle fitted with a longer barrel and magnified optic. Fires accurate two-round bursts at extended range, trading rate of fire for per-shot damage.</description>
 		<graphicData>
@@ -609,12 +609,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DRG_AdvancedWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -636,7 +636,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DRG_Bullet_CombatDMR</defaultProjectile>
+				<defaultProjectile>DITN_Bullet_CombatDMR</defaultProjectile>
 				<warmupTime>0.9</warmupTime>
 				<range>42.0</range>
 				<burstShotCount>2</burstShotCount>
@@ -647,7 +647,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DRG_RingerDMR</li>
+			<li>DITN_RingerDMR</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -678,7 +678,7 @@
 	</ThingDef>	
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>DRG_Bullet_ServiceLMG</defName>
+		<defName>DITN_Bullet_ServiceLMG</defName>
 		<label>combat LMG round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -694,8 +694,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_ServiceLMG">
-		<defName>DRG_ServiceLMG</defName>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_ServiceLMG">
+		<defName>DITN_ServiceLMG</defName>
 		<label>Combat LMG</label>
 		<description>A modified form of the combat rifle used as a support weapon. Fitted with a longer barrel and a bipod, it also features a higher rate of fire, making it more effective as a light machinegun.</description>
 		<graphicData>
@@ -706,12 +706,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DRG_AdvancedWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -737,7 +737,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DRG_Bullet_ServiceLMG</defaultProjectile>
+				<defaultProjectile>DITN_Bullet_ServiceLMG</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
 				<range>30.0</range>
 				<burstShotCount>5</burstShotCount>
@@ -748,7 +748,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DRG_RingerHeavyGun</li>
+			<li>DITN_RingerHeavyGun</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -781,7 +781,7 @@
 	<!-- Shotguns -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>DRG_Shell_JackhammerShotgun</defName>
+		<defName>DITN_Shell_JackhammerShotgun</defName>
 		<label>jackhammer shotgun shell</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -797,8 +797,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_JackhammerShotgun">
-		<defName>DRG_JackhammerShotgun</defName>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_JackhammerShotgun">
+		<defName>DITN_JackhammerShotgun</defName>
 		<label>Jackhammer Shotgun</label>
 		<description>An ancient design for a multi-purpose automatic shotgun favored by mercenaries. Firing high-power shells via a drum magazine, it easily shreds flesh and can even damage armor.</description>
 		<graphicData>
@@ -809,12 +809,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Shotgun</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DRG_MercenaryWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_MercenaryWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -837,7 +837,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DRG_Shell_JackhammerShotgun</defaultProjectile>
+				<defaultProjectile>DITN_Shell_JackhammerShotgun</defaultProjectile>
 				<warmupTime>0.4</warmupTime>
 				<range>16.0</range>
 				<burstShotCount>4</burstShotCount>
@@ -848,7 +848,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DRG_RingerEliteShotgun</li>
+			<li>DITN_RingerEliteShotgun</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -879,7 +879,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>DRG_Shell_LawbringerShotgun</defName>
+		<defName>DITN_Shell_LawbringerShotgun</defName>
 		<label>8 gauge shotgun shell</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -895,8 +895,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_LawbringerShotgun">
-		<defName>DRG_LawbringerShotgun</defName>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_LawbringerShotgun">
+		<defName>DITN_LawbringerShotgun</defName>
 		<label>Lawbringer Shotgun</label>
 		<description>A large gauge shotgun favored by colonists for its ruggedness and stopping power. Slow to cycle but devastating at close to medium range with its uncommon 8 gauge shell.</description>
 		<graphicData>
@@ -907,12 +907,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Shotgun</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DRG_AdvancedWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -935,7 +935,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DRG_Shell_LawbringerShotgun</defaultProjectile>
+				<defaultProjectile>DITN_Shell_LawbringerShotgun</defaultProjectile>
 				<warmupTime>0.8</warmupTime>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>18</ticksBetweenBurstShots>
@@ -946,7 +946,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DRG_RingerShotgun</li>
+			<li>DITN_RingerShotgun</li>
 		</weaponTags>
 		<tools>
 			<li>

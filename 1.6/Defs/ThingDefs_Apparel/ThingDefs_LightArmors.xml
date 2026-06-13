@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>DRG_MarauderArmor</defName>
+    <defName>DITN_MarauderArmor</defName>
     <label>Marauder Armor</label>
     <description>A hardened armor set with segmented Marauder plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Ringer infantry who expect direct fire contact.</description>
     <graphicData>
@@ -18,13 +18,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>DITN_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>DRG_FabricationBench</li>
+        <li>DITN_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -66,7 +66,7 @@
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
       <tags Inherit="False">
-        <li>DRG_Armor</li>
+        <li>DITN_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
@@ -106,16 +106,16 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>DRG_Armor</li>
+      <li>DITN_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>DRG_Armor</li>
+      <li>DITN_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>DRG_MarauderHelmet</defName>
+    <defName>DITN_MarauderHelmet</defName>
     <label>Marauder Helmet</label>
     <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Ringer combat personnel.</description>
     <graphicData>
@@ -132,13 +132,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>DITN_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>DRG_FabricationBench</li>
+        <li>DITN_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -171,7 +171,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags>
-        <li>DRG_LightHelmet</li>
+        <li>DITN_LightHelmet</li>
       </tags>
       <renderNodeProperties>
         <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
@@ -201,16 +201,16 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>DRG_Helmets</li>
+      <li>DITN_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>DRG_Armor</li>
+      <li>DITN_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>DRG_MarauderHelmet_Insulated</defName>
+    <defName>DITN_MarauderHelmet_Insulated</defName>
     <label>Marauder Helmet (Insulated)</label>
     <description>A Marauder helmet with thermal lining added to the interior. Provides the same ballistic protection as the standard configuration in climates that would otherwise affect the wearer's effectiveness.</description>
     <graphicData>
@@ -227,13 +227,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>DITN_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>DRG_FabricationBench</li>
+        <li>DITN_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -267,7 +267,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>DRG_Armor</li>
+        <li>DITN_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
@@ -292,7 +292,7 @@
         </li>
       </renderNodeProperties>
       <tags>
-        <li>DRG_LightHelmet</li>
+        <li>DITN_LightHelmet</li>
       </tags>
     </apparel>
     <comps>
@@ -300,16 +300,16 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>DRG_Helmets</li>
+      <li>DITN_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>DRG_Armor</li>
+      <li>DITN_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>DRG_MarauderHelmet_Shield</defName>
+    <defName>DITN_MarauderHelmet_Shield</defName>
     <label>Marauder Helmet (Reinforced)</label>
     <description>A Marauder helmet with an additional ballistic plate bonded to the front. Heavier than the standard configuration, but more resistant to direct frontal impacts.</description>
     <graphicData>
@@ -326,13 +326,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>DITN_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>DRG_FabricationBench</li>
+        <li>DITN_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -369,7 +369,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>DRG_Armor</li>
+        <li>DITN_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
@@ -394,7 +394,7 @@
         </li>
       </renderNodeProperties>
       <tags>
-        <li>DRG_LightHelmet_Shield</li>
+        <li>DITN_LightHelmet_Shield</li>
       </tags>
     </apparel>
     <comps>
@@ -402,16 +402,16 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>DRG_Helmets</li>
+      <li>DITN_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>DRG_Armor</li>
+      <li>DITN_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>DRG_MarauderHelmet_Gasmask</defName>
+    <defName>DITN_MarauderHelmet_Gasmask</defName>
     <label>Marauder Helmet (Gasmask)</label>
     <description>A Marauder helmet fitted with an integrated filtration mask. Protects the skull and seals the airway against chemical agents and toxic particulates.</description>
     <graphicData>
@@ -428,13 +428,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DRG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>DITN_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>DRG_FabricationBench</li>
+        <li>DITN_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -469,7 +469,7 @@
       <useWornGraphicMask>True</useWornGraphicMask>
       <immuneToToxGasExposure>true</immuneToToxGasExposure>
       <tags Inherit="False">
-        <li>DRG_Armor</li>
+        <li>DITN_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
@@ -494,7 +494,7 @@
         </li>
       </renderNodeProperties>
       <tags>
-        <li>DRG_LightHelmet</li>
+        <li>DITN_LightHelmet</li>
       </tags>
     </apparel>
     <comps>
@@ -502,11 +502,11 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>DRG_Helmets</li>
+      <li>DITN_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>DRG_Armor</li>
+      <li>DITN_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>

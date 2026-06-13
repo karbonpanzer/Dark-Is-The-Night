@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="ArmorHelmetMakeableBase">
-    <defName>DRG_OrbitalMarauderHelmet</defName>
+    <defName>DITN_OrbitalMarauderHelmet</defName>
     <label>Orbital Marauder Helmet</label>
     <description>A fully sealed Marauder helmet rated for low-pressure environments. Integrated visor and pressure-lock collar allow short-duration operations in vacuum or near-vacuum conditions.</description>
     <techLevel>Spacer</techLevel>
     <recipeMaker>
-      <researchPrerequisite>DRG_OrbitalMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>DITN_OrbitalMarauderArmor</researchPrerequisite>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
@@ -29,7 +29,7 @@
       <EquipDelay>2</EquipDelay>
     </statBases>
     <thingCategories>
-      <li>DRG_Helmets</li>
+      <li>DITN_Helmets</li>
     </thingCategories>
     <costList>
       <Steel>30</Steel>
@@ -57,7 +57,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>DRG_Armor</li>
+        <li>DITN_Armor</li>
         <li>Vacsuit</li>
       </tags>
       <forceEyesVisibleForRotations>
@@ -111,12 +111,12 @@
   </ThingDef>
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>DRG_OrbitalMarauderArmor</defName>
+    <defName>DITN_OrbitalMarauderArmor</defName>
     <label>Orbital Marauder Armor</label>
     <techLevel>Spacer</techLevel>
     <description>A vacuum-rated variant of standard Marauder armor, with sealed joints and passive pressure retention. Used by personnel conducting boarding actions or operations in low-pressure environments.</description>
     <recipeMaker>
-      <researchPrerequisite>DRG_OrbitalMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>DITN_OrbitalMarauderArmor</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
@@ -137,7 +137,7 @@
       <EquipDelay>6</EquipDelay>
     </statBases>
     <thingCategories>
-      <li>DRG_Armor</li>
+      <li>DITN_Armor</li>
     </thingCategories>
     <costList>
       <Steel>60</Steel>
@@ -161,7 +161,7 @@
         <li>Middle</li>
       </layers>
       <tags>
-        <li>DRG_Armor</li>
+        <li>DITN_Armor</li>
       </tags>
       <defaultOutfitTags>
         <li>Spacefarer</li>

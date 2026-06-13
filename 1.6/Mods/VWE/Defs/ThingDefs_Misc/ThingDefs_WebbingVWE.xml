@@ -1,10 +1,10 @@
 <Defs>
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>DRG_Webbing_GrenadierSmoke</defName>
+		<defName>DITN_Webbing_GrenadierSmoke</defName>
 		<description>A load-bearing chest harness designed to carry smoke grenades. Vented pouch design allows pressure equalization and prevents moisture buildup that could compromise the pyrotechnic compounds within the old-school condensed smoke canisters.</description>
 		<label>Grenadier Webbing (Smoke)</label>
 		<recipeMaker>
-		  <researchPrerequisite>DRG_SpecialistAccessories</researchPrerequisite>
+		  <researchPrerequisite>DITN_SpecialistAccessories</researchPrerequisite>
 		</recipeMaker>
 		<graphicData>
 		  <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
@@ -23,6 +23,26 @@
 		  <Mass>1</Mass>
 		  <EquipDelay>1</EquipDelay>
 		</statBases>
+			<verbs>
+			<li>
+				<label>throw smoke grenade</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>VWE_Projectile_SmokeGrenade</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+			</verbs>
 		<comps>
 		  <li Class="CompProperties_ApparelReloadable">
 			<maxCharges>8</maxCharges>
@@ -36,7 +56,7 @@
 		  </li>
 		</comps>
 	    <thingCategories>
-		  <li>DRG_Accessories</li>
+		  <li>DITN_Accessories</li>
 		</thingCategories>
 		<equippedStatOffsets>
 		  <PainShockThreshold>0.10</PainShockThreshold>	  
@@ -69,7 +89,7 @@
 			<li>Belt</li>
 		  </layers>
 		  <tags>
-			<li>DRG_Accessories_Grenadier</li>
+			<li>DITN_Accessories_Grenadier</li>
 		  </tags>
 		  <defaultOutfitTags>
 			<li>Soldier</li>
@@ -77,10 +97,7 @@
 		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 		  <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-		  <useWornGraphicMask>True</useWornGraphicMask>			  
-      <abilities>
-        <li>DRG_Ability_ThrowSmoke</li>
-      </abilities>
+		  <useWornGraphicMask>True</useWornGraphicMask>
 		</apparel>	
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
@@ -88,41 +105,12 @@
 	  <uiIconScale>1.15</uiIconScale>
 	</ThingDef>
 
-  <AbilityDef>
-    <defName>DRG_Ability_ThrowSmoke</defName>
-    <label>throw smoke grenade</label>
-    <description>Throw a smoke grenade. Consumes one charge from the grenadier webbing.</description>
-    <iconPath>Things/Grenades/SmokeGrenade</iconPath>
-    <gizmoClass>DeadRinger.CommandAbilityReloadable</gizmoClass>
-    <aiCanUse>false</aiCanUse>
-    <ai_IsOffensive>false</ai_IsOffensive>
-    <ai_IsIncendiary>false</ai_IsIncendiary>
-    <hostile>false</hostile>
-    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <range>12.9</range>
-      <warmupTime>1.5</warmupTime>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-        <canTargetPawns>true</canTargetPawns>
-      </targetParams>
-    </verbProperties>
-    <comps>
-      <li Class="DeadRinger.CompPropertiesAbilityEffectApparelReloadable">
-        <ProjectileDef>VWE_Projectile_SmokeGrenade</ProjectileDef>
-        <ForcedMissRadius>1.9</ForcedMissRadius>
-        <SoundOnCast>ThrowGrenade</SoundOnCast>
-      </li>
-    </comps>
-  </AbilityDef>
-
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>DRG_Webbing_GrenadierFlash</defName>
+		<defName>DITN_Webbing_GrenadierFlash</defName>
 		<description>A load-bearing chest harness configured for flash grenades. Padded retention loops cushion the canisters against impact while keeping them accessible for rapid deployment to temporarily stun organic targets.</description>
 		<label>Grenadier Webbing (Flash)</label>
 		<recipeMaker>
-		  <researchPrerequisite>DRG_SpecialistAccessories</researchPrerequisite>
+		  <researchPrerequisite>DITN_SpecialistAccessories</researchPrerequisite>
 		</recipeMaker>
 		<graphicData>
 		  <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
@@ -141,6 +129,26 @@
 		  <Mass>1</Mass>
 		  <EquipDelay>1</EquipDelay>
 		</statBases>
+			<verbs>
+			<li>
+				<label>throw flash grenade</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>VWE_Projectile_FlashGrenade</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+			</verbs>
 		<comps>
 		  <li Class="CompProperties_ApparelReloadable">
 			<maxCharges>8</maxCharges>
@@ -154,7 +162,7 @@
 		  </li>
 		</comps>
 	    <thingCategories>
-		  <li>DRG_Accessories</li>
+		  <li>DITN_Accessories</li>
 		</thingCategories>
 		<equippedStatOffsets>
 		  <PainShockThreshold>0.10</PainShockThreshold>	  
@@ -187,7 +195,7 @@
 			<li>Belt</li>
 		  </layers>
 		  <tags>
-			<li>DRG_Accessories_Grenadier</li>
+			<li>DITN_Accessories_Grenadier</li>
 		  </tags>
 		  <defaultOutfitTags>
 			<li>Soldier</li>
@@ -195,44 +203,11 @@
 		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 		  <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-		  <useWornGraphicMask>True</useWornGraphicMask>			  
-      <abilities>
-        <li>DRG_Ability_ThrowFlash</li>
-      </abilities>
+		  <useWornGraphicMask>True</useWornGraphicMask>
 		</apparel>	
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>	
 	  <uiIconScale>1.15</uiIconScale>
-	</ThingDef>
-
-  <AbilityDef>
-    <defName>DRG_Ability_ThrowFlash</defName>
-    <label>throw flash grenade</label>
-    <description>Throw a flash grenade to stun targets. Consumes one charge from the grenadier webbing.</description>
-    <iconPath>Things/Grenades/FlashGrenade</iconPath>
-    <gizmoClass>DeadRinger.CommandAbilityReloadable</gizmoClass>
-    <aiCanUse>true</aiCanUse>
-    <ai_IsOffensive>true</ai_IsOffensive>
-    <ai_IsIncendiary>false</ai_IsIncendiary>
-    <ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
-    <hostile>true</hostile>
-    <writeCombatLog>true</writeCombatLog>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <range>12.9</range>
-      <warmupTime>1.5</warmupTime>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-        <canTargetPawns>true</canTargetPawns>
-      </targetParams>
-    </verbProperties>
-    <comps>
-      <li Class="DeadRinger.CompPropertiesAbilityEffectApparelReloadable">
-        <ProjectileDef>VWE_Projectile_FlashGrenade</ProjectileDef>
-        <ForcedMissRadius>1.9</ForcedMissRadius>
-        <SoundOnCast>ThrowGrenade</SoundOnCast>
-      </li>
-    </comps>
-  </AbilityDef>	
+	</ThingDef>	
 </Defs>

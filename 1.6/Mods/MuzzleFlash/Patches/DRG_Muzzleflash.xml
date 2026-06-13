@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[defName="DRG_AssaultPistol"]</xpath>
+		<xpath>Defs/ThingDef[defName="DITN_AssaultPistol"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>MF_StandardMuzzleFalshTwo</def>
@@ -15,7 +15,7 @@
 	</Operation>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[defName="DRG_ServicePistol"]</xpath>
+		<xpath>Defs/ThingDef[defName="DITN_ServicePistol"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>MF_StandardMuzzleFalshTwo</def>
@@ -28,7 +28,7 @@
 	</Operation>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[defName="DRG_AdvancedSMG"]</xpath>
+		<xpath>Defs/ThingDef[defName="DITN_AdvancedSMG"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>MF_StandardMuzzleFalshTwo</def>
@@ -41,7 +41,7 @@
 	</Operation>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[defName="DRG_StampedeRevolver"]</xpath>
+		<xpath>Defs/ThingDef[defName="DITN_StampedeRevolver"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>MF_StandardMuzzleFalshTwo</def>
@@ -54,7 +54,7 @@
 	</Operation>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[defName="DRG_ServiceRifle"]</xpath>
+		<xpath>Defs/ThingDef[defName="DITN_ServiceRifle"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>MF_StandardMuzzleFalshThree</def>
@@ -67,7 +67,7 @@
 	</Operation>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[defName="DRG_ServiceCarbine"]</xpath>
+		<xpath>Defs/ThingDef[defName="DITN_ServiceCarbine"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>MF_StandardMuzzleFalshThree</def>
@@ -80,7 +80,7 @@
 	</Operation>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[defName="DRG_ServiceDMR"]</xpath>
+		<xpath>Defs/ThingDef[defName="DITN_ServiceDMR"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>MF_StandardMuzzleFalsh</def>
@@ -93,7 +93,7 @@
 	</Operation>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[defName="DRG_ServiceLMG"]</xpath>
+		<xpath>Defs/ThingDef[defName="DITN_ServiceLMG"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>MF_StandardMuzzleFalsh</def>
@@ -106,7 +106,7 @@
 	</Operation>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[defName="DRG_JackhammerShotgun"]</xpath>
+		<xpath>Defs/ThingDef[defName="DITN_JackhammerShotgun"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>MF_StandardMuzzleFalsh</def>
@@ -119,7 +119,7 @@
 	</Operation>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[defName="DRG_LawbringerShotgun"]</xpath>
+		<xpath>Defs/ThingDef[defName="DITN_LawbringerShotgun"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>MF_StandardMuzzleFalsh</def>
@@ -132,7 +132,7 @@
 	</Operation>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[defName="DRG_SalvoGrenadeLauncher"]</xpath>
+		<xpath>Defs/ThingDef[defName="DITN_SalvoGrenadeLauncher"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>MF_StandardMuzzleFalsh</def>
@@ -145,7 +145,7 @@
 	</Operation>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[defName="DRG_AutoloaderCannon"]</xpath>
+		<xpath>Defs/ThingDef[defName="DITN_AutoloaderCannon"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>MF_StandardMuzzleFalsh</def>
@@ -158,7 +158,7 @@
 	</Operation>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[defName="DRG_HydraRifle"]</xpath>
+		<xpath>Defs/ThingDef[defName="DITN_HydraRifle"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>MF_StandardMuzzleFalsh</def>

@@ -5,9 +5,9 @@
     <!-- ========================================= -->
 
     <!-- Civilian Bases -->
-    <PawnKindDef Name="DRG_Civil_CivilianBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_CivilianBase" Abstract="True">
         <race>Human</race>
-        <defaultFactionType>DRG_Civil</defaultFactionType>
+        <defaultFactionType>DITN_Civil</defaultFactionType>
         <invNutrition>2.55</invNutrition>
         <chemicalAddictionChance>0.05</chemicalAddictionChance>
         <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
@@ -44,11 +44,11 @@
             </subOptionsChooseOne>
         </inventoryOptions>
         <weaponTags>
-            <li>DRG_RingerSidearm</li>
+            <li>DITN_RingerSidearm</li>
         </weaponTags>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_LaborerBase" ParentName="DRG_Civil_CivilianBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_LaborerBase" ParentName="DITN_Civil_CivilianBase" Abstract="True">
         <combatPower>25</combatPower>
         <itemQuality>Poor</itemQuality>
         <isFighter>false</isFighter>
@@ -66,14 +66,14 @@
         <initialWillRange>2~4</initialWillRange>
         <initialResistanceRange>15~25</initialResistanceRange>
         <weaponTags>
-            <li>DRG_RingerSidearm</li>
+            <li>DITN_RingerSidearm</li>
         </weaponTags>
     </PawnKindDef>
 
     <!-- Leadership Bases -->
-    <PawnKindDef Name="DRG_Civil_LeadershipBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_LeadershipBase" Abstract="True">
         <race>Human</race>
-        <defaultFactionType>DRG_Civil</defaultFactionType>
+        <defaultFactionType>DITN_Civil</defaultFactionType>
         <invNutrition>2.55</invNutrition>
         <chemicalAddictionChance>0</chemicalAddictionChance>
         <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
@@ -114,15 +114,15 @@
             </subOptionsChooseOne>
         </inventoryOptions>
         <weaponTags>
-            <li>DRG_RingerSidearm</li>
-            <li>DRG_RingerHeavyPistol</li>
+            <li>DITN_RingerSidearm</li>
+            <li>DITN_RingerHeavyPistol</li>
         </weaponTags>
     </PawnKindDef>
 
     <!-- Military/Fighter Bases -->
-    <PawnKindDef Name="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_MilitaryBase" Abstract="True">
         <race>Human</race>
-        <defaultFactionType>DRG_Civil</defaultFactionType>
+        <defaultFactionType>DITN_Civil</defaultFactionType>
         <invNutrition>2.55</invNutrition>
         <chemicalAddictionChance>0</chemicalAddictionChance>
         <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
@@ -160,14 +160,14 @@
         </inventoryOptions>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_RecruitRangedTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_RecruitRangedTier" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>100</combatPower>
         <itemQuality>Poor</itemQuality>
         <apparelMoney>600~900</apparelMoney>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DRG_RingerSidearm</li>
-            <li>DRG_RingerSMG</li>
+            <li>DITN_RingerSidearm</li>
+            <li>DITN_RingerSMG</li>
         </weaponTags>
         <weaponMoney>1000~1500</weaponMoney>
         <techHediffsChance>0.02</techHediffsChance>
@@ -186,13 +186,13 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_RecruitMeleeTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_RecruitMeleeTier" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>100</combatPower>
         <itemQuality>Poor</itemQuality>
         <apparelMoney>600~900</apparelMoney>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DRG_RingerMelee</li>
+            <li>DITN_RingerMelee</li>
         </weaponTags>
         <weaponMoney>2000~2500</weaponMoney>
         <techHediffsChance>0.02</techHediffsChance>
@@ -208,12 +208,12 @@
         </skills>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_InfantryRangedTier1" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_InfantryRangedTier1" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>120</combatPower>
         <apparelMoney>1000~1500</apparelMoney>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DRG_RingerRifle</li>
+            <li>DITN_RingerRifle</li>
         </weaponTags>
         <weaponMoney>3200~4500</weaponMoney>
         <techHediffsChance>0.05</techHediffsChance>
@@ -232,12 +232,12 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_InfantryMeleeTier1" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_InfantryMeleeTier1" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>120</combatPower>
         <apparelMoney>1000~1500</apparelMoney>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DRG_RingerMelee</li>
+            <li>DITN_RingerMelee</li>
         </weaponTags>
         <weaponMoney>2000~2800</weaponMoney>
         <techHediffsChance>0.05</techHediffsChance>
@@ -253,13 +253,13 @@
         </skills>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_InfantryRangedTier2" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_InfantryRangedTier2" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>150</combatPower>
         <apparelMoney>1200~1700</apparelMoney>
         <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DRG_RingerCarbine</li>
-            <li>DRG_RingerHeavyPistol</li>
+            <li>DITN_RingerCarbine</li>
+            <li>DITN_RingerHeavyPistol</li>
         </weaponTags>
         <weaponMoney>1800~2400</weaponMoney>
         <techHediffsChance>0.08</techHediffsChance>
@@ -279,13 +279,13 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_InfantryMeleeTier2" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_InfantryMeleeTier2" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>150</combatPower>
         <apparelMoney>1200~1700</apparelMoney>
         <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DRG_RingerMelee</li>
-            <li>DRG_RingerEliteMelee</li>
+            <li>DITN_RingerMelee</li>
+            <li>DITN_RingerEliteMelee</li>
         </weaponTags>
         <weaponMoney>1800~2400</weaponMoney>
         <techHediffsChance>0.08</techHediffsChance>
@@ -302,7 +302,7 @@
         </skills>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_HeavyInfantryTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_HeavyInfantryTier" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>175</combatPower>
         <apparelMoney>1500~2000</apparelMoney>
         <apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
@@ -320,11 +320,11 @@
             </li>
         </skills>
         <weaponTags>
-            <li>DRG_RingerHeavyGun</li>
+            <li>DITN_RingerHeavyGun</li>
         </weaponTags>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_VeteranRangedTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_VeteranRangedTier" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>180</combatPower>
         <itemQuality>Good</itemQuality>
         <apparelMoney>1800~2400</apparelMoney>
@@ -346,13 +346,13 @@
             <li>Brawler</li>
         </disallowedTraits>
         <weaponTags>
-            <li>DRG_RingerRifle</li>
-            <li>DRG_RingerEliteShotgun</li>
-            <li>DRG_RingerMarksmanGun</li>
+            <li>DITN_RingerRifle</li>
+            <li>DITN_RingerEliteShotgun</li>
+            <li>DITN_RingerMarksmanGun</li>
         </weaponTags>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_VeteranMeleeTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_VeteranMeleeTier" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>180</combatPower>
         <itemQuality>Good</itemQuality>
         <apparelMoney>1800~2400</apparelMoney>
@@ -371,11 +371,11 @@
             </li>
         </skills>
         <weaponTags>
-            <li>DRG_RingerEliteMelee</li>
+            <li>DITN_RingerEliteMelee</li>
         </weaponTags>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_NCOTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_NCOTier" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>130</combatPower>
         <itemQuality>Normal</itemQuality>
         <apparelMoney>1100~1600</apparelMoney>
@@ -383,8 +383,8 @@
         <minGenerationAge>25</minGenerationAge>
         <maxGenerationAge>45</maxGenerationAge>
         <weaponTags>
-            <li>DRG_RingerRifle</li>
-            <li>DRG_RingerHeavyPistol</li>
+            <li>DITN_RingerRifle</li>
+            <li>DITN_RingerHeavyPistol</li>
         </weaponTags>
         <weaponMoney>1800~2400</weaponMoney>
         <techHediffsChance>0.07</techHediffsChance>
@@ -412,7 +412,7 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_VeteranTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_VeteranTier" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>180</combatPower>
         <itemQuality>Good</itemQuality>
         <apparelMoney>1800~2400</apparelMoney>
@@ -438,20 +438,20 @@
             <li>Brawler</li>
         </disallowedTraits>
         <weaponTags>
-            <li>DRG_RingerRifle</li>
-            <li>DRG_RingerEliteShotgun</li>
+            <li>DITN_RingerRifle</li>
+            <li>DITN_RingerEliteShotgun</li>
         </weaponTags>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_SupportTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_SupportTier" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>120</combatPower>
         <apparelMoney>1000~1500</apparelMoney>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DRG_RingerSidearm</li>
-            <li>DRG_RingerSMG</li>
-            <li>DRG_RingerCarbine</li>
-            <li>DRG_RingerShotgun</li>
+            <li>DITN_RingerSidearm</li>
+            <li>DITN_RingerSMG</li>
+            <li>DITN_RingerCarbine</li>
+            <li>DITN_RingerShotgun</li>
         </weaponTags>
         <weaponMoney>1500~2100</weaponMoney>
         <techHediffsChance>0.06</techHediffsChance>
@@ -465,7 +465,7 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_OfficerTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_OfficerTier" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>140</combatPower>
         <itemQuality>Good</itemQuality>
         <gearHealthRange>1.0~1.0</gearHealthRange>
@@ -474,8 +474,8 @@
         <apparelMoney>1200~1800</apparelMoney>
         <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DRG_RingerCarbine</li>
-            <li>DRG_RingerHeavyPistol</li>
+            <li>DITN_RingerCarbine</li>
+            <li>DITN_RingerHeavyPistol</li>
         </weaponTags>
         <weaponMoney>3600~4500</weaponMoney>
         <techHediffsChance>0.15</techHediffsChance>
@@ -502,7 +502,7 @@
         </disallowedTraits>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_SpecialWeaponsTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_SpecialWeaponsTier" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>145</combatPower>
         <apparelMoney>1100~1600</apparelMoney>
         <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
@@ -523,12 +523,12 @@
             <li>Brawler</li>
         </disallowedTraits>
         <weaponTags>
-            <li>DRG_RingerSidearm</li>
-            <li>DRG_RingerSMG</li>
+            <li>DITN_RingerSidearm</li>
+            <li>DITN_RingerSMG</li>
         </weaponTags>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_WardenTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_WardenTier" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>160</combatPower>
         <itemQuality>Good</itemQuality>
         <gearHealthRange>1.0~1.0</gearHealthRange>
@@ -537,8 +537,8 @@
         <apparelMoney>1400~2000</apparelMoney>
         <apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DRG_RingerShotgun</li>
-            <li>DRG_RingerSidearm</li>
+            <li>DITN_RingerShotgun</li>
+            <li>DITN_RingerSidearm</li>
         </weaponTags>
         <weaponMoney>2400~3600</weaponMoney>
         <techHediffsChance>0.12</techHediffsChance>
@@ -566,7 +566,7 @@
         </skills>
     </PawnKindDef>
 
-    <PawnKindDef Name="DRG_Civil_ShocktrooperTier" ParentName="DRG_Civil_MilitaryBase" Abstract="True">
+    <PawnKindDef Name="DITN_Civil_ShocktrooperTier" ParentName="DITN_Civil_MilitaryBase" Abstract="True">
         <combatPower>190</combatPower>
         <itemQuality>Good</itemQuality>
         <apparelMoney>1900~2600</apparelMoney>
@@ -592,7 +592,7 @@
             </li>
         </skills>
         <weaponTags>
-            <li>DRG_RingerHeavyPistol</li>
+            <li>DITN_RingerHeavyPistol</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -600,8 +600,8 @@
     <!-- CIVILIAN PAWNS -->
     <!-- ========================================= -->
 
-    <PawnKindDef ParentName="DRG_Civil_CivilianBase">
-        <defName>DRG_Civil_Settler</defName>
+    <PawnKindDef ParentName="DITN_Civil_CivilianBase">
+        <defName>DITN_Civil_Settler</defName>
         <label>settler</label>
         <labelPlural>settlers</labelPlural>
         <combatPower>35</combatPower>
@@ -633,13 +633,13 @@
             <li>Brawler</li>
         </disallowedTraits>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
+            <li>DITN_RingerUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_CivilianBase">
-        <defName>DRG_Civil_Trader</defName>
+    <PawnKindDef ParentName="DITN_Civil_CivilianBase">
+        <defName>DITN_Civil_Trader</defName>
         <label>trader</label>
         <labelPlural>traders</labelPlural>
         <trader>true</trader>
@@ -673,13 +673,13 @@
             <li>Brawler</li>
         </disallowedTraits>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
+            <li>DITN_RingerUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_LaborerBase">
-        <defName>DRG_Civil_Laborer</defName>
+    <PawnKindDef ParentName="DITN_Civil_LaborerBase">
+        <defName>DITN_Civil_Laborer</defName>
         <label>laborer</label>
         <labelPlural>laborers</labelPlural>
         <combatPower>25</combatPower>
@@ -701,7 +701,7 @@
             <li>Brawler</li>
         </disallowedTraits>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
+            <li>DITN_RingerUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -710,8 +710,8 @@
     <!-- LEADER PAWNS -->
     <!-- ========================================= -->
 
-    <PawnKindDef ParentName="DRG_Civil_LeadershipBase">
-        <defName>DRG_Civil_Representative</defName>
+    <PawnKindDef ParentName="DITN_Civil_LeadershipBase">
+        <defName>DITN_Civil_Representative</defName>
         <label>representative</label>
         <labelPlural>representatives</labelPlural>
         <combatPower>80</combatPower>
@@ -751,7 +751,7 @@
             <li>Brawler</li>
         </disallowedTraits>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
+            <li>DITN_RingerUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -760,8 +760,8 @@
     <!-- FIGHTER PAWNS -->
     <!-- ========================================= -->
 
-    <PawnKindDef ParentName="DRG_Civil_RecruitRangedTier">
-        <defName>DRG_Civil_Recruit_Ranged</defName>
+    <PawnKindDef ParentName="DITN_Civil_RecruitRangedTier">
+        <defName>DITN_Civil_Recruit_Ranged</defName>
         <label>recruit</label>
         <labelPlural>recruits</labelPlural>
         <combatPower>70</combatPower>
@@ -776,16 +776,16 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_Infantry</li>
+            <li>DITN_Webbing_Infantry</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
+            <li>DITN_RingerUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_RecruitMeleeTier">
-        <defName>DRG_Civil_Recruit_Melee</defName>
+    <PawnKindDef ParentName="DITN_Civil_RecruitMeleeTier">
+        <defName>DITN_Civil_Recruit_Melee</defName>
         <label>recruit</label>
         <labelPlural>recruits</labelPlural>
         <combatPower>70</combatPower>
@@ -800,16 +800,16 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_Infantry</li>
+            <li>DITN_Webbing_Infantry</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
+            <li>DITN_RingerUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_InfantryRangedTier1">
-        <defName>DRG_Civil_Infantry_Ranged</defName>
+    <PawnKindDef ParentName="DITN_Civil_InfantryRangedTier1">
+        <defName>DITN_Civil_Infantry_Ranged</defName>
         <label>infantry</label>
         <labelPlural>infantry</labelPlural>
         <combatPower>105</combatPower>
@@ -820,18 +820,18 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_Infantry</li>
-            <li>DRG_MarauderArmor</li>
+            <li>DITN_Webbing_Infantry</li>
+            <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
-            <li>DRG_LightHelmet</li>
+            <li>DITN_RingerUniform</li>
+            <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_InfantryMeleeTier1">
-        <defName>DRG_Civil_Infantry_Melee</defName>
+    <PawnKindDef ParentName="DITN_Civil_InfantryMeleeTier1">
+        <defName>DITN_Civil_Infantry_Melee</defName>
         <label>infantry</label>
         <labelPlural>infantry</labelPlural>
         <combatPower>105</combatPower>
@@ -842,18 +842,18 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_Infantry</li>
-            <li>DRG_MarauderArmor</li>
+            <li>DITN_Webbing_Infantry</li>
+            <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
-            <li>DRG_LightHelmet</li>
+            <li>DITN_RingerUniform</li>
+            <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_HeavyInfantryTier">
-        <defName>DRG_Civil_Heavy_Infantry</defName>
+    <PawnKindDef ParentName="DITN_Civil_HeavyInfantryTier">
+        <defName>DITN_Civil_Heavy_Infantry</defName>
         <label>heavy infantry</label>
         <labelPlural>heavy infantry</labelPlural>
         <combatPower>125</combatPower>
@@ -866,18 +866,18 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_Infantry</li>
-            <li>DRG_HeavyMarauderArmor</li>
+            <li>DITN_Webbing_Infantry</li>
+            <li>DITN_HeavyMarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
-            <li>DRG_HeavyHelmet</li>
+            <li>DITN_RingerUniform</li>
+            <li>DITN_HeavyHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_NCOTier">
-        <defName>DRG_Civil_Sergeant</defName>
+    <PawnKindDef ParentName="DITN_Civil_NCOTier">
+        <defName>DITN_Civil_Sergeant</defName>
         <label>sergeant</label>
         <labelPlural>sergeants</labelPlural>
         <combatPower>90</combatPower>
@@ -888,28 +888,28 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_Infantry</li>
-            <li>DRG_MarauderArmor</li>
+            <li>DITN_Webbing_Infantry</li>
+            <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
-            <li>DRG_LightHelmet</li>
+            <li>DITN_RingerUniform</li>
+            <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_VeteranRangedTier">
-        <defName>DRG_Civil_Veteran_Ranged</defName>
+    <PawnKindDef ParentName="DITN_Civil_VeteranRangedTier">
+        <defName>DITN_Civil_Veteran_Ranged</defName>
         <label>veteran</label>
         <labelPlural>veterans</labelPlural>
         <combatPower>130</combatPower>
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
         <weaponTags Inherit="False">
-            <li>DRG_RingerRifle</li>
-            <li>DRG_RingerEliteShotgun</li>
-            <li>DRG_RingerMarksmanGun</li>
-            <li>DRG_RingerDMR</li>              
+            <li>DITN_RingerRifle</li>
+            <li>DITN_RingerEliteShotgun</li>
+            <li>DITN_RingerMarksmanGun</li>
+            <li>DITN_RingerDMR</li>              
         </weaponTags>
         <modExtensions>
             <li Class="DeadRinger.DecalKindExtension">
@@ -918,25 +918,25 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_Infantry</li>
-            <li>DRG_HeavyMarauderArmor</li>
+            <li>DITN_Webbing_Infantry</li>
+            <li>DITN_HeavyMarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
-            <li>DRG_HeavyHelmet</li>
+            <li>DITN_RingerUniform</li>
+            <li>DITN_HeavyHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_VeteranMeleeTier">
-        <defName>DRG_Civil_Veteran_Melee</defName>
+    <PawnKindDef ParentName="DITN_Civil_VeteranMeleeTier">
+        <defName>DITN_Civil_Veteran_Melee</defName>
         <label>veteran</label>
         <labelPlural>veterans</labelPlural>
         <combatPower>130</combatPower>
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
         <weaponTags Inherit="False">
-            <li>DRG_RingerEliteMelee</li>
+            <li>DITN_RingerEliteMelee</li>
         </weaponTags>
         <modExtensions>
             <li Class="DeadRinger.DecalKindExtension">
@@ -945,25 +945,25 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_Infantry</li>
-            <li>DRG_HeavyMarauderArmor</li>
+            <li>DITN_Webbing_Infantry</li>
+            <li>DITN_HeavyMarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
-            <li>DRG_HeavyHelmet</li>
+            <li>DITN_RingerUniform</li>
+            <li>DITN_HeavyHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_InfantryRangedTier2">
-        <defName>DRG_Civil_Ranger</defName>
+    <PawnKindDef ParentName="DITN_Civil_InfantryRangedTier2">
+        <defName>DITN_Civil_Ranger</defName>
         <label>ranger</label>
         <labelPlural>rangers</labelPlural>
         <combatPower>110</combatPower>
         <weaponTags Inherit="False">
-            <li>DRG_RingerCarbine</li>
-            <li>DRG_RingerHeavyPistol</li>
-            <li>DRG_RingerDMR</li>            
+            <li>DITN_RingerCarbine</li>
+            <li>DITN_RingerHeavyPistol</li>
+            <li>DITN_RingerDMR</li>            
         </weaponTags>
         <weaponMoney>1950~2550</weaponMoney>
         <apparelMoney>1100~1600</apparelMoney>
@@ -984,17 +984,17 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_Scout</li>
-            <li>DRG_ScoutMarauderArmor</li>
+            <li>DITN_Webbing_Scout</li>
+            <li>DITN_ScoutMarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
+            <li>DITN_RingerUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_SupportTier">
-        <defName>DRG_Civil_Medic</defName>
+    <PawnKindDef ParentName="DITN_Civil_SupportTier">
+        <defName>DITN_Civil_Medic</defName>
         <label>medic</label>
         <labelPlural>medics</labelPlural>
         <combatPower>80</combatPower>
@@ -1028,22 +1028,22 @@
             </li>
         </modExtensions>
         <weaponTags Inherit="False">
-            <li>DRG_RingerSidearm</li>
-            <li>DRG_RingerSMG</li>
+            <li>DITN_RingerSidearm</li>
+            <li>DITN_RingerSMG</li>
         </weaponTags>
         <apparelRequired>
-            <li>DRG_Webbing_Medic</li>
-            <li>DRG_MarauderArmor</li>
+            <li>DITN_Webbing_Medic</li>
+            <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
-            <li>DRG_LightHelmet</li>
+            <li>DITN_RingerUniform</li>
+            <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_SupportTier">
-        <defName>DRG_Civil_Engineer</defName>
+    <PawnKindDef ParentName="DITN_Civil_SupportTier">
+        <defName>DITN_Civil_Engineer</defName>
         <label>engineer</label>
         <labelPlural>engineers</labelPlural>
         <combatPower>80</combatPower>
@@ -1068,28 +1068,28 @@
             </li>
         </modExtensions>
         <weaponTags Inherit="False">
-            <li>DRG_RingerCarbine</li>
-            <li>DRG_RingerShotgun</li>
+            <li>DITN_RingerCarbine</li>
+            <li>DITN_RingerShotgun</li>
         </weaponTags>
         <apparelRequired>
-            <li>DRG_Webbing_Engineer</li>
-            <li>DRG_MarauderArmor</li>
+            <li>DITN_Webbing_Engineer</li>
+            <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
-            <li>DRG_LightHelmet</li>
+            <li>DITN_RingerUniform</li>
+            <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_SpecialWeaponsTier">
-        <defName>DRG_Civil_GrenadierFrag</defName>
+    <PawnKindDef ParentName="DITN_Civil_SpecialWeaponsTier">
+        <defName>DITN_Civil_GrenadierFrag</defName>
         <label>grenadier</label>
         <labelPlural>grenadiers</labelPlural>
         <combatPower>100</combatPower>
         <weaponTags Inherit="False">
-            <li>DRG_RingerSidearm</li>
-            <li>DRG_RingerSMG</li>
+            <li>DITN_RingerSidearm</li>
+            <li>DITN_RingerSMG</li>
         </weaponTags>
         <modExtensions>
             <li Class="DeadRinger.DecalKindExtension">
@@ -1098,24 +1098,24 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_GrenadierFrag</li>
-            <li>DRG_MarauderArmor</li>
+            <li>DITN_Webbing_GrenadierFrag</li>
+            <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
-            <li>DRG_LightHelmet</li>
+            <li>DITN_RingerUniform</li>
+            <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_SpecialWeaponsTier">
-        <defName>DRG_Civil_GrenadierFire</defName>
+    <PawnKindDef ParentName="DITN_Civil_SpecialWeaponsTier">
+        <defName>DITN_Civil_GrenadierFire</defName>
         <label>grenadier</label>
         <labelPlural>grenadiers</labelPlural>
         <combatPower>100</combatPower>
         <weaponTags Inherit="False">
-            <li>DRG_RingerSidearm</li>
-            <li>DRG_RingerSMG</li>
+            <li>DITN_RingerSidearm</li>
+            <li>DITN_RingerSMG</li>
         </weaponTags>
         <modExtensions>
             <li Class="DeadRinger.DecalKindExtension">
@@ -1124,24 +1124,24 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_GrenadierIncendiary</li>
-            <li>DRG_MarauderArmor</li>
+            <li>DITN_Webbing_GrenadierIncendiary</li>
+            <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
-            <li>DRG_LightHelmet</li>
+            <li>DITN_RingerUniform</li>
+            <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>
     
-    <PawnKindDef ParentName="DRG_Civil_SpecialWeaponsTier">
-        <defName>DRG_Civil_GrenadierEMP</defName>
+    <PawnKindDef ParentName="DITN_Civil_SpecialWeaponsTier">
+        <defName>DITN_Civil_GrenadierEMP</defName>
         <label>grenadier</label>
         <labelPlural>grenadiers</labelPlural>
         <combatPower>100</combatPower>
         <weaponTags Inherit="False">
-            <li>DRG_RingerSidearm</li>
-            <li>DRG_RingerSMG</li>
+            <li>DITN_RingerSidearm</li>
+            <li>DITN_RingerSMG</li>
         </weaponTags>
         <modExtensions>
             <li Class="DeadRinger.DecalKindExtension">
@@ -1150,24 +1150,24 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_GrenadierEMP</li>
-            <li>DRG_MarauderArmor</li>
+            <li>DITN_Webbing_GrenadierEMP</li>
+            <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
-            <li>DRG_LightHelmet</li>
+            <li>DITN_RingerUniform</li>
+            <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>   
 
-    <PawnKindDef ParentName="DRG_Civil_SpecialWeaponsTier" MayRequire="Ludeon.RimWorld.Biotech">
-        <defName>DRG_Civil_GrenadierTox</defName>
+    <PawnKindDef ParentName="DITN_Civil_SpecialWeaponsTier" MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>DITN_Civil_GrenadierTox</defName>
         <label>grenadier</label>
         <labelPlural>grenadiers</labelPlural>
         <combatPower>100</combatPower>
         <weaponTags Inherit="False">
-            <li>DRG_RingerSidearm</li>
-            <li>DRG_RingerSMG</li>
+            <li>DITN_RingerSidearm</li>
+            <li>DITN_RingerSMG</li>
         </weaponTags>
         <modExtensions>
             <li Class="DeadRinger.DecalKindExtension">
@@ -1176,25 +1176,25 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_GrenadierTox</li>
-            <li>DRG_MarauderArmor</li>
+            <li>DITN_Webbing_GrenadierTox</li>
+            <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
-            <li>DRG_LightHelmet</li>
+            <li>DITN_RingerUniform</li>
+            <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef> 
 
-    <PawnKindDef ParentName="DRG_Civil_ShocktrooperTier">
-        <defName>DRG_Civil_Shocktrooper</defName>
+    <PawnKindDef ParentName="DITN_Civil_ShocktrooperTier">
+        <defName>DITN_Civil_Shocktrooper</defName>
         <label>shocktrooper</label>
         <labelPlural>shocktroopers</labelPlural>
         <combatPower>140</combatPower>
         <minGenerationAge>25</minGenerationAge>
         <maxGenerationAge>40</maxGenerationAge>
         <weaponTags Inherit="False">
-            <li>DRG_RingerHeavyPistol</li>
+            <li>DITN_RingerHeavyPistol</li>
         </weaponTags>
         <modExtensions>
             <li Class="DeadRinger.DecalKindExtension">
@@ -1203,18 +1203,18 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_Shocktrooper</li>
-            <li>DRG_HeavyMarauderArmor</li>
-            <li>DRG_HeavyMarauderHelmet_Shielded</li>
+            <li>DITN_Webbing_Shocktrooper</li>
+            <li>DITN_HeavyMarauderArmor</li>
+            <li>DITN_HeavyMarauderHelmet_Shielded</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
+            <li>DITN_RingerUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_WardenTier">
-        <defName>DRG_Civil_Warden</defName>
+    <PawnKindDef ParentName="DITN_Civil_WardenTier">
+        <defName>DITN_Civil_Warden</defName>
         <label>warden</label>
         <labelPlural>wardens</labelPlural>
         <combatPower>115</combatPower>
@@ -1225,17 +1225,17 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_Webbing_Riot</li>
-            <li>DRG_RiotMarauderArmor</li>
+            <li>DITN_Webbing_Riot</li>
+            <li>DITN_RiotMarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_RingerUniform</li>
+            <li>DITN_RingerUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DRG_Civil_OfficerTier">
-        <defName>DRG_Civil_Officer</defName>
+    <PawnKindDef ParentName="DITN_Civil_OfficerTier">
+        <defName>DITN_Civil_Officer</defName>
         <label>commander</label>
         <labelPlural>commanders</labelPlural>
         <combatPower>105</combatPower>
@@ -1271,10 +1271,10 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>DRG_OfficerMarauderArmor</li>
+            <li>DITN_OfficerMarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DRG_OfficerUniform</li>
+            <li>DITN_OfficerUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>

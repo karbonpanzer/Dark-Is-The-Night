@@ -4,7 +4,7 @@
 	<!-- Melee Weapons -->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>DRG_Vibrosword</defName>
+		<defName>DITN_Vibrosword</defName>
 		<label>Vibrosword</label>
 		<description>A composite sword powered by a small micro-motor which vibrates the blade. Easily able to carve through armor and flesh, the production of it is a closely guarded secret in the Dominion.</description>
 		<graphicData>
@@ -19,12 +19,12 @@
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
-			<researchPrerequisite>DRG_VibroWeapons</researchPrerequisite>
+			<researchPrerequisite>DITN_VibroWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -67,8 +67,8 @@
 			</li>
 		</tools>
 		<weaponTags>
-			<li>DRG_RingerMelee</li>
-			<li>DRG_RingerEliteMelee</li>
+			<li>DITN_RingerMelee</li>
+			<li>DITN_RingerEliteMelee</li>
 		</weaponTags>
 		<thingSetMakerTags>
 			<li>RewardHighTech</li>
@@ -80,7 +80,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>DRG_Vibroblade</defName>
+		<defName>DITN_Vibroblade</defName>
 		<label>Vibroblade</label>
 		<description>A composite dagger powered by a small micro-motor. Though lacking in the range of a sword, it provides benefits in close quarters, favored as a back-up weapon.</description>
 		<graphicData>
@@ -95,12 +95,12 @@
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
-			<researchPrerequisite>DRG_VibroWeapons</researchPrerequisite>
+			<researchPrerequisite>DITN_VibroWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>DRG_FabricationBench</li>
+				<li>DITN_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -143,7 +143,7 @@
 			</li>
 		</tools>
 		<weaponTags>
-			<li>DRG_RingerMelee</li>
+			<li>DITN_RingerMelee</li>
 		</weaponTags>
 		<thingSetMakerTags>
 			<li>RewardStandardHighTech</li>

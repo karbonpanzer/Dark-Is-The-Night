@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>DRG_Webbing_GrenadierTox</defName>
+		<defName>DITN_Webbing_GrenadierTox</defName>
 		<description>A load-bearing chest harness built to carry toxin grenades. Chemically resistant inner lining and sealed canister clips prevent accidental exposure to the lethal chemical agents during movement.</description>
 		<label>Grenadier Webbing (Tox)</label>
 		<recipeMaker>
-		  <researchPrerequisite>DRG_SpecialistAccessories</researchPrerequisite>
+		  <researchPrerequisite>DITN_SpecialistAccessories</researchPrerequisite>
 		</recipeMaker>
 		<graphicData>
 		  <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
@@ -24,6 +24,26 @@
 		  <Mass>1</Mass>
 		  <EquipDelay>1</EquipDelay>
 		</statBases>
+			<verbs>
+			<li>
+				<label>throw tox grenade</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_GrenadeTox</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+			</verbs>
 		<comps>
 		  <li Class="CompProperties_ApparelReloadable">
 			<maxCharges>8</maxCharges>
@@ -37,7 +57,7 @@
 		  </li>
 		</comps>
 	    <thingCategories>
-		  <li>DRG_Accessories</li>
+		  <li>DITN_Accessories</li>
 		</thingCategories>
 		<equippedStatOffsets>
 		  <PainShockThreshold>0.10</PainShockThreshold>	  
@@ -70,7 +90,7 @@
 			<li>Belt</li>
 		  </layers>
 		  <tags>
-			<li>DRG_Accessories_Grenadier</li>
+			<li>DITN_Accessories_Grenadier</li>
 		  </tags>
 		  <defaultOutfitTags>
 			<li>Soldier</li>
@@ -78,44 +98,11 @@
 		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 		  <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-		  <useWornGraphicMask>True</useWornGraphicMask>			  
-      <abilities>
-        <li>DRG_Ability_ThrowTox</li>
-      </abilities>
+		  <useWornGraphicMask>True</useWornGraphicMask>
 		</apparel>	
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>	
 	  <uiIconScale>1.15</uiIconScale>
 	</ThingDef>
-
-  <AbilityDef>
-    <defName>DRG_Ability_ThrowTox</defName>
-    <label>throw tox grenade</label>
-    <description>Throw a toxic grenade. Consumes one charge from the grenadier webbing.</description>
-    <iconPath>Things/Item/Equipment/WeaponRanged/ToxGrenades</iconPath>
-    <gizmoClass>DeadRinger.CommandAbilityReloadable</gizmoClass>
-    <aiCanUse>true</aiCanUse>
-    <ai_IsOffensive>true</ai_IsOffensive>
-    <ai_IsIncendiary>false</ai_IsIncendiary>
-    <ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
-    <hostile>true</hostile>
-    <writeCombatLog>true</writeCombatLog>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <range>12.9</range>
-      <warmupTime>1.5</warmupTime>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-        <canTargetPawns>true</canTargetPawns>
-      </targetParams>
-    </verbProperties>
-    <comps>
-      <li Class="DeadRinger.CompPropertiesAbilityEffectApparelReloadable">
-        <ProjectileDef>Proj_GrenadeTox</ProjectileDef>
-        <ForcedMissRadius>1.9</ForcedMissRadius>
-        <SoundOnCast>ThrowGrenade</SoundOnCast>
-      </li>
-    </comps>
-  </AbilityDef>
 </Defs>

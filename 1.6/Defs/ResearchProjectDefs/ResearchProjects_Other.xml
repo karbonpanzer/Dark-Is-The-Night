@@ -2,17 +2,17 @@
 <Defs>
 
 	<ResearchProjectDef>
-		<defName>DRG_FabricationBench</defName>
+		<defName>DITN_FabricationBench</defName>
 		<label>Ringer Fabricator</label>
 		<description>Build the Ringer Fabricator workbench needed to produce Ringer equipment.</description>
 		<baseCost>1000</baseCost>
-		<tab>DRG_ResearchTab</tab>
+		<tab>DITN_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>Fabrication</li>
 		</prerequisites>
 		<requiredAnalyzed>
-			<li>DRG_Decoder</li>
+			<li>DITN_Decoder</li>
 		</requiredAnalyzed>
 		<researchViewX>0</researchViewX>
 		<researchViewY>2.1</researchViewY>

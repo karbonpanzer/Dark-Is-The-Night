@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>DRG_Webbing_GrenadierTear</defName>
+		<defName>DITN_Webbing_GrenadierTear</defName>
 		<description>A load-bearing chest harness tailored for tear gas grenades. Double-sealed canister pockets with chemically resistant inner lining and rubberized layers protect the wearer from accidental exposure to the special compound during movement.</description>
 		<label>Grenadier Webbing (Tear)</label>
 		<recipeMaker>
 		  <researchPrerequisites>
-		    <li>DRG_SpecialistAccessories</li>
+		    <li>DITN_SpecialistAccessories</li>
 		    <li>VWE_NonLethal</li>
 		  </researchPrerequisites>
 		</recipeMaker>
@@ -27,6 +27,26 @@
 		  <Mass>1</Mass>
 		  <EquipDelay>1</EquipDelay>
 		</statBases>
+			<verbs>
+			<li>
+				<label>throw tear gas grenade</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>VWENL_Projectile_TearGasGrenade</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+			</verbs>
 		<comps>
 		  <li Class="CompProperties_ApparelReloadable">
 			<maxCharges>8</maxCharges>
@@ -40,7 +60,7 @@
 		  </li>
 		</comps>
 	    <thingCategories>
-		  <li>DRG_Accessories</li>
+		  <li>DITN_Accessories</li>
 		</thingCategories>
 		<equippedStatOffsets>
 		  <PainShockThreshold>0.10</PainShockThreshold>	  
@@ -59,7 +79,7 @@
 			<li>Belt</li>
 		  </layers>
 		  <tags>
-			<li>DRG_Accessories_Grenadier</li>
+			<li>DITN_Accessories_Grenadier</li>
 		  </tags>
 		  <defaultOutfitTags>
 			<li>Soldier</li>
@@ -67,44 +87,11 @@
 		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 		  <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
 		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-		  <useWornGraphicMask>True</useWornGraphicMask>			  
-      <abilities>
-        <li>DRG_Ability_ThrowTear</li>
-      </abilities>
+		  <useWornGraphicMask>True</useWornGraphicMask>
 		</apparel>	
     <colorGenerator Class="ColorGenerator_Single">
       <color>(0.40,0.34,0.22)</color>
     </colorGenerator>	
 	  <uiIconScale>1.15</uiIconScale>
 	</ThingDef>
-
-  <AbilityDef>
-    <defName>DRG_Ability_ThrowTear</defName>
-    <label>throw tear gas grenade</label>
-    <description>Throw a tear gas grenade to incapacitate targets. Consumes one charge from the grenadier webbing.</description>
-    <iconPath>Things/Item/Equipment/WeaponRanged/TearGasGrenades</iconPath>
-    <gizmoClass>DeadRinger.CommandAbilityReloadable</gizmoClass>
-    <aiCanUse>true</aiCanUse>
-    <ai_IsOffensive>true</ai_IsOffensive>
-    <ai_IsIncendiary>false</ai_IsIncendiary>
-    <ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
-    <hostile>true</hostile>
-    <writeCombatLog>true</writeCombatLog>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <range>12.9</range>
-      <warmupTime>1.5</warmupTime>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-        <canTargetPawns>true</canTargetPawns>
-      </targetParams>
-    </verbProperties>
-    <comps>
-      <li Class="DeadRinger.CompPropertiesAbilityEffectApparelReloadable">
-        <ProjectileDef>VWENL_Projectile_TearGasGrenade</ProjectileDef>
-        <ForcedMissRadius>1.9</ForcedMissRadius>
-        <SoundOnCast>ThrowGrenade</SoundOnCast>
-      </li>
-    </comps>
-  </AbilityDef>
 </Defs>
