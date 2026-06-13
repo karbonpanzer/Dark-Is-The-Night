@@ -10,18 +10,18 @@
 			<rulesStrings>
 				<li>r_name(p=5)->[provisional_adjective] [provisional_government] of [nearnameinitial]</li>
 				<li>r_name(p=4)->[nearnameinitial] [provisional_adjective] [provisional_government]</li>
-				<li>r_name(p=4)->[nearnameinitial] [provisional_government]</li>
-				<li>r_name(p=3)->[provisional_government] of [nearnameinitial]</li>
+				<li>r_name(p=2)->[nearnameinitial] [provisional_government]</li>
+				<li>r_name(p=3)->The [provisional_government] of [nearnameinitial]</li>
 
 				<li>r_name(p=5)->[socialist_adjective] [socialist_government] of [nearnameinitial]</li>
 				<li>r_name(p=4)->[nearnameinitial] [socialist_adjective] [socialist_government]</li>
 				<li>r_name(p=4)->[nearnameinitial] [socialist_government]</li>
-				<li>r_name(p=3)->The [nearnameinitial] [socialist_government]</li>
+				<li>r_name(p=3)->The [nearnameinitial] Soviet</li>
+				<li>r_name(p=2)->[nearnameinitial] Soviet</li>
 
 				<li>r_name(p=2)->[nearnameinitial] [political_union_outcast]</li>
-				<li>r_name(p=2)->[political_union_outcast] of [nearnameinitial]</li>
+				<li>r_name(p=3)->The [political_union_outcast] of [nearnameinitial]</li>
 				<li>r_name(p=2)->[political_adjective_outcast] [political_union_outcast] of [nearnameinitial]</li>
-				<li>r_name(p=1)->The [political_union_outcast] of [nearnameinitial]</li>
 				<li>r_name(p=1)->[nearnameinitial] [political_adjective_outcast] [political_union_outcast]</li>
 
 				<li>nearnameinitial(p=3)->[PlaceOutlander]</li>
@@ -54,9 +54,9 @@
 				<li>r_name(p=2)->[Character]burg</li>
 				<li>r_name(p=1)->Port [Character]</li>
 
-				<li>r_name(p=4)->[concept_outcast]</li>
-				<li>r_name(p=2)->[concept_outcast] [community_term]</li>
-				<li>r_name(p=1)->Port [concept_outcast]</li>
+				<li>r_name(p=1)->[concept_outcast]</li>
+				<li>r_name(p=3)->[concept_outcast] [community_term]</li>
+				<li>r_name(p=2)->Port [concept_outcast]</li>
 
 				<li>r_name(p=6)->[ghosttown]</li>
 				<li>r_name(p=3)->Fort [ghosttown]</li>
@@ -123,21 +123,18 @@
 			<rulesStrings>
 				<li>r_name(p=4)->[townname_combo]</li>
 				<li>r_name(p=3)->[townname_freebooter]</li>
-				<li>r_name(p=2)->[townname_wordgen]</li>
+				<li>r_name(p=1)->[townname_wordgen]</li>
 
 				<li>townname_freebooter->[NamePerson]'s [campterm]</li>
 				<li>townname_freebooter->Fort [NamePerson]</li>
 				<li>townname_freebooter->Camp [ConceptBadass]</li>
 				<li>townname_freebooter->Outpost [ConceptBadass]</li>
 
-				<li>townname_combo->[AnimalBadass] [geography]</li>
-				<li>townname_combo->[ConceptBadass] [geography]</li>
-				<li>townname_combo->[PersonBadass]'s [geography]</li>
-				<li>townname_combo->[ColorBadass] [geography]</li>
-				<li>townname_combo->[Weapon]'s [geography]</li>
-
-				<li>geography(p=2)->[TerrainFeature]</li>
-				<li>geography->[Community]</li>
+				<li>townname_combo->[AnimalBadass] [TerrainFeature]</li>
+				<li>townname_combo->[ConceptBadass] [TerrainFeature]</li>
+				<li>townname_combo->[PersonBadass]'s [TerrainFeature]</li>
+				<li>townname_combo->[ColorBadass] [TerrainFeature]</li>
+				<li>townname_combo->[Weapon]'s [TerrainFeature]</li>
 
 				<li>townname_wordgen(p=2)->[SylE][SylE]</li>
 				<li>townname_wordgen->[SylE][townendevil]</li>

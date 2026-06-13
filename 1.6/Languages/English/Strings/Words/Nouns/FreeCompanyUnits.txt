@@ -2,6 +2,5 @@ Brigade
 Battalion
 Regiment
 Legion
-Company
 Cohort
 Banner
