@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>DITN_Faction_Outcast</defName>
+		<defName>UFR_Faction_Outcast</defName>
 		<include>
 			<li>OutlanderPlaceNameUtility</li>
 		</include>
@@ -39,7 +39,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>DITN_Settlement_Outcast</defName>
+		<defName>UFR_Settlement_Outcast</defName>
 		<include>
 			<li>OutlanderPlaceNameUtility</li>
 		</include>
@@ -87,7 +87,7 @@
 			<rulesFiles>
 				<li>townname_fixed->Names/OutlanderTown</li>
 				<li>concept_positive->Words/Nouns/Concepts_Positive</li>
-				<li>ghosttown->Names/DITN_GhostTowns</li>
+				<li>ghosttown->Names/UFR_GhostTowns</li>
 				<li>concept_outcast->Words/Nouns/Concepts_Outcast</li>
 				<li>community_term->Words/Nouns/CommunityTerms_Outcast</li>
 			</rulesFiles>
@@ -95,7 +95,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>DITN_Faction_Freebooters</defName>
+		<defName>UFR_Faction_Freebooters</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>r_name(p=2)->[NamePerson]'s Free Company</li>
@@ -118,7 +118,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>DITN_Settlement_Freebooters</defName>
+		<defName>UFR_Settlement_Freebooters</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>r_name(p=4)->[townname_combo]</li>

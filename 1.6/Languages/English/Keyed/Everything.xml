@@ -2,20 +2,20 @@
 <LanguageData>
 
   <!-- Decal UI -->
-  <DarkIsTheNight_StyleDecalsGizmo>Style Decals: {0}</DarkIsTheNight_StyleDecalsGizmo>
-  <DarkIsTheNight_StyleDecalsDesc>Customize the decal markings on this pawn's armor and helmet.</DarkIsTheNight_StyleDecalsDesc>
-  <DarkIsTheNight_StyleDecalsTitle>Style Decals: {0}</DarkIsTheNight_StyleDecalsTitle>
-  <DarkIsTheNight_Decals_Armor>Armor</DarkIsTheNight_Decals_Armor>
-  <DarkIsTheNight_Decals_Helmet>Helmet</DarkIsTheNight_Decals_Helmet>
-  <DarkIsTheNight_Decals_Enabled>Enable Decals</DarkIsTheNight_Decals_Enabled>
-  <DarkIsTheNight_Decals_RandomSymbol>Random Symbol</DarkIsTheNight_Decals_RandomSymbol>
-  <DarkIsTheNight_Decals_RoleOther>Other</DarkIsTheNight_Decals_RoleOther>
-  <DarkIsTheNight_Decals_IdeoColor>Ideo Color</DarkIsTheNight_Decals_IdeoColor>
-  <DarkIsTheNight_Decals_RandomColor>Random Color</DarkIsTheNight_Decals_RandomColor>
-  <DarkIsTheNight_Decals_FavColor>Favorite Color</DarkIsTheNight_Decals_FavColor>
-  <DarkIsTheNight_Decals_Cancel>Cancel</DarkIsTheNight_Decals_Cancel>
-  <DarkIsTheNight_Decals_Reset>Reset</DarkIsTheNight_Decals_Reset>
-  <DarkIsTheNight_Decals_Accept>Accept</DarkIsTheNight_Decals_Accept>
+  <UnitedFront_StyleDecalsGizmo>Style Decals: {0}</UnitedFront_StyleDecalsGizmo>
+  <UnitedFront_StyleDecalsDesc>Customize the decal markings on this pawn's armor and helmet.</UnitedFront_StyleDecalsDesc>
+  <UnitedFront_StyleDecalsTitle>Style Decals: {0}</UnitedFront_StyleDecalsTitle>
+  <UnitedFront_Decals_Armor>Armor</UnitedFront_Decals_Armor>
+  <UnitedFront_Decals_Helmet>Helmet</UnitedFront_Decals_Helmet>
+  <UnitedFront_Decals_Enabled>Enable Decals</UnitedFront_Decals_Enabled>
+  <UnitedFront_Decals_RandomSymbol>Random Symbol</UnitedFront_Decals_RandomSymbol>
+  <UnitedFront_Decals_RoleOther>Other</UnitedFront_Decals_RoleOther>
+  <UnitedFront_Decals_IdeoColor>Ideo Color</UnitedFront_Decals_IdeoColor>
+  <UnitedFront_Decals_RandomColor>Random Color</UnitedFront_Decals_RandomColor>
+  <UnitedFront_Decals_FavColor>Favorite Color</UnitedFront_Decals_FavColor>
+  <UnitedFront_Decals_Cancel>Cancel</UnitedFront_Decals_Cancel>
+  <UnitedFront_Decals_Reset>Reset</UnitedFront_Decals_Reset>
+  <UnitedFront_Decals_Accept>Accept</UnitedFront_Decals_Accept>
 
   <!-- Replicant -->  
   <Replicant_FinalClarity_Message>{0} has reached final clarity.</Replicant_FinalClarity_Message>

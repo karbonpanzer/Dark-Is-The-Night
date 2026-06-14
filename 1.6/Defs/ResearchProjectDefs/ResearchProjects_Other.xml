@@ -2,17 +2,17 @@
 <Defs>
 
 	<ResearchProjectDef>
-		<defName>DITN_FabricationBench</defName>
+		<defName>UFR_FabricationBench</defName>
 		<label>Outcast Fabricator</label>
 		<description>Build the Outcast Fabricator workbench needed to produce Outcast equipment.</description>
 		<baseCost>1000</baseCost>
-		<tab>DITN_ResearchTab</tab>
+		<tab>UFR_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>Fabrication</li>
 		</prerequisites>
 		<requiredAnalyzed>
-			<li>DITN_Decoder</li>
+			<li>UFR_Decoder</li>
 		</requiredAnalyzed>
 		<researchViewX>0</researchViewX>
 		<researchViewY>2.1</researchViewY>

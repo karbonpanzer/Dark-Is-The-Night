@@ -1,472 +1,472 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_10star</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_10star</defName>
     <label>10 Star</label>
     <Path>Things/Decals/10star</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_1star</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_1star</defName>
     <label>1 Star</label>
     <Path>Things/Decals/1star</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_2star</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_2star</defName>
     <label>2 Star</label>
     <Path>Things/Decals/2star</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_3star</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_3star</defName>
     <label>3 Star</label>
     <Path>Things/Decals/3star</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_4star</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_4star</defName>
     <label>4 Star</label>
     <Path>Things/Decals/4star</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_5star</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_5star</defName>
     <label>5 Star</label>
     <Path>Things/Decals/5star</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_air</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_air</defName>
     <label>Air</label>
     <Path>Things/Decals/air</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_arrowhead</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_arrowhead</defName>
     <label>Arrowhead</label>
     <Path>Things/Decals/arrowhead</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_axe</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_axe</defName>
     <label>Axe</label>
     <Path>Things/Decals/axe</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_battleaxe</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_battleaxe</defName>
     <label>Battle Axe</label>
     <Path>Things/Decals/battleaxe</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_bear</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_bear</defName>
     <label>Bear</label>
     <Path>Things/Decals/bear</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_buffalo</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_buffalo</defName>
     <label>Buffalo</label>
     <Path>Things/Decals/buffalo</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_chain</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_chain</defName>
     <label>Chain</label>
     <Path>Things/Decals/chain</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_clockwork</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_clockwork</defName>
     <label>Clockwork</label>
     <Path>Things/Decals/clockwork</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_club</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_club</defName>
     <label>Club</label>
     <Path>Things/Decals/club</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_cog</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_cog</defName>
     <label>Cog</label>
     <Path>Things/Decals/cog</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_coggish</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_coggish</defName>
     <label>Coggish</label>
     <Path>Things/Decals/coggish</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_column</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_column</defName>
     <label>Column</label>
     <Path>Things/Decals/column</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_commander</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_commander</defName>
     <label>Commander</label>
     <Path>Things/Decals/commander</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_containment</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_containment</defName>
     <label>Containment</label>
     <Path>Things/Decals/containment</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_corepng</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_corepng</defName>
     <label>Core</label>
     <Path>Things/Decals/corepng</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_corporal</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_corporal</defName>
     <label>Corporal</label>
     <Path>Things/Decals/corporal</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_cougar</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_cougar</defName>
     <label>Cougar</label>
     <Path>Things/Decals/cougar</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_cpt</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_cpt</defName>
     <label>Captain</label>
     <Path>Things/Decals/cpt</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_cross</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_cross</defName>
     <label>Cross</label>
     <Path>Things/Decals/cross</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_cube</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_cube</defName>
     <label>Cube</label>
     <Path>Things/Decals/cube</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_diamond</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_diamond</defName>
     <label>Diamond</label>
     <Path>Things/Decals/diamond</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_dynasty</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_dynasty</defName>
     <label>Dynasty</label>
     <Path>Things/Decals/dynasty</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_earth</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_earth</defName>
     <label>Earth</label>
     <Path>Things/Decals/earth</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_eye</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_eye</defName>
     <label>Eye</label>
     <Path>Things/Decals/eye</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_fallout</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_fallout</defName>
     <label>Fallout</label>
     <Path>Things/Decals/fallout</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_fire</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_fire</defName>
     <label>Fire</label>
     <Path>Things/Decals/fire</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_fox</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_fox</defName>
     <label>Fox</label>
     <Path>Things/Decals/fox</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_french</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_french</defName>
     <label>French</label>
     <Path>Things/Decals/french</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_greekcross</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_greekcross</defName>
     <label>Greek Cross</label>
     <Path>Things/Decals/greekcross</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_guilt</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_guilt</defName>
     <label>Guilt</label>
     <Path>Things/Decals/guilt</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_hazard</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_hazard</defName>
     <label>Hazard</label>
     <Path>Things/Decals/hazard</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_heart</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_heart</defName>
     <label>Heart</label>
     <Path>Things/Decals/heart</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_hexinator</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_hexinator</defName>
     <label>Hexinator</label>
     <Path>Things/Decals/hexinator</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_hollow</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_hollow</defName>
     <label>Hollow</label>
     <Path>Things/Decals/hollow</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_horse</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_horse</defName>
     <label>Horse</label>
     <Path>Things/Decals/horse</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_horuxalt</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_horuxalt</defName>
     <label>Horuxalt</label>
     <Path>Things/Decals/horuxalt</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_inquisitor</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_inquisitor</defName>
     <label>Inquisitor</label>
     <Path>Things/Decals/inquisitor</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_linedworld</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_linedworld</defName>
     <label>Lined World</label>
     <Path>Things/Decals/linedworld</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_lt</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_lt</defName>
     <label>Lieutenant</label>
     <Path>Things/Decals/lt</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_maintainancejack</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_maintainancejack</defName>
     <label>Maintenance Jack</label>
     <Path>Things/Decals/maintainancejack</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_marathon</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_marathon</defName>
     <label>Marathon</label>
     <Path>Things/Decals/marathon</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_medcom</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_medcom</defName>
     <label>Med Com</label>
     <Path>Things/Decals/medcom</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_mercy</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_mercy</defName>
     <label>Mercy</label>
     <Path>Things/Decals/mercy</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_None</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_None</defName>
     <label>None</label>
     <Path>Things/Decals/None</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_obelisk</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_obelisk</defName>
     <label>Obelisk</label>
     <Path>Things/Decals/obelisk</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_pentoptimum</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_pentoptimum</defName>
     <label>Pentoptimum</label>
     <Path>Things/Decals/pentoptimum</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_phor</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_phor</defName>
     <label>Phor</label>
     <Path>Things/Decals/phor</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_police</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_police</defName>
     <label>Police</label>
     <Path>Things/Decals/police</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_private</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_private</defName>
     <label>Private</label>
     <Path>Things/Decals/private</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_psi</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_psi</defName>
     <label>Psi</label>
     <Path>Things/Decals/psi</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_ringer</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_ringer</defName>
     <label>Ringer</label>
     <Path>Things/Decals/ringer</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_rook</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_rook</defName>
     <label>Rook</label>
     <Path>Things/Decals/rook</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_scalpel</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_scalpel</defName>
     <label>Scalpel</label>
     <Path>Things/Decals/scalpel</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_sentinel</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_sentinel</defName>
     <label>Sentinel</label>
     <Path>Things/Decals/sentinel</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_sgt</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_sgt</defName>
     <label>Sergeant</label>
     <Path>Things/Decals/sgt</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_shield</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_shield</defName>
     <label>Shield</label>
     <Path>Things/Decals/shield</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_shootingstar</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_shootingstar</defName>
     <label>Shooting Star</label>
     <Path>Things/Decals/shootingstar</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_skull</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_skull</defName>
     <label>Skull</label>
     <Path>Things/Decals/skull</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_skullrifle</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_skullrifle</defName>
     <label>Skull Rifle</label>
     <Path>Things/Decals/skullrifle</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_skullspear</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_skullspear</defName>
     <label>Skull Spear</label>
     <Path>Things/Decals/skullspear</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_skullsword</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_skullsword</defName>
     <label>Skull Sword</label>
     <Path>Things/Decals/skullsword</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_spade</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_spade</defName>
     <label>Spade</label>
     <Path>Things/Decals/spade</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_spearhead</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_spearhead</defName>
     <label>Spearhead</label>
     <Path>Things/Decals/spearhead</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_staroflife</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_staroflife</defName>
     <label>Star of Life</label>
     <Path>Things/Decals/staroflife</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_thrumbo</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_thrumbo</defName>
     <label>Thrumbo</label>
     <Path>Things/Decals/thrumbo</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_tinstar</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_tinstar</defName>
     <label>Tin Star</label>
     <Path>Things/Decals/tinstar</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_utility</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_utility</defName>
     <label>Utility</label>
     <Path>Things/Decals/utility</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_vesperia</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_vesperia</defName>
     <label>Vesperia</label>
     <Path>Things/Decals/vesperia</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_warg</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_warg</defName>
     <label>Warg</label>
     <Path>Things/Decals/warg</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_water</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_water</defName>
     <label>Water</label>
     <Path>Things/Decals/water</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_wolf</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_wolf</defName>
     <label>Wolf</label>
     <Path>Things/Decals/wolf</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
-  <DeadRinger.DecalSymbol>
-    <defName>DITN_Decal_wrench</defName>
+  <UnitedFront.DecalSymbol>
+    <defName>UFR_Decal_wrench</defName>
     <label>Wrench</label>
     <Path>Things/Decals/wrench</Path>
-  </DeadRinger.DecalSymbol>
+  </UnitedFront.DecalSymbol>
 
 </Defs>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>DITN_OfficerUniform</defName>
+    <defName>UFR_OfficerUniform</defName>
     <label>Outcast Officer Uniform</label>
     <description>A tailored duty uniform worn by commissioned Outcast officers. Cut to be presentable in formal settings while remaining durable enough for field use.</description>
     <graphicData>
@@ -32,7 +32,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DITN_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_OfficerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -65,7 +65,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>DITN_OfficerUniform</li>
+        <li>UFR_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -73,17 +73,17 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>DITN_Uniforms</li>
+      <li>UFR_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>DITN_Uniforms</li>
+      <li>UFR_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>DITN_OfficerHat</defName>
+    <defName>UFR_OfficerHat</defName>
     <label>Outcast Officer Headwear</label>
     <description>A structured cap worn by Outcast Officers. Bears rank and unit markings, allowing the wearer to be identified quickly as command personnel during engagements.</description>
     <graphicData>
@@ -114,7 +114,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DITN_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_OfficerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -139,7 +139,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>DITN_OfficerUniform</li>
+        <li>UFR_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -151,17 +151,17 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>DITN_Headgear</li>
+      <li>UFR_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>DITN_Uniforms</li>
+      <li>UFR_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>DITN_OfficerUniform_SuperCold</defName>
+    <defName>UFR_OfficerUniform_SuperCold</defName>
     <label>Outcast Officer Uniform (Tundra)</label>
     <description>An officer's duty uniform insulated for extreme cold. Thermal lining and sealed cuffs allow command personnel to function in conditions that would otherwise be debilitating.</description>
     <graphicData>
@@ -193,8 +193,8 @@
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisites>
-        <li>DITN_OfficerUniforms</li>
-        <li>DITN_ExtremeWeatherUniforms</li>
+        <li>UFR_OfficerUniforms</li>
+        <li>UFR_ExtremeWeatherUniforms</li>
       </researchPrerequisites>
     </recipeMaker>
     <stuffCategories>
@@ -228,7 +228,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>DITN_OfficerUniform</li>
+        <li>UFR_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -236,17 +236,17 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>DITN_Uniforms</li>
+      <li>UFR_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>DITN_Uniforms</li>
+      <li>UFR_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>DITN_OfficerHat_SuperCold</defName>
+    <defName>UFR_OfficerHat_SuperCold</defName>
     <label>Outcast Officer Headwear (Tundra)</label>
     <description>An officer's cap insulated for extreme cold. Full brow and ear coverage protects against frostbite without obscuring the rank markings that identify command personnel.</description>
     <graphicData>
@@ -278,8 +278,8 @@
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisites>
-        <li>DITN_OfficerUniforms</li>
-        <li>DITN_ExtremeWeatherUniforms</li>
+        <li>UFR_OfficerUniforms</li>
+        <li>UFR_ExtremeWeatherUniforms</li>
       </researchPrerequisites>
     </recipeMaker>
     <stuffCategories>
@@ -305,7 +305,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>DITN_OfficerUniform</li>
+        <li>UFR_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -317,11 +317,11 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>DITN_Headgear</li>
+      <li>UFR_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>DITN_Uniforms</li>
+      <li>UFR_Uniforms</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>

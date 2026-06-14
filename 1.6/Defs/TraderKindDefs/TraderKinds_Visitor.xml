@@ -71,11 +71,11 @@
         <maxTechLevelGenerate>Spacer</maxTechLevelGenerate>
       </li>
       <li Class="StockGenerator_Tag">
-        <tradeTag>DITN_Uniforms</tradeTag>
+        <tradeTag>UFR_Uniforms</tradeTag>
         <countRange>1~3</countRange>
       </li>
       <li Class="StockGenerator_Tag">
-        <tradeTag>DITN_Armor</tradeTag>
+        <tradeTag>UFR_Armor</tradeTag>
         <thingDefCountRange>1~2</thingDefCountRange>
         <countRange>-2~1</countRange> <!-- ~30% chance for a single armor piece -->
       </li>

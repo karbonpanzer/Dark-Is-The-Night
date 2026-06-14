@@ -1,6 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dark is the Night\1.6\Assemblies\DarkIsTheNight.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dark is the Night\Source\DarkIsTheNight\obj\Debug\DarkIsTheNight.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dark is the Night\Source\DarkIsTheNight\obj\Debug\DarkIsTheNight.GeneratedMSBuildEditorConfig.editorconfig
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dark is the Night\Source\DarkIsTheNight\obj\Debug\DarkIsTheNight.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dark is the Night\Source\DarkIsTheNight\obj\Debug\DarkIsTheNight.sourcelink.json
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dark is the Night\Source\DarkIsTheNight\obj\Debug\DarkIsTheNight.dll

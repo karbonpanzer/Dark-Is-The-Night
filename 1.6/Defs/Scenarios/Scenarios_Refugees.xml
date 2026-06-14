@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ScenarioDef ParentName="ScenarioBase">
-		<defName>DITN_Prospectors</defName>
+		<defName>UFR_Prospectors</defName>
 		<label>Outcast refugees</label>
 		<description>You arrived, following the dream of many, you are the first of your ship to set foot on this world. The fresh air is the first you have breathed in years, you are here now. Many of your family and friends could not make it but you did.. What will you do with your freedom?</description>
 
@@ -9,7 +9,7 @@
 			<summary>A group of settlers from a fallen world seeking security.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
-				<factionDef>DITN_Player</factionDef>
+				<factionDef>UFR_Player</factionDef>
 			</playerFaction>
 
 			<parts>
@@ -43,35 +43,35 @@
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>DITN_LawbringerShotgun</thingDef>
+					<thingDef>UFR_LawbringerShotgun</thingDef>
 					<count>1</count>					
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>DITN_ServicePistol</thingDef>
+					<thingDef>UFR_ServicePistol</thingDef>
 					<count>1</count>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>DITN_Vibroblade</thingDef>
+					<thingDef>UFR_Vibroblade</thingDef>
 					<count>1</count>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>DITN_MarauderArmor</thingDef>
+					<thingDef>UFR_MarauderArmor</thingDef>
 					<count>1</count>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>DITN_MarauderHelmet</thingDef>
+					<thingDef>UFR_MarauderHelmet</thingDef>
 					<count>1</count>
 					<quality>Normal</quality>
 				</li>
@@ -121,12 +121,12 @@
 				<!-- Needed for Scenario Start to get Early Research-->
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
-					<project>DITN_FabricationBench</project>
+					<project>UFR_FabricationBench</project>
 				</li>
 
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
-					<project>DITN_OutcastUniforms</project>
+					<project>UFR_OutcastUniforms</project>
 				</li>				
 
 				 <!-- Scatter some things near player start -->

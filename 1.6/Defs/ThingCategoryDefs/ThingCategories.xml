@@ -1,42 +1,42 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
 	<ThingCategoryDef>
-		<defName>DITN_Uniforms</defName>
+		<defName>UFR_Uniforms</defName>
 		<label>Outcast Apparel</label>
 		<parent>Apparel</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>DITN_Headgear</defName>
+		<defName>UFR_Headgear</defName>
 		<label>Outcast Headgear</label>
-		<parent>DITN_Uniforms</parent>
+		<parent>UFR_Uniforms</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>DITN_Accessories</defName>
+		<defName>UFR_Accessories</defName>
 		<label>Outcast Accessories</label>
-		<parent>DITN_Uniforms</parent>
+		<parent>UFR_Uniforms</parent>
 	</ThingCategoryDef>
 
 	<!-- Armor Directory-->
 	<ThingCategoryDef>
-		<defName>DITN_Armor</defName>
+		<defName>UFR_Armor</defName>
 		<label>Outcast Armor</label>
-		<parent>DITN_Uniforms</parent>
+		<parent>UFR_Uniforms</parent>
 	</ThingCategoryDef>
 
 	<!-- Helmet Subdirectory-->
 	<ThingCategoryDef>
-		<defName>DITN_Helmets</defName>
+		<defName>UFR_Helmets</defName>
 		<label>Helmets</label>
-		<parent>DITN_Armor</parent>
+		<parent>UFR_Armor</parent>
 	</ThingCategoryDef>
 
 	<!-- Armor Accessories-->
 	<ThingCategoryDef>
-		<defName>DITN_ArmorAccessories</defName>
+		<defName>UFR_ArmorAccessories</defName>
 		<label>Armor Accessories</label>
-		<parent>DITN_Armor</parent>
+		<parent>UFR_Armor</parent>
 	</ThingCategoryDef>
 
 </Defs>

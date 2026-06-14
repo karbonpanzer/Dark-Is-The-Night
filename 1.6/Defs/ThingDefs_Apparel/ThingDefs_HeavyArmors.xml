@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>DITN_HeavyMarauderArmor</defName>
+    <defName>UFR_HeavyMarauderArmor</defName>
     <label>Heavy Marauder Armor</label>
     <description>A reinforced Marauder armor set with additional plating over the standard configuration. Heavier and slower than Marauder armor, but substantially more resistant to incoming fire. Used by assault troops expected to absorb significant punishment.</description>
     <graphicData>
@@ -18,13 +18,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DITN_HeavyMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>DITN_FabricationBench</li>
+        <li>UFR_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -69,12 +69,12 @@
       <soundRemove>Remove_PowerArmor</soundRemove>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <tags Inherit="False">
-        <li>DITN_Armor</li>
+        <li>UFR_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DarkIsTheNight.PawnRenderNodePropertiesDecal">
-          <nodeClass>DarkIsTheNight.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DarkIsTheNight.PawnRenderNodeWorkerDecal</workerClass>
+        <li Class="UnitedFront.PawnRenderNodePropertiesDecal">
+          <nodeClass>UnitedFront.PawnRenderNodeDecal</nodeClass>
+          <workerClass>UnitedFront.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>16</baseLayer>
           <texPaths>
@@ -105,21 +105,21 @@
       </renderNodeProperties>
     </apparel>
     <comps>
-      <li Class="DarkIsTheNight.CompPropertiesEditDecalMarker" />
+      <li Class="UnitedFront.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>DITN_Armor</li>
+      <li>UFR_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>DITN_Armor</li>
+      <li>UFR_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>DITN_HeavyMarauderHelmet</defName>
+    <defName>UFR_HeavyMarauderHelmet</defName>
     <label>Heavy Marauder Helmet</label>
     <description>A reinforced Marauder helmet with additional plating across the crown and rear. Substantially more protective than the standard configuration. Used by assault personnel expecting sustained fire.</description>
     <graphicData>
@@ -136,13 +136,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DITN_HeavyMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>DITN_FabricationBench</li>
+        <li>UFR_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -175,12 +175,12 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags>
-        <li>DITN_HeavyHelmet</li>
+        <li>UFR_HeavyHelmet</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DarkIsTheNight.PawnRenderNodePropertiesDecal">
-          <nodeClass>DarkIsTheNight.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DarkIsTheNight.PawnRenderNodeWorkerDecalHead</workerClass>
+        <li Class="UnitedFront.PawnRenderNodePropertiesDecal">
+          <nodeClass>UnitedFront.PawnRenderNodeDecal</nodeClass>
+          <workerClass>UnitedFront.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -201,20 +201,20 @@
       </renderNodeProperties>
     </apparel>
     <comps>
-      <li Class="DarkIsTheNight.CompPropertiesEditDecalMarker" />
+      <li Class="UnitedFront.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>DITN_Helmets</li>
+      <li>UFR_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>DITN_Armor</li>
+      <li>UFR_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>DITN_HeavyMarauderHelmet_Insulated</defName>
+    <defName>UFR_HeavyMarauderHelmet_Insulated</defName>
     <label>Heavy Marauder Helmet (Insulated)</label>
     <description>A heavy Marauder helmet with thermal lining for extreme temperature operations. Provides the same protection as the standard heavy configuration in conditions that would otherwise impair the wearer.</description>
     <graphicData>
@@ -231,13 +231,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DITN_HeavyMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>DITN_FabricationBench</li>
+        <li>UFR_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -271,12 +271,12 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>DITN_Armor</li>
+        <li>UFR_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DarkIsTheNight.PawnRenderNodePropertiesDecal">
-          <nodeClass>DarkIsTheNight.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DarkIsTheNight.PawnRenderNodeWorkerDecalHead</workerClass>
+        <li Class="UnitedFront.PawnRenderNodePropertiesDecal">
+          <nodeClass>UnitedFront.PawnRenderNodeDecal</nodeClass>
+          <workerClass>UnitedFront.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -296,24 +296,24 @@
         </li>
       </renderNodeProperties>
       <tags>
-        <li>DITN_HeavyHelmet</li>
+        <li>UFR_HeavyHelmet</li>
       </tags>
     </apparel>
     <comps>
-      <li Class="DarkIsTheNight.CompPropertiesEditDecalMarker" />
+      <li Class="UnitedFront.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>DITN_Helmets</li>
+      <li>UFR_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>DITN_Armor</li>
+      <li>UFR_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>DITN_HeavyMarauderHelmet_Shielded</defName>
+    <defName>UFR_HeavyMarauderHelmet_Shielded</defName>
     <label>Heavy Marauder Helmet (Reinforced)</label>
     <description>A heavy Marauder helmet with extra armor bonded across the faceplate and brow. The most protective variant of the Marauder helmet series.</description>
     <graphicData>
@@ -330,13 +330,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DITN_HeavyMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>DITN_FabricationBench</li>
+        <li>UFR_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -374,12 +374,12 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>DITN_Armor</li>
+        <li>UFR_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DarkIsTheNight.PawnRenderNodePropertiesDecal">
-          <nodeClass>DarkIsTheNight.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DarkIsTheNight.PawnRenderNodeWorkerDecalHead</workerClass>
+        <li Class="UnitedFront.PawnRenderNodePropertiesDecal">
+          <nodeClass>UnitedFront.PawnRenderNodeDecal</nodeClass>
+          <workerClass>UnitedFront.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -399,24 +399,24 @@
         </li>
       </renderNodeProperties>
       <tags>
-        <li>DITN_HeavyHelmet_Shielded</li>
+        <li>UFR_HeavyHelmet_Shielded</li>
       </tags>
     </apparel>
     <comps>
-      <li Class="DarkIsTheNight.CompPropertiesEditDecalMarker" />
+      <li Class="UnitedFront.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>DITN_Helmets</li>
+      <li>UFR_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>DITN_Armor</li>
+      <li>UFR_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>DITN_HeavyMarauderHelmet_Gasmask</defName>
+    <defName>UFR_HeavyMarauderHelmet_Gasmask</defName>
     <label>Heavy Marauder Helmet (Gasmask)</label>
     <description>A heavy Marauder helmet with a full-face filtration system integrated into the shell. Seals completely against airborne threats while retaining the ballistic protection of the heavy platform.</description>
     <graphicData>
@@ -433,13 +433,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DITN_HeavyMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>DITN_FabricationBench</li>
+        <li>UFR_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -477,12 +477,12 @@
       <useWornGraphicMask>True</useWornGraphicMask>
       <immuneToToxGasExposure>true</immuneToToxGasExposure>
       <tags Inherit="False">
-        <li>DITN_Armor</li>
+        <li>UFR_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DarkIsTheNight.PawnRenderNodePropertiesDecal">
-          <nodeClass>DarkIsTheNight.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DarkIsTheNight.PawnRenderNodeWorkerDecalHead</workerClass>
+        <li Class="UnitedFront.PawnRenderNodePropertiesDecal">
+          <nodeClass>UnitedFront.PawnRenderNodeDecal</nodeClass>
+          <workerClass>UnitedFront.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -502,19 +502,19 @@
         </li>
       </renderNodeProperties>
       <tags>
-        <li>DITN_HeavyHelmet</li>
+        <li>UFR_HeavyHelmet</li>
       </tags>
     </apparel>
     <comps>
-      <li Class="DarkIsTheNight.CompPropertiesEditDecalMarker" />
+      <li Class="UnitedFront.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>DITN_Helmets</li>
+      <li>UFR_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>DITN_Armor</li>
+      <li>UFR_Armor</li>
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>

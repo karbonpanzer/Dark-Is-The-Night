@@ -138,7 +138,7 @@
         </countChances>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>DITN_Decoder</thingDef>
+        <thingDef>UFR_Decoder</thingDef>
         <countRange>1~2</countRange>
       </li>
 
@@ -174,10 +174,10 @@
       <!-- Faction exotic weapons -->
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
-          <li>DITN_HydraRifle</li>
-          <li>DITN_AutoloaderCannon</li>
-          <li>DITN_SalvoGrenadeLauncher</li>
-          <li>DITN_ServiceLMG</li>
+          <li>UFR_HydraRifle</li>
+          <li>UFR_AutoloaderCannon</li>
+          <li>UFR_SalvoGrenadeLauncher</li>
+          <li>UFR_ServiceLMG</li>
         </thingDefs>
         <countRange>0~2</countRange>
       </li>
@@ -192,7 +192,7 @@
         <countRange>2~4</countRange>
       </li>
       <li Class="StockGenerator_Tag">
-        <tradeTag>DITN_Uniforms</tradeTag>
+        <tradeTag>UFR_Uniforms</tradeTag>
         <countRange>6~10</countRange>
       </li>
       <li Class="StockGenerator_Tag">
@@ -202,17 +202,17 @@
         <countRange>2~4</countRange>
       </li>
       <li Class="StockGenerator_Tag">
-        <tradeTag>DITN_Armor</tradeTag>
+        <tradeTag>UFR_Armor</tradeTag>
         <thingDefCountRange>4~8</thingDefCountRange>
         <countRange>3~6</countRange>
       </li>
       <!-- Prestige armor -->
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
-          <li>DITN_OfficerMarauderArmor</li>
-          <li>DITN_OfficerMarauderArmor_Scout</li>
-          <li>DITN_ScoutMarauderArmor</li>
-          <li>DITN_RiotMarauderArmor</li>
+          <li>UFR_OfficerMarauderArmor</li>
+          <li>UFR_OfficerMarauderArmor_Scout</li>
+          <li>UFR_ScoutMarauderArmor</li>
+          <li>UFR_RiotMarauderArmor</li>
         </thingDefs>
         <countRange>0~2</countRange>
       </li>
@@ -257,7 +257,7 @@
         <excludedThingDefs>
           <li>Luciferium</li>
           <li>ComponentSpacer</li>
-          <li>DITN_Decoder</li>
+          <li>UFR_Decoder</li>
         </excludedThingDefs>
         <customCountRanges>
           <MedicineUltratech>2~15</MedicineUltratech>

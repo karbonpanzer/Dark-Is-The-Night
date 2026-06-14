@@ -1,6 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dead Ringers\1.6\Assemblies\DeadRinger.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dead Ringers\Source\DeadRingers\obj\Debug\DeadRingers.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dead Ringers\Source\DeadRingers\obj\Debug\DeadRingers.GeneratedMSBuildEditorConfig.editorconfig
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dead Ringers\Source\DeadRingers\obj\Debug\DeadRingers.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dead Ringers\Source\DeadRingers\obj\Debug\DeadRingers.sourcelink.json
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dead Ringers\Source\DeadRingers\obj\Debug\DeadRinger.dll
