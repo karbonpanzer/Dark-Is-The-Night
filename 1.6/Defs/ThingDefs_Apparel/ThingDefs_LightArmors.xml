@@ -69,9 +69,9 @@
         <li>UFR_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="UnitedFront.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.PawnRenderNodeWorkerDecal</workerClass>
+        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
+          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
+          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>72</baseLayer>
           <texPaths>
@@ -102,7 +102,7 @@
       </renderNodeProperties>
     </apparel>
     <comps>
-      <li Class="UnitedFront.CompPropertiesEditDecalMarker" />
+      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
@@ -174,9 +174,9 @@
         <li>UFR_LightHelmet</li>
       </tags>
       <renderNodeProperties>
-        <li Class="UnitedFront.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.PawnRenderNodeWorkerDecalHead</workerClass>
+        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
+          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
+          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
           <texPaths>
@@ -197,7 +197,7 @@
       </renderNodeProperties>
     </apparel>
     <comps>
-      <li Class="UnitedFront.CompPropertiesEditDecalMarker" />
+      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
@@ -270,9 +270,9 @@
         <li>UFR_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="UnitedFront.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.PawnRenderNodeWorkerDecalHead</workerClass>
+        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
+          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
+          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
           <texPaths>
@@ -296,7 +296,7 @@
       </tags>
     </apparel>
     <comps>
-      <li Class="UnitedFront.CompPropertiesEditDecalMarker" />
+      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
@@ -372,9 +372,9 @@
         <li>UFR_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="UnitedFront.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.PawnRenderNodeWorkerDecalHead</workerClass>
+        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
+          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
+          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
           <texPaths>
@@ -398,7 +398,7 @@
       </tags>
     </apparel>
     <comps>
-      <li Class="UnitedFront.CompPropertiesEditDecalMarker" />
+      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
@@ -472,9 +472,9 @@
         <li>UFR_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="UnitedFront.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.PawnRenderNodeWorkerDecalHead</workerClass>
+        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
+          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
+          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
           <texPaths>
@@ -498,7 +498,7 @@
       </tags>
     </apparel>
     <comps>
-      <li Class="UnitedFront.CompPropertiesEditDecalMarker" />
+      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>

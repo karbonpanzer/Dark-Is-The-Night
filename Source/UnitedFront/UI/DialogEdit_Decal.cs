@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
 using RimWorld;
+using UnitedFront.Decal;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
 
-namespace UnitedFront
+namespace UnitedFront.UI
 {
     [StaticConstructorOnStartup]
     public sealed class DialogEditDecals : Window

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using RimWorld;
 using Verse;
 
-namespace UnitedFront
+namespace UnitedFront.Decal
 {
     public static class DecalUtil
     {

@@ -1,7 +1,8 @@
+using UnitedFront.Decal;
 using UnityEngine;
 using Verse;
 
-namespace UnitedFront
+namespace UnitedFront.Render
 {
     public class PawnRenderNodePropertiesDecal : PawnRenderNodeProperties
     {

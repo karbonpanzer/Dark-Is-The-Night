@@ -69,9 +69,9 @@
         <li>Spacefarer</li>
       </defaultOutfitTags>
       <renderNodeProperties>
-        <li Class="UnitedFront.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.PawnRenderNodeWorkerDecalHead</workerClass>
+        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
+          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
+          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
           <visibleFacing>
@@ -97,7 +97,7 @@
       <li>RewardStandardMidFreq</li>
     </thingSetMakerTags>
     <comps>
-      <li Class="UnitedFront.CompPropertiesEditDecalMarker" />
+      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
     </comps>    
     <colorGenerator Class="ColorGenerator_Options">
       <options>
@@ -167,9 +167,9 @@
         <li>Spacefarer</li>
       </defaultOutfitTags>
       <renderNodeProperties>
-        <li Class="UnitedFront.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.PawnRenderNodeWorkerDecal</workerClass>
+        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
+          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
+          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>72</baseLayer>
           <texPaths>
@@ -200,7 +200,7 @@
       </renderNodeProperties>      
     </apparel>
     <comps>
-      <li Class="UnitedFront.CompPropertiesEditDecalMarker" />
+      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
     </comps>
     <colorGenerator Class="ColorGenerator_Options">
       <options>

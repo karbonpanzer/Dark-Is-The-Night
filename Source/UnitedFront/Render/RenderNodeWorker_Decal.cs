@@ -1,6 +1,6 @@
 using Verse;
 
-namespace UnitedFront
+namespace UnitedFront.Render
 {
     public class PawnRenderNodeWorkerDecal : PawnRenderNodeWorker
     {

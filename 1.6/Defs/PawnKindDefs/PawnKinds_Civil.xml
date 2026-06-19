@@ -681,7 +681,7 @@
         <initialWillRange>3~5</initialWillRange>
         <initialResistanceRange>25~35</initialResistanceRange>
         <modExtensions>
-            <li Class="UnitedFront.DecalKindExtension">
+            <li Class="UnitedFront.Decal.DecalKindExtension">
                 <armorDecalPath>Things/Decals/private</armorDecalPath>
                 <helmetDecalPath>Things/Decals/private</helmetDecalPath>
             </li>
@@ -705,7 +705,7 @@
         <initialWillRange>3~5</initialWillRange>
         <initialResistanceRange>25~35</initialResistanceRange>
         <modExtensions>
-            <li Class="UnitedFront.DecalKindExtension">
+            <li Class="UnitedFront.Decal.DecalKindExtension">
                 <armorDecalPath>Things/Decals/private</armorDecalPath>
                 <helmetDecalPath>Things/Decals/private</helmetDecalPath>
             </li>
@@ -725,7 +725,7 @@
         <labelPlural>infantry</labelPlural>
         <combatPower>105</combatPower>
         <modExtensions>
-            <li Class="UnitedFront.DecalKindExtension">
+            <li Class="UnitedFront.Decal.DecalKindExtension">
                 <armorDecalPath>Things/Decals/corporal</armorDecalPath>
                 <helmetDecalPath>Things/Decals/corporal</helmetDecalPath>
             </li>
@@ -747,7 +747,7 @@
         <labelPlural>infantry</labelPlural>
         <combatPower>105</combatPower>
         <modExtensions>
-            <li Class="UnitedFront.DecalKindExtension">
+            <li Class="UnitedFront.Decal.DecalKindExtension">
                 <armorDecalPath>Things/Decals/corporal</armorDecalPath>
                 <helmetDecalPath>Things/Decals/corporal</helmetDecalPath>
             </li>
@@ -769,7 +769,7 @@
         <labelPlural>sergeants</labelPlural>
         <combatPower>90</combatPower>
         <modExtensions>
-            <li Class="UnitedFront.DecalKindExtension">
+            <li Class="UnitedFront.Decal.DecalKindExtension">
                 <armorDecalPath>Things/Decals/sgt</armorDecalPath>
                 <helmetDecalPath>Things/Decals/sgt</helmetDecalPath>
             </li>
@@ -799,7 +799,7 @@
             <li>UFR_UFDMR</li>              
         </weaponTags>
         <modExtensions>
-            <li Class="UnitedFront.DecalKindExtension">
+            <li Class="UnitedFront.Decal.DecalKindExtension">
                 <armorDecalPath>Things/Decals/skullrifle</armorDecalPath>
                 <helmetDecalPath>Things/Decals/skullrifle</helmetDecalPath>
             </li>
@@ -826,7 +826,7 @@
             <li>UFR_UFEliteMelee</li>
         </weaponTags>
         <modExtensions>
-            <li Class="UnitedFront.DecalKindExtension">
+            <li Class="UnitedFront.Decal.DecalKindExtension">
                 <armorDecalPath>Things/Decals/skullsword</armorDecalPath>
                 <helmetDecalPath>Things/Decals/skullsword</helmetDecalPath>
             </li>
@@ -865,7 +865,7 @@
             </li>
         </skills>
         <modExtensions>
-            <li Class="UnitedFront.DecalKindExtension">
+            <li Class="UnitedFront.Decal.DecalKindExtension">
                 <armorDecalPath>Things/Decals/arrowhead</armorDecalPath>
                 <helmetDecalPath>Things/Decals/arrowhead</helmetDecalPath>
             </li>
@@ -909,7 +909,7 @@
             </li>
         </skills>
         <modExtensions>
-            <li Class="UnitedFront.DecalKindExtension">
+            <li Class="UnitedFront.Decal.DecalKindExtension">
                 <armorDecalPath>Things/Decals/cross</armorDecalPath>
                 <helmetDecalPath>Things/Decals/cross</helmetDecalPath>
             </li>
@@ -949,7 +949,7 @@
             </li>
         </skills>
         <modExtensions>
-            <li Class="UnitedFront.DecalKindExtension">
+            <li Class="UnitedFront.Decal.DecalKindExtension">
                 <armorDecalPath>Things/Decals/cog</armorDecalPath>
                 <helmetDecalPath>Things/Decals/cog</helmetDecalPath>
             </li>
@@ -979,7 +979,7 @@
             <li>UFR_UFSMG</li>
         </weaponTags>
         <modExtensions>
-            <li Class="UnitedFront.DecalKindExtension">
+            <li Class="UnitedFront.Decal.DecalKindExtension">
                 <armorDecalPath>Things/Decals/battleaxe</armorDecalPath>
                 <helmetDecalPath>Things/Decals/battleaxe</helmetDecalPath>
             </li>
@@ -1006,7 +1006,7 @@
             <li>UFR_UFHeavyPistol</li>
         </weaponTags>
         <modExtensions>
-            <li Class="UnitedFront.DecalKindExtension">
+            <li Class="UnitedFront.Decal.DecalKindExtension">
                 <armorDecalPath>Things/Decals/skullspear</armorDecalPath>
                 <helmetDecalPath>Things/Decals/skullspear</helmetDecalPath>
             </li>
@@ -1053,7 +1053,7 @@
             </li>
         </skills>
         <modExtensions>
-            <li Class="UnitedFront.DecalKindExtension">
+            <li Class="UnitedFront.Decal.DecalKindExtension">
                 <armorDecalPath>Things/Decals/commander</armorDecalPath>
                 <helmetDecalPath>Things/Decals/commander</helmetDecalPath>
             </li>

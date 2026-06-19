@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using RimWorld;
 using RimWorld.Planet;
+using UnitedFront.Decal;
 using Verse;
 
 namespace UnitedFront

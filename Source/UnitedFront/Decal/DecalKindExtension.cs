@@ -1,7 +1,7 @@
 using UnityEngine;
 using Verse;
 
-namespace UnitedFront
+namespace UnitedFront.Decal
 {
     public class DecalKindExtension : DefModExtension
     {

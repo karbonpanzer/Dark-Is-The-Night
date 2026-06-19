@@ -2,10 +2,11 @@ using System;
 using System.Collections.Generic;
 using HarmonyLib;
 using RimWorld;
+using UnitedFront.Decal;
 using UnityEngine;
 using Verse;
 
-namespace UnitedFront
+namespace UnitedFront.UI
 {
     [StaticConstructorOnStartup]
     public static class DecalBootstrap
