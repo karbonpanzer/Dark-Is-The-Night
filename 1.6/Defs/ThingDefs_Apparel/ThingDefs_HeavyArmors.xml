@@ -213,6 +213,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
+
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>UFR_HeavyBulwarkHelmet_Insulated</defName>
     <label>Heavy Bulwark Helmet (Insulated)</label>
@@ -312,6 +313,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
+
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>UFR_HeavyBulwarkHelmet_Shielded</defName>
     <label>Heavy Bulwark Helmet (Reinforced)</label>
@@ -355,7 +357,6 @@
       <Insulation_Cold>12</Insulation_Cold>
       <Insulation_Heat>0.2</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
-      
     </statBases>
     <equippedStatOffsets>
       <MoveSpeed>-0.08</MoveSpeed>
@@ -415,6 +416,7 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
+
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>UFR_HeavyBulwarkHelmet_Gasmask</defName>
     <label>Heavy Bulwark Helmet (Gasmask)</label>
@@ -518,4 +520,5 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
+  
 </Defs>
