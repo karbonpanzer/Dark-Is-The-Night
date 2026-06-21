@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>UFR_Gamesphere</defName>
+    <label>game sphere</label>
+    <description>A high-tech spacer game console. Using advanced methods to create a holographic play area, it is considered the pinnacle of video game development. Creating a perfect immersion in whatever of the several hundred preloaded games it contains.\n\nImpossible to produce on most Rimworlds, it is often sold by merchant-scalpers looking to make a larger profit.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Joy/Gamesphere/Gamesphere</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <size>(1,1)</size>
+    <rotatable>true</rotatable>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <techLevel>Spacer</techLevel>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.4</Flammability>
+      <Mass>10</Mass>
+      <Beauty>10</Beauty>
+      <BeautyOutdoors>6</BeautyOutdoors>
+      <MarketValue>1400</MarketValue>
+      <JoyGainFactor>1.4</JoyGainFactor>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(200,140,240,0)</glowColor>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+    <surfaceType>Item</surfaceType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <designationCategory>Joy</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+    </researchPrerequisites>
+    <building>
+      <joyKind>Television</joyKind>
+      <watchBuildingStandDistanceRange>2~4</watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>5</watchBuildingStandRectWidth>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+      <effectWatching>WatchingTelevision</effectWatching>
+    </building>
+  </ThingDef>
+
+</Defs>

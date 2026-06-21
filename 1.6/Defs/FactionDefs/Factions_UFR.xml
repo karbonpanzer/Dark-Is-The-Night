@@ -60,6 +60,11 @@
 		<colorSpectrum>
 			<li>(0.80, 0.80, 0.95)</li>
 		</colorSpectrum>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>UFR_OvisypiumWool</li>
+			</thingDefs>
+		</apparelStuffFilter>		
 		<permanentEnemy>false</permanentEnemy>
 		<techLevel>Spacer</techLevel>
 		<allowedCultures>
@@ -262,6 +267,11 @@
 		<colorSpectrum>
 			<li>(0.60, 0.15, 0.15)</li>
 		</colorSpectrum>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>UFR_OvisypiumWool</li>
+			</thingDefs>
+		</apparelStuffFilter>			
 		<permanentEnemy>true</permanentEnemy>
 		<techLevel>Spacer</techLevel>
 		<allowedCultures>

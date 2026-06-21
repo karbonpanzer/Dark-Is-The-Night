@@ -85,10 +85,10 @@
       <StuffPower_Insulation_Heat>28</StuffPower_Insulation_Heat>
     </statBases>
     <graphicData>
-      <color>(198,198,198)</color>
+      <color>(83,83,84)</color>
     </graphicData>
     <stuffProps>
-      <color>(198,198,198)</color>
+      <color>(83,83,84)</color>
     </stuffProps>
   </ThingDef>
 
