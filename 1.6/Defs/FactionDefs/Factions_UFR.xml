@@ -20,7 +20,7 @@
         <backstoryFilters>
           <li>
             <categories>
-                <li>Outlander</li>
+                <li>UFR_FlufflonWool</li>
             </categories>
           </li>
         </backstoryFilters>
@@ -38,6 +38,7 @@
             <li>ClassicStartTechprints</li>
         </startingTechprintsResearchTags>
     </FactionDef>
+
     <FactionDef ParentName="FactionBase">
         <defName>UFR_Civil</defName>
         <label>Front citizens</label>

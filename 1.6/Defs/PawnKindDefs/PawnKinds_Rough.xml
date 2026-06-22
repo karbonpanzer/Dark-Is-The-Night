@@ -3,8 +3,8 @@
 
     <PawnKindDef ParentName="UFR_CivilianBase">
         <defName>UFR_Rough_Settler</defName>
-        <label>settler</label>
-        <labelPlural>settlers</labelPlural>
+        <label>drifter</label>
+        <labelPlural>drifters</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>35</combatPower>
         <itemQuality>Poor</itemQuality>
@@ -37,8 +37,8 @@
 
     <PawnKindDef ParentName="UFR_CivilianBase">
         <defName>UFR_Rough_Trader</defName>
-        <label>trader</label>
-        <labelPlural>traders</labelPlural>
+        <label>merchant</label>
+        <labelPlural>merchants</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>50</combatPower>
         <trader>true</trader>
@@ -74,8 +74,8 @@
 
     <PawnKindDef ParentName="UFR_LaborerBase">
         <defName>UFR_Rough_Laborer</defName>
-        <label>laborer</label>
-        <labelPlural>laborers</labelPlural>
+        <label>hand</label>
+        <labelPlural>hands</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>25</combatPower>
         <skills>
@@ -100,8 +100,8 @@
 
     <PawnKindDef ParentName="UFR_LeadershipBase">
         <defName>UFR_Rough_Representative</defName>
-        <label>representative</label>
-        <labelPlural>representatives</labelPlural>
+        <label>negotiator</label>
+        <labelPlural>negotiators</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>80</combatPower>
         <factionLeader>true</factionLeader>
@@ -143,8 +143,8 @@
 
     <PawnKindDef ParentName="UFR_LineRecruitBase">
         <defName>UFR_Rough_Recruit_Ranged</defName>
-        <label>recruit</label>
-        <labelPlural>recruits</labelPlural>
+        <label>hireling</label>
+        <labelPlural>hirelings</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>70</combatPower>
         <initialWillRange>3~5</initialWillRange>
@@ -180,8 +180,8 @@
 
     <PawnKindDef ParentName="UFR_LineRecruitBase">
         <defName>UFR_Rough_Recruit_Melee</defName>
-        <label>recruit</label>
-        <labelPlural>recruits</labelPlural>
+        <label>hireling</label>
+        <labelPlural>hirelings</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>70</combatPower>
         <weaponMoney>2000~2500</weaponMoney>
@@ -213,8 +213,8 @@
 
     <PawnKindDef ParentName="UFR_LineInfantryBase">
         <defName>UFR_Rough_Infantry_Ranged</defName>
-        <label>infantry</label>
-        <labelPlural>infantry</labelPlural>
+        <label>mercenary</label>
+        <labelPlural>mercenaries</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>105</combatPower>
         <weaponTags Inherit="False">
@@ -250,8 +250,8 @@
 
     <PawnKindDef ParentName="UFR_LineInfantryBase">
         <defName>UFR_Rough_Infantry_Melee</defName>
-        <label>infantry</label>
-        <labelPlural>infantry</labelPlural>
+        <label>mercenary</label>
+        <labelPlural>mercenaries</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>105</combatPower>
         <weaponMoney>2000~2800</weaponMoney>
@@ -284,8 +284,8 @@
 
     <PawnKindDef ParentName="UFR_LineVeteranBase">
         <defName>UFR_Rough_Veteran_Ranged</defName>
-        <label>veteran</label>
-        <labelPlural>veterans</labelPlural>
+        <label>legionaire</label>
+        <labelPlural>legionaires</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>130</combatPower>
         <minGenerationAge>30</minGenerationAge>
@@ -326,8 +326,8 @@
 
     <PawnKindDef ParentName="UFR_LineVeteranBase">
         <defName>UFR_Rough_Veteran_Melee</defName>
-        <label>veteran</label>
-        <labelPlural>veterans</labelPlural>
+        <label>legionaire</label>
+        <labelPlural>legionaires</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>130</combatPower>
         <minGenerationAge>30</minGenerationAge>
@@ -362,8 +362,8 @@
 
     <PawnKindDef ParentName="UFR_LeaderBase">
         <defName>UFR_Rough_Officer</defName>
-        <label>commander</label>
-        <labelPlural>commanders</labelPlural>
+        <label>captain</label>
+        <labelPlural>captains</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>105</combatPower>
         <factionLeader>true</factionLeader>
@@ -418,8 +418,8 @@
 
     <PawnKindDef ParentName="UFR_SupportBase">
         <defName>UFR_Rough_Medic</defName>
-        <label>medic</label>
-        <labelPlural>medics</labelPlural>
+        <label>surgeon</label>
+        <labelPlural>surgeons</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>80</combatPower>
         <inventoryOptions>
@@ -468,8 +468,8 @@
 
     <PawnKindDef ParentName="UFR_SupportBase">
         <defName>UFR_Rough_Engineer</defName>
-        <label>engineer</label>
-        <labelPlural>engineers</labelPlural>
+        <label>sapper</label>
+        <labelPlural>sappers</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>80</combatPower>
         <weaponTags Inherit="False">
@@ -509,8 +509,8 @@
 
     <PawnKindDef ParentName="UFR_ScoutBase">
         <defName>UFR_Rough_Scout</defName>
-        <label>scout</label>
-        <labelPlural>scouts</labelPlural>
+        <label>assassin</label>
+        <labelPlural>assassins</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>110</combatPower>
         <weaponMoney>1950~2550</weaponMoney>
@@ -547,8 +547,8 @@
 
     <PawnKindDef ParentName="UFR_ShocktrooperBase">
         <defName>UFR_Rough_Shocktrooper</defName>
-        <label>shocktrooper</label>
-        <labelPlural>shocktroopers</labelPlural>
+        <label>berserker</label>
+        <labelPlural>berserkers</labelPlural>
         <defaultFactionType>UFR_Rough</defaultFactionType>
         <combatPower>140</combatPower>
         <minGenerationAge>25</minGenerationAge>

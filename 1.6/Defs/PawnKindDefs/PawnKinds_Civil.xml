@@ -100,8 +100,8 @@
 
     <PawnKindDef ParentName="UFR_LeadershipBase">
         <defName>UFR_Civil_Representative</defName>
-        <label>representative</label>
-        <labelPlural>representatives</labelPlural>
+        <label>delegate</label>
+        <labelPlural>delegates</labelPlural>
         <defaultFactionType>UFR_Civil</defaultFactionType>
         <combatPower>80</combatPower>
         <factionLeader>true</factionLeader>

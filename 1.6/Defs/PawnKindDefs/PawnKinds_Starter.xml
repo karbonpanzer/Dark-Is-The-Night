@@ -27,7 +27,6 @@
 			<min>1500</min>
 			<max>3000</max>
 		</apparelMoney>
-		<apparelColor>(60,80,110)</apparelColor>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
 		<techHediffsMoney>
