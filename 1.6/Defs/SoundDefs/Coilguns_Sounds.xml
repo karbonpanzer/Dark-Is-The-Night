@@ -8,13 +8,85 @@
             <li>
             <grains>
                 <li Class="AudioGrain_Folder">
-                <clipFolderPath>Slug_medium</clipFolderPath>
+                <clipFolderPath>Shot_slugmedium</clipFolderPath>
                 </li>
             </grains>
             <volumeRange>55.2941~55.2941</volumeRange>
-            <pitchRange>1.091765~2</pitchRange>
+            <pitchRange>1.9781~3.1178</pitchRange>
             <sustainLoop>False</sustainLoop>
             </li>
         </subSounds>
     </SoundDef>
+
+    <SoundDef>
+        <defName>UFR_Shot_SlugSmall</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+            <grains>
+                <li Class="AudioGrain_Folder">
+                <clipFolderPath>Shot_slugsmall</clipFolderPath>
+                </li>
+            </grains>
+            <volumeRange>55.2941~55.2941</volumeRange>
+            <pitchRange>2.15513~2.937553</pitchRange>
+            <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>    
+
+    <SoundDef>
+        <defName>UFR_Shot_SlugScatter</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+            <grains>
+                <li Class="AudioGrain_Folder">
+                <clipFolderPath>Shot_slugscatter</clipFolderPath>
+                </li>
+            </grains>
+            <volumeRange>55.2941~55.2941</volumeRange>
+            <pitchRange>1.75513~2.567553</pitchRange>
+            <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>  
+    
+    <SoundDef>
+        <defName>UFR_Shot_SlugBig</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+            <grains>
+                <li Class="AudioGrain_Folder">
+                <clipFolderPath>Shot_slugbig</clipFolderPath>
+                </li>
+            </grains>
+            <volumeRange>55.2941~55.2941</volumeRange>
+            <pitchRange>1.95513~2.89675</pitchRange>
+            <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef> 
+    
+    <SoundDef>
+        <defName>UFR_Shot_Slugmassive</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+            <grains>
+                <li Class="AudioGrain_Folder">
+                <clipFolderPath>Shot_slugbig</clipFolderPath>
+                </li>
+            </grains>
+            <volumeRange>55.2941~55.2941</volumeRange>
+            <pitchRange>2.75513~4.567553</pitchRange>
+            <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>     
 </Defs>

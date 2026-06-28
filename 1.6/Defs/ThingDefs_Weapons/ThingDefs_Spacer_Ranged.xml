@@ -61,7 +61,7 @@
                 <defaultProjectile>UFR_Slug_HeavyCoilPistol</defaultProjectile>
                 <warmupTime>0.85</warmupTime>
                 <range>20.0</range>
-                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCast>UFR_Shot_SlugSmall</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>11</muzzleFlashScale>
             </li>
@@ -158,7 +158,7 @@
                 <defaultProjectile>UFR_Slug_CoilPistol</defaultProjectile>
                 <warmupTime>0.65</warmupTime>
                 <range>22.0</range>
-                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCast>UFR_Shot_SlugSmall</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
@@ -550,7 +550,7 @@
                 <warmupTime>1.6</warmupTime>
                 <range>30.0</range>
                 <burstShotCount>4</burstShotCount>
-                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
                 <soundCast>UFR_Shot_SlugMedium</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>10</muzzleFlashScale>
@@ -651,7 +651,7 @@
                 <burstShotCount>2</burstShotCount>
                 <ticksBetweenBurstShots>18</ticksBetweenBurstShots>
                 <range>22.0</range>
-                <soundCast>Shot_ChargeBlaster</soundCast>
+                <soundCast>UFR_Shot_SlugScatter</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>11</muzzleFlashScale>
             </li>
@@ -699,7 +699,7 @@
         <projectile>
             <flyOverhead>false</flyOverhead>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>38</damageAmountBase>
+            <damageAmountBase>45</damageAmountBase>
             <armorPenetrationBase>0.85</armorPenetrationBase>
             <speed>160</speed>
         </projectile>
@@ -739,7 +739,7 @@
             <AccuracyShort>0.58</AccuracyShort>
             <AccuracyMedium>0.78</AccuracyMedium>
             <AccuracyLong>0.82</AccuracyLong>
-            <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>3.4</RangedWeapon_Cooldown>
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.30</MoveSpeed>
@@ -753,7 +753,7 @@
                 <range>82.0</range>
                 <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>				
-                <soundCast>Shot_ChargeBlaster</soundCast>
+                <soundCast>UFR_Shot_SlugBig</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>13</muzzleFlashScale>
             </li>
@@ -792,6 +792,12 @@
     <ThingDef ParentName="BaseBullet">
         <defName>UFR_Slug_CoilCannon</defName>
         <label>coil cannon slug</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <category>Projectile</category>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <useHitPoints>False</useHitPoints>
+        <neverMultiSelect>True</neverMultiSelect>        
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <texPath>Things/Projectile/slug_heavy</texPath>
@@ -799,12 +805,12 @@
             <shaderType>MoteGlow</shaderType>
         </graphicData>
         <projectile>
-            <flyOverhead>false</flyOverhead>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>70</damageAmountBase>
-            <armorPenetrationBase>1.00</armorPenetrationBase>
-            <stoppingPower>4</stoppingPower>
-            <speed>150</speed>
+            <damageDef>Bomb</damageDef>
+            <explosionRadius>1.6</explosionRadius>
+            <speed>38</speed>
+            <damageAmountBase>55</damageAmountBase>
+            <arcHeightFactor>0.4</arcHeightFactor>
+            <soundExplode>Explosion_Rocket</soundExplode>
         </projectile>
     </ThingDef>
 
@@ -842,7 +848,7 @@
             <AccuracyShort>0.35</AccuracyShort>
             <AccuracyMedium>0.70</AccuracyMedium>
             <AccuracyLong>0.90</AccuracyLong>
-            <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.45</MoveSpeed>
@@ -852,11 +858,19 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>UFR_Slug_CoilCannon</defaultProjectile>
-                <warmupTime>3.0</warmupTime>
+                <warmupTime>8.0</warmupTime>
                 <range>54.0</range>
-                <soundCast>Shot_ChargeBlaster</soundCast>
+                <soundCast>UFR_Shot_Slugmassive</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>14</muzzleFlashScale>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>              
+                <forcedMissRadius>5.75</forcedMissRadius>
+                <forcedMissEvenDispersal>true</forcedMissEvenDispersal>
+                <targetParams>
+                    <canTargetPawns>false</canTargetPawns>
+                    <canTargetLocations>true</canTargetLocations>
+                    <canTargetBuildings>false</canTargetBuildings>
+                </targetParams>                
             </li>
         </verbs>
         <weaponTags>
