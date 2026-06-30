@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="UFR_VatGrownPartBase" ParentName="BodyPartBionicBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <thingSetMakerTags Inherit="False" />
+    <recipeMaker>
+      <researchPrerequisite>UFR_BioAugments</researchPrerequisite>
+      <recipeUsers>
+        <li>UFR_BioAugmentBench</li>
+      </recipeUsers>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>8</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- Vat-grown Arm -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownArm</defName>
+    <label>vat-grown arm</label>
+    <description>An organic arm cultivated from lab-grown tissue. Denser musculature, reinforced bone, and engineered nerve fibers give it greater strength and dexterity than the natural arm it replaces.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownArm</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>2.0</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>4</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>3</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>8000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownArm</defName>
+    <label>vat-grown arm</label>
+    <labelNoun>a vat-grown arm</labelNoun>
+    <description>An installed vat-grown arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownArm</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownArm</defName>
+    <label>install vat-grown arm</label>
+    <description>Install a vat-grown arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownArm</ThingDef>
+      <HediffDef>UFR_VatGrownArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown arm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownArm</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Leg -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownLeg</defName>
+    <label>vat-grown leg</label>
+    <description>An organic leg cultivated from lab-grown tissue. Denser musculature and reinforced bone give it greater strength and endurance than the natural leg it replaces.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownLeg</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>2.5</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>4</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>3</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>8000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownLeg</defName>
+    <label>vat-grown leg</label>
+    <labelNoun>a vat-grown leg</labelNoun>
+    <description>An installed vat-grown leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownLeg</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownLeg</defName>
+    <label>install vat-grown leg</label>
+    <description>Install a vat-grown leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownLeg</ThingDef>
+      <HediffDef>UFR_VatGrownLeg</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown leg.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownLeg</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Hand -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownHand</defName>
+    <label>vat-grown hand</label>
+    <description>An organic hand cultivated from lab-grown tissue, for when the arm itself is salvageable but the hand is not.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownHand</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1100</MarketValue>
+      <Mass>0.8</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>2</UFR_LabGrownCulture>
+      <Neutroamine>2</Neutroamine>
+      <Plasteel>2</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>5000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownHand</defName>
+    <label>vat-grown hand</label>
+    <labelNoun>a vat-grown hand</labelNoun>
+    <description>An installed vat-grown hand.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownHand</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownHand</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.30</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownHand</defName>
+    <label>install vat-grown hand</label>
+    <description>Install a vat-grown hand.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownHand</ThingDef>
+      <HediffDef>UFR_VatGrownHand</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown hand.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownHand</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownHand</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownHand</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Foot -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownFoot</defName>
+    <label>vat-grown foot</label>
+    <description>An organic foot cultivated from lab-grown tissue, for when the leg itself is salvageable but the foot is not.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownFoot</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1100</MarketValue>
+      <Mass>0.8</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>2</UFR_LabGrownCulture>
+      <Neutroamine>2</Neutroamine>
+      <Plasteel>2</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>5000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownFoot</defName>
+    <label>vat-grown foot</label>
+    <labelNoun>a vat-grown foot</labelNoun>
+    <description>An installed vat-grown foot.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownFoot</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownFoot</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.30</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownFoot</defName>
+    <label>install vat-grown foot</label>
+    <description>Install a vat-grown foot.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownFoot</ThingDef>
+      <HediffDef>UFR_VatGrownFoot</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown foot.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownFoot</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownFoot</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Foot</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownFoot</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Finger -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownFinger</defName>
+    <label>vat-grown finger</label>
+    <description>A single organic finger cultivated from lab-grown tissue.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownFinger</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.2</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>1</UFR_LabGrownCulture>
+      <Neutroamine>2</Neutroamine>
+      <Plasteel>1</Plasteel>
+    </costList>
+    <recipeMaker>
+      <workAmount>3000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownFinger</defName>
+    <label>vat-grown finger</label>
+    <labelNoun>a vat-grown finger</labelNoun>
+    <description>An installed vat-grown finger.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownFinger</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownFinger</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.30</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownFinger</defName>
+    <label>install vat-grown finger</label>
+    <description>Install a vat-grown finger.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownFinger</ThingDef>
+      <HediffDef>UFR_VatGrownFinger</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown finger.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownFinger</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownFinger</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Finger</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownFinger</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Toe -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownToe</defName>
+    <label>vat-grown toe</label>
+    <description>A single organic toe cultivated from lab-grown tissue.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownToe</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.2</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>1</UFR_LabGrownCulture>
+      <Neutroamine>2</Neutroamine>
+      <Plasteel>1</Plasteel>
+    </costList>
+    <recipeMaker>
+      <workAmount>3000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownToe</defName>
+    <label>vat-grown toe</label>
+    <labelNoun>a vat-grown toe</labelNoun>
+    <description>An installed vat-grown toe.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownToe</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownToe</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.30</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownToe</defName>
+    <label>install vat-grown toe</label>
+    <description>Install a vat-grown toe.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownToe</ThingDef>
+      <HediffDef>UFR_VatGrownToe</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown toe.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownToe</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownToe</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Toe</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownToe</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Eye -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownEye</defName>
+    <label>vat-grown eye</label>
+    <description>An organic eye cultivated from lab-grown tissue. Engineered photoreceptors give it sharper acuity than the natural eye it replaces.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownEye</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1800</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>2</UFR_LabGrownCulture>
+      <Neutroamine>2</Neutroamine>
+      <Plasteel>2</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>5500</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownEye</defName>
+    <label>vat-grown eye</label>
+    <labelNoun>a vat-grown eye</labelNoun>
+    <description>An installed vat-grown eye.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownEye</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownEye</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownEye</defName>
+    <label>install vat-grown eye</label>
+    <description>Install a vat-grown eye.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownEye</ThingDef>
+      <HediffDef>UFR_VatGrownEye</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown eye.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownEye</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Ear -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownEar</defName>
+    <label>vat-grown ear</label>
+    <description>An organic ear cultivated from lab-grown tissue. Engineered hair cells give it sharper hearing than the natural ear it replaces.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownEar</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>2</UFR_LabGrownCulture>
+      <Neutroamine>2</Neutroamine>
+      <Plasteel>2</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>5500</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownEar</defName>
+    <label>vat-grown ear</label>
+    <labelNoun>a vat-grown ear</labelNoun>
+    <description>An installed vat-grown ear.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownEar</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownEar</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownEar</defName>
+    <label>install vat-grown ear</label>
+    <description>Install a vat-grown ear.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownEar</ThingDef>
+      <HediffDef>UFR_VatGrownEar</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown ear.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownEar</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Nose -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownNose</defName>
+    <label>vat-grown nose</label>
+    <description>An organic nose cultivated from lab-grown tissue.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownNose</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>900</MarketValue>
+      <Mass>0.2</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>1</UFR_LabGrownCulture>
+      <Neutroamine>2</Neutroamine>
+      <Plasteel>1</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>4000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownNose</defName>
+    <label>vat-grown nose</label>
+    <labelNoun>a vat-grown nose</labelNoun>
+    <description>An installed vat-grown nose.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownNose</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownNose</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.30</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownNose</defName>
+    <label>install vat-grown nose</label>
+    <description>Install a vat-grown nose.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownNose</ThingDef>
+      <HediffDef>UFR_VatGrownNose</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown nose.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownNose</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownNose</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownNose</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Jaw -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownJaw</defName>
+    <label>vat-grown jaw</label>
+    <description>An organic jaw cultivated from lab-grown tissue. Reinforced bone and rebuilt musculature give it greater bite strength than the natural jaw it replaces.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownJaw</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>2</UFR_LabGrownCulture>
+      <Neutroamine>2</Neutroamine>
+      <Plasteel>2</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>5000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownJaw</defName>
+    <label>vat-grown jaw</label>
+    <labelNoun>a vat-grown jaw</labelNoun>
+    <description>An installed vat-grown jaw.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownJaw</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownJaw</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownJaw</defName>
+    <label>install vat-grown jaw</label>
+    <description>Install a vat-grown jaw.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownJaw</ThingDef>
+      <HediffDef>UFR_VatGrownJaw</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown jaw.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownJaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownJaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Jaw</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownJaw</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Heart -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownHeart</defName>
+    <label>vat-grown heart</label>
+    <description>An organic heart cultivated from lab-grown tissue. Vat-engineered fibers and a reinforced ventricular wall give it greater output and resilience than the original it replaces.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownHeart</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>0.8</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>4</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>3</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>7500</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownHeart</defName>
+    <label>vat-grown heart</label>
+    <labelNoun>a vat-grown heart</labelNoun>
+    <description>An installed vat-grown heart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownHeart</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownHeart</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownHeart</defName>
+    <label>install vat-grown heart</label>
+    <description>Install a vat-grown heart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownHeart</ThingDef>
+      <HediffDef>UFR_VatGrownHeart</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown heart.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownHeart</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Lung -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownLung</defName>
+    <label>vat-grown lung</label>
+    <description>An organic lung cultivated from lab-grown tissue. Engineered alveoli provide greater oxygen exchange than the natural lung it replaces.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownLung</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>3</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>2</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>6500</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownLung</defName>
+    <label>vat-grown lung</label>
+    <labelNoun>a vat-grown lung</labelNoun>
+    <description>An installed vat-grown lung.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownLung</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownLung</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.30</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownLung</defName>
+    <label>install vat-grown lung</label>
+    <description>Install a vat-grown lung.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownLung</ThingDef>
+      <HediffDef>UFR_VatGrownLung</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown lung.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownLung</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Liver -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownLiver</defName>
+    <label>vat-grown liver</label>
+    <description>An organic liver cultivated from lab-grown tissue. Engineered cells filter toxins more efficiently than the natural liver it replaces.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownLiver</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>0.6</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>3</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>2</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>6500</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownLiver</defName>
+    <label>vat-grown liver</label>
+    <labelNoun>a vat-grown liver</labelNoun>
+    <description>An installed vat-grown liver.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownLiver</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownLiver</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.30</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownLiver</defName>
+    <label>install vat-grown liver</label>
+    <description>Install a vat-grown liver.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownLiver</ThingDef>
+      <HediffDef>UFR_VatGrownLiver</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown liver.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownLiver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownLiver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownLiver</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Kidney -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownKidney</defName>
+    <label>vat-grown kidney</label>
+    <description>An organic kidney cultivated from lab-grown tissue. Engineered nephrons filter blood more efficiently than the natural kidney it replaces.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownKidney</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>3</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>2</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>6500</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownKidney</defName>
+    <label>vat-grown kidney</label>
+    <labelNoun>a vat-grown kidney</labelNoun>
+    <description>An installed vat-grown kidney.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownKidney</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownKidney</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.30</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownKidney</defName>
+    <label>install vat-grown kidney</label>
+    <description>Install a vat-grown kidney.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownKidney</ThingDef>
+      <HediffDef>UFR_VatGrownKidney</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown kidney.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownKidney</addsHediff>
+  </RecipeDef>
+
+  <!-- Vat-grown Stomach -->
+  <ThingDef ParentName="UFR_VatGrownPartBase">
+    <defName>UFR_VatGrownStomach</defName>
+    <label>vat-grown stomach</label>
+    <description>An organic stomach cultivated from lab-grown tissue. Engineered digestion gives it greater efficiency than the natural stomach it replaces.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallVatGrownStomach</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1600</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>3</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>2</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>6500</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UFR_VatGrownStomach</defName>
+    <label>vat-grown stomach</label>
+    <labelNoun>a vat-grown stomach</labelNoun>
+    <description>An installed vat-grown stomach.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownStomach</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_VatGrownStomach</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.35</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>UFR_InstallVatGrownStomach</defName>
+    <label>install vat-grown stomach</label>
+    <description>Install a vat-grown stomach.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_VatGrownStomach</ThingDef>
+      <HediffDef>UFR_VatGrownStomach</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vat-grown stomach.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_VatGrownStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_VatGrownStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_VatGrownStomach</addsHediff>
+  </RecipeDef>
+
+</Defs>

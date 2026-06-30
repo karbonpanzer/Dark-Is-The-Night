@@ -18,7 +18,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_HeavyBulwarkArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkMolecularPlating</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -101,7 +101,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_HeavyBulwarkArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkMolecularPlating</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -172,7 +172,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_HeavyBulwarkArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkMolecularPlating</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -247,7 +247,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_HeavyBulwarkArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkMolecularPlating</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -325,7 +325,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_HeavyBulwarkArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkMolecularPlating</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>

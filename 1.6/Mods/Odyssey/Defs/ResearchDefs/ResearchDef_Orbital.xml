@@ -2,19 +2,18 @@
 
 <Defs> 	
 		
-		<ResearchProjectDef>
-			<defName>UFR_OrbitalBulwarkArmor</defName>
-			<label>Orbital Bulwark Armor and Helmet</label>
-			<description>Craft Bulwark Armor for usage in orbit.</description>
-			<baseCost>500</baseCost>
-			<tab>UFR_ResearchTab</tab>
-			<techLevel>Spacer</techLevel>
-			<prerequisites>
-				<li>UFR_BulwarkArmor</li>
-				<li MayRequire="Ludeon.RimWorld.Odyssey">OrbitalTech</li>
-			</prerequisites>
-			<researchViewX>4</researchViewX>
-			<researchViewY>0.7</researchViewY>
-		</ResearchProjectDef>			
+    <ResearchProjectDef>
+        <defName>UFR_ZeroGEVASuits</defName>
+        <label>Zero-G EVA Suits</label>
+        <description>Craft sealed environment suits designed for high-altitude and vacuum operations.</description>
+        <baseCost>2400</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_BulwarkSpecializedCompositions</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>0.7</researchViewY>
+    </ResearchProjectDef>		
 			
 </Defs>

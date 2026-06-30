@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>UFR_LabGrownCulture</defName>
+    <label>lab-grown culture</label>
+    <description>A flask of viable tissue culture, harvested via surgical extraction from a humanoid donor. Seeded into the culture tank of a Bio-Augment Bench, this stock can be sculpted into vat-grown replacement organs and limbs.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Medicine/MedicineIndustrial</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MarketValue>120</MarketValue>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1.5</DeteriorationRate>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <useHitPoints>true</useHitPoints>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>UFR_CultureExtractionRecovery</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>tissue extraction recovery</label>
+    <labelNoun>tissue extraction recovery</labelNoun>
+    <description>This person recently had a sample of soft tissue extracted for use as bio-augment culture stock. Mild fatigue and reduced manipulation accompany the recovery.</description>
+    <defaultLabelColor>(0.85, 0.65, 0.65)</defaultLabelColor>
+    <isBad>true</isBad>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>180000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.10</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>UFR_ExtractCulture</defName>
+    <label>extract tissue culture</label>
+    <description>Surgically extract a sample of viable soft tissue from a humanoid donor for use as bio-augment culture stock. The donor will need a few days to recover.</description>
+    <jobString>Extracting tissue culture.</jobString>
+    <workerClass>UnitedFront.Recipes.RecipeExtractCulture</workerClass>
+    <workAmount>2500</workAmount>
+    <surgerySuccessChanceFactor>2.0</surgerySuccessChanceFactor>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <targetsBodyPart>false</targetsBodyPart>
+    <isViolation>false</isViolation>
+    <anesthetize>true</anesthetize>
+    <skillRequirements>
+      <Medicine>6</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <addsHediff>UFR_CultureExtractionRecovery</addsHediff>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_LabGrownCulture</ThingDef>
+    </descriptionHyperlinks>
+    <uiIconThing>UFR_LabGrownCulture</uiIconThing>
+  </RecipeDef>
+
+</Defs>

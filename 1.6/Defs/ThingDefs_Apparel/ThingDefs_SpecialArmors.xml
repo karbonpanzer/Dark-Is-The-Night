@@ -18,7 +18,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_OfficerBulwarkArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkSpecializedCompositions</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -99,7 +99,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_OfficerBulwarkArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkSpecializedCompositions</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -256,7 +256,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_RiotArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkRecompositionMethods</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>

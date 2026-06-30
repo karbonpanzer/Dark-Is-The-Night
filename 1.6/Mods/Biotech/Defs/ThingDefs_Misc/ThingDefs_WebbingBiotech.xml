@@ -5,7 +5,7 @@
 		<description>A load-bearing chest harness built to carry toxin grenades. Chemically resistant inner lining and sealed canister clips prevent accidental exposure to the lethal chemical agents during movement.</description>
 		<label>Grenadier Webbing (Tox)</label>
 		<recipeMaker>
-		  <researchPrerequisite>UFR_SpecialistAccessories</researchPrerequisite>
+		  <researchPrerequisite>UFR_ModifiedSpecialistKits</researchPrerequisite>
 		</recipeMaker>
 		<graphicData>
 		  <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>

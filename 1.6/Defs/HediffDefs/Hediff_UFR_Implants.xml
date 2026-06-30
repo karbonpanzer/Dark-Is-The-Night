@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="UFR_BioImplantBase" ParentName="BodyPartBionicBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <thingSetMakerTags Inherit="False" />
+    <recipeMaker>
+      <researchPrerequisite>UFR_AdvancedBioAugments</researchPrerequisite>
+      <recipeUsers>
+        <li>UFR_BioAugmentBench</li>
+      </recipeUsers>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>10</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- Redundant Cardiac Bulb -->
+  <ThingDef ParentName="UFR_BioImplantBase">
+    <defName>UFR_CardiacBulb</defName>
+    <label>redundant cardiac bulb</label>
+    <description>A vat-grown auxiliary cardiac muscle, smaller than the original and seated below it. Engineered for failover and stress-mode circulation boost.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallCardiacBulb</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1800</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>4</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>3</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Luciferium>1</Luciferium>
+    </costList>
+    <recipeMaker>
+      <workAmount>9000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>UFR_CardiacBulb</defName>
+    <label>redundant cardiac bulb</label>
+    <labelNoun>a redundant cardiac bulb</labelNoun>
+    <description>An installed redundant cardiac bulb providing auxiliary circulation under stress.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_CardiacBulb</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_CardiacBulb</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <ImmunityGainSpeedFactor>0.10</ImmunityGainSpeedFactor>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>0.10</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>UFR_InstallCardiacBulb</defName>
+    <label>install redundant cardiac bulb</label>
+    <description>Install a redundant cardiac bulb.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_CardiacBulb</ThingDef>
+      <HediffDef>UFR_CardiacBulb</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing redundant cardiac bulb.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_CardiacBulb</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_CardiacBulb</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_CardiacBulb</addsHediff>
+  </RecipeDef>
+
+  <!-- Lattice Plate -->
+  <ThingDef ParentName="UFR_BioImplantBase">
+    <defName>UFR_LatticePlate</defName>
+    <label>lattice plate</label>
+    <description>A surgical mesh of plate-reinforced bone grafts running along the long bones and ribcage. The added density costs a small amount of mobility but provides substantial blunt protection.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallLatticePlate</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2800</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>6</UFR_LabGrownCulture>
+      <Neutroamine>6</Neutroamine>
+      <Plasteel>5</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Luciferium>2</Luciferium>
+    </costList>
+    <recipeMaker>
+      <workAmount>12000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>UFR_LatticePlate</defName>
+    <label>lattice plate</label>
+    <labelNoun>a lattice plate</labelNoun>
+    <description>An installed lattice plate providing body-wide bone reinforcement.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_LatticePlate</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_LatticePlate</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+          <CarryingCapacity>25</CarryingCapacity>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>UFR_InstallLatticePlate</defName>
+    <label>install lattice plate</label>
+    <description>Install a lattice plate.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_LatticePlate</ThingDef>
+      <HediffDef>UFR_LatticePlate</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing lattice plate.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_LatticePlate</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_LatticePlate</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_LatticePlate</addsHediff>
+  </RecipeDef>
+
+  <!-- Sectional Rest Cortex -->
+  <ThingDef ParentName="UFR_BioImplantBase">
+    <defName>UFR_RestCortex</defName>
+    <label>sectional rest cortex</label>
+    <description>Neural rewiring that lets the brain rest one hemisphere at a time, the way dolphins do. The pawn requires roughly half the usual sleep.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallRestCortex</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2400</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>4</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>2</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Luciferium>1</Luciferium>
+    </costList>
+    <recipeMaker>
+      <workAmount>9000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>UFR_RestCortex</defName>
+    <label>sectional rest cortex</label>
+    <labelNoun>a sectional rest cortex</labelNoun>
+    <description>An installed sectional rest cortex permitting hemispheric sleep.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_RestCortex</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_RestCortex</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statFactors>
+          <RestRateMultiplier>2.0</RestRateMultiplier>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>UFR_InstallRestCortex</defName>
+    <label>install sectional rest cortex</label>
+    <description>Install a sectional rest cortex.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_RestCortex</ThingDef>
+      <HediffDef>UFR_RestCortex</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing sectional rest cortex.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_RestCortex</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_RestCortex</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_RestCortex</addsHediff>
+  </RecipeDef>
+
+  <!-- Bronchial Filter Assembly -->
+  <ThingDef ParentName="UFR_BioImplantBase">
+    <defName>UFR_BronchialFilter</defName>
+    <label>bronchial filter assembly</label>
+    <description>A third partial lung with engineered alveoli that scrub airborne toxins before they reach the bloodstream.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallBronchialFilter</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>4</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>3</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Luciferium>1</Luciferium>
+    </costList>
+    <recipeMaker>
+      <workAmount>9000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>UFR_BronchialFilter</defName>
+    <label>bronchial filter assembly</label>
+    <labelNoun>a bronchial filter assembly</labelNoun>
+    <description>An installed bronchial filter assembly providing chemical air-filtration.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_BronchialFilter</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_BronchialFilter</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <ToxicResistance>0.50</ToxicResistance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>UFR_InstallBronchialFilter</defName>
+    <label>install bronchial filter assembly</label>
+    <description>Install a bronchial filter assembly.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_BronchialFilter</ThingDef>
+      <HediffDef>UFR_BronchialFilter</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bronchial filter assembly.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_BronchialFilter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_BronchialFilter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_BronchialFilter</addsHediff>
+  </RecipeDef>
+
+  <!-- Hemostatic Gland -->
+  <ThingDef ParentName="UFR_BioImplantBase">
+    <defName>UFR_HemostaticGland</defName>
+    <label>hemostatic gland</label>
+    <description>A small lab-grown endocrine organ that floods the bloodstream with clotting agents and antibodies in response to trauma.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallHemostaticGland</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>4</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>3</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Luciferium>1</Luciferium>
+    </costList>
+    <recipeMaker>
+      <workAmount>9000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>UFR_HemostaticGland</defName>
+    <label>hemostatic gland</label>
+    <labelNoun>a hemostatic gland</labelNoun>
+    <description>An installed hemostatic gland accelerating immune response and clotting.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_HemostaticGland</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_HemostaticGland</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <ImmunityGainSpeedFactor>0.50</ImmunityGainSpeedFactor>
+          <InjuryHealingFactor>0.25</InjuryHealingFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>UFR_InstallHemostaticGland</defName>
+    <label>install hemostatic gland</label>
+    <description>Install a hemostatic gland.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_HemostaticGland</ThingDef>
+      <HediffDef>UFR_HemostaticGland</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing hemostatic gland.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_HemostaticGland</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_HemostaticGland</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_HemostaticGland</addsHediff>
+  </RecipeDef>
+
+  <!-- Subdermal Harness Mesh -->
+  <ThingDef ParentName="UFR_BioImplantBase">
+    <defName>UFR_HarnessMesh</defName>
+    <label>subdermal harness mesh</label>
+    <description>A grown-in lattice of conductive contact points under the skin, designed to interface with UFR Bulwark and Varangian power armor inner sockets. Also provides modest dermal toughening.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallHarnessMesh</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2400</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>5</UFR_LabGrownCulture>
+      <Neutroamine>5</Neutroamine>
+      <Plasteel>4</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Luciferium>1</Luciferium>
+    </costList>
+    <recipeMaker>
+      <workAmount>10000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>UFR_HarnessMesh</defName>
+    <label>subdermal harness mesh</label>
+    <labelNoun>a subdermal harness mesh</labelNoun>
+    <description>An installed subdermal harness mesh providing power-armor interface and dermal reinforcement.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_HarnessMesh</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_HarnessMesh</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>UFR_InstallHarnessMesh</defName>
+    <label>install subdermal harness mesh</label>
+    <description>Install a subdermal harness mesh.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_HarnessMesh</ThingDef>
+      <HediffDef>UFR_HarnessMesh</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing subdermal harness mesh.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_HarnessMesh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_HarnessMesh</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_HarnessMesh</addsHediff>
+  </RecipeDef>
+
+  <!-- Aesthetic Refiner -->
+  <ThingDef ParentName="UFR_BioImplantBase">
+    <defName>UFR_AestheticRefiner</defName>
+    <label>aesthetic refiner</label>
+    <description>A suite of dermal and subdermal refinements that subtly improve the wearer's apparent beauty.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallAestheticRefiner</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>3</UFR_LabGrownCulture>
+      <Neutroamine>3</Neutroamine>
+      <Plasteel>2</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>7000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>UFR_AestheticRefiner</defName>
+    <label>aesthetic refiner</label>
+    <labelNoun>a aesthetic refiner</labelNoun>
+    <description>An installed aesthetic refiner subtly improving appearance.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_AestheticRefiner</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_AestheticRefiner</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <PawnBeauty>1</PawnBeauty>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>UFR_InstallAestheticRefiner</defName>
+    <label>install aesthetic refiner</label>
+    <description>Install a aesthetic refiner.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_AestheticRefiner</ThingDef>
+      <HediffDef>UFR_AestheticRefiner</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing aesthetic refiner.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_AestheticRefiner</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_AestheticRefiner</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_AestheticRefiner</addsHediff>
+  </RecipeDef>
+
+  <!-- Cognitive Accelerator -->
+  <ThingDef ParentName="UFR_BioImplantBase">
+    <defName>UFR_CognitiveAccelerator</defName>
+    <label>cognitive accelerator</label>
+    <description>A neural co-processor cluster grown into the cortex. Accelerates information retention and analytical thinking.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallCognitiveAccelerator</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2400</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>4</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>3</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>9000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>UFR_CognitiveAccelerator</defName>
+    <label>cognitive accelerator</label>
+    <labelNoun>a cognitive accelerator</labelNoun>
+    <description>An installed cognitive accelerator boosting research and learning.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_CognitiveAccelerator</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_CognitiveAccelerator</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <ResearchSpeedFactor>0.25</ResearchSpeedFactor>
+          <GlobalLearningFactor>0.50</GlobalLearningFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>UFR_InstallCognitiveAccelerator</defName>
+    <label>install cognitive accelerator</label>
+    <description>Install a cognitive accelerator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_CognitiveAccelerator</ThingDef>
+      <HediffDef>UFR_CognitiveAccelerator</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing cognitive accelerator.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_CognitiveAccelerator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_CognitiveAccelerator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_CognitiveAccelerator</addsHediff>
+  </RecipeDef>
+
+  <!-- Reflex Enhancer -->
+  <ThingDef ParentName="UFR_BioImplantBase">
+    <defName>UFR_ReflexEnhancer</defName>
+    <label>reflex enhancer</label>
+    <description>Neural pathways pre-tuned for rapid response. Sharper reflexes, quicker manipulation, and faster movement.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallReflexEnhancer</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>4</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>3</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>9000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>UFR_ReflexEnhancer</defName>
+    <label>reflex enhancer</label>
+    <labelNoun>a reflex enhancer</labelNoun>
+    <description>An installed reflex enhancer sharpening response time.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_ReflexEnhancer</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_ReflexEnhancer</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.10</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.10</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>UFR_InstallReflexEnhancer</defName>
+    <label>install reflex enhancer</label>
+    <description>Install a reflex enhancer.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_ReflexEnhancer</ThingDef>
+      <HediffDef>UFR_ReflexEnhancer</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing reflex enhancer.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_ReflexEnhancer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_ReflexEnhancer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_ReflexEnhancer</addsHediff>
+  </RecipeDef>
+
+  <!-- Pain Modulator -->
+  <ThingDef ParentName="UFR_BioImplantBase">
+    <defName>UFR_PainModulator</defName>
+    <label>pain modulator</label>
+    <description>Implanted into the brain's pain-processing center, this device dampens pain signals to a fraction of their natural intensity.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallPainModulator</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1800</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>3</UFR_LabGrownCulture>
+      <Neutroamine>3</Neutroamine>
+      <Plasteel>2</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>8000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>UFR_PainModulator</defName>
+    <label>pain modulator</label>
+    <labelNoun>a pain modulator</labelNoun>
+    <description>An installed pain modulator dampening pain perception.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_PainModulator</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_PainModulator</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statFactors>
+          <PainShockThreshold>1.5</PainShockThreshold>
+        </statFactors>
+        <painFactor>0.5</painFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>UFR_InstallPainModulator</defName>
+    <label>install pain modulator</label>
+    <description>Install a pain modulator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_PainModulator</ThingDef>
+      <HediffDef>UFR_PainModulator</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing pain modulator.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_PainModulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_PainModulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_PainModulator</addsHediff>
+  </RecipeDef>
+
+  <!-- Adrenal Enhancer -->
+  <ThingDef ParentName="UFR_BioImplantBase">
+    <defName>UFR_AdrenalEnhancer</defName>
+    <label>adrenal enhancer</label>
+    <description>Augmented adrenal glands provide a constant low-level adrenal boost, sharpening combat reactions.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallAdrenalEnhancer</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>4</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>3</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>8000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>UFR_AdrenalEnhancer</defName>
+    <label>adrenal enhancer</label>
+    <labelNoun>a adrenal enhancer</labelNoun>
+    <description>An installed adrenal enhancer providing chronic combat-readiness.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_AdrenalEnhancer</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_AdrenalEnhancer</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDamageFactor>0.10</MeleeDamageFactor>
+          <AimingDelayFactor>-0.20</AimingDelayFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>UFR_InstallAdrenalEnhancer</defName>
+    <label>install adrenal enhancer</label>
+    <description>Install a adrenal enhancer.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_AdrenalEnhancer</ThingDef>
+      <HediffDef>UFR_AdrenalEnhancer</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing adrenal enhancer.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_AdrenalEnhancer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_AdrenalEnhancer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_AdrenalEnhancer</addsHediff>
+  </RecipeDef>
+
+  <!-- Healing Accelerator -->
+  <ThingDef ParentName="UFR_BioImplantBase">
+    <defName>UFR_HealingAccelerator</defName>
+    <label>healing accelerator</label>
+    <description>A subdermal mesh of growth-factor-secreting cells. Wounds close faster.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>UFR_InstallHealingAccelerator</RecipeDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MarketValue>2100</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <costList>
+      <UFR_LabGrownCulture>4</UFR_LabGrownCulture>
+      <Neutroamine>4</Neutroamine>
+      <Plasteel>3</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <workAmount>9000</workAmount>
+    </recipeMaker>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>UFR_HealingAccelerator</defName>
+    <label>healing accelerator</label>
+    <labelNoun>a healing accelerator</labelNoun>
+    <description>An installed healing accelerator increasing wound recovery rate.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_HealingAccelerator</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>UFR_HealingAccelerator</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <InjuryHealingFactor>0.50</InjuryHealingFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>UFR_InstallHealingAccelerator</defName>
+    <label>install healing accelerator</label>
+    <description>Install a healing accelerator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_HealingAccelerator</ThingDef>
+      <HediffDef>UFR_HealingAccelerator</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing healing accelerator.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_HealingAccelerator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_HealingAccelerator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>UFR_HealingAccelerator</addsHediff>
+  </RecipeDef>
+
+</Defs>

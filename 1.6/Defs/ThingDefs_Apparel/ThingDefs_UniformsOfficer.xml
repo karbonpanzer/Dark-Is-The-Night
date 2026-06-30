@@ -32,7 +32,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_CommissarUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -114,7 +114,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_CommissarUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -193,7 +193,7 @@
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisites>
-        <li>UFR_OfficerUniforms</li>
+        <li>UFR_CommissarUniforms</li>
         <li>UFR_ExtremeWeatherUniforms</li>
       </researchPrerequisites>
     </recipeMaker>
@@ -278,7 +278,7 @@
     </colorGenerator>
     <recipeMaker>
       <researchPrerequisites>
-        <li>UFR_OfficerUniforms</li>
+        <li>UFR_CommissarUniforms</li>
         <li>UFR_ExtremeWeatherUniforms</li>
       </researchPrerequisites>
     </recipeMaker>

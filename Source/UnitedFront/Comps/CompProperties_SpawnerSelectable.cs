@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Verse;
 
-namespace FoodSynthesizer
+namespace UnitedFront.Comps
 {
-    public class CompProperties_SpawnerSelectable : CompProperties
+    public class CompPropertiesSpawnerSelectable : CompProperties
     {
 
         public List<ThingDefCountClass> spawnOptions = null!;
@@ -18,7 +18,7 @@ namespace FoodSynthesizer
         [NoTranslate]
         public string saveKeysPrefix = null!;
 
-        public CompProperties_SpawnerSelectable()
+        public CompPropertiesSpawnerSelectable()
         {
             compClass = typeof(CompSpawnerSelectable);
         }

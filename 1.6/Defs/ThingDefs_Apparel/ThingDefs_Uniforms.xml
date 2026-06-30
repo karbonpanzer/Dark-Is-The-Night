@@ -176,7 +176,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_UFUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_AdvancedWovenUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -251,7 +251,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_UFUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_AdvancedWovenUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -329,7 +329,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_UFUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_AdvancedWovenUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -408,7 +408,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_UFUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_AdvancedWovenUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -486,7 +486,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_UFUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_AdvancedWovenUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -565,7 +565,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_UFUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_AdvancedWovenUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>

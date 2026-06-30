@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <ResearchProjectDef>
+        <defName>UFR_AdvancedFabricationMethods</defName>
+        <label>Advanced Fabrication Methods</label>
+        <description>Build the United Front Fabricator workbench needed to produce United Front equipment.</description>
+        <baseCost>1000</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>Fabrication</li>
+        </prerequisites>
+        <requiredAnalyzed>
+            <li>UFR_Decoder</li>
+        </requiredAnalyzed>
+        <researchViewX>0</researchViewX>
+        <researchViewY>2.8</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_BulwarkArmor</defName>
+        <label>Bulwark Armor</label>
+        <description>Craft armor and helmets that provide stronger protection than flak gear and cover more of the body.</description>
+        <baseCost>1600</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_AdvancedFabricationMethods</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>0.7</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_BulwarkMolecularPlating</defName>
+        <label>Bulwark Molecular Plating</label>
+        <description>Apply molecular-grade plating techniques to Bulwark armor, producing heavier configurations with substantially improved protection at increased material cost.</description>
+        <baseCost>2000</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_BulwarkArmor</li>
+        </prerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_BulwarkSpecializedCompositions</defName>
+        <label>Bulwark Specialized Compositions</label>
+        <description>Refine Bulwark composite formulations for specialized officer-grade armor configurations that combine protection with the appearance expected of command personnel.</description>
+        <baseCost>2400</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_BulwarkArmor</li>
+        </prerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>0.7</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_BulwarkRecompositionMethods</defName>
+        <label>Bulwark Recomposition Methods</label>
+        <description>Restructure Bulwark composite matrices into alternate configurations suited for specialist combat roles.</description>
+        <baseCost>2200</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_BulwarkArmor</li>
+        </prerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>1.4</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_VarangianPowerArmor</defName>
+        <label>Varangian Power Armor</label>
+        <description>Construct lighter-frame powered combat suits favored by mobile assault elements. Augments the wearer's strength, mobility, and survivability. Requires analysis of an armor decoder.</description>
+        <baseCost>3200</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>UFR_BulwarkMolecularPlating</li>
+        </prerequisites>
+        <requiredAnalyzed>
+            <li>UFR_ArmorDecoder</li>
+        </requiredAnalyzed>
+        <researchViewX>6</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_PraetorianPowerArmor</defName>
+        <label>Praetorian Power Armor</label>
+        <description>Construct heavy-frame powered combat suits for command personnel and elite guard units. Maximum protection with reduced mobility. Requires analysis of an armor decoder.</description>
+        <baseCost>3200</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>UFR_BulwarkSpecializedCompositions</li>
+        </prerequisites>
+        <requiredAnalyzed>
+            <li>UFR_ArmorDecoder</li>
+        </requiredAnalyzed>
+        <researchViewX>6</researchViewX>
+        <researchViewY>0.7</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_AdvancedWovenUniforms</defName>
+        <label>Advanced Woven Uniforms</label>
+        <description>Tailor garments that provide light protection and insulation for a variety of climates.</description>
+        <baseCost>1200</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_AdvancedFabricationMethods</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>4.2</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_ExtremeWeatherUniforms</defName>
+        <label>Extreme Weather Uniforms</label>
+        <description>Tailor heavily modified garments designed for survival and work in extreme heat and cold.</description>
+        <baseCost>1500</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_AdvancedWovenUniforms</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>3.5</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_CommissarUniforms</defName>
+        <label>Commissar Uniforms</label>
+        <description>Tailor garments with commissar markings that offer the same protection as standard apparel.</description>
+        <baseCost>1500</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_AdvancedWovenUniforms</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>4.9</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_StandardizedInfantryKits</defName>
+        <label>Standardized Infantry Kits</label>
+        <description>Craft equipment that improves reload speed and general combat readiness.</description>
+        <baseCost>1000</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_AdvancedWovenUniforms</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>4.2</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_ModifiedSpecialistKits</defName>
+        <label>Modified Specialist Kits</label>
+        <description>Craft specialized equipment for heavy frontline use by shocktroopers and engineers.</description>
+        <baseCost>1800</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_StandardizedInfantryKits</li>
+        </prerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>4.2</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_MagneticCoilManufacturing</defName>
+        <label>Magnetic Coil Manufacturing</label>
+        <description>Construct basic coil weapons used by United Front settlers. Capacitor banks and rail coils require advanced components.</description>
+        <baseCost>1600</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_AdvancedFabricationMethods</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>2.8</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_HighFrequencyGenerators</defName>
+        <label>High-Frequency Generators</label>
+        <description>Construct weapons that use ultrasonic vibration generators. Note that these also require advanced components.</description>
+        <baseCost>2800</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_AdvancedFabricationMethods</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>2.1</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_AdvancedCoilFabrication</defName>
+        <label>Advanced Coil Fabrication</label>
+        <description>Construct advanced coil weaponry fielded by United Front armed forces. Multi-stage rail acceleration and precision capacitor tuning enable significantly higher velocity and penetration.</description>
+        <baseCost>2400</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_MagneticCoilManufacturing</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>2.8</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_ReinforcedCoilSuperstructures</defName>
+        <label>Reinforced Coil Superstructures</label>
+        <description>Construct heavy coil weapons favored by United Front pirates and mercenaries. Industrial-scale capacitor banks deliver devastating slug impacts.</description>
+        <baseCost>2000</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_MagneticCoilManufacturing</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>3.5</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_IonizedGasRefinement</defName>
+        <label>Ionized Gas Refinement</label>
+        <description>Construct ultratech laser weapons that fire focused beams of coherent light through refined ionized gas. Requires analysis of a weapons decoder.</description>
+        <baseCost>3200</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>UFR_AdvancedCoilFabrication</li>
+        </prerequisites>
+        <requiredAnalyzed>
+            <li>UFR_WeaponsDecoder</li>
+        </requiredAnalyzed>
+        <researchViewX>6</researchViewX>
+        <researchViewY>2.8</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_MagneticCoilTurret</defName>
+        <label>Magnetic Coil Turret</label>
+        <description>Construct stationary coil turrets for base defense. Slow-firing but accurate, capable of penetrating standard armor at range.</description>
+        <baseCost>2000</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_MagneticCoilManufacturing</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>2.1</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_ReinforcedMagneticCoilTurret</defName>
+        <label>Reinforced Magnetic Coil Turret</label>
+        <description>Construct heavy coil turret emplacements with anti-armor capability. Designed to engage vehicles and mechanoid threats.</description>
+        <baseCost>2800</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_MagneticCoilTurret</li>
+            <li>UFR_AdvancedCoilFabrication</li>
+        </prerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>2.1</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_HeavyIonPlasmaWeaponry</defName>
+        <label>Heavy Ion-Plasma Weaponry</label>
+        <description>Construct ultratech plasma weapons that channel ionized plasma streams capable of melting through armor and structure alike. Requires analysis of a weapons decoder.</description>
+        <baseCost>4000</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>UFR_IonizedGasRefinement</li>
+        </prerequisites>
+        <requiredAnalyzed>
+            <li>UFR_WeaponsDecoder</li>
+        </requiredAnalyzed>
+        <researchViewX>7</researchViewX>
+        <researchViewY>2.1</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_IonPlasmaTurrets</defName>
+        <label>Ion-Plasma Turrets</label>
+        <description>Construct ultratech plasma turret emplacements for sustained area denial. Capable of engaging multiple armored targets simultaneously.</description>
+        <baseCost>4000</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>UFR_IonizedGasRefinement</li>
+        </prerequisites>
+        <requiredAnalyzed>
+            <li>UFR_WeaponsDecoder</li>
+        </requiredAnalyzed>
+        <researchViewX>7</researchViewX>
+        <researchViewY>2.8</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_IonPlasmaBlades</defName>
+        <label>Ion-Plasma Blades</label>
+        <description>Construct ultratech plasma-edged melee weapons that channel containment-stabilized plasma along a blade edge, slicing through armor and tissue with equal ease.</description>
+        <baseCost>3600</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>UFR_IonizedGasRefinement</li>
+        </prerequisites>
+        <requiredAnalyzed>
+            <li>UFR_WeaponsDecoder</li>
+        </requiredAnalyzed>
+        <researchViewX>7</researchViewX>
+        <researchViewY>3.5</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_MatterRecombination</defName>
+        <label>Matter-Recombination</label>
+        <description>Construct food synthesizers that produce nutrient packs from raw biomass and chemicals via molecular recombination, eliminating the need for agriculture in hostile climates. Requires analysis of a utility decoder.</description>
+        <baseCost>1600</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Ultra</techLevel>
+        <requiredAnalyzed>
+            <li>UFR_UtilityDecoder</li>
+        </requiredAnalyzed>
+        <researchViewX>8</researchViewX>
+        <researchViewY>4.2</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_BioAugments</defName>
+        <label>Bio-Augments</label>
+        <description>Construct vat-grown organic prosthetics that replace lost limbs and organs with genetically engineered biological replacements. Reinforced bone structure, denser musculature, and combat-grade tissue augmentations. Requires analysis of a medical decoder.</description>
+        <baseCost>2400</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>UFR_AdvancedFabricationMethods</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>5.6</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_AdvancedBioAugments</defName>
+        <label>Advanced Bio-Augments</label>
+        <description>Construct perfected vat-grown organic augments that push biological engineering to its practical ceiling. Enhanced organ function, optimized sensory replacements, and combat-grade limb augmentations engineered for elite frontline personnel.</description>
+        <baseCost>3200</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>UFR_BioAugments</li>
+        </prerequisites>
+        <requiredAnalyzed>
+            <li>UFR_MedicalDecoder</li>
+        </requiredAnalyzed>        
+        <researchViewX>2</researchViewX>
+        <researchViewY>5.6</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_FrontierEntertainment</defName>
+        <label>Frontier Entertainment</label>
+        <description>Construct recreation items including the euchre table and wargaming table for off-duty United Front personnel.</description>
+        <baseCost>800</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>ComplexFurniture</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>5.6</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_NetcastingEntertainment</defName>
+        <label>Netcasting Entertainment</label>
+        <description>Construct mid-tier recreation devices that broadcast curated content over local networks for off-duty personnel.</description>
+        <baseCost>1600</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>Fabrication</li>
+            <li>UFR_FrontierEntertainment</li>
+        </prerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>5.6</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_HolographicEntertainment</defName>
+        <label>Holographic Entertainment</label>
+        <description>Construct ultratech holographic recreation devices including the game sphere. Requires analysis of a utility decoder.</description>
+        <baseCost>2400</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>UFR_NetcastingEntertainment</li>
+        </prerequisites>
+        <requiredAnalyzed>
+            <li>UFR_UtilityDecoder</li>
+        </requiredAnalyzed>
+        <researchViewX>8</researchViewX>
+        <researchViewY>5.6</researchViewY>
+    </ResearchProjectDef>
+</Defs>

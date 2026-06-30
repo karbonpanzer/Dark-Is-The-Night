@@ -6,7 +6,7 @@
 		<label>Grenadier Webbing (Tear)</label>
 		<recipeMaker>
 		  <researchPrerequisites>
-		    <li>UFR_SpecialistAccessories</li>
+		    <li>UFR_ModifiedSpecialistKits</li>
 		    <li>VWE_NonLethal</li>
 		  </researchPrerequisites>
 		</recipeMaker>

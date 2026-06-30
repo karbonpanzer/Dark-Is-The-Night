@@ -3,18 +3,18 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 
-namespace FoodSynthesizer
+namespace UnitedFront.Comps
 {
     public class CompSpawnerSelectable : ThingComp
     {
-        private int ticksUntilSpawn;
-        private int selectedIndex;
+        private int _ticksUntilSpawn;
+        private int _selectedIndex;
 
-        public CompProperties_SpawnerSelectable Props
-            => (CompProperties_SpawnerSelectable)props;
+        public CompPropertiesSpawnerSelectable Props
+            => (CompPropertiesSpawnerSelectable)props;
 
         private ThingDefCountClass CurrentOption
-            => Props.spawnOptions[selectedIndex];
+            => Props.spawnOptions[_selectedIndex];
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
@@ -27,7 +27,7 @@ namespace FoodSynthesizer
 
         private void ResetTimer()
         {
-            ticksUntilSpawn = Props.spawnIntervalRange.RandomInRange;
+            _ticksUntilSpawn = Props.spawnIntervalRange.RandomInRange;
         }
 
         public override void CompTick()
@@ -35,21 +35,21 @@ namespace FoodSynthesizer
             if (Props.requiresPower)
             {
                 CompPowerTrader power = parent.TryGetComp<CompPowerTrader>();
-                if (power != null && !power.PowerOn)
+                if (power is { PowerOn: false })
                 {
                     return;
                 }
             }
 
-            ticksUntilSpawn--;
-            if (ticksUntilSpawn <= 0)
+            _ticksUntilSpawn--;
+            if (_ticksUntilSpawn <= 0)
             {
                 TryDoSpawn();
                 ResetTimer();
             }
         }
 
-        private bool TryDoSpawn()
+        private void TryDoSpawn()
         {
             ThingDefCountClass option = CurrentOption;
 
@@ -61,18 +61,18 @@ namespace FoodSynthesizer
                     if (cell.InBounds(parent.Map))
                     {
                         List<Thing> thingsAt = cell.GetThingList(parent.Map);
-                        for (int i = 0; i < thingsAt.Count; i++)
+                        foreach (var t in thingsAt)
                         {
-                            if (thingsAt[i].def == option.thingDef)
+                            if (t.def == option.thingDef)
                             {
-                                adjacent += thingsAt[i].stackCount;
+                                adjacent += t.stackCount;
                             }
                         }
                     }
                 }
                 if (adjacent >= Props.spawnMaxAdjacent)
                 {
-                    return false;
+                    return;
                 }
             }
 
@@ -93,7 +93,7 @@ namespace FoodSynthesizer
                 ThingPlaceMode.Near))
             {
                 thing.Destroy();
-                return false;
+                return;
             }
 
             if (Props.showMessageIfOwned && parent.Faction == Faction.OfPlayer)
@@ -104,8 +104,6 @@ namespace FoodSynthesizer
                     thing,
                     MessageTypeDefOf.PositiveEvent);
             }
-
-            return true;
         }
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
@@ -128,7 +126,7 @@ namespace FoodSynthesizer
                         int localIndex = i;
                         ThingDefCountClass opt = Props.spawnOptions[i];
                         string label;
-                        if (i == selectedIndex)
+                        if (i == _selectedIndex)
                         {
                             label = "FoodSynth_CurrentMarker".Translate(
                                 opt.thingDef.LabelCap,
@@ -142,7 +140,7 @@ namespace FoodSynthesizer
                         }
                         menuOptions.Add(new FloatMenuOption(label, delegate
                         {
-                            selectedIndex = localIndex;
+                            _selectedIndex = localIndex;
                         }));
                     }
                     Find.WindowStack.Add(new FloatMenu(menuOptions));
@@ -169,7 +167,7 @@ namespace FoodSynthesizer
             if (Props.writeTimeLeftToSpawn)
             {
                 text += "\n" + "NextSpawnedItemIn".Translate(
-                    GenDate.ToStringTicksToPeriod(ticksUntilSpawn));
+                    _ticksUntilSpawn.ToStringTicksToPeriod());
             }
 
             return text;
@@ -178,11 +176,11 @@ namespace FoodSynthesizer
         public override void PostExposeData()
         {
             base.PostExposeData();
-            string prefix = Props.saveKeysPrefix ?? "selectable";
-            Scribe_Values.Look(ref ticksUntilSpawn,
-                prefix + "_ticksUntilSpawn", 0);
-            Scribe_Values.Look(ref selectedIndex,
-                prefix + "_selectedIndex", 0);
+            string prefix = Props.saveKeysPrefix;
+            Scribe_Values.Look(ref _ticksUntilSpawn,
+                prefix + "_ticksUntilSpawn");
+            Scribe_Values.Look(ref _selectedIndex,
+                prefix + "_selectedIndex");
         }
     }
 }

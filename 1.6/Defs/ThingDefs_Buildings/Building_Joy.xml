@@ -76,4 +76,118 @@
     </building>
   </ThingDef>
 
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>UFR_WargamingTable</defName>
+    <label>wargaming table</label>
+    <description>A purpose-built tabletop for miniature wargaming. Sculpted terrain, painted regiments, dice and rulers. A frontier-favorite for those who enjoy intellectual contests of attrition and maneuver. Trains intellectual skills.\n\nThis building requires adjacent chairs or stools to use.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/WargamingTable/wargamingtable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(1.6, 0.3, 1.6)</volume>
+        <offset>(0, 0, -0.15)</offset>
+      </shadowData>
+    </graphicData>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <minTechLevelToBuild>Industrial</minTechLevelToBuild>
+    <building>
+      <joyKind>Gaming_Cerebral</joyKind>
+      <buildingSizeCategory>Medium</buildingSizeCategory>
+      <paintable>true</paintable>
+    </building>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>30</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+      <JoyGainFactor>1.4</JoyGainFactor>
+    </statBases>
+    <size>(2,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <pathCost>42</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+    <designationHotKey>Misc5</designationHotKey>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>UFR_FrontierEntertainment</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <uiIconScale>0.9</uiIconScale>
+  </ThingDef>
+
+  <!-- Build like poker for hte time being -->
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>UFR_EuchreTable</defName>
+    <label>euchre table</label>
+    <description>A square card table designed for the four-player game of euchre. Played in two partnerships, it's a quick, sociable game popular on frontier worlds where space and time are at a premium.\n\nThis building requires adjacent chairs or stools to use.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/Euchre/euchre</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>      
+      <shadowData>
+        <volume>(1.6, 0.3, 1.6)</volume>
+        <offset>(0, 0, -0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <size>(2,2)</size>    
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <minTechLevelToBuild>Industrial</minTechLevelToBuild>
+    <building>
+      <joyKind>Gaming_Cerebral</joyKind>
+      <buildingSizeCategory>Medium</buildingSizeCategory>      
+      <paintable>true</paintable>
+    </building>
+    <researchPrerequisites>
+      <li>UFR_FrontierEntertainment</li>
+    </researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>9000</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>4</Beauty>
+      <JoyGainFactor>1.1</JoyGainFactor>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>80</costStuffCount>
+    <costList>
+      <Cloth>20</Cloth>
+    </costList>
+    <pathCost>30</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+    <designationHotKey>Misc2</designationHotKey>
+  </ThingDef>
+
 </Defs>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>UFR_FoodSynthesizer</defName>
+    <label>food synthesizer</label>
+    <description>An advanced molecular assembly unit that synthesizes edible food cubes from atmospheric compounds. A selection dial allows the operator to choose the output type. The machine hums with quiet purpose — utilitarian, reliable, and deeply unappetizing.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Special/FoodSynthesizer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2.5,2.5)</drawSize>
+      <shadowData>
+        <volume>(0.7, 0.4, 0.7)</volume>
+      </shadowData>
+    </graphicData>
+    <researchPrerequisites>
+      <li>UFR_MatterRecombination</li>
+    </researchPrerequisites>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <costList>
+      <Steel>200</Steel>
+      <Plasteel>25</Plasteel>
+      <Uranium>25</Uranium>
+      <ComponentSpacer>10</ComponentSpacer>
+    </costList>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>350</basePowerConsumption>
+      </li>
+      <li Class="UnitedFront.Comps.CompPropertiesSpawnerSelectable">
+        <spawnOptions>
+          <DRG_Meatcube>75</DRG_Meatcube>
+          <DRG_Vegblock>75</DRG_Vegblock>
+          <DRG_Fruitblock>75</DRG_Fruitblock>
+          <DRG_Chocoblock>50</DRG_Chocoblock>
+          <DRG_Squareloaf MayRequire="vanillaexpanded.vcooke">75</DRG_Squareloaf>
+          <DRG_Seasoncube MayRequire="vanillaexpanded.vcooke">50</DRG_Seasoncube>
+        </spawnOptions>
+        <spawnIntervalRange>100000~100000</spawnIntervalRange>
+        <spawnMaxAdjacent>-1</spawnMaxAdjacent>
+        <requiresPower>true</requiresPower>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>true</showMessageIfOwned>
+        <saveKeysPrefix>foodSynth</saveKeysPrefix>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MarketValue>1800</MarketValue>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>-5</Beauty>
+      <Mass>40</Mass>
+      <WorkToBuild>10000</WorkToBuild>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+    <tickerType>Normal</tickerType>
+    <size>(1,1)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tradeability>Sellable</tradeability>
+    <tradeTags>
+      <li>ExoticBuilding</li>
+    </tradeTags>
+    <designationCategory>Production</designationCategory>
+    <designationHotKey>Misc12</designationHotKey>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+    <uiIconScale>0.8</uiIconScale>
+  </ThingDef>
+
+</Defs>

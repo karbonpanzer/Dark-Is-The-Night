@@ -25,12 +25,12 @@
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <texPath>Things/Item/Equipment/heavycoilpistol</texPath>
-            <drawSize>1.1</drawSize>
+            <drawSize>0.9</drawSize>
         </graphicData>
         <techLevel>Spacer</techLevel>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>UFR_MercenaryWeaponry</researchPrerequisite>
+            <researchPrerequisite>UFR_ReinforcedCoilSuperstructures</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -60,8 +60,8 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>UFR_Slug_HeavyCoilPistol</defaultProjectile>
                 <warmupTime>0.85</warmupTime>
-                <range>20.0</range>
-                <soundCast>UFR_Shot_SlugSmall</soundCast>
+                <range>19.9</range>
+                <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>11</muzzleFlashScale>
             </li>
@@ -94,7 +94,7 @@
         <tradeTags>
             <li>WeaponRanged</li>
         </tradeTags>
-        <uiIconScale>1.25</uiIconScale>
+        <uiIconScale>1.35</uiIconScale>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
@@ -127,7 +127,7 @@
         <techLevel>Spacer</techLevel>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>UFR_UFWeaponry</researchPrerequisite>
+            <researchPrerequisite>UFR_MagneticCoilManufacturing</researchPrerequisite>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
@@ -157,8 +157,8 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>UFR_Slug_CoilPistol</defaultProjectile>
                 <warmupTime>0.65</warmupTime>
-                <range>22.0</range>
-                <soundCast>UFR_Shot_SlugSmall</soundCast>
+                <range>21.9</range>
+                <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
@@ -224,7 +224,7 @@
         <techLevel>Spacer</techLevel>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>UFR_AdvancedWeaponry</researchPrerequisite>
+            <researchPrerequisite>UFR_AdvancedCoilFabrication</researchPrerequisite>
             <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>
@@ -254,10 +254,10 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>UFR_Slug_CoilRifle</defaultProjectile>
                 <warmupTime>1.1</warmupTime>
-                <range>35.0</range>
+                <range>34.9</range>
                 <burstShotCount>2</burstShotCount>
                 <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-                <soundCast>UFR_Shot_SlugMedium</soundCast>
+                <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>10</muzzleFlashScale>
             </li>
@@ -290,7 +290,7 @@
         <tradeTags>
             <li>WeaponRanged</li>
         </tradeTags>
-        <uiIconScale>1.15</uiIconScale>
+        <uiIconScale>1.05</uiIconScale>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
@@ -323,7 +323,7 @@
         <techLevel>Spacer</techLevel>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>UFR_UFWeaponry</researchPrerequisite>
+            <researchPrerequisite>UFR_MagneticCoilManufacturing</researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
@@ -353,10 +353,10 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>UFR_Slug_CoilCarbine</defaultProjectile>
                 <warmupTime>0.85</warmupTime>
-                <range>28.0</range>
+                <range>27.9</range>
                 <burstShotCount>2</burstShotCount>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-                <soundCast>UFR_Shot_SlugMedium</soundCast>
+                <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
@@ -386,7 +386,7 @@
         <tradeTags>
             <li>WeaponRanged</li>
         </tradeTags>
-        <uiIconScale>1.15</uiIconScale>
+        <uiIconScale>1.05</uiIconScale>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
@@ -419,7 +419,7 @@
         <techLevel>Spacer</techLevel>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>UFR_AdvancedWeaponry</researchPrerequisite>
+            <researchPrerequisite>UFR_AdvancedCoilFabrication</researchPrerequisite>
             <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>
@@ -448,8 +448,8 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>UFR_Slug_HeavyCoilRifle</defaultProjectile>
                 <warmupTime>1.4</warmupTime>
-                <range>42.0</range>
-                <soundCast>UFR_Shot_SlugMedium</soundCast>
+                <range>41.9</range>
+                <soundCast>Shot_ChargeBlaster</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>10</muzzleFlashScale>
             </li>
@@ -482,7 +482,7 @@
         <tradeTags>
             <li>WeaponRanged</li>
         </tradeTags>
-        <uiIconScale>1.15</uiIconScale>
+        <uiIconScale>1.05</uiIconScale>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
@@ -515,7 +515,7 @@
         <techLevel>Spacer</techLevel>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>UFR_AdvancedWeaponry</researchPrerequisite>
+            <researchPrerequisite>UFR_AdvancedCoilFabrication</researchPrerequisite>
             <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>
@@ -548,10 +548,10 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>UFR_Slug_CoilMG</defaultProjectile>
                 <warmupTime>1.6</warmupTime>
-                <range>30.0</range>
+                <range>29.9</range>
                 <burstShotCount>4</burstShotCount>
-                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
-                <soundCast>UFR_Shot_SlugMedium</soundCast>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>10</muzzleFlashScale>
             </li>
@@ -584,7 +584,7 @@
         <tradeTags>
             <li>WeaponRanged</li>
         </tradeTags>
-        <uiIconScale>1.15</uiIconScale>
+        <uiIconScale>1.05</uiIconScale>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
@@ -618,7 +618,7 @@
         <techLevel>Spacer</techLevel>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>UFR_AdvancedWeaponry</researchPrerequisite>
+            <researchPrerequisite>UFR_AdvancedCoilFabrication</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -650,8 +650,8 @@
                 <warmupTime>1.0</warmupTime>
                 <burstShotCount>2</burstShotCount>
                 <ticksBetweenBurstShots>18</ticksBetweenBurstShots>
-                <range>22.0</range>
-                <soundCast>UFR_Shot_SlugScatter</soundCast>
+                <range>21.9</range>
+                <soundCast>Shot_ChargeBlaster</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>11</muzzleFlashScale>
             </li>
@@ -688,7 +688,110 @@
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
-        <defName>UFR_Slug_HydraAMR</defName>
+        <defName>UFR_Slug_CoilCannon</defName>
+        <label>coil cannon slug</label>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Projectile/slug_heavy</texPath>
+            <drawSize>1.1</drawSize>
+            <shaderType>MoteGlow</shaderType>
+        </graphicData>
+        <projectile>
+            <flyOverhead>false</flyOverhead>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>70</damageAmountBase>
+            <armorPenetrationBase>1.00</armorPenetrationBase>
+            <stoppingPower>4</stoppingPower>
+            <speed>150</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_CoilCannon">
+        <defName>UFR_CoilCannon</defName>
+        <label>Coil Cannon</label>
+        <description>A scaled up anti-tank coil cannon made for anti-Mechanoid specialist use. Heavy, cumbersome, and slow, but capable of destroying armor effectively over great distances.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Item/Equipment/coilcannon</texPath>
+            <drawSize>1.1</drawSize>
+        </graphicData>
+        <techLevel>Spacer</techLevel>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>UFR_ReinforcedCoilSuperstructures</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>11</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+                <li>UFR_FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Steel>140</Steel>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentSpacer>8</ComponentSpacer>
+            <Plasteel>44</Plasteel>
+        </costList>
+        <statBases>
+            <WorkToMake>82000</WorkToMake>
+            <Mass>16.0</Mass>
+            <MarketValue>8500</MarketValue>
+            <AccuracyTouch>0.15</AccuracyTouch>
+            <AccuracyShort>0.35</AccuracyShort>
+            <AccuracyMedium>0.70</AccuracyMedium>
+            <AccuracyLong>0.90</AccuracyLong>
+            <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.45</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>UFR_Slug_CoilCannon</defaultProjectile>
+                <warmupTime>3.0</warmupTime>
+                <range>53.9</range>
+                <burstShotCount>2</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <soundCast>Shot_ChargeBlaster</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <weaponTags>
+            <li>UFR_UFHeavyGun</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>frame</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <thingSetMakerTags>
+            <li>RewardHighTech</li>
+        </thingSetMakerTags>
+        <tradeTags>
+            <li>WeaponRanged</li>
+        </tradeTags>
+        <uiIconScale>1.00</uiIconScale>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>UFR_Slug_Tricoil</defName>
         <label>tri-coil slug</label>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
@@ -699,25 +802,25 @@
         <projectile>
             <flyOverhead>false</flyOverhead>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>45</damageAmountBase>
+            <damageAmountBase>38</damageAmountBase>
             <armorPenetrationBase>0.85</armorPenetrationBase>
             <speed>160</speed>
         </projectile>
     </ThingDef>
 
-    <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_HydraRifle">
-        <defName>UFR_TriCoilHeavyRifle</defName>
+    <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_TricoilHeavyRifle">
+        <defName>UFR_TricoilRifle</defName>
         <label>Tri-Coil Heavy Rifle</label>
         <description>An experimental anti-material coil rifle built around three stacked capacitor rails. Heavy and cumbersome, effective against both armored and unarmored targets.</description>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <texPath>Things/Item/Equipment/tricoilrifle</texPath>
-            <drawSize>1.1</drawSize>
+            <drawSize>1.25</drawSize>
         </graphicData>
         <techLevel>Spacer</techLevel>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>UFR_AdvancedWeaponry</researchPrerequisite>
+            <researchPrerequisite>UFR_AdvancedCoilFabrication</researchPrerequisite>
             <skillRequirements>
                 <Crafting>12</Crafting>
             </skillRequirements>
@@ -739,7 +842,7 @@
             <AccuracyShort>0.58</AccuracyShort>
             <AccuracyMedium>0.78</AccuracyMedium>
             <AccuracyLong>0.82</AccuracyLong>
-            <RangedWeapon_Cooldown>3.4</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.30</MoveSpeed>
@@ -748,12 +851,10 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>UFR_Slug_HydraAMR</defaultProjectile>
+                <defaultProjectile>UFR_Slug_Tricoil</defaultProjectile>
                 <warmupTime>3.6</warmupTime>
-                <range>82.0</range>
-                <burstShotCount>3</burstShotCount>
-                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>				
-                <soundCast>UFR_Shot_SlugBig</soundCast>
+                <range>81.9</range>
+                <soundCast>Shot_ChargeBlaster</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>13</muzzleFlashScale>
             </li>
@@ -786,122 +887,6 @@
         <tradeTags>
             <li>WeaponRanged</li>
         </tradeTags>
-        <uiIconScale>1.05</uiIconScale>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
-        <defName>UFR_Slug_CoilCannon</defName>
-        <label>coil cannon slug</label>
-        <thingClass>Projectile_Explosive</thingClass>
-        <category>Projectile</category>
-        <tickerType>Normal</tickerType>
-        <altitudeLayer>Projectile</altitudeLayer>
-        <useHitPoints>False</useHitPoints>
-        <neverMultiSelect>True</neverMultiSelect>        
-        <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Projectile/slug_heavy</texPath>
-            <drawSize>1.1</drawSize>
-            <shaderType>MoteGlow</shaderType>
-        </graphicData>
-        <projectile>
-            <damageDef>Bomb</damageDef>
-            <explosionRadius>1.6</explosionRadius>
-            <speed>38</speed>
-            <damageAmountBase>55</damageAmountBase>
-            <arcHeightFactor>0.4</arcHeightFactor>
-            <soundExplode>Explosion_Rocket</soundExplode>
-        </projectile>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_CoilCannon">
-        <defName>UFR_CoilCannon</defName>
-        <label>Coil Cannon</label>
-        <description>A scaled up anti-tank coil cannon made for anti-Mechanoid specialist use. Heavy, cumbersome, and slow, but capable of destroying armor effectively over great distances.</description>
-        <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Item/Equipment/coilcannon</texPath>
-            <drawSize>1.25</drawSize>
-        </graphicData>
-        <techLevel>Spacer</techLevel>
-        <soundInteract>Interact_ChargeRifle</soundInteract>
-        <recipeMaker>
-            <researchPrerequisite>UFR_MercenaryWeaponry</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>11</Crafting>
-            </skillRequirements>
-            <recipeUsers>
-                <li>UFR_FabricationBench</li>
-            </recipeUsers>
-        </recipeMaker>
-        <costList>
-            <Steel>140</Steel>
-            <ComponentIndustrial>10</ComponentIndustrial>
-            <ComponentSpacer>8</ComponentSpacer>
-            <Plasteel>44</Plasteel>
-        </costList>
-        <statBases>
-            <WorkToMake>82000</WorkToMake>
-            <Mass>16.0</Mass>
-            <MarketValue>8500</MarketValue>
-            <AccuracyTouch>0.15</AccuracyTouch>
-            <AccuracyShort>0.35</AccuracyShort>
-            <AccuracyMedium>0.70</AccuracyMedium>
-            <AccuracyLong>0.90</AccuracyLong>
-            <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
-        </statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>-0.45</MoveSpeed>
-        </equippedStatOffsets>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>UFR_Slug_CoilCannon</defaultProjectile>
-                <warmupTime>8.0</warmupTime>
-                <range>54.0</range>
-                <soundCast>UFR_Shot_Slugmassive</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>14</muzzleFlashScale>
-                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>              
-                <forcedMissRadius>5.75</forcedMissRadius>
-                <forcedMissEvenDispersal>true</forcedMissEvenDispersal>
-                <targetParams>
-                    <canTargetPawns>false</canTargetPawns>
-                    <canTargetLocations>true</canTargetLocations>
-                    <canTargetBuildings>false</canTargetBuildings>
-                </targetParams>                
-            </li>
-        </verbs>
-        <weaponTags>
-            <li>UFR_UFHeavyGun</li>
-        </weaponTags>
-        <tools>
-            <li>
-                <label>frame</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>16</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>14</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
-        <thingSetMakerTags>
-            <li>RewardHighTech</li>
-        </thingSetMakerTags>
-        <tradeTags>
-            <li>WeaponRanged</li>
-        </tradeTags>
         <uiIconScale>0.90</uiIconScale>
     </ThingDef>
-
 </Defs>

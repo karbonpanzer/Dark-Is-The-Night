@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- =============================================================== -->
+  <!--  Bio-Augment Bench                                              -->
+  <!--  3x1 workstation with a culture tank at one end. The bench      -->
+  <!--  where lab-grown cultures are sculpted into vat-grown limbs     -->
+  <!--  and organs. Gated on UFR_BioAugments research.                 -->
+  <!-- =============================================================== -->
+
+  <ThingDef ParentName="BenchBase">
+    <defName>UFR_BioAugmentBench</defName>
+    <label>bio-augment bench</label>
+    <description>A specialized biological workbench used to sculpt lab-grown tissue cultures into functional replacement organs and limbs. A pressurized culture tank at one end provides the growth medium; the working surface houses the manipulators, scalpels, and monitors needed to coax raw cellular stock into anatomically viable form. Crude compared to glitterworld vat-clinics, but it works.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>true</useHitPoints>
+    <minTechLevelToBuild>Industrial</minTechLevelToBuild>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Mass>50</Mass>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(3,1)</size>
+    <costList>
+      <Steel>120</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <graphicData>
+      <texPath>Things/Building/Production/FabricationBench</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <rect>(0,0.1,3,0.9)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>350</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <workTableRoomRole>Workshop</workTableRoomRole>
+      <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+    </building>
+    <designationCategory>Production</designationCategory>
+    <designationHotKey>Misc11</designationHotKey>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>UFR_BioAugments</li>
+    </researchPrerequisites>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <rotatable>true</rotatable>
+    <surfaceType>Item</surfaceType>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </ThingDef>
+
+</Defs>

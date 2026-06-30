@@ -4,7 +4,7 @@
 		<description>A load-bearing chest harness designed to carry smoke grenades. Vented pouch design allows pressure equalization and prevents moisture buildup that could compromise the pyrotechnic compounds within the old-school condensed smoke canisters.</description>
 		<label>Grenadier Webbing (Smoke)</label>
 		<recipeMaker>
-		  <researchPrerequisite>UFR_SpecialistAccessories</researchPrerequisite>
+		  <researchPrerequisite>UFR_ModifiedSpecialistKits</researchPrerequisite>
 		</recipeMaker>
 		<graphicData>
 		  <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>

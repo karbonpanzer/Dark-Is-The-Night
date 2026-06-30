@@ -102,11 +102,11 @@
                 </li>
                 <li Class="ScenPart_StartingResearch">
                     <def>StartingResearch</def>
-                    <project>UFR_FabricationBench</project>
+                    <project>UFR_AdvancedFabricationMethods</project>
                 </li>
                 <li Class="ScenPart_StartingResearch">
                     <def>StartingResearch</def>
-                    <project>UFR_UFUniforms</project>
+                    <project>UFR_AdvancedWovenUniforms</project>
                 </li>
                 <li Class="ScenPart_ScatterThingsNearPlayerStart">
                     <def>ScatterThingsNearPlayerStart</def>
